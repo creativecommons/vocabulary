@@ -1,131 +1,299 @@
-.main-footer {
-  background-color: $color-black;
-  color: $white;
-  padding: $space-large 0;
-  --button-focus-outline: #fff;
-  a {
-    color: $color-dark-turquoise;
+// @import "bulma/sass/layout/footer.sass";
 
-    &:hover {
-      color: $color-dark-turquoise;
-      text-decoration: underline;
-    }
+.footer {
+	display: flex;
+	flex-direction: column;
+	row-gap: $space-large;
+	background-color: $color-black;
+	color: $white;
+	padding: 3.25rem 0.625rem;
+	a {
+		color: $color-dark-turquoise;
+		&:hover {
+			color: $color-dark-turquoise;
+			text-decoration: underline;
+		}
+		&.social:hover {
+			text-decoration: none;
+		}
+	}
+	.button:focus {
+		outline: 1px solid $white;
+	}
 
-    &.social:hover {
-      text-decoration: none;
-    }
-  }
+	.footer-navigation {
+		.menu {
+			display: flex;
+			flex-direction: column;
+			row-gap: $space-larger;
+			li {
+				display: block;
 
-  .main-logo {
-    display: block;
+				&:first-child {
+					.menu-item {
+						padding-left: 0;
+					}
+				}
+				.menu-item {
+					display: block;
+					font-size: $font-size-h5;
+					font-style: normal;
+					font-weight: bold;
+					white-space: nowrap;
+				}
+			}
+		}
+	}
 
-    svg {
-      width: 13rem;
-    }
-  }
+	.subscription {
+		h5 {
+			margin-bottom: $space-normal;
+			color: $color-white;
+			font-family: $family-heading;
+			text-transform: uppercase;
+			width: 70%;
+		}
+		.newsletter {
+			display: flex;
+			.input {
+				background-color: transparent;
+				border-color: $color-dark-gray;
+				color: $color-dark-gray;
+				padding: $space-small $space-normal;
+				&::placeholder {
+					color: $color-dark-gray;
+					opacity: 0.8;
+				}
+			}
+			.button {
+				margin-left: -$space-normal;
+				border: none;
+				background-color: $color-dark-gray;
+				color: $color-white;
+				text-transform: capitalize;
+				font-family: $family-body;
+				height: $space-large;
+				&:hover {
+					background-color: lighten($color-dark-gray, 10);
+				}
+			}
+		}
+	}
 
-  address {
-    font-style: normal;
-  }
+	.donate-section {
+		h5 {
+			color: $color-white;
+			font-family: $family-heading;
+			text-transform: uppercase;
+			margin-bottom: $space-smaller;
+		}
+		p {
+			font-size: 0.813rem;
+			font-weight: 600;
+		}
+		.donate {
+			margin-top: $space-normal;
+			font-size: 1.125rem;
+			padding: 0.7rem $space-normal 0.7rem 0.75rem;
+			font-weight: 700;
+			svg {
+				margin-right: $space-normal;
+				width: $space-bigger;
+				height: $space-bigger;
+			}
+			.icon {
+				line-height: 1.25;
+			}
+		}
+	}
 
-  .footer-navigation {
-    .menu {
-      li {
-        display: inline-block;
+	.footer-logo {
+		font-weight: 600;
+		font-size: 0.813rem;
+		.main-logo {
+			display: block;
+			svg {
+				width: 10.5rem;
+			}
+		}
+		address {
+			font-style: normal;
+			margin-bottom: $space-normal;
+		}
+		.mail {
+			display: block;
+		}
+		.socials-cover {
+			display: flex;
+			column-gap: $space-bigger;
+			padding-top: $space-bigger;
+			.social {
+				font-size: 2rem;
+			}
+		}
+	}
 
-        &:first-child {
-          .menu-item {
-            padding-left: 0;
-          }
-        }
+	.attribution {
+		width: 95%;
+		.caption {
+			font-weight: 600;
+			font-size: 0.813rem;
+		}
+		.icon {
+			font-size: 2rem;
+		}
+	}
 
-        .menu-item {
-          display: block;
-          padding: $space-normal;
-          font-size: $font-size-h4;
-          font-style: normal;
-          font-weight: bold;
-        }
-      }
-    }
-  }
+	@include tablet() {
+		padding: 1.75rem 2.25rem;
+		display: grid;
+		grid-template-areas:
+			'nav nav nav'
+			'logo sub sub'
+			'logo donate donate'
+			'. attr attr';
+		grid-template-columns: auto 1fr 1fr;
+		grid-template-rows: repeat(4, auto);
+		row-gap: 1.3rem;
 
-  .subscription {
-    h5 {
-      margin-bottom: $space-normal;
-      color: $color-white;
-    }
+		.footer-navigation {
+			grid-area: nav;
+			.menu {
+				flex-direction: row;
+				column-gap: $space-larger;
+			}
+		}
 
-    .newsletter {
-      display: flex;
-      width: 70%;
+		.subscription {
+			grid-area: sub;
+			h5 {
+				width: 100%;
+			}
+			.newsletter {
+				width: 75%;
+				.button {
+					text-transform: uppercase;
+					font-size: 1.125rem;
+					font-family: $family-heading;
+				}
+			}
+		}
 
-      .input {
-        background-color: transparent;
-        border-color: $color-dark-gray;
-        color: $color-dark-gray;
+		.footer-logo {
+			grid-area: logo;
+			font-weight: 400;
+			font-size: $font-size-body-normal;
+			width: 95%;
+			.main-logo {
+				margin-bottom: $space-large;
+			}
+			address {
+				margin-bottom: $space-small;
+			}
+			.mail {
+				margin-bottom: -$space-normal;
+			}
+			.socials-cover {
+				column-gap: $space-big;
+			}
+		}
 
-        &::placeholder {
-          color: $color-dark-gray;
-          opacity: 0.8;
-        }
-      }
+		.donate-section {
+			grid-area: donate;
+			margin-top: -$space-large;
+			h5 {
+				margin-bottom: $space-small;
+			}
+			p {
+				font-size: $font-size-body-normal;
+				font-weight: normal;
+			}
+		}
 
-      .button {
-        margin-left: -1rem;
-        border: none;
-        background-color: $color-dark-gray;
-        color: $color-white;
+		.attribution {
+			grid-area: attr;
+			width: 100%;
+			margin-top: -$space-large;
+			padding-bottom: $space-big;
+		}
+	}
 
-        &:hover {
-          background-color: lighten($color-dark-gray, 10);
-        }
-      }
-    }
-  }
+	@include desktop() {
+		padding: 3.5rem 7.5rem $space-xl;
+		display: grid;
+		grid-template-areas:
+			'nav nav nav . . '
+			'logo sub sub donate donate'
+			'logo attr attr attr . ';
+		grid-template-columns: auto 1fr 1fr 1fr 1fr;
+		grid-template-rows: repeat(3, auto);
+		row-gap: $space-bigger;
 
-  .donate-section {
-    h5 {
-      color: $color-white;
-    }
+		.subscription {
+			margin-left: -$space-normal;
+			.newsletter {
+				width: 95%;
+			}
+		}
 
-    .donate {
-      margin-top: $space-big;
-      color: $color-black;
+		.footer-logo {
+			margin-right: -$space-normal;
+		}
 
-      svg {
-        margin-right: 1rem;
-        width: 2rem;
-        height: 2rem;
-      }
-    }
-  }
+		.attribution {
+			margin-left: -$space-normal;
+		}
 
-  @include tablet() {
-    padding: $space-big;
+		.donate-section {
+			margin-top: 0;
+			margin-left: $space-normal;
+			.donate {
+				font-size: 1.5rem;
+				padding: $space-normal $space-big $space-normal 1.25rem;
+				.icon {
+					font-size: 2rem !important;
+				}
+			}
+		}
+	}
 
-    .footer-navigation {
-      .menu {
-        display: flex;
-      }
-    }
-  }
+	@include fullhd() {
+		padding: $space-large $space-xxl $space-xl;
+		display: grid;
+		grid-template-areas:
+			'logo nav nav nav nav '
+			'logo sub sub . donate'
+			'logo attr attr . . ';
+		grid-template-columns: auto 2fr 2fr auto auto;
+		grid-template-rows: repeat(3, auto);
+		column-gap: $space-larger;
 
-  @include mobile() {
-    padding: $space-normal;
+		.footer-logo {
+			width: 100%;
+			margin-right: 0;
+			.main-logo {
+				svg {
+					width: 13rem;
+				}
+			}
+		}
 
-    .footer-navigation {
-      margin-bottom: $space-normal;
+		.footer-navigation {
+			margin-top: $space-normal;
+		}
 
-      .menu {
-        li {
-          display: block;
+		.subscription {
+			margin-left: 0;
+			width: 90%;
+		}
 
-          .menu-item {
-            padding-left: 0;
-          }
-        }
-      }
-    }
-  }
+		.attribution {
+			margin-left: 0;
+			margin-top: -$space-xl;
+		}
+
+		.donate-section {
+			margin-left: 0;
+		}
+	}
 }
