@@ -22,7 +22,7 @@ $font-size-h2: 2.25rem;
 $font-size-h3: 1.75rem;
 $font-size-h4: 1.43rem;
 $font-size-h5: 1.25rem;
-$font-size-h6: 1.15rem; // Not in Figma, extrapolated
+$font-size-h6: 1.125rem;
 
 $font-size-value: 4.37rem;
 
@@ -32,6 +32,8 @@ $font-size-body-normal: 1rem;
 $font-size-body-list: 1rem;
 
 $font-size-caption: 0.8rem;
+$font-size-small-caption: 0.687;
+
 
 // Classes
 $body-font-sizes: (
@@ -54,6 +56,10 @@ $body-font-sizes: (
 
 .caption {
   font-size: $font-size-caption;
+}
+
+.small-caption {
+  font-size: $font-size-small-caption;
 }
 
 .value {
