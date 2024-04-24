@@ -1,6 +1,10 @@
 # Vocabulary
 A cohesive system of design for Creative Commons
 
+## 🚧  NOTICE
+
+This repository is under active construction and is not currently accepting PRs yet.
+
 
 ## Code of conduct
 
