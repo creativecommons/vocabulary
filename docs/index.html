@@ -10,7 +10,75 @@
 </head>
 <body>
 
-    <h1>Vocabulary Docs</h1>
+<h1>Vocabulary</h1>
 
+<p>A cohesive system of design for Creative Commons</p>
+
+<h2>Installation</h2>
+
+<p>Vocabulary needs to be included via CSS and JavaScript routes. Both are generally required, and recommended.</p>
+
+<h3>CSS Installation</h3>
+
+<p>Your project should include a “main/root” css styles file, which is included within the "head" element of your HTML.</p>
+
+<pre>
+<code class="lang-html">
+    
+<link rel="stylesheet" media="all" href="PATH/TO/style.css">
+    
+</code>
+</pre>
+
+<aside>
+    <p>It is recommended you call this file style.css; depending on the requirements of the system you could also call this file main.css, root.css, or manifest.css. WordPress Theme's, for example, require 'style.css'.</p>
+</aside>
+
+<p>Include vocabulary.css from within style.css include Vocabulary via a CSS [@layer  import](link).</p>
+
+<pre>
+<code class="lang-css">
+    
+@import 'PATH/TO/vocabulary/css/vocabulary.css' layer(vocabulary);
+    
+</code>
+</pre>
+
+<aside> 
+    <p>CSS Layers provide a reliable, and safely overridable cascade of rulesets.</p>
+</aside>
+
+<p><strong>Special Note for in-dev implementations:</strong> You can also include the vocabulary-tests.css file to perform basic tests against recommended and required approaches within the HTML markup.</p>
+
+<pre>
+<code class="lang-css">
+    
+@import 'PATH/TO/vocabulary/css/vocabulary.css' layer(vocabulary);
+@import 'PATH/TO/vocabulary/css/vocabulary-tests.css' layer(vocabulary-tests);
+    
+    
+</code>
+</pre>
+
+<p>Production use of the vocabulary-tests.css file  is not recommended generally.</p>
+
+<h3>JS Installation</h3>
+
+<p>Vocabulary has a minimal JavaScript footprint, but does have some required behaviors that rely on JS.</p>
+
+<pre>
+<code class="lang-html">
+
+<script src="https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/js/vocabulary.js"></script>
+
+      
+</code>
+</pre>
+
+
+<script>
+    //escapes html within code elements
+    document.querySelectorAll("code.lang-html").forEach(el => el.innerText = el.innerHTML);
+</script>
 </body>
 </html>
