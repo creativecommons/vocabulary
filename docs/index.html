@@ -10,17 +10,31 @@
 </head>
 <body>
 
+<header>
+
 <h1>Vocabulary</h1>
 
-<p>A cohesive system of design for Creative Commons</p>
+</header>
+
+<main>
+
+<p>A cohesive system of design for Creative Commons.</p>
 
 <h2>Installation</h2>
 
-<p>Vocabulary needs to be included via CSS and JavaScript routes. Both are generally required, and recommended.</p>
+<h3>01. Get the Vocabulary Files</h3>
 
-<h3>CSS Installation</h3>
+<p>Download the <a href="#">creativecommons/vocabulary</a> repository, rename the <span class="distinct">/src</span> directory to <span class="distinct">/vocabulary</span>, and move it into desired location.</p>
 
-<p>Your project should include a “main/root” css styles file, which is included within the "head" element of your HTML.</p>
+<p>Vocabulary needs to be included via CSS <strong>and</strong> JavaScript routes. Both are generally required, and recommended.</p>
+
+<h3>02. CSS Installation</h3>
+
+<p>Your project should include a “main/root” css styles file, which is included within the <span class="distinct">head</span> element of your HTML.</p>
+
+<aside>
+    <p>It is recommended you call this file style.css; depending on the requirements of the system you could also call this file main.css, root.css, or manifest.css. WordPress Theme's, for example, require 'style.css'.</p>
+</aside>
 
 <pre>
 <code class="lang-html">
@@ -30,11 +44,13 @@
 </code>
 </pre>
 
-<aside>
-    <p>It is recommended you call this file style.css; depending on the requirements of the system you could also call this file main.css, root.css, or manifest.css. WordPress Theme's, for example, require 'style.css'.</p>
-</aside>
 
-<p>Include vocabulary.css from within style.css include Vocabulary via a CSS [@layer  import](link).</p>
+
+<p>Include <span class="distinct">vocabulary.css</span> from within <span class="distinct">style.css</span> via a <a href="#">CSS @layer import</a> at the top of the file.</p>
+
+<aside> 
+    <p>CSS Layers provide a reliable, and safely overridable cascade of rulesets.</p>
+</aside>
 
 <pre>
 <code class="lang-css">
@@ -44,11 +60,9 @@
 </code>
 </pre>
 
-<aside> 
-    <p>CSS Layers provide a reliable, and safely overridable cascade of rulesets.</p>
-</aside>
 
-<p><strong>Special Note for in-dev implementations:</strong> You can also include the vocabulary-tests.css file to perform basic tests against recommended and required approaches within the HTML markup.</p>
+
+<p><strong>Note:</strong> (for in-dev implementations) You can also include the <span class="distinct">vocabulary-tests.css</span> file to perform basic tests against recommended and required approaches within the HTML markup.</p>
 
 <pre>
 <code class="lang-css">
@@ -60,25 +74,48 @@
 </code>
 </pre>
 
-<p>Production use of the vocabulary-tests.css file  is not recommended generally.</p>
+<p>Production use of the <span class="distinct">vocabulary-tests.css</span> file  is not recommended generally.</p>
 
-<h3>JS Installation</h3>
+<h3>03. JS Installation</h3>
 
 <p>Vocabulary has a minimal JavaScript footprint, but does have some required behaviors that rely on JS.</p>
+
+<p>Include the <span class="distinct">vocabulary.js</span> file at the bottom of your HTML markup, prior to the closing <span class="distinct">body</span> tag.</p>
 
 <pre>
 <code class="lang-html">
 
-<script src="https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/js/vocabulary.js"></script>
+<script src="PATH/TO/vocabulary/js/vocabulary.js"></script>
 
-      
+        
 </code>
 </pre>
 
 
+</main>
+
+
+<!-- <aside class="menu">
+
+<nav>
+<ul>
+    <li><a href="#" class="active">Intro</a></li>
+    <li><a href="#">link</a></li>
+    <li><a href="#">link</a></li>
+
+</ul>
+
+</nav>
+
+
+
+</aside> -->
+
+
 <script>
-    //escapes html within code elements
-    document.querySelectorAll("code.lang-html").forEach(el => el.innerText = el.innerHTML);
+//escapes html within code elements
+document.querySelectorAll("code.lang-html").forEach(el => el.innerText = el.innerHTML);
 </script>
+
 </body>
 </html>
