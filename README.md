@@ -1,6 +1,15 @@
 # Vocabulary
 A cohesive system of design for Creative Commons
 
+Vocabulary is a refactor and reimplementation of the original, now archived, [Vocabulary Legacy][vocabulary-legacy] project.
+
+Both projects are informed by the  [CC Style Guide (2019)][cc-style-guide], and incorporate or adapt its guidance into a digital context.
+
+
+[vocabulary-legacy]: https://creativecommons.org/wp-content/uploads/2019/10/Creative-Commons-Style-Guide-2019.pdf 
+[cc-style-guide]: https://github.com/cc-archive/vocabulary-legacy
+
+
 ## 🚧  NOTICE
 
 This repository is under active construction and is not currently accepting PRs yet.
