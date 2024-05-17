@@ -5,7 +5,7 @@
   
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" media="all" href="css/style.css">
+<link rel="stylesheet" media="all" href="style.css">
 
 </head>
 <body>
@@ -26,6 +26,63 @@
 <p>Vocabulary is a refactor and reimplementation of the original, now archived, <a href="https://github.com/cc-archive/vocabulary-legacy">Vocabulary Legacy</a> project.</p>
 
 <p>Both projects are informed by the  <a href="https://creativecommons.org/wp-content/uploads/2019/10/Creative-Commons-Style-Guide-2019.pdf">CC Style Guide (2019)</a>, and incorporate or adapt its guidance into a digital context.</p>
+
+
+<h3>Structure & Behavior</h3>
+
+<p>Vocabulary is raw material design system with inherent rules and generalized implementable documentation.</p>
+
+<p>Vocabulary is then implemented within a project via an upstream/downstream relationship as follow:</p>
+
+<pre>
+    Design System → Static Implementation → Dynamic Implementation
+    vocabulary → prototype → final
+    vocabulary -> [project]-prototype -> [project]-[implementation(s)] (*-dev-env *-theme, etc.)
+</pre>
+
+<p>In the case of the <a href="https://creativecommons.org">Index Project (CreativeCommons.org)</a> it looks like this:</a> </p>
+
+<pre>
+    <a href="https://github.com/creativecommons/vocabulary">vocabulary</a> → <a href="https://github.com/creativecommons/index-prototype">index-prototype</a> → <a href="https://github.com/creativecommons/vocabulary-theme">vocabulary-theme</a>
+</pre>
+
+<h4>A prototype contains:</h4>
+<ul>
+    <li>[vocabulary]</li>
+    <li>project source of truth implementations (contexts mostly)</li>
+    <li>localized functionality (new contexts, etc., until moved into vocabulary) (functionality)</li>
+    <li>patches (temp overrides, until moved into vocabulary) (fixes)</li>
+</ul>
+
+<p>We need to maintain a way to test F/E UX absent a CMS layer. That way the static layer prototype describes the intended output the CMS would create. It becomes a form of documentation and testing. It's an expectation spec.</p>
+
+<p>It's one additional layer of downstream changes, but it provides a clear and distinct documentation for how and where things are localized when vocabulary is implemented, and can offer good examples for where we can pull varied localized implementations upstream into vocabulary generally, so the localizations can then be removed.
+</p>
+
+
+
+<h3>Upstream/Downstream Change Flow</h3>
+
+This enables two modes of build work. 
+
+<h4>A: upstream → downstream</h4>
+<ol>
+    <li>new functionality introduced into Vocabulary</li>
+    <li>documented and generalized</li>
+    <li>available to prototypes and implementations</li>
+</ol>
+
+<h4>B: downstream -> upstream -> downstream</h4>
+<ol>
+    <li>new functionality introduced local to project prototype</li>
+    <li>documented and implemented here locally</li>
+    <li>migrated to vocabulary</li>
+    <li>documented and generalized</li>
+    <li>removed in downstream project's prototype localization</li>
+    <li>available to prototypes and implementations</li>
+</ol>
+
+<p>Either route is valid, and has its reasons for being the more viable route. But it is generally preferred that route A be the default consideration wherever possible. </p>
 
 <h2>Installation</h2>
 
