@@ -510,9 +510,9 @@ This enables two modes of build work.
 <ul>
   <li><span class="distinct">body.home-index > main > article.authored-posts</span></li>
   <li><span class="distinct">body.blog-index > main > article.authored-posts</span>, directly after the <span class="distinct">main > header</span> </li>
-<li><span class="distinct">body.archive-page > main > div.authored-posts</span>, directly after the <span class="distinct">main > aside</span>  </li>
-<li><span class="distinct">body.person-page > main > section.authored-posts</span>, directly after the <span class="distinct">main > header</span>  </li>
-
+  <li><span class="distinct">body.blog-index > main > article.authored-posts</span>, directly after the first <span class="distinct">main > article.authored-posts</span> </li> 
+  <li><span class="distinct">body.archive-page > main > div.authored-posts</span>, directly after the <span class="distinct">main > aside</span>  </li>
+  <li><span class="distinct">body.person-page > main > section.authored-posts</span>, directly after the <span class="distinct">main > header</span>  </li>
 </ul>
 
 <pre>
@@ -534,6 +534,14 @@ This enables two modes of build work.
       </figure>
       <p>truncated teaser excerpt </p>
      </article>
+
+     <footer> <!-- optional footer -->
+       <a class="more" href="#">more posts</a>
+
+       <article class="attribution-list">
+         ...
+       </article>
+     </footer>
 
    </article>
 
