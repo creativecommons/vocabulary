@@ -183,7 +183,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-  <li>The <span class="distinct">Header</span> begins directly after the opening <span class="distinct">body</span> tag, and appears only once per page</li>
+  <li>The <span class="distinct">Header</span> begins directly after the opening <span class="distinct">body</span> tag, and appears only once per page, on all page levels</li>
 </ul>
 
 
@@ -276,7 +276,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-  <li>The <span class="distinct">Footer</span> begins directly before the bottom <span class="distinct">script</span> includes, which appear before the closing <span class="distinct">body</span> tag, and appears only once per page</li>
+  <li>The <span class="distinct">Footer</span> begins directly before the bottom <span class="distinct">script</span> includes, which appear before the closing <span class="distinct">body</span> tag, and appears only once per page, on all page levels</li>
 </ul>
 
 <pre>
@@ -361,7 +361,7 @@ This enables two modes of build work.
  <!-- <li><span class="distinct">Main Content Region</span> of the <span class="distinct">Home Index</span></li>
   <li><span class="distinct">Main Content Region</span> of the <span class="distinct">Blog Archive</span></li> -->
 
-  <li><span class="distinct">body.home-index > article.attribution-list</span>; after referenced media; on the <span class="distinct">home-index</span> page-level</li>
+  <li><span class="distinct">body.home-index > main > article.authored-posts > footer >article.attribution-list</span>; on the <span class="distinct">home-index</span> page-level</li>
   <li><span class="distinct">body.blog-index > main > article.attribution-list</span>; after referenced media; on the <span class="distinct">blog-index</span> page-level</li>
 </ul>
 
@@ -369,17 +369,22 @@ This enables two modes of build work.
 <code class="lang-html">
 
   <article class="attribution-list">
-  
-   <ul class="attribution-panel">
-     <li>
-       <article>
+    <h2>Images Attribution</h2>
+    <button class="expand-attribution">view</button>
 
-         content here
+    <ul class="attribution-panel">
+      <li>
+        <article>
+          <figure>
+            <img src="PATH/TO/image.png">
+            <span class="attribution">attribution here</span>
+          </figure>
+        </article>
+      </li>
 
-       </article>
-     </li>
+      ...
+
    </ul>
-
   </article>
 
 
@@ -412,37 +417,55 @@ This enables two modes of build work.
 
 <h3>Person Snippet - Singular - Block</h3>
 
+<h4>Expected Contexts</h3>
+<ul>
+  <li><span class="distinct">article.persons > ul > li > article.person</span> </li>
+
+</ul>
+
 <pre>
 <code class="lang-html">
 
   <article class="person">
-  
-   content here
-
+    <h3><a href="#">Name Here</a></h3>
+    <span class="title">Position/Title here</span>
+    <figure>
+      <img src="PATH/TO/profile.jpg" />
+    </figure>
+    <p>Truncated bio here&hellip;</p>
   </article>
-
 
 </code>
 </pre>
 
 
-<h3>Person Snippet - Plural - Block</h3>
+<h3>Persons Snippets - Plural - Block</h3>
+
+<h4>Expected Contexts</h3>
+<ul>
+  <li><span class="distinct">body.team-index main</span>, directly after <span class="distinct">main > header</span> </li>
+
+</ul>
 
 <pre>
 <code class="lang-html">
 
   <article class="persons">
-  
-   <ul>
-     <li>
-       <article class="person">
+    <h2>Persons</h2>
+    <ul>
+      <li>
+        <article class="person">
+          <h3><a href="#">Name Here</a></h3>
+          <span class="title">Position/Title here</span>
+          <figure>
+            <img src="PATH/TO/profile.jpg" />
+          </figure>
+          <p>Truncated bio here&hellip;</p>
+         </article>
+      </li>
 
-         content here
-
-       </article>
-     </li>
-   </ul>
-
+      ...
+    </ul>
   </article>
 
 
@@ -451,13 +474,28 @@ This enables two modes of build work.
 
 <h3>Story Snippet - Singular - Block</h3>
 
+<h4>Expected Contexts</h3>
+<ul>
+  <li><span class="distinct">article.authored-posts article.story</span> </li>
+
+</ul>
+
 <pre>
 <code class="lang-html">
 
   <article class="story">
-  
-   content here
+    <header>
+    <h2><a href="#">Title Here</a></h2>
 
+    <span class="byline">by <a href="#">Author Name</a>, <a href="#">Author Name</a></span>
+    <span class="categories"><a href=#">Open Culture</a></span>
+
+    </header>
+    <figure>
+      <img src="PATH/TO/image.jpg" />
+      <span class="attribution">attribution here</span>
+    </figure>
+    <p>truncated teaser excerpt </p>
   </article>
 
 
@@ -466,24 +504,38 @@ This enables two modes of build work.
 
 
 
-<h3>Story Snippet - Plural - Block</h3>
+<h3>Stories Snippets - Plural - Block</h3>
+
+<h4>Expected Contexts</h3>
+<ul>
+  <li><span class="distinct">body.home-index > main > article.authored-posts</span></li>
+  <li><span class="distinct">body.blog-index > main > article.authored-posts</span>, directly after the <span class="distinct">main > header</span> </li>
+<li><span class="distinct">body.archive-page > main > div.authored-posts</span>, directly after the <span class="distinct">main > aside</span>  </li>
+<li><span class="distinct">body.person-page > main > section.authored-posts</span>, directly after the <span class="distinct">main > header</span>  </li>
+
+</ul>
 
 <pre>
 <code class="lang-html">
 
   <article class="authored-posts">
   
-   <ul>
-     <li>
-       <article class="story">
+    <article class="story">
+      <header>
+      <h2><a href="#">Title Here</a></h2>
 
-         content here
+      <span class="byline">by <a href="#">Author Name</a>, <a href="#">Author Name</a></span>
+      <span class="categories"><a href=#">Open Culture</a></span>
 
-       </article>
-     </li>
-   </ul>
+      </header>
+      <figure>
+        <img src="PATH/TO/image.jpg" />
+        <span class="attribution">attribution here</span>
+      </figure>
+      <p>truncated teaser excerpt </p>
+     </article>
 
-  </article>
+   </article>
 
 
 </code>
@@ -491,6 +543,14 @@ This enables two modes of build work.
 
 
 <h3>Pagination - Nav</h3>
+
+<h4>Expected Contexts</h3>
+<ul>
+  <li><span class="distinct">body.archive-page > main > nav.pagination</span>, as the last child of <span class="distinct">body > main</span> </li>
+  <li><span class="distinct">body.person-page > main > nav.pagination</span>, as the last child of <span class="distinct">body > main</span> </li>
+
+
+</ul>
 
 <pre>
 <code class="lang-html">
@@ -518,12 +578,20 @@ This enables two modes of build work.
 
 <h3>Sidebar - Region</h3>
 
+<h4>Expected Contexts</h3>
+<ul>
+  <li><span class="distinct">body.default-page > aside</span>; optionally after <span class="distinct">main > header</span></li>
+<li><span class="distinct">body.archive-page > aside</span>, after <span class="distinct">main > header</span></li>
+
+
+</ul>
+
 <pre>
 <code class="lang-html">
 
   <aside>
 
-
+    contents here
 
   </aside>
 
@@ -531,6 +599,12 @@ This enables two modes of build work.
 </pre>
 
 <h3>Filter Menu - Nav</h3>
+
+<h4>Expected Contexts</h3>
+<ul>
+<li><span class="distinct">body.archive-page > aside > nav.filter-menu</span></li>
+
+</ul>
 
 <pre>
 <code class="lang-html">
@@ -551,6 +625,12 @@ This enables two modes of build work.
 
 <h3>General Menu - Nav</h3>
 
+<h4>Expected Contexts</h3>
+<ul>
+<li><span class="distinct">body.archive-page > aside > nav</span></li>
+
+</ul>
+
 <pre>
 <code class="lang-html">
 
@@ -563,6 +643,136 @@ This enables two modes of build work.
        </ul>
    </nav>
 
+
+</code>
+</pre>
+
+
+
+<h3>Data Points - Singular - Block</h3>
+
+<h4>Expected Contexts</h3>
+<ul>
+<li><span class="distinct">article.case-studies > ul > li > article-data-point</span></li>
+
+</ul>
+
+<pre>
+<code class="lang-html">
+
+
+  <article class="data-point">
+    <h2>Title</h2>
+    <h3 class="stat">55+ million articles</h3>
+    <p>Descriptive text here</p>
+  </article>
+ 
+
+</code>
+</pre>
+
+
+
+
+<h3>Data Points - Plural - Supporting Block</h3>
+
+<h4>Expected Contexts</h3>
+<ul>
+<li><span class="distinct">article.case-studies > footer > article.data-points</span></li>
+
+</ul>
+
+<pre>
+<code class="lang-html">
+
+
+  <article class="data-points supporting">
+    <ul>
+      <li>
+        <article class="data-point">
+          <h2>Title</h2>
+          <h3 class="stat">55+ million articles</h3>
+          <p>Descriptive text here</p>
+        </article>
+       </li>
+
+       ...
+
+     </ul>
+   </article>
+
+</code>
+</pre>
+
+
+
+<h3>Case Studies - Block</h3>
+
+<h4>Expected Contexts</h3>
+<ul>
+<li><span class="distinct">body.home-index > main > article.case-studies</span></li>
+
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="case-studies">
+    <h2>Title here</h2>
+    <p>Descriptive text</p>
+    <ul>
+      <li>
+        <figure>
+          <img src="PATH/TO/home.jpg" />
+          <span class="attribution">attribution here</span>
+         </figure>
+       </li>
+
+        ...
+
+    </ul>
+
+    <footer>
+      <article class="data-points supporting">
+        <ul>
+          <li>
+            <article class="data-point">
+              <h2>Title</h2>
+              <h3 class="stat">55+ million articles</h3>
+              <p>Descriptive text here</p>
+            </article>
+           </li>
+
+           ...
+
+         </ul>
+       </article>
+    </footer>
+  </article>
+
+
+</code>
+</pre>
+
+<h3>Search Form - Block</h3>
+
+<h4>Expected Contexts</h3>
+<ul>
+<li><span class="distinct">body.search-index > main > header</span>; directly after the <span class="distinct">main > header > h1</span></span></li>
+
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="search-form">
+    <form role="search" method="get" class="search-form" action="https://creativecommons.org/">
+
+      <input type="search" class="search-field" placeholder="Search for..." value="" name="s" title="Search">
+
+      <button type="submit" value="Search">Search</button>
+    </form>
+  </article>
 
 </code>
 </pre>
