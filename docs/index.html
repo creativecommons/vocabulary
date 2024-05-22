@@ -158,14 +158,33 @@ This enables two modes of build work.
 </code>
 </pre>
 
-<h2>Global Header & Footer</h2>
+
+
+
+
+
+
+<h2 id="components">Components</h2>
+
+<p><span class="distinct">Components</span> are discrete collected elements in a semantic order that provide a coherent meaning, and can be placed in various contexts which expect them. Various presentations and/or behaviors can then be applied to them depending on the needs, rules, and use cases of various contexts.</p>
+
+<aside>
+<p>There are perhaps better naming conventions than "components", but when used here it doesn't mean JS Components generally, Web Components, or React Components; it's just the term as general as possible.</p>
+</aside>
+
+
+
+
+
+<h3 id="global-header">Header - Global Area</h3><a class="permalink" href="#global-header">permalink</a>
 
 <p>Each CC site utilizing Vocabulary should include the global <span class="distinct">Header</span> & <span class="distinct">Footer</span> areas at the top and bottom of the site respectively.</p>
 
 
-<h3>Header</h3>
-
-<p>The <span class="distinct">Header</span> begins directly after the opening <span class="distinct">body</span> tag.</p>
+<h4>Expected Contexts</h4>
+<ul>
+  <li>The <span class="distinct">Header</span> begins directly after the opening <span class="distinct">body</span> tag, and appears only once per page</li>
+</ul>
 
 
 <pre>
@@ -251,9 +270,14 @@ This enables two modes of build work.
 
 
 
-<h3>Footer</h3>
+<h3 id="global-footer">Footer - Global Area</h3><a class="permalink" href="#global-footer">permalink</a>
 
-<p>The <span class="distinct">Footer</span> begins directly before the bottom <span class="distinct">script</span> includes, which appear before the closing <span class="distinct">body</span> tag.</p>
+<p>Each CC site utilizing Vocabulary should include the global <span class="distinct">Header</span> & <span class="distinct">Footer</span> areas at the top and bottom of the site respectively.</p>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li>The <span class="distinct">Footer</span> begins directly before the bottom <span class="distinct">script</span> includes, which appear before the closing <span class="distinct">body</span> tag, and appears only once per page</li>
+</ul>
 
 <pre>
 <code class="lang-html">
@@ -319,7 +343,7 @@ This enables two modes of build work.
         </svg>
     </div>
 
-    </footer>
+</footer>
 
       
 </code>
@@ -328,64 +352,18 @@ This enables two modes of build work.
 
 
 
-<h2 id="contexts">Contexts</h2>
-
-
-<h3>Sidebar - Region</h3>
-
-
-
-<h3>Archive - Page</h3>
-
-
-<h3>Blog - Index</h3>
-
-
-<h3>Blog - Post</h3>
-
-
-<h3>Default - Page</h3>
-
-
-<h3>Home - Index</h3>
-
-
-<h3>Person - Page</h3>
-
-
-<h3>Program - Index</h3>
-
-
-<h3>Search - Index</h3>
-
-
-<h3>Team - Index</h3>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h2 id="components">Components</h2>
-
-<p><span class="distinct">Components</span> are discrete collected elements in a semantic order that provide a coherent meaning, and can be placed in various contexts which expect them. Various presentations and/or behaviors can then be applied to them depending on the needs, rules, and use cases of various contexts.</p>
-
-<aside>
-<p>There are perhaps better naming conventions than "components", but when used here it doesn't mean JS Components generally, Web Components, or React Components; it's just the term as general as possible.</p>
-</aside>
 
 
 <h3>Attribution List - Block</h3>
+
+<h4>Expected Contexts</h4>
+<ul>
+ <!-- <li><span class="distinct">Main Content Region</span> of the <span class="distinct">Home Index</span></li>
+  <li><span class="distinct">Main Content Region</span> of the <span class="distinct">Blog Archive</span></li> -->
+
+  <li><span class="distinct">body.home-index > article.attribution-list</span>; after referenced media; on the <span class="distinct">home-index</span> page-level</li>
+  <li><span class="distinct">body.blog-index > main > article.attribution-list</span>; after referenced media; on the <span class="distinct">blog-index</span> page-level</li>
+</ul>
 
 <pre>
 <code class="lang-html">
@@ -411,6 +389,12 @@ This enables two modes of build work.
 
 
 <h3>Notice - Block</h3>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">body.* > article.attention</span>; after <span class="distinct">body > header</span>; before <span class="distinct">body > main</span>; all page-levels</li>
+  <li><span class="distinct">body.archive-page > aside > article.attention</span>; as last child item, only <span class="distinct">default-page</span>, <span class="distinct">archive-page</span> levels</li>
+</ul>
 
 <pre>
 <code class="lang-html">
@@ -593,8 +577,6 @@ This enables two modes of build work.
 <ul>
     <li><a href="#introduction" class="active">Introduction</a></li>
   <li><a href="#installation">Installation</a></li>
-  <li><a href="#global-header-footer">Global Header/Footer</a></li>
-  <li><a href="#contexts">Contexts</a></li>
   <li><a href="#components">Components</a></li>
 
 </ul>
