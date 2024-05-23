@@ -2,6 +2,28 @@
 
 body {
     width: 65%;
-
     font-size: 1.2em;
+
+    padding: 1em;
+}
+
+pre > code {
+    display: block;
+    padding: 2em;
+    overflow-x: scroll;
+
+    /* white-space: pre-wrap; */
+    background: #ededed;
+    
+}
+
+span.distinct {
+    padding: .1em .2em;
+
+    background: #ededed;
+    border-radius: 3px;
+}
+
+main ul li {
+    margin-bottom: .5em;
 }
