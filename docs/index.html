@@ -361,7 +361,7 @@ This enables two modes of build work.
  <!-- <li><span class="distinct">Main Content Region</span> of the <span class="distinct">Home Index</span></li>
   <li><span class="distinct">Main Content Region</span> of the <span class="distinct">Blog Archive</span></li> -->
 
-  <li><span class="distinct">body.home-index > main > article.authored-posts > footer >article.attribution-list</span>; on the <span class="distinct">home-index</span> page-level</li>
+  <li><span class="distinct">body.home-index > main > article.authored-posts > footer > article.attribution-list</span>; on the <span class="distinct">home-index</span> page-level</li>
   <li><span class="distinct">body.blog-index > main > article.attribution-list</span>; after referenced media; on the <span class="distinct">blog-index</span> page-level</li>
 </ul>
 
@@ -510,19 +510,22 @@ This enables two modes of build work.
 <ul>
   <li><span class="distinct">body.home-index > main > article.authored-posts</span></li>
   <li><span class="distinct">body.blog-index > main > article.authored-posts</span>, directly after the <span class="distinct">main > header</span> </li>
-  <li><span class="distinct">body.blog-index > main > article.authored-posts</span>, directly after the first <span class="distinct">main > article.authored-posts</span> </li> 
-  <li><span class="distinct">body.archive-page > main > div.authored-posts</span>, directly after the <span class="distinct">main > aside</span>  </li>
-  <li><span class="distinct">body.person-page > main > section.authored-posts</span>, directly after the <span class="distinct">main > header</span>  </li>
+    <li><span class="distinct">body.blog-index > main > article.authored-posts</span>, directly after the first <span class="distinct">main > article.authored-posts</span> </li>
+<li><span class="distinct">body.archive-page > main > div.authored-posts</span>, directly after the <span class="distinct">main > aside</span>  </li>
+<li><span class="distinct">body.person-page > main > section.authored-posts</span>, directly after the <span class="distinct">main > header</span>  </li>
+
 </ul>
 
 <pre>
 <code class="lang-html">
 
   <article class="authored-posts">
+
+  <h2>Title Here</h2>
   
     <article class="story">
       <header>
-      <h2><a href="#">Title Here</a></h2>
+      <h3><a href="#">Title Here</a></h3>
 
       <span class="byline">by <a href="#">Author Name</a>, <a href="#">Author Name</a></span>
       <span class="categories"><a href=#">Open Culture</a></span>
@@ -577,7 +580,7 @@ This enables two modes of build work.
         <li><a href="#">></a></li>
     </ol>
 
-</nav>
+  </nav>
 
 
 </code>
@@ -762,6 +765,7 @@ This enables two modes of build work.
 </code>
 </pre>
 
+
 <h3>Search Form - Block</h3>
 
 <h4>Expected Contexts</h3>
@@ -785,6 +789,7 @@ This enables two modes of build work.
 </code>
 </pre>
 
+
 <h3>Topic Summary - Block</h3>
 
 <h4>Expected Contexts</h3>
@@ -807,6 +812,65 @@ This enables two modes of build work.
         <a href="#">Learn more</a>
     </div>
   </article>
+
+</code>
+</pre>
+
+
+<h3>Page Header - Region</h3>
+
+<h4>Expected Contexts</h3>
+<ul>
+<li><span class="distinct">body.default-page > main > header</span></li>
+<li><span class="distinct">body.archive-page > main > header</span></li>
+<li><span class="distinct">body.blog-index > main > header</span></li>
+<li><span class="distinct">body.blog-post > main > header</span></li>
+<li><span class="distinct">body.search-index > main > header</span></li>
+<li><span class="distinct">body.team-index > main > header</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <header>
+    <h1>Title Here</h1>
+    <span class="byline">by <a href="#">Name Here</a>, <a href="#">Name Here</a></span>
+
+    <p>lead in paragraph</p> <!-- optional -->
+
+    <span class="categories">  <!-- optional -->
+      <a href="#">Open Culture</a>
+    </span>
+  
+  </header>
+
+</code>
+</pre>
+
+
+<h3>Person Header - Region</h3>
+
+<h4>Expected Contexts</h3>
+<ul>
+<li><span class="distinct">body.person-page > main > header</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <header>
+
+    <h1>Name</h1>
+    <span class="title">position/title here</span>
+    <figure>
+      <img src="PATH/TO/profile.jpg" />
+      <span class="attribution">attribution here</span>
+     </figure>
+     <div class="bio">
+       <p>Bio here</p>
+     </div>
+  
+  </header>
 
 </code>
 </pre>
