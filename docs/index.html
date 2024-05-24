@@ -377,7 +377,7 @@ This enables two modes of build work.
  <!-- <li><span class="distinct">Main Content Region</span> of the <span class="distinct">Home Index</span></li>
   <li><span class="distinct">Main Content Region</span> of the <span class="distinct">Blog Archive</span></li> -->
 
-  <li><span class="distinct">body.home-index > main > article.authored-posts > footer > article.attribution-list</span>; on the <span class="distinct">home-index</span> page-level <strong>(* context not included in vocabulary at this time)</strong></li>
+  <li><span class="distinct">body.home-index > main > article.authored-posts > footer > article.attribution-list</span>; on the <span class="distinct">home-index</span> page-level</li>
   <li><span class="distinct">body.blog-index > main > article.attribution-list</span>; after referenced media; on the <span class="distinct">blog-index</span> page-level</li>
 </ul>
 
@@ -409,7 +409,7 @@ This enables two modes of build work.
 
 
 
-<h3>Notice - Block</h3>
+<h3>Attention - Block</h3>
 
 <h4>Expected Contexts</h4>
 <ul>
@@ -420,7 +420,7 @@ This enables two modes of build work.
 <pre>
 <code class="lang-html">
 
-  <article class="notice">
+  <article class="attention">
   
    content here
 
@@ -524,11 +524,12 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h3>
 <ul>
-  <li><span class="distinct">body.home-index > main > article.authored-posts</span><strong> (* context not included in vocabulary at this time)</strong></li>
+  <li><span class="distinct">body.home-index > main > article.authored-posts</span></li>
   <li><span class="distinct">body.blog-index > main > article.authored-posts</span>, directly after the <span class="distinct">main > header</span> </li>
     <li><span class="distinct">body.blog-index > main > article.authored-posts</span>, directly after the first <span class="distinct">main > article.authored-posts</span> </li>
 <li><span class="distinct">body.archive-page > main > div.authored-posts</span>, directly after the <span class="distinct">main > aside</span>  </li>
 <li><span class="distinct">body.person-page > main > section.authored-posts</span>, directly after the <span class="distinct">main > header</span>  </li>
+<li><span class="distinct">body.blog-post > main > article.related-posts > article.authored-posts</span>, as the last child of <span class="distinct">body > main/span> </li>
 
 </ul>
 
@@ -601,6 +602,72 @@ This enables two modes of build work.
 
 </code>
 </pre>
+
+
+<h3>Series Summary - Block</h3>
+
+<h4>Expected Contexts</h3>
+<ul>
+  <li><span class="distinct">body.blog-post > main > div.series</span>; optionally after <span class="distinct">main > header</span></li>
+
+
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <div class="series">
+    <p>content here</p>
+  </div>
+
+</code>
+</pre>
+
+
+<h3>Closing Summary - Block</h3>
+
+<h4>Expected Contexts</h3>
+<ul>
+  <li><span class="distinct">body.blog-post > main > div.closing</span>; optionally before <span class="distinct">main > span.pub-date</span></li>
+
+
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <div class="closing">
+    <p>content here</p>
+  </div>
+
+</code>
+</pre>
+
+
+<h3>Tags listing - Block</h3>
+
+<h4>Expected Contexts</h3>
+<ul>
+  <li><span class="distinct">body.blog-post > main > article.tags</span>; optionally after <span class="distinct">main > span.pubdate</span></li>
+
+
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="tags">
+    <h2>Tags</h2>
+    <ul>
+      <li><a href="#">open culture</a></li>
+      ...
+
+    </ul>
+  </article>
+
+</code>
+</pre>
+
 
 
 <h3>Sidebar - Region</h3>
@@ -737,7 +804,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h3>
 <ul>
-<li><span class="distinct">body.home-index > main > article.case-studies</span> <strong>(* context not included in vocabulary at this time)</strong></li>
+<li><span class="distinct">body.home-index > main > article.case-studies</span></li>
 
 </ul>
 
@@ -810,7 +877,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h3>
 <ul>
-<li><span class="distinct">body.home-index > main > article.topic-summary</span> <strong>(* context not included in vocabulary at this time)</strong></li>
+<li><span class="distinct">body.home-index > main > article.topic-summary</span></li>
 
 </ul>
 
