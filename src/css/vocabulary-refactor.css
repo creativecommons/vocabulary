@@ -254,3 +254,19 @@ main blockquote p {
     font-size: 1.9em;
     line-height: 105%;
 }
+
+main figure {
+    margin: 0;
+    margin-bottom: 3em;
+    padding: 0;
+}
+
+main figure .attribution {
+    display: block;
+    margin-top: 1em;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
