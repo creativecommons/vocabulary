@@ -270,3 +270,45 @@ main figure .attribution {
     font-weight: 400;
     line-height: 150%;
 }
+
+main figure:has(iframe) {
+    width: 120%;
+    margin-left: -10%;
+    margin-right: 0;
+    float: none;
+}
+
+main .pub-date {
+    display: inline-block;
+    margin-bottom: 4em;
+
+    font-family: 'Source Sans Pro';
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+main article.tags {
+    margin-bottom: 8em;
+}
+
+main article.tags ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    left: 0;
+
+    list-style: none;
+}
+
+main article.tags ul li {
+    margin-right: .5em;
+}
+
+
+main article.tags ul li:after {
+    content: ',';
+    margin-left: .1em;
+
+}
