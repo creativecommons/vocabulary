@@ -82,6 +82,8 @@ main > header {
     position: relative;
 
     text-align: center;
+    color: #333;
+
 }
 
 main > header:before {
@@ -94,7 +96,7 @@ main > header:before {
     content: "";
 
     background: #F5F5F5;
-    
+
     background: #CBF3F0;  /* for testing */
 }
 
@@ -106,11 +108,17 @@ main > header h1 {
     font-style: normal;
     font-weight: 700;
     /* text-transform: uppercase; */
+
+    color: #324c7f;
 }
 
 main > header a {
     color: var(--vocabulary-brand-color-dark-tomato);
     --underline-background-color: var(--vocabulary-neutral-color-lighter-gray);
+
+    color: #324c7f; /* for testing */
+    --underline-background-color: #CBF3F0; /* for testing */
+    /* background: #CBF3F0; */
 }
 
 main > header .categories {
