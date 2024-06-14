@@ -82,7 +82,7 @@ main > header {
     position: relative;
 
     text-align: center;
-    color: #333;
+    color: #333; /* for testing */
 
 }
 
