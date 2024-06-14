@@ -84,6 +84,9 @@ main > header {
     text-align: center;
     color: #333; /* for testing */
 
+    /* margin-top: 10em;
+    background: white; */
+
 }
 
 main > header:before {
@@ -92,6 +95,7 @@ main > header:before {
     position: absolute;
     left: -33.333%;
     top: 0;
+    /* top: -10em; */
     z-index: -1;
     content: "";
 
@@ -170,12 +174,17 @@ main .series {
     width: 100%;
 
     background: #FEEDE9;
+    background: #CBF3F0;  /* for testing */
 }
 
 
 main .series a {
     color: var(--vocabulary-brand-color-dark-tomato);
     --underline-background-color: #FEEDE9;
+
+    color: #324c7f; /* for testing */
+    --underline-background-color: #CBF3F0; /* for testing */
+    background: #CBF3F0;
 }
 
 main .series p {
