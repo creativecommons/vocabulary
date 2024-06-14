@@ -94,6 +94,8 @@ main > header:before {
     content: "";
 
     background: #F5F5F5;
+    
+    background: #CBF3F0;  /* for testing */
 }
 
 main > header h1 {
