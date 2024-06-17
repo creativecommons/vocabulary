@@ -358,3 +358,50 @@ main article.tags ul li:after {
     margin-left: .1em;
 
 }
+
+/* related posts here? */
+
+
+nav.pagination {
+    grid-column: span 2;
+    margin: 0 auto;
+}
+
+nav.pagination ol {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-indent: none;
+
+    font-size: 1em;
+    list-style: none;
+
+}
+
+main nav.pagination ol li {
+    margin: 0 .5em;
+
+    line-height: 250%;
+}
+
+main nav.pagination ol li a {
+    padding: .4em .7em;
+
+    background: #F5F5F5;
+    --underline-background-color: #F5F5F5;
+    color: black;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: none;
+    text-decoration: none;
+}
+
+main nav.pagination ol li.current a {
+    background: black;
+    --underline-background-color: black;
+    color: white;
+}
