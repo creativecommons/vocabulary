@@ -1566,7 +1566,8 @@ main .authored-posts.highlight article {
 }
 
 nav.pagination {
-    grid-column: span 3;
+    grid-column: span 2;
+    margin: 0 auto;
 }
 
 nav.pagination ol {
