@@ -370,6 +370,7 @@ nav.pagination {
 nav.pagination ol {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
     margin: 0;
     padding: 0;
