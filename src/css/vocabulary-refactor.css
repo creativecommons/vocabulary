@@ -454,3 +454,84 @@ main nav.pagination ol li.current a {
     --underline-background-color: black;
     color: white;
 }
+
+
+.attribution-list {
+    position: relative;
+    padding: 4em;
+    gap: 0;
+
+
+    background:  var(--vocabulary-brand-color-soft-turquoise);
+    background: var(--vocabulary-brand-color-tomato);
+    background: var(--vocabulary-brand-color-soft-tomato);
+    background: var(--vocabulary-neutral-color-lighter-gray);
+    /* color: white; */
+    text-align: left;
+}
+
+.attribution-list h2 {
+    margin: 0;
+}
+
+.attribution-list button.expand-attribution {
+    position: absolute;
+    top: 4.5em;
+    right: 4em;
+
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: .5em;
+    font-family: "Source Sans Pro";
+}
+
+.attribution-list button.expand-attribution.selected {
+    background: black;
+    color: white;
+}
+
+.attribution-list ul {
+    display: none;
+}
+
+.attribution-list ul.expand {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0;
+    margin-top: 2em;
+    padding: 0;
+    gap: 2em;
+
+    font-size: 1em;
+    list-style: none;
+}
+
+.attribution-list article {
+    margin-bottom: 1em;
+}
+
+.attribution-list article a {
+    /* --underline-background-color: var(--vocabulary-brand-color-tomato); */
+    /* color: white; */
+
+    --underline-background-color: var(--vocabulary-brand-color-soft-tomato);
+
+
+}
+
+.attribution-list article figure {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.attribution-list article img {
+    object-fit: cover;
+    width: 4em;
+    height: 4em;
+}
+
+.attribution-list article figure .attribution {
+    margin-top: 0;
+}
