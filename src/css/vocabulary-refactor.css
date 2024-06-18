@@ -461,12 +461,10 @@ main nav.pagination ol li.current a {
     padding: 4em;
     gap: 0;
 
-
     background:  var(--vocabulary-brand-color-soft-turquoise);
     background: var(--vocabulary-brand-color-tomato);
     background: var(--vocabulary-brand-color-soft-tomato);
     background: var(--vocabulary-neutral-color-lighter-gray);
-    /* color: white; */
     text-align: left;
 }
 
@@ -512,12 +510,7 @@ main nav.pagination ol li.current a {
 }
 
 .attribution-list article a {
-    /* --underline-background-color: var(--vocabulary-brand-color-tomato); */
-    /* color: white; */
-
     --underline-background-color: var(--vocabulary-brand-color-soft-tomato);
-
-
 }
 
 .attribution-list article figure {
