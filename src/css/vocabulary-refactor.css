@@ -456,7 +456,7 @@ main nav.pagination ol li.current a {
 }
 
 
-.attribution-list {
+main .attribution-list {
     position: relative;
     padding: 4em;
     gap: 0;
@@ -468,11 +468,11 @@ main nav.pagination ol li.current a {
     text-align: left;
 }
 
-.attribution-list h2 {
+main .attribution-list h2 {
     margin: 0;
 }
 
-.attribution-list button.expand-attribution {
+main .attribution-list button.expand-attribution {
     position: absolute;
     top: 4.5em;
     right: 4em;
@@ -484,16 +484,16 @@ main nav.pagination ol li.current a {
     font-family: "Source Sans Pro";
 }
 
-.attribution-list button.expand-attribution.selected {
+main .attribution-list button.expand-attribution.selected {
     background: black;
     color: white;
 }
 
-.attribution-list ul {
+main .attribution-list ul {
     display: none;
 }
 
-.attribution-list ul.expand {
+main .attribution-list ul.expand {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0;
@@ -505,26 +505,26 @@ main nav.pagination ol li.current a {
     list-style: none;
 }
 
-.attribution-list article {
+main .attribution-list article {
     margin-bottom: 1em;
 }
 
-.attribution-list article a {
+main .attribution-list article a {
     --underline-background-color: var(--vocabulary-brand-color-soft-tomato);
 }
 
-.attribution-list article figure {
+main .attribution-list article figure {
     display: flex;
     gap: 1em;
     margin-top: 1em;
 }
 
-.attribution-list article img {
+main .attribution-list article img {
     object-fit: cover;
     width: 4em;
     height: 4em;
 }
 
-.attribution-list article figure .attribution {
+main .attribution-list article figure .attribution {
     margin-top: 0;
 }
