@@ -34,7 +34,6 @@ EX:
     top: 0;
     left: 0;
     margin: -1000px;
-
 }
 
 .skip-to-content:focus {
@@ -86,7 +85,6 @@ main > header {
 
     /* margin-top: 10em;
     background: white; */
-
 }
 
 main > header:before {
@@ -154,7 +152,6 @@ main h2 {
     font-weight: 700;
     font-size: 2.1em;
     text-transform: none;
-
 }
 
 main h3 {
@@ -264,7 +261,6 @@ main blockquote p:before {
     mask-image: var(--icon-sprite);
     -webkit-mask-size: contain;
     mask-size: contain;
-
 }
 
 main blockquote p {
@@ -356,7 +352,6 @@ main article.tags ul li {
 main article.tags ul li:after {
     content: ',';
     margin-left: .1em;
-
 }
 
 main article.tags ul li:last-child:after {
@@ -368,7 +363,6 @@ main article.related-posts {
     margin-left: -20%;
     padding: 2em 4em;
     box-sizing: border-box;
-
 
     background: var(--vocabulary-neutral-color-lighter-gray);
 }
@@ -426,7 +420,6 @@ nav.pagination ol {
 
     font-size: 1em;
     list-style: none;
-
 }
 
 main nav.pagination ol li {
