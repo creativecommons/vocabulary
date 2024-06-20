@@ -2035,7 +2035,7 @@ main blockquote {
 
 /* manually include quote icon to avoid extraneous html classes */
 main blockquote p:before {
-    --icon-sprite: var(--fa-quote);
+    --icon-sprite: var(--cc-quote);
 
     display: block;
     content: '';
