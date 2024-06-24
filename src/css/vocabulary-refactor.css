@@ -532,3 +532,64 @@ main .attribution-list article img {
 main .attribution-list article figure .attribution {
     margin-top: 0;
 }
+
+
+.grid-temp {
+    display: grid;
+    grid-template-columns: 5% 3% 12% 15% 30% 15% 12% 3% 5%;
+}
+
+.grid-temp main {
+    display: grid;
+    grid-template-columns: subgrid;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    grid-column: 1 / 10;
+    /* gap: 4.1em; */
+    
+
+}
+
+.grid-temp main header {
+    
+    /* grid-column-start: 3;
+    grid-column-end: 6; */
+    grid-column: 4 / span 3;
+}
+
+.grid-temp main header:before {
+    display: none;
+}
+
+.grid-temp main > p {
+    grid-column: 4 / span 3;
+}
+
+.grid-temp main > .wide-box {
+    grid-column: 3 / span 5;
+
+    border: 1px dotted black;
+}
+
+
+/* if aside is present, split to two-col */
+.grid-temp main:has( > aside) > p {
+    grid-column: 2 / span 4;
+    
+    border: 1px dotted black;
+}
+
+/* makes sure first item after aside is always even horiztonally */
+.grid-temp main:has( > aside) *:nth-child(3) {
+    grid-row-start: 2;
+}
+
+.grid-temp main:has( > aside) > aside {
+    grid-column: 6 / span 3;
+    padding-left: 4.1em;
+
+    /* background: black; */
+    border: 1px dotted black;
+}
+
