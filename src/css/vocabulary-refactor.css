@@ -201,6 +201,8 @@ main a {
      color: var(--vocabulary-brand-color-dark-tomato);
      text-decoration: none;
 
+     color: #324c7f; /* for testing */
+
      /* adapted from Tufte.css -- Copyright (c) 2014 Dave Liepmann -- https://github.com/edwardtufte/tufte-css -- https://github.com/edwardtufte/tufte-css/blob/gh-pages/LICENSE */
      background: -webkit-linear-gradient(var( --underline-color), var( --underline-color)), -webkit-linear-gradient(var( --underline-color), var( --underline-color)), -webkit-linear-gradient(currentColor, currentColor);
      background: linear-gradient(var( --underline-color), var( --underline-color)), linear-gradient(var( --underline-color), var( --underline-color)), linear-gradient(currentColor, currentColor);
@@ -302,12 +304,17 @@ main figure:has(iframe) {
     width: 100%;
 
     background: var(--vocabulary-brand-color-soft-turquoise);
+    background: #CBF3F0;  /* for testing */
 
   }
 
 .closing a {
     --underline-background-color: var(--vocabulary-brand-color-soft-turquoise);
     color: var(--vocabulary-brand-color-dark-tomato);
+
+    color: #324c7f; /* for testing */
+    --underline-background-color: #CBF3F0; /* for testing */
+    background: #CBF3F0;
   }
 
  .closing p {
@@ -450,9 +457,13 @@ main nav.pagination ol li.current a {
 
 
 main .attribution-list {
+    box-sizing: border-box;
     position: relative;
     padding: 4em;
     gap: 0;
+    width: 140%;
+    margin-left: -20%;
+    
 
     background:  var(--vocabulary-brand-color-soft-turquoise);
     background: var(--vocabulary-brand-color-tomato);
@@ -503,7 +514,7 @@ main .attribution-list article {
 }
 
 main .attribution-list article a {
-    --underline-background-color: var(--vocabulary-brand-color-soft-tomato);
+    --underline-background-color: var(--vocabulary-brand-color-grey);
 }
 
 main .attribution-list article figure {
