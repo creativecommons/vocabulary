@@ -582,6 +582,12 @@ main .attribution-list article figure .attribution {
     border: 1px dotted black;
 }
 
+.grid-temp main > .page-box {
+    grid-column: 2 / span 9;
+
+    border: 1px dotted black;
+}
+
 
 /* if aside is present, split to two-col */
 .grid-temp main:has( > aside) > p {
