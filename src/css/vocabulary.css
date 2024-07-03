@@ -878,7 +878,7 @@ body > article.attention.low-importance a:before, body > article.attention.mediu
     margin-left: -10%;
 }
 
-.blog-post main .closing {
+.blog-post main aside.closing {
     display: inline-block;
     /* position: absolute;
     left: -25%;
@@ -898,12 +898,12 @@ body > article.attention.low-importance a:before, body > article.attention.mediu
 
   }
 
-  .blog-post main .closing a {
+  .blog-post main aside.closing a {
     color: var(--vocabulary-brand-color-dark-tomato);
     --underline-background-color: var(--vocabulary-brand-color-soft-turquoise);
   }
 
-  .blog-post main .closing p {
+  .blog-post main aside.closing p {
     margin :0;
 
     font-family: 'Source Sans Pro';
@@ -1694,11 +1694,11 @@ main nav.pagination ol li.current a {
     font-size: .75em;
 }
 
-.team-index main .closing {
+.team-index main aside.closing {
     grid-column: span 3;
 }
 
-.team-index main .closing p {
+.team-index main aside.closing p {
     font-style: italic;
 }
 
@@ -1941,7 +1941,7 @@ main h3 {
     text-transform: none;
 }
 
-main .series {
+main aside.opening {
     display: inline-block;
     /* position: absolute;
     left: -25%;
@@ -1963,12 +1963,12 @@ main .series {
 }
 
 
-main .series a {
+main aside.opening a {
     color: var(--vocabulary-brand-color-dark-tomato);
     --underline-background-color: #FEEDE9;
 }
 
-main .series p {
+main aside.opening p {
     margin :0;
 
     font-family: 'Source Sans Pro';
