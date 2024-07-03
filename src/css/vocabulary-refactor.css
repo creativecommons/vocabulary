@@ -162,7 +162,7 @@ main h3 {
     text-transform: none;
 }
 
-main .series {
+main aside.opening {
     display: inline-block;
     box-sizing: border-box;
     width: 25%;
@@ -175,7 +175,7 @@ main .series {
 }
 
 
-main .series a {
+main aside.opening a {
     color: var(--vocabulary-brand-color-dark-tomato);
     --underline-background-color: #FEEDE9;
 
@@ -184,7 +184,7 @@ main .series a {
     background: #CBF3F0;
 }
 
-main .series p {
+main aside.opening p {
     margin :0;
 
     font-family: 'Source Sans Pro';
@@ -295,7 +295,7 @@ main figure:has(iframe) {
     float: none;
 }
 
-.closing {
+aside.closing {
     display: inline-block;
     box-sizing: border-box;
     width: 25%;
@@ -308,7 +308,7 @@ main figure:has(iframe) {
 
   }
 
-.closing a {
+aside.closing a {
     --underline-background-color: var(--vocabulary-brand-color-soft-turquoise);
     color: var(--vocabulary-brand-color-dark-tomato);
 
@@ -317,7 +317,7 @@ main figure:has(iframe) {
     background: #CBF3F0;
   }
 
- .closing p {
+ aside.closing p {
     margin :0;
 
     font-family: 'Source Sans Pro';
