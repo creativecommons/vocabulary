@@ -604,11 +604,11 @@ This enables two modes of build work.
 </pre>
 
 
-<h3 id="series-summary-block">Series Summary - Block</h3><a class="permalink" href="#series-summary-block">permalink</a>
+<h3 id="opening-summary-block">Opening Summary - Block</h3><a class="permalink" href="#opening-summary-block">permalink</a>
 
 <h4>Expected Contexts</h3>
 <ul>
-  <li><span class="distinct">body.blog-post > main > div.series</span>; optionally after <span class="distinct">main > header</span></li>
+  <li><span class="distinct">body.blog-post > main > aside.opening</span>; optionally after <span class="distinct">main > header</span></li>
 
 
 </ul>
@@ -616,9 +616,9 @@ This enables two modes of build work.
 <pre>
 <code class="lang-html">
 
-  <div class="series">
+  <aside class="opening">
     <p>content here</p>
-  </div>
+  </aside>
 
 </code>
 </pre>
@@ -628,7 +628,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h3>
 <ul>
-  <li><span class="distinct">body.blog-post > main > div.closing</span>; optionally before <span class="distinct">main > span.pub-date</span></li>
+  <li><span class="distinct">body.blog-post > main > aside.closing</span>; optionally before <span class="distinct">main > span.pub-date</span></li>
 
 
 </ul>
@@ -636,9 +636,9 @@ This enables two modes of build work.
 <pre>
 <code class="lang-html">
 
-  <div class="closing">
+  <aside class="closing">
     <p>content here</p>
-  </div>
+  </aside>
 
 </code>
 </pre>
