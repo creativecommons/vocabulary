@@ -304,9 +304,10 @@ main figure .attribution {
 }
 
 main figure:has(iframe) {
-    width: 120%;
+    grid-column: 4 / span 5;
+    /* width: 120%;
     margin-left: -10%;
-    margin-right: 0;
+    margin-right: 0; */
     float: none;
 }
 
