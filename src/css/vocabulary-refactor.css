@@ -43,7 +43,9 @@ EX:
 /* typography */
 
 body {
-    /* font-family: Arial;   */
+    display: grid;
+    grid-template-columns: 5% 3% 6% 6% 15% 30% 15% 6% 6% 3% 5%;
+
     font-weight: 400;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -64,11 +66,17 @@ body > footer {display: none;}
 
 
 main {
-    width: 60%;
-    margin: 0 auto;
+    /* width: 60%; */
+    /* margin: 0 auto; */
     /* margin-top: 2em; */
     margin-bottom: 8em;
-    padding: 0 2em;
+    /* padding: 0 2em; */
+    display: grid;
+    grid-template-columns: subgrid;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    grid-column: 1 / 12;
 }
 
 main > header {
@@ -79,6 +87,8 @@ main > header {
     padding-top: 2em;
     padding-bottom: 1em;
     position: relative;
+    grid-template-columns: subgrid;
+    grid-column: 5 / span 3;
 
     text-align: center;
     color: #333; /* for testing */
@@ -104,6 +114,7 @@ main > header:before {
 
 main > header h1 {
     width: 100%;
+    grid: 0 / auto;
 
     font-family: 'Roboto Condensed';
     font-size: 3.56em;
@@ -216,6 +227,7 @@ main a {
 }
 
 main p {
+    grid-column: 5 / span 3;
     margin-bottom: 2em;
 
     font-family: 'Source Sans Pro';
@@ -533,6 +545,21 @@ main .attribution-list article figure .attribution {
     margin-top: 0;
 }
 
+.blog-index main {
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .grid-temp {
     display: grid;
@@ -545,23 +572,19 @@ main .attribution-list article figure .attribution {
     width: 100%;
     margin: 0;
     padding: 0;
-    grid-column: 1 / 12;
-    /* gap: 4.1em; */
-    
-
+    grid-column: 1 / 12;    
 }
 
 .grid-temp main header {
-    
-    /* grid-column-start: 3;
-    grid-column-end: 6; */
+    grid-template-columns: subgrid;
     grid-column: 5 / span 3;
 
     border: 1px dotted black;
 }
 
-.grid-temp main header:before {
-    display: none;
+
+.grid-temp main header h1 {
+    grid: 0 / auto;
 }
 
 .grid-temp main > p {
@@ -608,4 +631,3 @@ main .attribution-list article figure .attribution {
     /* background: black; */
     border: 1px dotted black;
 }
-
