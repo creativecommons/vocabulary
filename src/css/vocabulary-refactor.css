@@ -428,7 +428,7 @@ main article.related-posts .authored-posts.highlight article p {
 }
 
 main nav.pagination {
-    grid-column: span 2;
+    /* grid-column: span 2; */
     margin: 0 auto;
 }
 
