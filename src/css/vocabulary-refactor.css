@@ -473,12 +473,13 @@ main nav.pagination ol li.current a {
 
 
 main .attribution-list {
+    grid-column: 3 / span 7;
     box-sizing: border-box;
     position: relative;
     padding: 4em;
-    gap: 0;
+    /* gap: 0;
     width: 140%;
-    margin-left: -20%;
+    margin-left: -20%; */
     
 
     background:  var(--vocabulary-brand-color-soft-turquoise);
