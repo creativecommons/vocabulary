@@ -79,6 +79,10 @@ main {
     grid-column: 1 / 12;
 }
 
+main > * {
+    grid-column: 5 / span 3;
+}
+
 main > header {
     display: flex;
     flex-wrap: wrap;
@@ -227,7 +231,6 @@ main a {
 }
 
 main p {
-    grid-column: 5 / span 3;
     margin-bottom: 2em;
 
     font-family: 'Source Sans Pro';
@@ -546,7 +549,7 @@ main .attribution-list article figure .attribution {
 }
 
 .blog-index main {
-    
+
     
 }
 
