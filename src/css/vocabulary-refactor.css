@@ -295,7 +295,7 @@ main figure:has(iframe) {
     float: none;
 }
 
-aside.closing {
+main aside.closing {
     display: inline-block;
     box-sizing: border-box;
     width: 25%;
@@ -308,7 +308,7 @@ aside.closing {
 
   }
 
-aside.closing a {
+main aside.closing a {
     --underline-background-color: var(--vocabulary-brand-color-soft-turquoise);
     color: var(--vocabulary-brand-color-dark-tomato);
 
@@ -317,7 +317,7 @@ aside.closing a {
     background: #CBF3F0;
   }
 
- aside.closing p {
+ main aside.closing p {
     margin :0;
 
     font-family: 'Source Sans Pro';
@@ -411,12 +411,12 @@ main article.related-posts .authored-posts.highlight article p {
     display: none;
 }
 
-nav.pagination {
+main nav.pagination {
     grid-column: span 2;
     margin: 0 auto;
 }
 
-nav.pagination ol {
+main nav.pagination ol {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
