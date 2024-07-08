@@ -381,8 +381,9 @@ main article.tags ul li:last-child:after {
 }
 
 main article.related-posts {
-    width: 140%;
-    margin-left: -20%;
+    grid-column: 3 / span 7;
+    /* width: 140%;
+    margin-left: -20%; */
     padding: 2em 4em;
     box-sizing: border-box;
 
