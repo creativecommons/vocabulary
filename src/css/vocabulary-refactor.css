@@ -631,6 +631,51 @@ main .attribution-list article figure .attribution {
     
 }
 
+/* search-index context */
+
+.search-index main header { /* generalize? */
+    display: block;
+    padding: 3.7em 0;
+    text-align: left;
+}
+
+.search-index .search-form form {
+    display: flex;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+
+}
+
+.search-index .search-form form input {
+    flex: 1;
+    width: 100%;
+    height: 4em;
+    padding: .2em 1em;
+
+    outline: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: 2px solid black;
+
+}
+
+.search-index .search-form form button {
+    width: 10%;
+
+    cursor: pointer;
+    background: black;
+    color: white;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
 
 
 
