@@ -177,7 +177,6 @@ main:has( > aside) > aside {
     float: right;
     margin-top: -10%;
     margin-right: -5vw; */
-
 }
 
 main > header {
@@ -815,6 +814,7 @@ main .attribution-list article figure .attribution {
 .grid-temp {
     display: grid;
     grid-template-columns: 5% 3% 6% 6% 15% 30% 15% 6% 6% 3% 5%;
+    grid-auto-rows: min-content;
 }
 
 .grid-temp main {
@@ -826,9 +826,9 @@ main .attribution-list article figure .attribution {
     grid-column: 1 / 12;    
 }
 
-/* .grid-temp main > * {
+.grid-temp main > * {
     grid-column: 5 / span 3;
-} */
+}
 
 .grid-temp main header {
     grid-template-columns: subgrid;
@@ -870,7 +870,7 @@ main .attribution-list article figure .attribution {
 /* if aside is present, split to two-col */
 .grid-temp main:has( > aside) > p {
     grid-column: 2 / span 5;
-    
+
     border: 1px dotted black;
 }
 
