@@ -662,6 +662,20 @@ main .attribution-list article figure .attribution {
     background: var(--vocabulary-neutral-color-lighter-gray);
 }
 
+.topic-summary.news ul {
+    display: subgrid; /* temporary */
+    grid-column: 1 / span 5;
+    list-style: none;
+}
+
+.topic-summary.news ul li {
+    grid-column: 2 / span 3;
+}
+
+.topic-summary.news ul li:nth-of-type(1) {
+    grid-column: 2 / span 3;
+}
+
 
 
 
