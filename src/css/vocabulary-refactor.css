@@ -649,6 +649,24 @@ main .attribution-list article figure .attribution {
     margin-top: 0;
 }
 
+/* components */
+
+/* topic-summary component */
+
+.topic-summary {
+    display: grid;
+    grid-column: 3 / span 7 ;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    margin-bottom: 16em;
+
+    background: var(--vocabulary-neutral-color-lighter-gray);
+}
+
+
+
+
+
+/* blog-index context */
 .blog-index main {
 
     
