@@ -159,7 +159,7 @@ main > * {
 }
 
 /* if aside is present, split to two-col */
-main:has( > aside) > * {
+main:has( > aside.sidebar) > * {
     grid-column: 2 / span 5;
 }
 
@@ -168,7 +168,7 @@ main:has( > aside) *:nth-child(3) {
     grid-row-start: 2;
 }
 
-main:has( > aside) > aside {
+main:has( > aside.sidebar) > aside.sidebar {
     grid-column: 7 / span 4;
     grid-row-start: 2;
     padding-left: 4.1em;
