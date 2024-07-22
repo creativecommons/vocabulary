@@ -161,6 +161,7 @@ main > * {
 /* if aside is present, split to two-col */
 main:has( > aside.sidebar) > div { /* was '>  *' */
     grid-column: 2 / span 5;
+    /* grid-column: 6 / span 5; */
 }
 
 /* main:has( > aside.sidebar) > header { /* was '>  *' */
@@ -176,6 +177,9 @@ main:has( > aside.sidebar) > aside.sidebar {
     grid-column: 7 / span 4;
     grid-row-start: 2;
     padding-left: 4.1em;
+
+    /* grid-column: 2 / span 4;
+    padding-right: 4.1em; */
 
     /* display: block;
     float: right;
@@ -201,9 +205,9 @@ main > header {
     background: white; */
 }
 
-main:has( > aside.sidebar) > header { /* was '>  *' */
+/* main:has( > aside.sidebar) > header {
     text-align: left;
-}
+} */
 
 main > header:before {
     width: 100vw;
