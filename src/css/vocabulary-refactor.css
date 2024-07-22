@@ -159,9 +159,13 @@ main > * {
 }
 
 /* if aside is present, split to two-col */
-main:has( > aside.sidebar) > * {
+main:has( > aside.sidebar) > div { /* was '>  *' */
     grid-column: 2 / span 5;
 }
+
+/* main:has( > aside.sidebar) > header { /* was '>  *' */
+    grid-column: 2 / span 9;
+} */
 
 /* makes sure first item after aside is always even horiztonally */
 main:has( > aside) *:nth-child(3) {
@@ -195,6 +199,10 @@ main > header {
 
     /* margin-top: 10em;
     background: white; */
+}
+
+main:has( > aside.sidebar) > header { /* was '>  *' */
+    text-align: left;
 }
 
 main > header:before {
