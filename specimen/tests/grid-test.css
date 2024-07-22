@@ -1,0 +1,78 @@
+
+
+
+.grid-temp {
+    display: grid;
+    grid-template-columns: 5% 3% 6% 6% 15% 30% 15% 6% 6% 3% 5%;
+    grid-auto-rows: min-content;
+}
+
+.grid-temp main {
+    display: grid;
+    grid-template-columns: subgrid;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    grid-column: 1 / 12;    
+}
+
+.grid-temp main > * {
+    grid-column: 5 / span 3;
+}
+
+.grid-temp main header {
+    grid-template-columns: subgrid;
+    grid-column: 5 / span 3;
+
+    border: 1px dotted black;
+}
+
+
+.grid-temp main header h1 {
+    grid: 0 / auto;
+}
+
+.grid-temp main > p {
+    grid-column: 5 / span 3;
+
+    border: 1px dotted black;
+}
+
+.grid-temp main > .wide-box {
+    grid-column: 3 / span 7;
+
+    border: 1px dotted black;
+}
+
+.grid-temp main > .wide-img {
+    grid-column: 4 / span 5;
+
+    border: 1px dotted black;
+}
+
+.grid-temp main > .page-box {
+    grid-column: 2 / span 9;
+
+    border: 1px dotted black;
+}
+
+
+/* if aside is present, split to two-col */
+.grid-temp main:has( > aside) > p {
+    grid-column: 2 / span 5;
+
+    border: 1px dotted black;
+}
+
+/* makes sure first item after aside is always even horiztonally */
+.grid-temp main:has( > aside) *:nth-child(3) {
+    grid-row-start: 2;
+}
+
+.grid-temp main:has( > aside) > aside {
+    grid-column: 7 / span 4;
+    padding-left: 4.1em;
+
+    /* background: black; */
+    border: 1px dotted black;
+}
