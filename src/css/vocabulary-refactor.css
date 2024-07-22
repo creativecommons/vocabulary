@@ -164,13 +164,18 @@ main:has( > aside.sidebar) > div { /* was '>  *' */
     /* grid-column: 6 / span 5; */
 }
 
-/* main:has( > aside.sidebar) > header { /* was '>  *' */
+main:has( > aside.sidebar) > article {
+    grid-column: 2 / span 5;
+    /* grid-column: 6 / span 5; */
+}
+
+/* main:has( > aside.sidebar) > header {
     grid-column: 2 / span 9;
 } */
 
 /* makes sure first item after aside is always even horiztonally */
 main:has( > aside) *:nth-child(3) {
-    grid-row-start: 2;
+    /* grid-row-start: 2; */
 }
 
 main:has( > aside.sidebar) > aside.sidebar {
@@ -688,8 +693,124 @@ main .attribution-list article figure .attribution {
     grid-column: 2 / span 3;
 }
 
+.posts > h2 {
+    margin-bottom: 2.1em;
+
+    font-family: 'Roboto Condensed';
+    font-size: 2.1em;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: none;
+}
+
+/* .posts component */
+
+.posts .post {
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'title title'
+    'image teaser';
+    gap: 2em;
+    margin-bottom: 8em;
+}
+
+.posts .post header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: baseline;
+    width: 100%;
+}
+
+.posts .post h2, .posts .post h3 {
+    grid-area: title;
+    width: 100%;
+    margin-top: 0.83em;
+
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    font-size: 2.1em;
+    text-transform: none;
+    text-transform: initial;
+}
+
+/* .posts.highlight .post .byline {
+    margin-bottom: 2em;
+} */
+
+.posts .post article .categories {
+    order: -1;
+
+    font-family: 'Source Sans Pro';
+}
+
+.posts .post .byline {
+    font-family: 'Source Sans Pro';
+}
+
+.posts .post figure {
+    display: inline-block;
+    width: 50%;
+    grid-area: image;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+.posts .post img {
+    /* width: 50%; */
+    width: 100%;
+    /* float: left; */
+    /* margin-right: 1em; */
+
+}
+
+.posts .post p {
+    flex: 1;
+    display: inline-block;
+    grid-area: teaser;
+    margin-top: 0;
+}
+
+.posts .attribution {
+    /* grid-area: image; */
+    /* grid-row-start: 3; */
+    display: inline-block;
+    margin-top: 1em;
+    /* background: #F5F5F5; */
+
+    font-family: 'Source Sans Pro';
+}
 
 
+.posts a.more, a.more {
+    padding: .4em .7em;
+
+    background: black;
+    color: white;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: none;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+
+
+
+
+/* blog-index context */
+.archive-page main {
+
+    
+}
 
 
 /* blog-index context */
@@ -812,7 +933,6 @@ main .attribution-list article figure .attribution {
     zoom: 10;
 }
 
-
 .team-index main .persons .person a {
      /* better hyperlink underline typesetting inspired by Tufte CSS */
      --underline-color: var(--vocabulary-brand-color-dark-tomato);
@@ -853,80 +973,3 @@ main .attribution-list article figure .attribution {
 
 
 
-
-
-.grid-temp {
-    display: grid;
-    grid-template-columns: 5% 3% 6% 6% 15% 30% 15% 6% 6% 3% 5%;
-    grid-auto-rows: min-content;
-}
-
-.grid-temp main {
-    display: grid;
-    grid-template-columns: subgrid;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    grid-column: 1 / 12;    
-}
-
-.grid-temp main > * {
-    grid-column: 5 / span 3;
-}
-
-.grid-temp main header {
-    grid-template-columns: subgrid;
-    grid-column: 5 / span 3;
-
-    border: 1px dotted black;
-}
-
-
-.grid-temp main header h1 {
-    grid: 0 / auto;
-}
-
-.grid-temp main > p {
-    grid-column: 5 / span 3;
-
-    border: 1px dotted black;
-}
-
-.grid-temp main > .wide-box {
-    grid-column: 3 / span 7;
-
-    border: 1px dotted black;
-}
-
-.grid-temp main > .wide-img {
-    grid-column: 4 / span 5;
-
-    border: 1px dotted black;
-}
-
-.grid-temp main > .page-box {
-    grid-column: 2 / span 9;
-
-    border: 1px dotted black;
-}
-
-
-/* if aside is present, split to two-col */
-.grid-temp main:has( > aside) > p {
-    grid-column: 2 / span 5;
-
-    border: 1px dotted black;
-}
-
-/* makes sure first item after aside is always even horiztonally */
-.grid-temp main:has( > aside) *:nth-child(3) {
-    grid-row-start: 2;
-}
-
-.grid-temp main:has( > aside) > aside {
-    grid-column: 7 / span 4;
-    padding-left: 4.1em;
-
-    /* background: black; */
-    border: 1px dotted black;
-}
