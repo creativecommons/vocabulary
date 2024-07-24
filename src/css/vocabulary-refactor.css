@@ -621,7 +621,7 @@ main .attribution-list article figure .attribution {
     margin-top: 0;
 }
 
-/* <body> page-level contexts */
+/* <body> general page-level context */
 
 /* body-level context */
 body > article.attention {
