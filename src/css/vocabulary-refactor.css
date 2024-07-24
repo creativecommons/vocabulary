@@ -529,3 +529,100 @@ main .attribution-list article img {
 main .attribution-list article figure .attribution {
     margin-top: 0;
 }
+
+/* components */
+
+/* posts component */
+.posts > h2 {
+    margin-bottom: 2.1em;
+
+    font-family: 'Roboto Condensed';
+    font-size: 2.1em;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: none;
+}
+
+.posts .post {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'title title'
+    'image teaser';
+    gap: 2em;
+    margin-bottom: 8em;
+}
+
+.posts .post header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: baseline;
+    width: 100%;
+}
+
+.posts .post h2, .posts .post h3 {
+    grid-area: title;
+    width: 100%;
+    margin-top: 0.83em;
+
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    font-size: 2.1em;
+    text-transform: none;
+    text-transform: initial;
+}
+
+.posts .post article .categories {
+    order: -1;
+
+    font-family: 'Source Sans Pro';
+}
+
+.posts .post .byline {
+    font-family: 'Source Sans Pro';
+}
+
+.posts .post figure {
+    display: inline-block;
+    width: 50%;
+    grid-area: image;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+.posts .post img {
+    width: 100%;
+}
+
+.posts .post p {
+    flex: 1;
+    display: inline-block;
+    grid-area: teaser;
+    margin-top: 0;
+}
+
+.posts .attribution {
+    display: inline-block;
+    margin-top: 1em;
+
+    font-family: 'Source Sans Pro';
+}
+
+.posts a.more, a.more {
+    padding: .4em .7em;
+
+    background: black;
+    color: white;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: none;
+    text-decoration: none;
+    text-shadow: none;
+}
