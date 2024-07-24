@@ -392,9 +392,6 @@ main figure .attribution {
 
 main figure:has(iframe) {
     grid-column: 4 / span 5;
-    /* width: 120%;
-    margin-left: -10%;
-    margin-right: 0; */
     float: none;
 }
 
