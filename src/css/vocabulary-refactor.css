@@ -407,16 +407,11 @@ main aside.closing {
     width: 100%;
 
     background: var(--vocabulary-brand-color-soft-turquoise);
-    background: #CBF3F0;  /* for testing */
   }
 
 main aside.closing a {
     --underline-background-color: var(--vocabulary-brand-color-soft-turquoise);
     color: var(--vocabulary-brand-color-dark-tomato);
-
-    color: #324c7f; /* for testing */
-    --underline-background-color: #CBF3F0; /* for testing */
-    background: #CBF3F0;
   }
 
 main aside.closing p {
