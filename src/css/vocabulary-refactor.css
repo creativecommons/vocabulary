@@ -532,6 +532,8 @@ main .attribution-list article figure .attribution {
 
 /* components */
 
+
+
 /* posts component */
 .posts > h2 {
     margin-bottom: 2.1em;
@@ -627,7 +629,86 @@ main .attribution-list article figure .attribution {
     text-shadow: none;
 }
 
-/* page-level contexts */
+/* body page-level contexts */
+
+/* body-level context */
+body > article.attention {
+    grid-column: 1 / span 11;
+    padding: 1em 5%;
+
+    background: var(--vocabulary-brand-color-soft-green);
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 150%;
+    text-align: center;
+    border-bottom: 3px solid white;
+}
+
+/* bottom page banner */
+/* body > article.attention:nth-of-type(2) {
+    background: var(--vocabulary-brand-color-soft-gold);
+} */
+
+body > article.attention a {
+    color: var(--vocabulary-brand-color-dark-green);
+    --underline-background-color: var(--vocabulary-brand-color-soft-green);
+}
+
+body > article.attention.low-importance a, body > article.attention.medium-importance a, body > article.attention.high-importance a {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5em .8em;
+    margin-left: .5em;
+
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+    vertical-align: middle;
+    background: var(--vocabulary-brand-color-turquoise);
+    color: white;
+    border-radius: 4px;
+}
+
+body > article.attention.low-importance a:before, body > article.attention.medium-importance a:before, body > article.attention.high-importance a:before {
+    --icon-sprite: var(--cc-heart-filled);
+    --icon-sprite-color: white;
+    --icon-sprite-size: 1em;
+
+    display: inline-block;
+    content: '';
+    height: 1em;
+    width: 1em;
+    margin-right: .2em;
+
+    font-size: var(--icon-sprite-size);
+    background-color: var(--icon-sprite-color);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: var(--icon-sprite);
+    mask-image: var(--icon-sprite);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+  }
+
+  body > .attention.low-importance {
+    background: var(--vocabulary-brand-color-soft-green);
+    border-bottom: 8px solid var(--vocabulary-brand-color-green);
+  }
+
+  body > .attention.medium-importance {
+    background: var(--vocabulary-brand-color-soft-gold);
+    border-bottom: 8px solid var(--vocabulary-brand-color-gold);
+  }
+
+  body > .attention.high-importance {
+    background: var(--vocabulary-brand-color-soft-tomato);
+    border-bottom: 8px solid var(--vocabulary-brand-color-tomato);
+  }
+
 
 /* archive-page context */
 .archive-page main {
