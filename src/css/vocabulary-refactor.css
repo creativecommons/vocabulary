@@ -626,3 +626,160 @@ main .attribution-list article figure .attribution {
     text-decoration: none;
     text-shadow: none;
 }
+
+/* page-level contexts */
+
+/* archive-page context */
+.archive-page main {
+
+    
+}
+
+/* blog-index context */
+.blog-index main {
+
+    
+}
+
+/* search-index context */
+
+.search-index main header { /* generalize? */
+    display: block;
+    padding: 3.7em 0;
+    text-align: left;
+}
+
+.search-index .search-form form {
+    display: flex;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+
+}
+
+.search-index .search-form form input {
+    flex: 1;
+    width: 100%;
+    height: 4em;
+    padding: .2em 1em;
+
+    outline: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: 2px solid black;
+
+}
+
+.search-index .search-form form button {
+    width: 10%;
+
+    cursor: pointer;
+    background: black;
+    color: white;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/* team-index context */
+
+.team-index main .persons {
+    /* grid-column: span 3; */
+    margin-bottom: 5em;
+}
+
+.team-index main .persons h2 {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.1em;
+}
+
+.team-index main .persons ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4em;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.team-index main .persons .person {
+    display: flex;
+    flex-wrap: wrap;
+
+    font-family: 'Source Sans Pro';
+}
+
+.team-index main .persons .person h3 {
+    width: 100%;
+    margin-top: .6em;
+    margin-bottom: .5em;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    /* line-height: 150%; */
+}
+
+.team-index main .persons .person .title {
+    margin-bottom: .4em;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: .7em;
+    line-height: 150%;
+}
+
+.team-index main .persons .person figure {
+    order: -1;
+    margin: 0;
+    padding: 0;
+
+    font-size: .8em;
+}
+
+.team-index main .persons .person img {
+    width: 100%;
+    zoom: 10;
+}
+
+.team-index main .persons .person a {
+     /* better hyperlink underline typesetting inspired by Tufte CSS */
+     --underline-color: var(--vocabulary-brand-color-dark-tomato);
+     --underline-background-color: white;
+     color: var(--vocabulary-brand-color-dark-tomato);
+     text-decoration: none;
+
+     /* adapted from Tufte.css -- Copyright (c) 2014 Dave Liepmann -- https://github.com/edwardtufte/tufte-css -- https://github.com/edwardtufte/tufte-css/blob/gh-pages/LICENSE */
+     background: -webkit-linear-gradient(var( --underline-color), var( --underline-color)), -webkit-linear-gradient(var( --underline-color), var( --underline-color)), -webkit-linear-gradient(currentColor, currentColor);
+     background: linear-gradient(var( --underline-color), var( --underline-color)), linear-gradient(var( --underline-color), var( --underline-color)), linear-gradient(currentColor, currentColor);
+     -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+     -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+     background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+     background-repeat: no-repeat, no-repeat, repeat-x;
+     text-shadow: 0.03em 0 var(--underline-background-color), -0.03em 0 var(--underline-background-color), 0 0.03em var(--underline-background-color), 0 -0.03em var(--underline-background-color), 0.06em 0 var(--underline-background-color), -0.06em 0 var(--underline-background-color), 0.09em 0 var(--underline-background-color), -0.09em 0 var(--underline-background-color), 0.12em 0 var(--underline-background-color), -0.12em 0 var(--underline-background-color), 0.15em 0 var(--underline-background-color), -0.15em 0 var(--underline-background-color);
+     background-position: 0% 93%, 100% 93%, 0% 93%;
+     /* background-position-y: 87%, 87%, 87%; */
+}
+
+.team-index main .persons .person p {
+    font-size: .75em;
+}
+
+.team-index main aside.closing {
+    grid-column: span 3;
+}
+
+.team-index main aside.closing p {
+    font-style: italic;
+}
