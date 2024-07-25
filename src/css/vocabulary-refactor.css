@@ -85,7 +85,7 @@ body > footer {display: none;}
     margin-bottom: 2.1em;
 
     font-family: 'Roboto Condensed';
-    font-size: 2.1em;
+    /* font-size: 2.1em; */
     font-style: normal;
     font-weight: 700;
     text-transform: none;
@@ -121,8 +121,8 @@ body > footer {display: none;}
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
-    font-size: 1.5em;
-    font-size: 2.1em;
+    /* font-size: 1.5em; */
+    /* font-size: 2.1em; */
     text-transform: none;
     text-transform: initial;
 }
@@ -801,7 +801,10 @@ body > .attention.high-importance {
 
 .blog-index main .posts {
     grid-column: 2 / span 9;
+}
 
+.blog-index main .posts h2 {
+    text-align: center;
 }
 
 .blog-index main .posts ul {
@@ -815,12 +818,39 @@ body > .attention.high-importance {
     margin: 0 auto;
     margin-top: 0;
 
-    font-size: .4em;
-    /* background: var(--vocabulary-neutral-color-lighter-gray); */
+    font-size: 1rem;
+    list-style: none;
 }
+
+.blog-index main .posts ul li {
+    grid-column: span 4;
+
+ }
 
 .blog-index main .posts h2 {
 
+}
+
+/* targets the featured posts section */
+
+.blog-index main .posts.highlight {
+    grid-column: 1 / span 11;
+
+    background: var(--vocabulary-neutral-color-lighter-gray);
+}
+
+.blog-index main .posts.highlight ul {    
+    padding: 0 5%;
+}
+
+.blog-index main .posts.highlight ul li {
+    grid-column: span 3;
+}
+
+.blog-index main .posts.highlight ul li:nth-of-type(1) {
+    grid-column: span 12;
+
+    background: white;
 }
 
 .blog-index main footer {
