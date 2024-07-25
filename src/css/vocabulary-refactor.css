@@ -101,6 +101,7 @@ body > footer {display: none;}
     'image teaser';
     gap: 2em;
     margin-bottom: 8em;
+    position: relative;
 
     text-align: left;
 }
@@ -134,6 +135,17 @@ body > footer {display: none;}
 }
 
 .posts .post .byline {
+    font-family: 'Source Sans Pro';
+}
+
+.posts .post .type {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .5em .7em;
+
+    background: var(--vocabulary-brand-color-soft-turquoise);
+    border-radius: 4px;
     font-family: 'Source Sans Pro';
 }
 
