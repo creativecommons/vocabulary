@@ -51,6 +51,20 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+a.more {
+    padding: .4em .7em;
+
+    background: black;
+    color: white;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: none;
+    text-decoration: none;
+    text-shadow: none;
+}
+
 
 /* ************************* */
 
@@ -136,25 +150,16 @@ body > footer {display: none;}
     margin-top: 0;
 }
 
+.posts a.more {
+    display: inline-block;
+    margin: 0 auto;
+}
+
 .posts .attribution {
     display: inline-block;
     margin-top: 1em;
 
     font-family: 'Source Sans Pro';
-}
-
-.posts a.more, a.more {
-    padding: .4em .7em;
-
-    background: black;
-    color: white;
-    font-family: 'Roboto Condensed';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.2em;
-    text-transform: none;
-    text-decoration: none;
-    text-shadow: none;
 }
 
 /* contexts - in ascending order of specificity */
@@ -527,6 +532,10 @@ main article.tags ul li:last-child:after {
     content: '';
 }
 
+main > footer {
+    grid-column: 3 / span 7;
+}
+
 main article.related-posts {
     grid-column: 3 / span 7;
     /* width: 140%;
@@ -616,7 +625,6 @@ main nav.pagination ol li.current a {
     --underline-background-color: black;
     color: white;
 }
-
 
 main .attribution-list {
     grid-column: 3 / span 7;
