@@ -855,7 +855,7 @@ body > .attention.high-importance {
 .search-index main header { /* generalize? */
     display: block;
     padding: 3.7em 0;
-    text-align: left;
+    /* text-align: left; */
 }
 
 .search-index .search-form form {
