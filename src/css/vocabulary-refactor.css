@@ -76,6 +76,11 @@ body > footer {display: none;}
 /* components */
 
 /* post component - plural */
+
+.posts {
+    text-align: center;
+}
+
 .posts > h2 {
     margin-bottom: 2.1em;
 
@@ -84,6 +89,7 @@ body > footer {display: none;}
     font-style: normal;
     font-weight: 700;
     text-transform: none;
+    text-align: left;
 }
 
 .posts .post {
@@ -95,6 +101,8 @@ body > footer {display: none;}
     'image teaser';
     gap: 2em;
     margin-bottom: 8em;
+    
+    text-align: left;
 }
 
 .posts .post header {
@@ -153,6 +161,7 @@ body > footer {display: none;}
 .posts a.more {
     display: inline-block;
     margin: 0 auto;
+    margin-bottom: 4em;
 }
 
 .posts .attribution {
