@@ -101,7 +101,7 @@ body > footer {display: none;}
     'image teaser';
     gap: 2em;
     margin-bottom: 8em;
-    
+
     text-align: left;
 }
 
@@ -797,6 +797,34 @@ body > .attention.high-importance {
 .blog-index main {
 
     
+}
+
+.blog-index main .posts {
+    grid-column: 2 / span 9;
+
+}
+
+.blog-index main .posts ul {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 8em;
+    /* padding: 0 4em; */
+    gap: 2em;
+    box-sizing: border-box;
+    width:100%;
+    margin: 0 auto;
+    margin-top: 0;
+
+    font-size: .4em;
+    /* background: var(--vocabulary-neutral-color-lighter-gray); */
+}
+
+.blog-index main .posts h2 {
+
+}
+
+.blog-index main footer {
+    grid-column: 2 / span 9;
 }
 
 /* search-index context */
