@@ -826,21 +826,21 @@ body > .attention.high-importance {
 
 
 /* targets the featured posts section */
-.blog-index main .posts.highlight {
+.blog-index main .posts.featured {
     grid-column: 1 / span 11;
 
     background: var(--vocabulary-neutral-color-lighter-gray);
 }
 
-.blog-index main .posts.highlight ul {    
+.blog-index main .posts.featured ul {    
     padding: 0 5%;
 }
 
-.blog-index main .posts.highlight ul li {
+.blog-index main .posts.featured ul li {
     grid-column: span 3;
 }
 
-.blog-index main .posts.highlight ul li:nth-of-type(1) {
+.blog-index main .posts.featured ul li:nth-of-type(1) {
     grid-column: span 12;
 
     background: white;
