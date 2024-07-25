@@ -121,8 +121,7 @@ body > footer {display: none;}
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
-    /* font-size: 1.5em; */
-    /* font-size: 2.1em; */
+    font-size: 2.1em;
     text-transform: none;
     text-transform: initial;
 }
@@ -794,11 +793,6 @@ body > .attention.high-importance {
 }
 
 /* blog-index context */
-.blog-index main {
-
-    
-}
-
 .blog-index main .posts {
     grid-column: 2 / span 9;
 }
@@ -824,15 +818,14 @@ body > .attention.high-importance {
 
 .blog-index main .posts ul li {
     grid-column: span 4;
-
  }
 
-.blog-index main .posts h2 {
-
+ .blog-index main .posts ul li h3 {
+    font-size: 1.5em;
 }
 
-/* targets the featured posts section */
 
+/* targets the featured posts section */
 .blog-index main .posts.highlight {
     grid-column: 1 / span 11;
 
