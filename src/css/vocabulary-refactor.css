@@ -61,7 +61,7 @@ body > footer {display: none;}
 
 /* components */
 
-/* posts component */
+/* post component - plural */
 .posts > h2 {
     margin-bottom: 2.1em;
 
@@ -105,7 +105,8 @@ body > footer {display: none;}
     text-transform: initial;
 }
 
-.posts .post article .categories {
+
+.posts .post .categories {
     order: -1;
 
     font-family: 'Source Sans Pro';
