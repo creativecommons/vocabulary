@@ -174,21 +174,6 @@ main > * {
     grid-column: 5 / span 3;
 }
 
-/* if aside is present, split to two-col */
-main:has( > aside.sidebar) > div { /* was '>  *' */
-    grid-column: 2 / span 5;
-}
-
-main:has( > aside.sidebar) > article {
-    grid-column: 2 / span 5;
-}
-
-main:has( > aside.sidebar) > aside.sidebar {
-    grid-column: 7 / span 4;
-    grid-row-start: 2;
-    padding-left: 4.1em;
-}
-
 main > header {
     display: flex;
     flex-wrap: wrap;
@@ -251,6 +236,69 @@ main > header .byline {
     font-style: normal;
     font-weight: 400;
     font-style: italic;
+}
+
+/* if aside is present, split to two-col */
+main:has( > aside.sidebar) > div { /* was '>  *' */
+    grid-column: 2 / span 5;
+}
+
+main:has( > aside.sidebar) > article {
+    grid-column: 2 / span 5;
+}
+
+main:has( > aside.sidebar) > aside.sidebar {
+    grid-column: 7 / span 4;
+    grid-row-start: 2;
+    padding-left: 4.1em;
+}
+
+main > aside h2 {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+main > aside nav {
+    margin-bottom: 3em;
+}
+
+main > aside nav ul {
+    margin: 0;
+    padding: 0;
+    text-indent: none;
+
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+main > aside nav ul ul {
+    margin-top: .8em;
+    margin-left: 1em;
+}
+
+main > aside nav ul li {
+    margin-bottom: 1em;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 150%;
+}
+
+main > aside nav ul ul li {
+    margin-bottom: .8em;
+}
+
+main > aside nav ul ul {
+    margin-left: 1em;
+}
+
+main > aside nav ul ul li {
+    margin-bottom: .8em;
 }
 
 main h2 {
