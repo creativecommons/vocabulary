@@ -253,18 +253,33 @@ main:has( > aside.sidebar) > aside.sidebar {
     padding-left: 4.1em;
 }
 
-main > aside h2 {
+main > aside.sidebar h2 {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
     font-size: 1.5em;
 }
 
-main > aside nav {
+main > aside.sidebar nav {
     margin-bottom: 3em;
 }
 
-main > aside nav ul {
+main > aside.sidebar nav.filter-menu ul li {
+    margin-bottom: 0;
+    padding: 1em;
+}
+
+main > aside.sidebar nav.filter-menu ul li.current {
+    background: var(--vocabulary-brand-color-soft-tomato);
+    /* padding: 1em; */
+    font-weight: bold;
+}
+
+main > aside.sidebar nav.filter-menu ul li.current a {
+    --underline-background-color: var(--vocabulary-brand-color-soft-tomato);
+}
+
+main > aside.sidebar nav ul {
     margin: 0;
     padding: 0;
     text-indent: none;
@@ -274,12 +289,12 @@ main > aside nav ul {
     font-weight: 700;
 }
 
-main > aside nav ul ul {
+main > aside.sidebar nav ul ul {
     margin-top: .8em;
     margin-left: 1em;
 }
 
-main > aside nav ul li {
+main > aside.sidebar nav ul li {
     margin-bottom: 1em;
 
     font-family: 'Source Sans Pro';
@@ -289,16 +304,20 @@ main > aside nav ul li {
     line-height: 150%;
 }
 
-main > aside nav ul ul li {
+main > aside.sidebar nav ul ul li {
     margin-bottom: .8em;
 }
 
-main > aside nav ul ul {
+main > aside.sidebar nav ul ul {
     margin-left: 1em;
 }
 
-main > aside nav ul ul li {
+main > aside.sidebar nav ul ul li {
     margin-bottom: .8em;
+}
+
+main > aside.sidebar p {
+    font-size: 1em;
 }
 
 main h2 {
