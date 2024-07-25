@@ -852,7 +852,7 @@ body > .attention.high-importance {
 
 /* search-index context */
 
-.search-index main header { /* generalize? */
+.search-index main > header { /* generalize? */
     display: block;
     padding: 3.7em 0;
     /* text-align: left; */
