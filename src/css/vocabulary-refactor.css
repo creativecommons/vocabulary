@@ -346,6 +346,19 @@ main > aside.sidebar p {
     font-size: 1em;
 }
 
+main > aside.sidebar .attention {
+    margin-top: 5em;
+    padding: 1.5em;
+
+    background: var(--vocabulary-brand-color-soft-turquoise);
+}
+
+main > aside.sidebar .attention a {
+    --underline-background-color: var(--vocabulary-brand-color-soft-turquoise);
+}
+
+
+
 main h2 {
     width: 100%;
 
