@@ -605,6 +605,10 @@ main article.posts.related ul li {
     margin-bottom: 3em;
 }
 
+main article.posts .post  {
+    margin-bottom: 0;
+}
+
 main article.posts.related .post header {
     flex-direction: column;
     align-items: baseline;
