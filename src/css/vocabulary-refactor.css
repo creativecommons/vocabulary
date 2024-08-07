@@ -583,7 +583,7 @@ main article.posts.related {
     background: var(--vocabulary-neutral-color-lighter-gray);
 }
 
-main article.posts.related h2 {
+main article.posts.related > h2 {
     margin-bottom: 0.83em;
 }
 
@@ -619,7 +619,7 @@ main article.posts.related .post a {
     --underline-background-color: var(--vocabulary-neutral-color-lighter-gray);
 }
 
-main article.posts.related .post h2 {
+main article.posts.related .post h2, main article.posts.related .post h3 {
     font-size: 1.4em;
 }
 
