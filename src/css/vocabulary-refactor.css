@@ -1032,3 +1032,85 @@ body > .attention.high-importance {
 .team-index main aside.closing p {
     font-style: italic;
 }
+
+/* person-page context */
+
+.person-page main > header {
+    grid-column: 2 / span 9;
+    min-height: 410px;
+    position: relative;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    /* grid-template-areas:
+    'picture info'
+    'picture info'
+    'picture info'; */
+    gap: 0 5em;
+    padding: 3.7em 0;
+
+    text-align: left;
+}
+
+
+.person-page main > header:before {
+    left: -5.5%;
+}
+
+
+.person-page main > header h1 {
+    grid-column-start: 2;
+
+    margin-bottom: .1em;
+
+}
+
+.person-page main > header .title {
+    grid-column-start: 2;
+    margin-bottom: 1em;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.9em;
+}
+
+.person-page main > header .pronouns {
+    grid-column-start: 2;
+    margin-bottom: 1em;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.person-page main > header figure {
+    box-sizing: border-box;
+    position: absolute;
+    margin: 0;
+    padding:0;
+
+    top: 3.4em;
+    left: 0;
+    width: 30%;
+}
+
+.person-page main > header figure img {
+    box-sizing: border-box;
+
+    width: 100%;
+
+    border: 16px solid white;
+}
+
+.person-page main > header .bio {
+    grid-column-start: 2;
+
+    font-size: .9em;
+
+}
+
+.person-page main > header p {
+    margin-bottom: .3em;
+}
+
