@@ -605,7 +605,7 @@ main article.posts.related ul li {
     margin-bottom: 3em;
 }
 
-main article.posts .post  {
+main article.posts.related .post  {
     margin-bottom: 0;
 }
 
