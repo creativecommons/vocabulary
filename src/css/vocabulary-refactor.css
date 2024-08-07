@@ -1039,6 +1039,11 @@ body > header .explore-panel {
     display: none;
 }
 
+.explore-panel.expand {
+    display: inherit;
+    transition: display 2s ease-in-out;
+}
+
 body > header .explore-panel aside {
     margin-right: 20px;
 }
