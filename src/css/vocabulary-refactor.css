@@ -1494,6 +1494,12 @@ body > footer .license svg {
     background: white;
 }
 
+.blog-index main .posts.featured ul li:nth-of-type(1) article.post {
+    margin-bottom: 1em;
+    padding: 4em;
+}
+
+
 .blog-index main footer {
     grid-column: 2 / span 9;
 }
@@ -1720,5 +1726,131 @@ body > footer .license svg {
 
 .person-page main > header p {
     margin-bottom: .3em;
+}
+
+/* responsive contexts */
+
+@media (min-width: 1500px) {
+    body {
+        width: 1500px;
+        margin: 0 auto;
+    }
+
+    body > main {
+        overflow-x: hidden;
+    }
+
+}
+
+@media (max-width: 1140px) {
+    .blog-index main footer .attribution-list ul.expand {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .blog-index main .posts ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 705px) {
+
+    body > header .masthead {
+        padding-top: 60px;
+        display: block;
+    }
+
+    body > header button.expand-menu {
+        position: absolute;
+        top: 4.5em;
+        right: 0;
+        display: inline-block;
+        padding: .3em .5em;
+        border: none;
+        border-radius: 5px;
+        background: #F5F5F5;
+        text-transform: uppercase;
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1em;
+        padding: .5rem 1rem;
+    }
+
+    body > header .primary-menu {
+        display: none;
+
+    }
+
+    body > header .primary-menu.expand {
+        display: initial;
+    }
+
+    body > header .primary-menu.expand ul {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-top: 1.5em;
+    }
+
+    body > header .primary-menu.expand ul li {
+        margin: 0;
+        padding: 1em 0;
+        border-top: 1px solid rgba(1,1,1,.1);
+    }
+    /* .ancilliary-menu {
+        display: none;
+    } */
+
+    main {
+        width: 80%;
+    }
+
+    main > header:before {
+        left: initial;
+    }
+
+    main article.posts.related {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    main article.posts.related {
+        display: block;
+    }
+
+    .blog-index main article.posts.featured > ul li:nth-child(1) {
+        padding: 2em;
+    }
+
+    .blog-index main .authored-posts.highlight {
+        padding: 0 5%;
+    }
+
+    .blog-index main footer .attribution-list ul.expand {
+        display: block;
+    }
+
+    .program-index main > article {
+        width: 90%;
+        margin: 0;
+    }
+
+    .program-index main > article.projects ul {
+        display: block;
+    }
+
+    .program-index main > article.projects ul li {
+        margin-bottom: 2em;
+    }
+
+    .search-index .search-form form button {
+        width: 20%;
+    }
+
 }
 
