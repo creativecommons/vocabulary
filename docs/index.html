@@ -523,18 +523,22 @@ This enables two modes of build work.
 </code>
 </pre>
 
-<h3 id="story-snippet-singular-block">Story Snippet - Singular - Block</h3><a class="permalink" href="#story-snippet-singular-block">permalink</a>
+<h3 id="post-singular-block">Post - Singular - Block</h3><a class="permalink" href="#post-singular-block">permalink</a>
+
+<p><span class="distinct">Post</span> components nested within a <span class="distinct">Posts</span> component can be direct children or nested within an html list element (<span class="distinct">ol/ul</span>)</p>
 
 <h4>Expected Contexts</h3>
 <ul>
-  <li><span class="distinct">article.authored-posts article.story</span> </li>
+  <li><span class="distinct">main > article.posts</span> </li>
+  <li><span class="distinct">article.posts article.post</span> </li>
+  <li><span class="distinct">article.posts  ul > li > article.post</span> </li>
 
 </ul>
 
 <pre>
 <code class="lang-html">
 
-  <article class="story">
+  <article class="post">
     <header>
     <h2><a href="#">Title Here</a></h2>
 
@@ -555,23 +559,23 @@ This enables two modes of build work.
 
 
 
-<h3 id="stories-snippets-plural-block">Stories Snippets - Plural - Block</h3><a class="permalink" href="#stories-snippets-plural-block">permalink</a>
+<h3 id="posts-plural-block">Posts - Plural - Block</h3><a class="permalink" href="#posts-plural-block">permalink</a>
 
 <h4>Expected Contexts</h3>
 <ul>
-  <li><span class="distinct">body.home-index > main > article.authored-posts</span></li>
-  <li><span class="distinct">body.blog-index > main > article.authored-posts</span>, directly after the <span class="distinct">main > header</span> </li>
-    <li><span class="distinct">body.blog-index > main > article.authored-posts</span>, directly after the first <span class="distinct">main > article.authored-posts</span> </li>
-<li><span class="distinct">body.archive-page > main > div.authored-posts</span>, directly after the <span class="distinct">main > aside</span>  </li>
-<li><span class="distinct">body.person-page > main > section.authored-posts</span>, directly after the <span class="distinct">main > header</span>  </li>
-<li><span class="distinct">body.blog-post > main > article.related-posts > article.authored-posts</span>, as the last child of <span class="distinct">body > main/span> </li>
+  <li><span class="distinct">main > article.posts</span></li>
+  <li><span class="distinct">body.blog-index > main > article.posts.featured</span>, directly after the <span class="distinct">main > header</span> </li>
+  <li><span class="distinct">body.blog-index > main > article.posts</span>, directly after the <span class="distinct">main > article.posts.featured</span> </li>
+  <li><span class="distinct">body.archive-page > main > article.posts</span>, directly after the <span class="distinct">main > aside</span>  </li>
+  <li><span class="distinct">body.person-page > main > article.posts</span>, directly after the <span class="distinct">main > header</span>  </li>
+  <li><span class="distinct">body.blog-post > main > article.posts.related</span>, as the last child of <span class="distinct">body > main</span> </li>
 
 </ul>
 
 <pre>
 <code class="lang-html">
 
-  <article class="authored-posts">
+  <article class="posts">
 
   <h2>Title Here</h2>
   
@@ -709,7 +713,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h3>
 <ul>
-  <li><span class="distinct">body.default-page > aside</span>; optionally after <span class="distinct">main > header</span></li>
+  <li><span class="distinct">body > aside</span>; optionally after <span class="distinct">main > header</span></li>
 <li><span class="distinct">body.archive-page > aside</span>, after <span class="distinct">main > header</span></li>
 
 
@@ -939,7 +943,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h3>
 <ul>
-<li><span class="distinct">body.default-page > main > header</span></li>
+<li><span class="distinct">body > main > header</span></li>
 <li><span class="distinct">body.archive-page > main > header</span></li>
 <li><span class="distinct">body.blog-index > main > header</span></li>
 <li><span class="distinct">body.blog-post > main > header</span></li>
