@@ -529,10 +529,9 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h3>
 <ul>
-  <li><span class="distinct">main > article.posts</span> </li>
-  <li><span class="distinct">article.posts article.post</span> </li>
+  <li><span class="distinct">main > article.post</span> </li>
+  <li><span class="distinct">main > article.posts > article.post</span> </li>
   <li><span class="distinct">article.posts  ul > li > article.post</span> </li>
-
 </ul>
 
 <pre>
@@ -561,9 +560,10 @@ This enables two modes of build work.
 
 <h3 id="posts-plural-block">Posts - Plural - Block</h3><a class="permalink" href="#posts-plural-block">permalink</a>
 
+<p><span class="distinct">Posts</span> components support a pseudo-semantic variant class of <span class="distinct">featured</span> or <span class="distinct">related</span>. This helps further describe what they are more specifically, but allows a semantic-ish target for their change in behavior or provided sub-elements. </p>
 <h4>Expected Contexts</h3>
 <ul>
-  <li><span class="distinct">main > article.posts</span></li>
+  <li><span class="distinct">main > article.posts</span>, directly after the <span class="distinct">main > header</span> </li>
   <li><span class="distinct">body.blog-index > main > article.posts.featured</span>, directly after the <span class="distinct">main > header</span> </li>
   <li><span class="distinct">body.blog-index > main > article.posts</span>, directly after the <span class="distinct">main > article.posts.featured</span> </li>
   <li><span class="distinct">body.archive-page > main > article.posts</span>, directly after the <span class="distinct">main > aside</span>  </li>
