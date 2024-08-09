@@ -428,7 +428,7 @@ main a {
      background-repeat: no-repeat, no-repeat, repeat-x;
      text-shadow: 0.03em 0 var(--underline-background-color), -0.03em 0 var(--underline-background-color), 0 0.03em var(--underline-background-color), 0 -0.03em var(--underline-background-color), 0.06em 0 var(--underline-background-color), -0.06em 0 var(--underline-background-color), 0.09em 0 var(--underline-background-color), -0.09em 0 var(--underline-background-color), 0.12em 0 var(--underline-background-color), -0.12em 0 var(--underline-background-color), 0.15em 0 var(--underline-background-color), -0.15em 0 var(--underline-background-color);
      background-position: 0% 93%, 100% 93%, 0% 93%;
-     /* background-position-y: 87%, 87%, 87%; */
+     background-position-y: 90%, 90%, 90%;
 }
 
 main p {
