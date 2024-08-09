@@ -237,6 +237,7 @@ main > header:before {
 
 main > header h1 {
     width: 100%;
+    margin-top: .39em;
     margin-bottom: 0;
     grid: 0 / auto;
 
@@ -1486,6 +1487,7 @@ body > footer .license svg {
 /* targets the featured posts section */
 .blog-index main .posts.featured {
     grid-column: 1 / span 11;
+    margin-bottom: 3em;
 
     background: var(--vocabulary-neutral-color-lighter-gray);
 }
