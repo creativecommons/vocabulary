@@ -76,6 +76,22 @@ a.more {
 
 /* components */
 
+/* post component - singular */
+
+.post header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: baseline;
+    width: 100%;
+}
+
+.post .categories {
+    order: -1;
+
+    font-family: 'Source Sans Pro';
+}
+
 /* post component - plural */
 
 .posts {
@@ -107,13 +123,13 @@ a.more {
     text-align: left;
 }
 
-.posts .post header {
+/* .posts .post header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: baseline;
     width: 100%;
-}
+} */
 
 .posts .post h2, .posts .post h3 {
     grid-area: title;
@@ -128,12 +144,11 @@ a.more {
     text-transform: initial;
 }
 
-
-.posts .post .categories {
+/* .posts .post .categories {
     order: -1;
 
     font-family: 'Source Sans Pro';
-}
+} */
 
 .posts .post .byline {
     font-family: 'Source Sans Pro';
@@ -246,6 +261,11 @@ main > header h1 {
     font-style: normal;
     font-weight: 700;
     /* text-transform: uppercase; */
+}
+
+main > header h2 {
+    margin: 0;
+    margin-top: .2em;
 }
 
 main > header a {
@@ -1710,7 +1730,6 @@ body > footer .license svg {
     left: -5.5%;
 }
 
-
 .person-page main > header h1 {
     grid-column-start: 2;
 
@@ -1766,6 +1785,38 @@ body > footer .license svg {
 .person-page main > header p {
     margin-bottom: .3em;
 }
+
+/* program-index context */
+
+.program-index main > article.projects {
+    grid-column: 3 / 10;
+    margin-bottom: 8em;
+}
+
+.program-index main > article.projects ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    margin: 0;
+    padding: 0;
+
+    font-size: 1em;
+    list-style: none;
+}
+
+.program-index main > article.projects article {
+    padding: 2em;
+
+    background: var(--vocabulary-brand-color-soft-turquoise);
+    border-top: 3px solid black;
+}
+
+.program-index main > article.projects article a {
+    --underline-background-color: var(--vocabulary-brand-color-soft-turquoise);
+}
+
+/* program-page context */
+
 
 /* responsive contexts */
 
