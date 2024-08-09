@@ -1478,6 +1478,10 @@ body > footer .license svg {
     font-size: 1.5em;
 }
 
+.blog-index main .posts .post figure {
+    order: -1;
+}
+
 
 /* targets the featured posts section */
 .blog-index main .posts.featured {
@@ -1501,12 +1505,16 @@ body > footer .license svg {
     font-size: 2.1em;
 }
 
-.blog-index main .posts.featured a {
+.blog-index main .posts.featured .post a {
     --underline-background-color: var(--vocabulary-neutral-color-lighter-gray);
 }
 
-.blog-index main .posts.featured .post:nth-of-type(1) a {
-    /* --underline-background-color: initial; */
+.blog-index main .posts.featured li:nth-of-type(1) .post a {
+    --underline-background-color: white;
+}
+
+.blog-index main .posts.featured li:nth-of-type(1) .post figure {
+    order: initial;
 }
 
 .blog-index main .posts.featured ul {    
