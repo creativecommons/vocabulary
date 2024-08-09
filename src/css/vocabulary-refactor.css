@@ -245,7 +245,7 @@ main > header h1 {
     font-size: 3.56em;
     font-style: normal;
     font-weight: 700;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 main > header a {
