@@ -1591,7 +1591,7 @@ body > footer .license svg {
 /* team-index context */
 
 .team-index main .persons {
-    /* grid-column: span 3; */
+    grid-column: 2 / 11;
     margin-bottom: 5em;
 }
 
@@ -1920,6 +1920,14 @@ body > footer .license svg {
     .posts article figure {
         width: 100%;
         flex: initial;
+    }
+
+    .team-index main > header {
+        padding: 0 5%;
+    }
+
+    .team-index main article.persons {
+        padding: 0 5%;
     }
 
     .team-index main article.persons ul {
