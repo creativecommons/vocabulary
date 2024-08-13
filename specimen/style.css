@@ -1,1 +1,2 @@
 @import '../src/css/vocabulary.css' layer(vocabulary);
+@import '../specimen/tests/grid-test.css' layer(vocabulary);
