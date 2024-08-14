@@ -81,6 +81,10 @@
     --vocabulary-neutral-color-lighter-gray: #F5F5F5;
     --vocabulary-neutral-color-dark-gray: #767676;
 
+    /* revised brand colors */
+    --vocabulary-brand-color-blue: #324c7f;
+    --vocabulary-brand-soft-blue: #CBF3F0;
+
     /* brand typsetting */
     --vocabulary-brand-typeset-nav-family: "Roboto Condensed";
     --vocabulary-brand-typeset-nav-weight: bold;
