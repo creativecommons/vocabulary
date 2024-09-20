@@ -521,6 +521,10 @@ main figure {
     padding: 0;
 }
 
+main > article figure img, main > figure img {
+    width: 100%;
+}
+
 main figure .attribution {
     display: block;
     margin-top: 1em;
