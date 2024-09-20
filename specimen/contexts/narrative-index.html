@@ -11,6 +11,13 @@
 <link rel="apple-touch-icon" sizes="180x180" href="../vocabulary/favicon/apple-touch-icon.png" />
 
 <link rel="stylesheet" media="all" href="../style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 
 </head>
 
@@ -19,66 +26,17 @@
 
 <header>
     <div class="masthead">
-        <h1><a class="identity-logo product" href="#">Vocabulary</a></h1>
+        <h1><a class="identity-logo" href="#">Vocabulary</a></h1>
         <button class="expand-menu">Menu</button>
         <nav class="primary-menu">
             <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Programs</a></li>
+                <li><a href="">License & Tools</a></li>
                 <li><a href="">Blog</a></li>
-                <li><a href="">Support</a></li>
+                <li><a href="" class="donate icon-attach fa-heart">Donate</a></li>
             </ul>
         </nav>
-
-        <nav class="ancilliary-menu">
-            <ul>
-                <li><button class="locale icon-attach fa-globe">English</button></li>
-                <li><a class="donate icon-attach fa-heart" href="#">Donate</a></li>
-                <li><button class="explore">Explore CC</button></li>
-            </ul>
-        </nav>
-    </div>
-
-
-
-    <div class="explore-panel">
-
-    <!-- (optional main CC logo, p, link on non-home site back to main site) -->
-    <aside>
-        <a class="identity-logo" href="#">Creative Commons</a>
-        <h2>Our Work Relies On You!</h2>
-        <p>Help us keep the internet free and open.</p>
-    </aside>
-
-    <nav class="explore-menu">
-        <ul>
-            <li>
-                <a href="#">Global Network</a>
-                <p>Join a  global community working to strengthen the Commons</p>
-            </li>
-            <li>
-                <a href="#">Certificate</a>
-                <p>Become an expert in creating and engaging with openly licensed materials</p>
-            </li>
-            <li>
-                <a href="#">Global Summit</a>
-                <p>Attend our annual event, promoting the power of open licensing</p>
-            </li>
-            <li>
-                <a href="#">Chooser</a>
-                <p>Get help choosing the appropriate license for your work</p>
-            </li>
-            <li>
-                <a href="#">Search Portal</a>
-                <p>Find engines to search openly licensed material for creative and educational reuse</p>
-            </li>
-            <li>
-                <a href="#">Open Source</a>
-                <p>Help us build products that maximize creativity and innovation</p>
-            </li>
-
-        </ul>
-    </nav>
     </div>
 
 </header>
@@ -91,12 +49,21 @@
 
 <main>
 
-<header>
+<!-- <header>
     <h1>Creative Commons, lorem ipsum dolor sit</h1>
-</header>
+</header> -->
+
+<!-- <img src="../media/sharing-illustration.png" /> -->
 
 <article class="topic-summary campaign">
-    <h2>What, Who, Why</h2>
+    <p><span class="first">you</span> make <span class="medium">music</span>.</p>
+    <p><span class="second">they</span> <span class="action">remix</span> it.</p>
+    <p class="third">We make it possible.</p>
+    <p class="fourth tagline">where our shared culture thrives</p></article>
+
+<article class="topic-summary">
+    <p><strong>Creative Commons</strong> is an international nonprofit organization that empowers people to grow and sustain the thriving commons of shared knowledge and culture we need to address the world's most pressing challenges and create a brighter future for all.</p>
+
 </article>
 
 <article class="topic-summary">
@@ -339,5 +306,50 @@
     </footer>
 
 <script src="../../src/js/vocabulary.js"></script>
+<script>
+    items = ['art','music','textbooks','photos', 'paintings', 'comics', 'movies', 'films', 'animations', 'research'];
+   
+    var item = items[Math.floor(Math.random()*items.length)];
+   
+    document.querySelector('.medium').innerHTML = item;
+   
+   
+    actions = ['remix','reshare','reuse'];
+   
+    var action = actions[Math.floor(Math.random()*actions.length)];
+   
+    document.querySelector('.action').innerHTML = action;
+   
+   
+    firsts = ['you','they'];
+   
+    var first = firsts[Math.floor(Math.random()*firsts.length)];
+   
+    document.querySelector('.first').innerHTML = first;
+   
+   
+   
+   
+    if (first == 'you') {
+     document.querySelector('.second').innerHTML = 'they';
+    }
+    else { document.querySelector('.second').innerHTML = 'you'; }
+   
+   
+   
+    taglines = [
+        'where our shared culture thrives',
+        'where the whole is greater than the sum of its parts',
+        "You can't use up creativity. The more you use, the more you have &mdash; Maya Angelou"
+   
+    ];
+   
+    var tagline = taglines[Math.floor(Math.random()*taglines.length)];
+   
+    document.querySelector('.tagline').innerHTML = tagline;
+   
+   
+   
+   </script>
 </body>
 </html>
