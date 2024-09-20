@@ -80,6 +80,9 @@ body.narrative-index main a {
     color: var(--vocabulary-core-color-seafoam);
 }
 
+body.narrative-index .topic-summary.campaign {
+    grid-column: 4 / span 5;
+}
 
 body.narrative-index .topic-summary.campaign p {
     margin-bottom: .5em;
@@ -115,4 +118,23 @@ body.narrative-index .topic-summary.campaign .medium {
 
 body.narrative-index .topic-summary.campaign .action {
     color: var(--vocabulary-core-color-rich-purple);
+}
+
+body.narrative-index .topic-summary.about {
+    margin-bottom: 8em;
+}
+
+
+body.narrative-index .topic-summary a.learn-more {
+    --underline-background-color: var(--vocaulary-core-color-soft-purple);
+
+    padding: .5em .7em;
+
+    font-family: 'Source Sans Pro';
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--vocabulary-core-color-rich-purple);
+    background: var(--vocaulary-core-color-soft-purple);
+    border-radius: 5px;
+
 }
