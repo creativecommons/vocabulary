@@ -138,3 +138,10 @@ body.narrative-index .topic-summary a.learn-more {
     border-radius: 5px;
 
 }
+
+body.narrative-index .topic-summary a.learn-more:hover {
+    --underline-background-color: var(--vocaulary-core-color-rich-purple);
+
+    color: white;
+    background: var(--vocabulary-core-color-rich-purple);
+}
