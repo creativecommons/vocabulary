@@ -10,9 +10,16 @@ Both projects are informed by the  [CC Style Guide (2019)][cc-style-guide], and 
 [cc-style-guide]: https://github.com/cc-archive/vocabulary-legacy
 
 
-## 🚧  NOTICE
+## Setup & Development
 
-This repository is under active construction and is not currently accepting PRs yet.
+For information on learning and installing the prerequisite technologies for this project, please see [Foundational technologies — Creative Commons Open Source][found-tech].
+
+[found-tech]: https://opensource.creativecommons.org/contributing-code/foundational-tech/
+
+### Local Development
+
+This project features several specimens that are used as scaffolding examples to build from, in addition to several Test specimens for more abstract test-cases such as the grid layout or product logos.
+
 
 
 ## Code of conduct
