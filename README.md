@@ -14,12 +14,11 @@ Both projects are informed by the  [CC Style Guide (2019)][cc-style-guide], and 
 
 For information on learning and installing the prerequisite technologies for this project, please see [Foundational technologies — Creative Commons Open Source][found-tech].
 
+
+For installation information please see the [Installation Documentation][vocabulary-docs].
+
 [found-tech]: https://opensource.creativecommons.org/contributing-code/foundational-tech/
-
-### Local Development
-
-This project features several specimens that are used as scaffolding examples to build from, in addition to several Test specimens for more abstract test-cases such as the grid layout or product logos.
-
+[vocabulary-docs]: https://vocabulary-docs.netlify.app/#installation
 
 
 ## Code of conduct
