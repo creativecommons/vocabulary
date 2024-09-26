@@ -10,9 +10,15 @@ Both projects are informed by the  [CC Style Guide (2019)][cc-style-guide], and 
 [cc-style-guide]: https://github.com/cc-archive/vocabulary-legacy
 
 
-## 🚧  NOTICE
+## Setup & Development
 
-This repository is under active construction and is not currently accepting PRs yet.
+For information on learning and installing the prerequisite technologies for this project, please see [Foundational technologies — Creative Commons Open Source][found-tech].
+
+
+For installation information please see the [Installation Documentation][vocabulary-docs].
+
+[found-tech]: https://opensource.creativecommons.org/contributing-code/foundational-tech/
+[vocabulary-docs]: https://vocabulary-docs.netlify.app/#installation
 
 
 ## Code of conduct
