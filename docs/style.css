@@ -1,29 +1,61 @@
 /* @import '../src/css/vocabulary.css' layer(vocabulary); */
+:root {
+  scroll-behavior: smooth;
+}
 
 body {
-    width: 65%;
-    font-size: 1.2em;
+  width: 65%;
+  font-size: 1.2em;
 
-    padding: 1em;
+  padding: 1em;
 }
 
 pre > code {
-    display: block;
-    padding: 2em;
-    overflow-x: scroll;
+  display: block;
+  padding: 2em;
+  overflow-x: scroll;
 
-    /* white-space: pre-wrap; */
-    background: #ededed;
-    
+  /* white-space: pre-wrap; */
+  background: #ededed;
 }
 
 span.distinct {
-    padding: .1em .2em;
+  padding: 0.1em 0.2em;
 
-    background: #ededed;
-    border-radius: 3px;
+  background: #ededed;
+  border-radius: 3px;
 }
 
 main ul li {
-    margin-bottom: .5em;
+  margin-bottom: 0.5em;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1000;
+}
+
+.scroll-to-top:focus {
+  outline: 2px solid #05b5da;
+}
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+@media (max-width: 600px) {
+  .scroll-to-top {
+    display: none;
+  }
 }
