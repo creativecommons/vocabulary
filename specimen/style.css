@@ -1,2 +1,36 @@
 @import '../src/css/vocabulary.css' layer(vocabulary);
 @import '../specimen/tests/grid-test.css' layer(vocabulary);
+
+:root {
+  scroll-behavior: smooth;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1000;
+}
+
+.scroll-to-top:focus {
+  outline: 2px solid #0056b3;
+}
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+@media (max-width: 600px) {
+  .scroll-to-top {
+    display: none;
+  }
+}
