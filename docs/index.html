@@ -7,6 +7,7 @@
 
 <link rel="stylesheet" media="all" href="style.css">
 
+
 </head>
 <body>
 
@@ -1021,9 +1022,19 @@ This enables two modes of build work.
 
 
 <script>
-//escapes html within code elements
-document.querySelectorAll("code.lang-html").forEach(el => el.innerText = el.innerHTML);
-</script>
+  // Escapes HTML within code elements
+  document.querySelectorAll("code.lang-html").forEach(el => el.innerText = el.innerHTML);
 
+  // Scroll to top function
+  function topFunction() {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth' 
+      });
+  }
+</script>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </body>
+
+
 </html>

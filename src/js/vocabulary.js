@@ -30,3 +30,24 @@ if (attributionButton !== null && attributionPanel !== null ) {
     });
 
 }
+
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scroll effect
+    });
+}
+
+// Show the button when the user scrolls down 20px from the top of the document
+const myBtn = document.getElementById("myBtn");
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        myBtn.style.display = "block"; // Show the button
+    } else {
+        myBtn.style.display = "none"; // Hide the button
+    }
+};
+
+// Adding click event for the button
+myBtn.addEventListener('click', topFunction);

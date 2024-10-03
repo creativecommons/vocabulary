@@ -27,3 +27,34 @@ span.distinct {
 main ul li {
     margin-bottom: .5em;
 }
+/* Additional button styles */
+#myBtn {
+    position: fixed; 
+    bottom: 30px; 
+    right: 30px; 
+    background-color: rgba(0, 123, 255, 0.8);
+    color: white;
+    border: none; 
+    border-radius: 50px; 
+    padding: 12px 20px; 
+    font-size: 18px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+/* Hover effect */
+#myBtn:hover {
+    background-color: rgba(106, 90, 205, 0.9);
+    transform: translateY(-2px); 
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 600px) {
+    #myBtn {
+        font-size: 16px; 
+        padding: 10px 16px; 
+    }
+}
+
+
