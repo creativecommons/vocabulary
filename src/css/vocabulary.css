@@ -33,7 +33,7 @@ EX:
     position: absolute;
     top: 0;
     left: 0;
-    margin: -1000px;
+    /* margin: -1000px; */
 }
 
 .skip-to-content:focus {
@@ -202,9 +202,7 @@ a.more {
 
 /* .posts .related variant context */
 
-.posts.related {
-    
-}
+
 
 /* <main> level context */
 
@@ -1461,10 +1459,7 @@ body > footer .license svg {
 
 
 /* archive-page context */
-.archive-page main {
 
-    
-}
 
 /* blog-index context */
 

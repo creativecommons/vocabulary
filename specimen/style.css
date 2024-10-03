@@ -1,2 +1,39 @@
 @import '../src/css/vocabulary.css' layer(vocabulary);
 @import '../specimen/tests/grid-test.css' layer(vocabulary);
+
+.topic-summary {
+   display: flex;
+ /* justify-items:center; */
+align-items: start;
+gap: 3%;
+width: 100%;
+margin-top: 4rem;
+}
+
+.description {
+    font-size: .8em;
+}
+
+
+.iframe-image {
+
+    width: 400px;
+    height: 200px;
+    background: black;
+
+}
+
+.header{
+    font-size: 2em;;
+}
+
+.attribution{
+    font-size: .9em;
+}
+.hero-text{
+    margin-bottom: .8em;
+}
+.learn-link{
+    font-weight: bold;
+    font-size: 1.5em;
+}
