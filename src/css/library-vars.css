@@ -295,3 +295,26 @@ leaving room for semantic and accessible implementation choices  */
     --icon-sprite: var(--cc-logo);
 }
 
+.icon-replace:focus {
+    outline: 2px solid blue; 
+}
+
+.icon-replace:before {
+    content: '';
+    display: block;
+    height: 100%; 
+    width: 100%; 
+    background-color: var(--icon-sprite-color);
+    -webkit-mask-image: var(--icon-sprite);
+    mask-image: var(--icon-sprite);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+
+.icon-replace:hover:before,
+.icon-replace:focus:before {
+    background-color: purple; 
+}
