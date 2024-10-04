@@ -1,2 +1,107 @@
 @import '../src/css/vocabulary.css' layer(vocabulary);
 @import '../specimen/tests/grid-test.css' layer(vocabulary);
+
+.accordion {
+  margin: 0;
+  padding: 0;
+}
+
+.accordion h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.accordion > * + * {
+  border-top: 1px solid hsl(0deg 0% 52%);
+}
+
+.accordion-trigger {
+  background: none;
+  color: hsl(0deg 0% 13%);
+  display: block;
+  margin: 0;
+  padding: 1em 0em;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+.accordion-open {
+  max-height: 500px;
+  padding: 15px;
+}
+.accordion-trigger:focus,
+.accordion-trigger:hover {
+  background: #f5f5f5;
+}
+
+.accordion-trigger:focus {
+  outline: 4px solid transparent;
+}
+
+.accordion > *:first-child .accordion-trigger,
+.accordion > *:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+.accordion > *:last-child .accordion-trigger,
+.accordion > *:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+button {
+  border-style: none;
+}
+
+.accordion button::-moz-focus-inner {
+  border: 0;
+}
+
+.accordion-title {
+  font-size: 1.75rem;
+  color: #333;
+  font-family: roboto condensed, sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  line-height: 1.3;
+  letter-spacing: 0.02rem;
+}
+
+.accordion-icon {
+  border: solid currentcolor;
+  border-width: 0 2px 2px 0;
+  height: 0.5rem;
+  pointer-events: none;
+  position: absolute;
+  right: 2em;
+  top: 50%;
+  transform: translateY(-60%) rotate(45deg);
+  width: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.accordion-trigger[aria-expanded='true'] .accordion-icon {
+  transform: translateY(-50%) rotate(-135deg);
+}
+.accordion-trigger[aria-expanded='true'] {
+  background-color: #f5f5f5;
+}
+.accordion-panel {
+  margin: 0;
+  padding: 1em 0em;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  max-height: 0;
+}
+.accordion-open {
+  max-height: 1000px;
+  padding: 15px;
+}
+
+.accordion-panel[hidden] {
+  display: none;
+}
