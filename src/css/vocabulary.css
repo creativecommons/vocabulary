@@ -215,7 +215,7 @@ main {
     width: 100%;
     margin: 0;
     margin-bottom: 8em;
-    padding: 0;
+    padding:0  16px 0 16px;
     grid-column: 1 / 12;
 }
 
@@ -783,6 +783,7 @@ body > header {
     flex-wrap: wrap;
     position: relative;
     margin-bottom: 2em;
+
     /* padding: 0 var(--vocabulary-page-edges-space); */
 }
 
