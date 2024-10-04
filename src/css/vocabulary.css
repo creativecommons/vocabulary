@@ -29,6 +29,10 @@ EX:
 @import 'library-vars.css';
 
 /* utilities */
+:root{
+  box-sizing: border-box;
+}
+
 .skip-to-content {
     position: absolute;
     top: 0;
@@ -51,10 +55,13 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
+body span {
+     padding:1rem
+}
 
 a.more {
     padding: .4em .7em;
-
+    margin:0 1rem;
     background: black;
     color: white;
     font-family: 'Roboto Condensed';
@@ -107,6 +114,7 @@ a.more {
     font-weight: 700;
     text-transform: none;
     text-align: left;
+    padding:0 16px;
 }
 
 .posts .post {
@@ -133,7 +141,6 @@ a.more {
 
 .posts .post h2, .posts .post h3 {
     grid-area: title;
-    width: 100%;
     margin-top: 0.83em;
 
     font-family: 'Roboto Condensed';
@@ -215,7 +222,6 @@ main {
     width: 100%;
     margin: 0;
     margin-bottom: 8em;
-    padding:0  16px 0 16px;
     grid-column: 1 / 12;
 }
 
@@ -257,7 +263,7 @@ main > header h1 {
     grid: 0 / auto;
 
     font-family: 'Roboto Condensed';
-    font-size: 3.56em;
+    font-size: 2.6rem;
     font-style: normal;
     font-weight: 700;
     /* text-transform: uppercase; */
@@ -389,8 +395,7 @@ main > aside.sidebar .attention a {
 }
 
 main h2 {
-    width: 100%;
-
+    padding:0 1rem;
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
@@ -403,6 +408,7 @@ main h3 {
     font-style: normal;
     font-weight: 700;
     font-size: 1.75em;
+    padding:0 1rem;
     text-transform: none;
 }
 
@@ -454,7 +460,7 @@ main a {
 
 main p {
     margin-bottom: 2em;
-
+    padding: 0 1rem ;
     font-family: 'Source Sans Pro';
     font-size: 1.5em;
     font-style: normal;
@@ -464,7 +470,7 @@ main p {
 
 main ul, main ol {
     margin: 0 0 2em 1em;
-    padding: 0;
+    padding: 0 1rem;
 
     font-family: 'Source Sans Pro';
     font-size: 1.5rem;
@@ -522,7 +528,7 @@ main > article figure img, main > figure img {
 main figure .attribution {
     display: block;
     margin-top: 1em;
-
+    padding:0 1rem;
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 400;
@@ -1560,7 +1566,7 @@ body > footer .license svg {
 
 .blog-index main .posts.featured ul li:nth-of-type(1) article.post {
     margin-bottom: 1em;
-    padding: 4em;
+    /* padding: 4em; */
 }
 
 
@@ -1737,7 +1743,7 @@ body > footer .license svg {
 
 .person-page main > header h1 {
     grid-column-start: 2;
-
+    padding:0 1rem;
     margin-bottom: .1em;
 
 }
@@ -1857,6 +1863,9 @@ body > footer .license svg {
         display: flex;
         flex-wrap: wrap;
     }
+    main article.posts.related ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 @media (max-width: 705px) {
@@ -1919,9 +1928,9 @@ body > footer .license svg {
         display: block;
     }
 
-    .blog-index main article.posts.featured > ul li:nth-child(1) {
+    /* .blog-index main article.posts.featured > ul li:nth-child(1) {
         padding: 2em;
-    }
+    } */
 
     .blog-index main .posts {
         padding: 0 5%;
@@ -1946,7 +1955,9 @@ body > footer .license svg {
     body > footer {
         display: block;
     }
-
+    main article.posts.related ul {
+        grid-template-columns: 1fr 1fr;
+    }
     body > footer > nav {
         margin-top: 1em;
         margin-bottom: 3em;
@@ -2024,10 +2035,15 @@ body > footer .license svg {
     body > footer .footer-menu ul {
         display: block;
     }
+    main > header h1{
+        font-size: 1.6rem;
+    }
 }
 
 @media (max-width: 425px) {
-
+    main article.posts.related ul {
+        grid-template-columns: 1fr;
+    }
     .blog-index .attribution-list {
       padding: 2em;
     }
