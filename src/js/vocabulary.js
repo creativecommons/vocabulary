@@ -1,3 +1,8 @@
+import { loadHTML } from './utils/load-header-and-footer.js';
+
+loadHTML('header-placeholder', 'header.html');
+loadHTML('footer-placeholder', 'footer.html');
+
 const exploreButton = document.querySelector('button.explore');
 const explorePanel = document.querySelector('.explore-panel');
 
