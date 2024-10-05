@@ -1918,9 +1918,9 @@ body > footer .license svg {
         display: block;
     }
 
-    .blog-index main article.posts.featured > ul li:nth-child(1) {
-        padding: 2em;
-    }
+    /* .blog-index main article.posts.featured > ul li:nth-child(1) {
+       
+    } */
 
     .blog-index main .posts {
         padding: 0 5%;
@@ -1962,6 +1962,8 @@ body > footer .license svg {
     main {
         display: block;
         width: 100%;
+        padding: 1em;
+        box-sizing: border-box;
     }
 
     main > aside .attention {
@@ -1969,7 +1971,7 @@ body > footer .license svg {
     }
 
     main > header:before {
-        left: 0;
+        left: -1em;
     }
 
     .posts article figure {
