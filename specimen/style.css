@@ -1,2 +1,37 @@
 @import '../src/css/vocabulary.css' layer(vocabulary);
 @import '../specimen/tests/grid-test.css' layer(vocabulary);
+
+/* faq-page css */
+main p{
+    /* font-size: em; */
+}
+article{
+    border-bottom: 2px solid #d8d8d8;
+
+}
+.faq__title{
+    font-family: 'Roboto Condensed';
+    color: #333333;
+        font-size: 1.8em;
+        line-height: 1.3;
+font-size: 1.75em;
+}
+.faq__head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.faq__head.expanded::after {
+    content: "";
+}
+
+ .fas{
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0 1rem; 
+ }
+.fa-chevron-up{
+    display: none;
+}
