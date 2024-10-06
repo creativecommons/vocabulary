@@ -217,6 +217,8 @@ main {
     margin-bottom: 8em;
     padding: 0;
     grid-column: 1 / 12;
+    margin-top: 80px;
+
 }
 
 main > * {
@@ -791,12 +793,19 @@ body > header .masthead {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: baseline;
-    position: relative;
-
-    width: 100%;
-    /* padding-top: 3%; */
+    position: fixed;
+    width: 90%;
+    left: 0;
+    margin: 0 auto;
     padding-top: 40px;
-    margin: 0 var(--vocabulary-page-edges-space);
+    padding-left:5%;
+    padding-right:5%;
+    z-index: 2;
+
+    background: #ffffff;    /* padding-top: 3%; */
+   
+
+    /* margin: 0 var(--vocabulary-page-edges-space); */
 }
 
 body > header .masthead h1 {
@@ -947,7 +956,7 @@ body > header .ancilliary-menu {
     top: 0;
     /* right: var(--vocabulary-page-edges-space); */
     right: 0;
-
+    padding-right: 5%;
     font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: 600;
@@ -1059,6 +1068,7 @@ body > header .explore-panel {
     justify-content: space-between;
     width: 100%;
     padding: 40px var(--vocabulary-page-edges-space) 60px var(--vocabulary-page-edges-space);
+    margin-top: 110px;
 
     background: black;
     color: white;
