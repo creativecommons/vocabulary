@@ -92,6 +92,7 @@ a.more {
     font-family: 'Source Sans Pro';
 }
 
+
 /* post component - plural */
 
 .posts {
@@ -220,7 +221,10 @@ main {
     margin-top: 80px;
 
 }
-
+/* Set default page and search page main margin top to zero */
+#main-container{
+    margin-top: 0;
+}
 main > * {
     grid-column: 5 / span 3;
 }
@@ -1156,6 +1160,8 @@ body > header .explore-panel nav ul li p {
 body > article.attention {
     grid-column: 1 / span 11;
     padding: 1em 5%;
+    margin-top: 65px;  /* adjusted margin top to push article down since navbar is fixed */
+
 
     background: var(--vocabulary-brand-color-soft-green);
     font-family: 'Source Sans Pro';
