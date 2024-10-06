@@ -2051,10 +2051,19 @@ body > footer .license svg {
     .team-index main article.persons ul {
         display: initial;
     }
+    
 }
 
 @media (max-width:340px) {
     body > header .ancilliary-menu button:before, body > header .ancilliary-menu a:before {
         display: none;
+    }
+    .content{
+        padding: 0 10px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 540px) {
+    .content {
+        padding: 25px;
     }
 }
