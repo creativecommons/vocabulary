@@ -1775,7 +1775,7 @@ body > footer .license svg {
     box-sizing: border-box;
 
     width: 100%;
-
+    max-height: 21.8rem;
     border: 16px solid white;
 }
 
@@ -1818,6 +1818,28 @@ body > footer .license svg {
 .program-index main > article.projects article a {
     --underline-background-color: var(--vocabulary-brand-color-soft-turquoise);
 }
+
+.accordion-header{
+    padding:1rem 1rem;
+    border-bottom: 1px solid gray
+    
+    }
+    .accordion-content{
+        display: block;
+        padding:0 1rem;
+    }
+    .accordion-chevron{
+
+        transform: translateY(6px);
+    }
+    .hidden{
+        display: none;
+        opacity: 0;
+    }
+    .accordion-chevron-active{
+        transition:all 300ms ease-in-out;
+        transform: rotateX(180deg);
+    }
 
 /* program-page context */
 
