@@ -47,9 +47,11 @@ body {
     grid-template-columns: 5% 3% 6% 6% 15% 30% 15% 6% 6% 3% 5%;
     overflow-x: hidden;
 
-    font-weight: 400;
+    font-weight: normal;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    font-size: 12px;
+    padding: 80px 20px;
 }
 
 a.more {
@@ -256,7 +258,7 @@ main > header h1 {
     margin-bottom: 0;
     grid: 0 / auto;
 
-    font-family: 'Roboto Condensed';
+    font-family: "Playfair Display", serif;
     font-size: 3.56em;
     font-style: normal;
     font-weight: 700;
@@ -308,6 +310,7 @@ main:has( > aside.sidebar) > aside.sidebar {
     grid-column: 7 / span 4;
     grid-row-start: 2;
     padding-left: 4.1em;
+    margin-bottom: auto;
 }
 
 main > aside.sidebar h2 {
@@ -458,7 +461,7 @@ main p {
     font-family: 'Source Sans Pro';
     font-size: 1.5em;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 150%;
 }
 
@@ -467,7 +470,7 @@ main ul, main ol {
     padding: 0;
 
     font-family: 'Source Sans Pro';
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
     /* line-height: 150%; */
@@ -616,13 +619,12 @@ main article.posts.related > h2 {
 
 main article.posts.related ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
     margin-top: 0;
-    gap: 2em;
+    gap: 20px;
     box-sizing: border-box;
     list-style: none;
-
     font-size: initial;
 
     
@@ -1912,7 +1914,6 @@ body > footer .license svg {
     main article.posts.related {
         width: 100%;
         margin-left: 0;
-    }
 
     main article.posts.related {
         display: block;
