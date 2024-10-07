@@ -2,9 +2,7 @@
 @import '../specimen/tests/grid-test.css' layer(vocabulary);
 
 /* faq-page css */
-main p{
-    /* font-size: em; */
-}
+
 article{
     border-bottom: 2px solid #d8d8d8;
 
