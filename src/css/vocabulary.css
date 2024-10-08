@@ -1818,6 +1818,32 @@ body > footer .license svg {
 .program-index main > article.projects article a {
     --underline-background-color: var(--vocabulary-brand-color-soft-turquoise);
 }
+/* accordion styles */
+.accordion-header{
+    padding:1rem 1rem;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+    margin:0;
+    }
+    .accordion-content{
+        display: block;
+        padding:1rem 1rem;
+        margin: 0;
+    }
+    .accordion-chevron{
+        margin-left:1rem;
+        height: 1.8rem;
+        transform: translateY(6px);
+    }
+    .hidden{
+        display: none;
+        opacity: 0;
+    }
+    .accordion-chevron-active{
+        transition:all 300ms ease-in-out;
+        transform: rotateX(180deg);
+    }
+
 
 /* program-page context */
 
@@ -2047,7 +2073,12 @@ body > footer .license svg {
         flex-direction: column;
         flex-wrap: wrap;
     }
-
+     .accordion-chevron{
+        height: 1.5rem;
+     }
+     .accordion-header{
+        font-size: 1.5rem;
+     }
     .team-index main article.persons ul {
         display: initial;
     }
