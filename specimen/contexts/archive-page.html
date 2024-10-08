@@ -301,28 +301,7 @@
         <a href="#top" class="scroll-to-top icon-attach fa-angle-up" aria-label="Scroll to top"></a>
     </div>
 
-<!--<script src="../../../src/js/vocabulary.js"></script>-->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const emailInput = document.getElementById('mce-EMAIL');
-            const feedbackElement = document.getElementById('emailFeedback');
-            emailInput.addEventListener('input', validateEmailInput);
-        
-            function validateEmailInput() {
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            
-                if (emailRegex.test(emailInput.value)) {
-                    feedbackElement.textContent = ""; // 
-                    emailInput.classList.remove('invalid'); // Removes invalid class
-                    emailInput.classList.add('valid'); // Adds valid class
-                } else {
-                    feedbackElement.textContent = "Please provide a valid email"; // Show error message
-                    emailInput.classList.remove('valid'); // Removes valid class
-                    emailInput.classList.add('invalid'); // Adds invalid class
-                }
-            }
-        });
-    </script>
+<script src="../../src/js/vocabulary.js"></script>
 
 </body>
 </html>
