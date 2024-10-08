@@ -264,13 +264,16 @@
 
     <div class="subscribe">
     <h2>Subscribe to our Newsletter</h2>
-    <form action="https://creativecommons.us4.list-manage.com/subscribe/post?u=fd30364b6577b471373d6076c&amp;id=4603fe102a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate newsletter" target="_blank" novalidate="">
-        <input type="email" value="" name="EMAIL" class="email input" id="mce-EMAIL" placeholder="Your email" required="">
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px" aria-hidden="true">
-          <input type="text" name="b_fd30364b6577b471373d6076c_4603fe102a" tabindex="-1" value="">
+    <form class="the-form" action="https://creativecommons.us4.list-manage.com/subscribe/post?u=fd30364b6577b471373d6076c&amp;id=4603fe102a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate newsletter" target="_blank" novalidate="">
+        <div class="input-wrap">
+            <input type="email" value="" name="EMAIL" class="email input" id="mce-EMAIL" placeholder="Your email" required="">
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px" aria-hidden="true">
+              <input type="text" name="b_fd30364b6577b471373d6076c_4603fe102a" tabindex="-1" value="">
+            </div>
+            <input type="submit" value="subscribe" id="mc-embedded-subscribe" class="button small">
         </div>
-        <input type="submit" value="subscribe" id="mc-embedded-subscribe" class="button small">
+        <span id="emailFeedback" class="error-message"></span>
       </form>
     </div>
 
@@ -298,7 +301,28 @@
         <a href="#top" class="scroll-to-top icon-attach fa-angle-up" aria-label="Scroll to top"></a>
     </div>
 
-<script src="../../../src/js/vocabulary.js"></script>
+<!--<script src="../../../src/js/vocabulary.js"></script>-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const emailInput = document.getElementById('mce-EMAIL');
+            const feedbackElement = document.getElementById('emailFeedback');
+            emailInput.addEventListener('input', validateEmailInput);
+        
+            function validateEmailInput() {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+                if (emailRegex.test(emailInput.value)) {
+                    feedbackElement.textContent = ""; // 
+                    emailInput.classList.remove('invalid'); // Removes invalid class
+                    emailInput.classList.add('valid'); // Adds valid class
+                } else {
+                    feedbackElement.textContent = "Please provide a valid email"; // Show error message
+                    emailInput.classList.remove('valid'); // Removes valid class
+                    emailInput.classList.add('invalid'); // Adds invalid class
+                }
+            }
+        });
+    </script>
 
 </body>
 </html>
