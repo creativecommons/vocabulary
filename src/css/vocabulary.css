@@ -206,6 +206,12 @@ a.more {
     
 }
 
+/* topic-summary component - singular */
+
+.topic-summary {
+    text-align: center;
+}
+
 /* <main> level context */
 
 main {

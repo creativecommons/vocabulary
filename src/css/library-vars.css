@@ -81,6 +81,44 @@
     --vocabulary-neutral-color-lighter-gray: #F5F5F5;
     --vocabulary-neutral-color-dark-gray: #767676;
 
+
+
+    /* new palette */
+
+    --vocabulary-core-color-seafoam: #2d827a;
+    --vocaulary-core-color-soft-seafoam: #D6EDE7;
+    --vocabulary-core-color-rich-seafoam: #2EC4B6;
+
+    --vocabulary-core-color-desat-seafoam: #3CAEA3;
+   
+
+    --vocabulary-core-color-blue: #324c7f;
+    --vocaulary-core-color-soft-blue: #CBF3F0;
+    --vocabulary-core-colore-rich-blue: #2C5DDC;
+
+    --vocabulary-core-color-purple: #62327F;
+    --vocaulary-core-color-soft-purple: #E4CBF3;
+    --vocabulary-core-color-rich-purple: #7d36b6;
+
+    --vocabulary-core-color-magenta: #bb377e;
+    --vocaulary-core-color-soft-magenta: #fee9f9;
+    --vocabulary-core-colore-rich-magenta: #E52A8F;
+
+    --vocabulary-core-neutral-lighter-gray: #F5F5F5;
+    --vocabulary-core-neutral-dark-gray: #767676;
+    --vocabulary-core-neutral-darker-gray: #414040;
+
+    --vocabulary-attention-color-red:#C1341B;
+    --vocabulary-attention-color-yellow: #EFB22D;
+    --vocabulary-attention-color-peach: #FEDBC2;
+
+    --vocabulary-custom-color-green:#6B8369;
+    --vocabulary-custom-color-soft-green: #9FAB9E;
+    --vocabulary-custom-color-rich-green: #46B33D;
+    
+
+    
+
     /* brand typsetting */
     --vocabulary-brand-typeset-nav-family: "Roboto Condensed";
     --vocabulary-brand-typeset-nav-weight: bold;
