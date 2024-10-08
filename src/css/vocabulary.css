@@ -1323,6 +1323,11 @@ body > footer .footer-menu ul li a {
 
 }
 
+body > footer .footer-menu ul li a:hover {
+    text-decoration: underline;
+    color: var(--vocabulary-brand-color-turquoise);
+}
+
 body > footer .contact {
     grid-area: contact;
 }
