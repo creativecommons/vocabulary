@@ -1812,9 +1812,9 @@ body > footer .license svg {
 .person-page main > header figure img {
 	box-sizing: border-box;
 
-	width: 100%;
-
-	border: 16px solid white;
+    width: 100%;
+    max-height: 21.8rem;
+    border: 16px solid white;
 }
 
 .person-page main > header .bio {
