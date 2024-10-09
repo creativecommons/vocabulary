@@ -1,2 +1,47 @@
 @import '../src/css/vocabulary.css' layer(vocabulary);
 @import '../specimen/tests/grid-test.css' layer(vocabulary);
+
+/* Media query for mobile devices (screens smaller than 768px) */
+@media (max-width: 768px) {
+    main article.posts.related ul {
+        grid-template-columns: 1fr 1fr; 
+        gap: 1em;
+    }
+    main{
+        padding: 0;
+        margin: 0 ;
+    }
+    main > header h1{
+font-size: 2em;
+    }
+    main p{
+        font-size: 1.2em;
+        padding: 0 1em;
+    }
+    main aside{
+        padding: 0;
+    }
+    .title,
+    ul > li,
+    ol > li,
+    span
+    {
+        margin-left: 16px;
+        margin-right: 16px;
+        width: 80%;
+    }
+   
+
+    figure{
+        margin: 0 1em;
+    }
+}
+
+/* Media query for very small screens (screens smaller than 480px) */
+@media (max-width: 480px) {
+    main article.posts.related ul {
+        grid-template-columns: 1fr ; 
+        gap: 1em; 
+    }
+  
+}
