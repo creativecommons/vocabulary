@@ -1821,6 +1821,34 @@ body > footer .license svg {
 
 /* program-page context */
 
+/* scroll to top element */
+
+.scroll-to-top{
+    position: sticky;
+    bottom: 20px;
+    left: 100%;
+    width: 2.5em;
+    height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: calc(100vh + 200px);
+    margin-bottom: 10px;
+
+    background-color: var(--vocabulary-brand-color-dark-tomato);
+    color: var(--vocabulary-brand-color-soft-gold);
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.scroll-to-top:hover {
+    background-color: var(--vocabulary-brand-color-tomato);
+}
+
+.scroll-to-top::before{
+    content:"↑";
+    font-size: 1.2rem;
+}
 
 /* responsive contexts */
 
@@ -1934,6 +1962,9 @@ body > footer .license svg {
         width: 20%;
     }
 
+    .scroll-to-top{
+        display: none;
+    }
 }
 
 @media (max-width: 680px) {
