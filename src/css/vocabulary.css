@@ -1856,6 +1856,10 @@ body > footer .license svg {
         display: flex;
         flex-wrap: wrap;
     }
+
+    main article.posts.related ul {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width: 705px) {
@@ -2022,6 +2026,10 @@ body > footer .license svg {
 
     body > footer .footer-menu ul {
         display: block;
+    }
+
+    main article.posts.related ul {
+        grid-template-columns: 1fr;
     }
 }
 
