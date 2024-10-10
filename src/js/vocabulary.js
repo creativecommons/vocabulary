@@ -30,3 +30,22 @@ if (attributionButton !== null && attributionPanel !== null ) {
     });
 
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const emailInput = document.getElementById('mce-EMAIL');
+    const feedbackElement = document.getElementById('emailFeedback');
+    emailInput.addEventListener('input', validateEmailInput);
+    function validateEmailInput() {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+        if (emailRegex.test(emailInput.value)) {
+            feedbackElement.textContent = ""; // 
+            emailInput.classList.remove('invalid'); // Removes invalid class
+            emailInput.classList.add('valid'); // Adds valid class
+        } else {
+            feedbackElement.textContent = "Please provide a valid email"; // Show error message
+            emailInput.classList.remove('valid'); // Removes valid class
+            emailInput.classList.add('invalid'); // Adds invalid class
+        }
+    }
+  });  
