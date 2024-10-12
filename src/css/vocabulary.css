@@ -1823,6 +1823,16 @@ body > footer .license svg {
     padding:1rem 1rem;
     border-bottom: 1px solid gray;
     cursor: pointer;
+    width: 100%;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.75em;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+
+    
     margin:0;
     }
     .accordion-content{
