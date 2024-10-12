@@ -36,10 +36,11 @@ if (attributionButton !== null && attributionPanel !== null ) {
 const accordionHeader = document.querySelectorAll(".accordion-header")
 
     if(typeof accordionHeader !== null){
-
         accordionHeader.forEach(header=>{
           header.addEventListener("click",(event)=>{
-
+            // updating aria-expanded attr as user clicks on the  accordion
+            const expanded = header.getAttribute('aria-expanded') === "true" || false;
+            header.setAttribute('aria-expanded', !expanded);
              const content = header.nextElementSibling
              const chevron = header.querySelector(".accordion-chevron")
 
