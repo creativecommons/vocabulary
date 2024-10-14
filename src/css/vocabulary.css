@@ -942,7 +942,7 @@ body > header button.expand-menu {
     display: none;
 }
 
-body > header .ancilliary-menu {
+body > header .Ancillary-menu {
     position: absolute;
     top: 0;
     /* right: var(--vocabulary-page-edges-space); */
@@ -955,7 +955,7 @@ body > header .ancilliary-menu {
     /* font-size: 1em; */
 }
 
-body > header .ancilliary-menu ul {
+body > header .Ancillary-menu ul {
     display: flex;
     margin: 0;
     padding: 0;
@@ -963,24 +963,24 @@ body > header .ancilliary-menu ul {
     list-style: none;
 }
 
-body > header .ancilliary-menu ul li {
+body > header .Ancillary-menu ul li {
     margin-left: 10px;
 }
-body > header .ancilliary-menu ul li a {
+body > header .Ancillary-menu ul li a {
     /* generalize this */
     display: inline-block;
 }
 
-body > header .ancilliary-menu ul li a,
-.ancilliary-menu ul li button {
+body > header .Ancillary-menu ul li a,
+.Ancillary-menu ul li button {
     margin-top: 10px;
 }
 
-body > header .ancilliary-menu ul li button:hover {
+body > header .Ancillary-menu ul li button:hover {
     cursor: pointer;
 }
 
-body > header .ancilliary-menu button.locale {
+body > header .Ancillary-menu button.locale {
     display: inline-flex;
     align-items: center;
     padding: 6px 10px;
@@ -991,7 +991,7 @@ body > header .ancilliary-menu button.locale {
     border-radius: 3px;
 }
 
-body > header .ancilliary-menu button.locale.icon-attach:before {
+body > header .Ancillary-menu button.locale.icon-attach:before {
     --icon-sprite: var(--fa-globe);
     --icon-sprite-size: .8em;
 
@@ -1000,7 +1000,7 @@ body > header .ancilliary-menu button.locale.icon-attach:before {
     opacity: .3;
 }
 
-body > header .ancilliary-menu a.donate {
+body > header .Ancillary-menu a.donate {
     display: inline-flex;
     align-items: center;
     padding: 6px 10px;
@@ -1011,7 +1011,7 @@ body > header .ancilliary-menu a.donate {
     border-radius: 3px;
 }
 
-.ancilliary-menu a.donate.icon-attach:before {
+.Ancillary-menu a.donate.icon-attach:before {
     --icon-sprite: var(--fa-heart);
     --icon-sprite-color: var(--vocabulary-brand-color-dark-tomato);
      --icon-sprite-size: .8em;
@@ -1019,7 +1019,7 @@ body > header .ancilliary-menu a.donate {
     margin-right: .8em;
 }
 
-body > header .ancilliary-menu a.search {
+body > header .Ancillary-menu a.search {
     display: inline-flex;
     align-items: center;
     padding: 6px 10px;
@@ -1032,14 +1032,14 @@ body > header .ancilliary-menu a.search {
     border-radius: 3px;
 }
 
-body > header .ancilliary-menu a.search.icon-attach:before {
+body > header .Ancillary-menu a.search.icon-attach:before {
     --icon-sprite: var(--fa-search);
      --icon-sprite-size: .8em;
 
     margin-right: .8em;
 }
 
-body > header .ancilliary-menu button.explore {
+body > header .Ancillary-menu button.explore {
     margin-top: 0;
     padding-top: 16px;
     padding-bottom: 6px;
@@ -2054,7 +2054,7 @@ body > footer .license svg {
 }
 
 @media (max-width:340px) {
-    body > header .ancilliary-menu button:before, body > header .ancilliary-menu a:before {
+    body > header .Ancillary-menu button:before, body > header .Ancillary-menu a:before {
         display: none;
     }
 }
