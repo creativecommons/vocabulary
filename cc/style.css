@@ -8,6 +8,8 @@ body {
     letter-spacing: 0.2px;
     color: #333;
     margin: 0;
+    overflow-x: hidden;
+
 }
 
 h1 {
@@ -89,7 +91,7 @@ a:hover {
 }
 
 .row {
-    max-width: 63rem;
+    max-width: 70rem;
     margin: auto;
     display: block;
 }

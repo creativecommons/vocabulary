@@ -20,6 +20,8 @@
             padding: 10px;
             border-radius: 5px;
             overflow-x: auto;
+            width: 50rem;
+
         }
         code {
             font-family: monospace;
@@ -33,9 +35,9 @@
 
     <div class="navbar clear nav-top">
         <div class="row content">
-            <a href="#"><img class="logo" src="logo.svg"></a>
-            <a class="right" style="text-decoration: underline;" href="#"><i class="fas fa-book"></i>&nbsp; Documentation</a>
-            <a class="right" href="mailto:yourapp@email.com" target="_blank"><i class="fas fa-paper-plane"></i>&nbsp; yourapp@email.com</a>
+            <a href="#"><h2 class="logo">Vocabulary</h2>
+            <!-- <a class="right" style="text-decoration: underline;" href="#"><i class="fas fa-book"></i>&nbsp; Documentation</a>
+            <a class="right" href="mailto:yourapp@email.com" target="_blank"><i class="fas fa-paper-plane"></i>&nbsp; yourapp@email.com</a> -->
         </div>
     </div>
 
@@ -44,17 +46,16 @@
 
             <div class="sidepanel">
 
-                <a class="title" href="#">Introduction</a>
+                <a class="title" href="#intro">Introduction</a>
                 
-                <a class="section" href="#">Structure & Behavior</a>
-                <a class="section" href="#">Upstream/Downstream Change Flow</a>
-                <a class="section" href="#technology">Components</a>
+                <a class="section" href="#struc">Supported Versions:</a>
+                <a class="section" href="#upstream">Upstream/Downstream Change Flow</a>
 
                 <div class="divider left"></div>
 
-                <a class="title" href="#gettingstarted">Installation</a>
+                <a class="title" href="#installation">Installation</a>
 
-                <a class="section" href="#installingapp">01. Get the Vocabulary Files</a>
+                <a class="section" href="#voc">01. Get the Vocabulary Files</a>
                  <a class="section" href="#openingapp">02. CSS Installation</a>
                  <a class="section" href="#openingapp">03. JS Installation</a>
 
@@ -87,18 +88,18 @@
 
             </div>
 
-            <div class="right-col">
+            <div class=" right-col">
             
 
 
-                <h1 >Introduction</h1>
+                <h1 id="intro">Introduction</h1>
                 
                 <p>Vocabulary is a refactor and reimplementation of the original, now archived, <a href="https://github.com/cc-archive/vocabulary-legacy">Vocabulary Legacy</a> project.</p>
 
                 <p>Both projects are informed by the  <a href="https://creativecommons.org/wp-content/uploads/2019/10/Creative-Commons-Style-Guide-2019.pdf">CC Style Guide (2019)</a>, and incorporate or adapt its guidance into a digital context.</p>
 
             
-                <h2>Supported Versions:</h2>
+                <h2 id="struc">Supported Versions:</h2>
              
                 <p>Vocabulary is raw material design system with inherent rules and generalized implementable documentation.</p>
 
@@ -134,7 +135,7 @@
 
 
 
-                    <h3>Upstream/Downstream Change Flow</h3>
+                    <h3 id="upstream">Upstream/Downstream Change Flow</h3>
 
                     This enables two modes of build work. 
 
@@ -157,7 +158,7 @@
 
                     <p>Either route is valid, and has its reasons for being the more viable route. But it is generally preferred that route A be the default consideration wherever possible. </p>
 
-                <h2>Installation</h2>
+                <h2 id="installation">Installation</h2>
                 
                 <h3>01. Get the Vocabulary Files</h3>
 
@@ -515,13 +516,13 @@
 <code class="lang-html">
 
     &lt;article class=&quot;person&quot;&gt;
-    &lt;h3&gt;&lt;a href=&quot;#&quot;&gt;Name Here&lt;/a&gt;&lt;/h3&gt;
-    &lt;span class=&quot;title&quot;&gt;Position/Title here&lt;/span&gt;
-    &lt;figure&gt;
-        &lt;img src=&quot;PATH/TO/profile.jpg&quot; /&gt;
-    &lt;/figure&gt;
-    &lt;p&gt;Truncated bio here&hellip;&lt;/p&gt;
-&lt;/article&gt
+        &lt;h3&gt;&lt;a href=&quot;#&quot;&gt;Name Here&lt;/a&gt;&lt;/h3&gt;
+        &lt;span class=&quot;title&quot;&gt;Position/Title here&lt;/span&gt;
+        &lt;figure&gt;
+            &lt;img src=&quot;PATH/TO/profile.jpg&quot; /&gt;
+        &lt;/figure&gt;
+        &lt;p&gt;Truncated bio here&hellip;&lt;/p&gt;
+    &lt;/article&gt
 
 </code>
 </pre>
@@ -566,19 +567,19 @@
 <code class="lang-html">
 
     &lt;article class=&quot;post&quot;&gt;
-    &lt;header&gt;
-        &lt;h2&gt;&lt;a href=&quot;#&quot;&gt;Title Here&lt;/a&gt;&lt;/h2&gt;
+        &lt;header&gt;
+            &lt;h2&gt;&lt;a href=&quot;#&quot;&gt;Title Here&lt;/a&gt;&lt;/h2&gt;
 
-        &lt;span class=&quot;byline&quot;&gt;by &lt;a href=&quot;#&quot;&gt;Author Name&lt;/a&gt;, &lt;a href=&quot;#&quot;&gt;Author Name&lt;/a&gt;&lt;/span&gt;
-        &lt;span class=&quot;categories&quot;&gt;&lt;a href=&quot;#&quot;&gt;Open Culture&lt;/a&gt;&lt;/span&gt;
+            &lt;span class=&quot;byline&quot;&gt;by &lt;a href=&quot;#&quot;&gt;Author Name&lt;/a&gt;, &lt;a href=&quot;#&quot;&gt;Author Name&lt;/a&gt;&lt;/span&gt;
+            &lt;span class=&quot;categories&quot;&gt;&lt;a href=&quot;#&quot;&gt;Open Culture&lt;/a&gt;&lt;/span&gt;
 
-    &lt;/header&gt;
-    &lt;figure&gt;
-        &lt;img src=&quot;PATH/TO/image.jpg&quot; /&gt;
-        &lt;span class=&quot;attribution&quot;&gt;attribution here&lt;/span&gt;
-    &lt;/figure&gt;
-    &lt;p&gt;truncated teaser excerpt &lt;/p&gt;
-&lt;/article&gt;
+        &lt;/header&gt;
+        &lt;figure&gt;
+            &lt;img src=&quot;PATH/TO/image.jpg&quot; /&gt;
+            &lt;span class=&quot;attribution&quot;&gt;attribution here&lt;/span&gt;
+        &lt;/figure&gt;
+        &lt;p&gt;truncated teaser excerpt &lt;/p&gt;
+    &lt;/article&gt;
 
 
 </code>
@@ -607,30 +608,30 @@
 
     &lt;h2&gt;Title Here&lt;/h2&gt;
     
-      &lt;article class=&quot;story&quot;&gt;
-        &lt;header&gt;
-        &lt;h3&gt;&lt;a href=&quot;#&quot;&gt;Title Here&lt;/a&gt;&lt;/h3&gt;
+        &lt;article class=&quot;story&quot;&gt;
+            &lt;header&gt;
+            &lt;h3&gt;&lt;a href=&quot;#&quot;&gt;Title Here&lt;/a&gt;&lt;/h3&gt;
+    
+            &lt;span class=&quot;byline&quot;&gt;by &lt;a href=&quot;#&quot;&gt;Author Name&lt;/a&gt;, &lt;a href=&quot;#&quot;&gt;Author Name&lt;/a&gt;&lt;/span&gt;
+            &lt;span class=&quot;categories&quot;&gt;&lt;a href=&quot;#&quot;&gt;Open Culture&lt;/a&gt;&lt;/span&gt;
+    
+            &lt;/header&gt;
+            &lt;figure&gt;
+            &lt;img src=&quot;PATH/TO/image.jpg&quot; /&gt;
+            &lt;span class=&quot;attribution&quot;&gt;attribution here&lt;/span&gt;
+            &lt;/figure&gt;
+            &lt;p&gt;truncated teaser excerpt &lt;/p&gt;
+        &lt;/article&gt;
+    
+        &lt;footer&gt; &lt;!-- optional footer --&gt;
+            &lt;a class=&quot;more&quot; href=&quot;#&quot;&gt;more posts&lt;/a&gt;
+    
+            &lt;article class=&quot;attribution-list&quot;&gt;
+            ...
+            &lt;/article&gt;
+        &lt;/footer&gt;
   
-        &lt;span class=&quot;byline&quot;&gt;by &lt;a href=&quot;#&quot;&gt;Author Name&lt;/a&gt;, &lt;a href=&quot;#&quot;&gt;Author Name&lt;/a&gt;&lt;/span&gt;
-        &lt;span class=&quot;categories&quot;&gt;&lt;a href=&quot;#&quot;&gt;Open Culture&lt;/a&gt;&lt;/span&gt;
-  
-        &lt;/header&gt;
-        &lt;figure&gt;
-          &lt;img src=&quot;PATH/TO/image.jpg&quot; /&gt;
-          &lt;span class=&quot;attribution&quot;&gt;attribution here&lt;/span&gt;
-        &lt;/figure&gt;
-        &lt;p&gt;truncated teaser excerpt &lt;/p&gt;
-       &lt;/article&gt;
-  
-       &lt;footer&gt; &lt;!-- optional footer --&gt;
-         &lt;a class=&quot;more&quot; href=&quot;#&quot;&gt;more posts&lt;/a&gt;
-  
-         &lt;article class=&quot;attribution-list&quot;&gt;
-           ...
-         &lt;/article&gt;
-       &lt;/footer&gt;
-  
-     &lt;/article&gt;
+    &lt;/article&gt;
 
 
 </code>
@@ -651,19 +652,19 @@
 <code class="lang-html">
 
     &lt;nav class=&quot;pagination&quot;&gt;
-    &lt;ol&gt;
-        &lt;li class=&quot;current&quot;&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&amp;hellip;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;527&lt;/a&gt;&lt;/li&gt;
+        &lt;ol&gt;
+            &lt;li class=&quot;current&quot;&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&amp;hellip;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;527&lt;/a&gt;&lt;/li&gt;
 
-        &lt;!-- &lt;li&gt;&lt;a href=&quot;&lt;&quot;&gt;&lt;&lt;/a&gt;&lt;/li&gt; --&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;/ol&gt;
-&lt;/nav&gt;
+            &lt;!-- &lt;li&gt;&lt;a href=&quot;&lt;&quot;&gt;&lt;&lt;/a&gt;&lt;/li&gt; --&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/nav&gt;
 
 
 </code>
@@ -683,8 +684,8 @@
 <code class="lang-html">
 
     &lt;aside class=&quot;opening&quot;&gt;
-    &lt;p&gt;content here&lt;/p&gt;
-&lt;/aside&gt;
+        &lt;p&gt;content here&lt;/p&gt;
+    &lt;/aside&gt;
 
 </code>
 </pre>
@@ -703,8 +704,8 @@
 <code class="lang-html">
 
     &lt;aside class=&quot;closing&quot;&gt;
-    &lt;p&gt;content here&lt;/p&gt;
-&lt;/aside&gt;
+        &lt;p&gt;content here&lt;/p&gt;
+    &lt;/aside&gt;
 
 </code>
 </pre>
@@ -723,12 +724,12 @@
 <code class="lang-html">
 
     &lt;article class=&quot;tags&quot;&gt;
-    &lt;h2&gt;Tags&lt;/h2&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;open culture&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;...&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/article&gt;
+        &lt;h2&gt;Tags&lt;/h2&gt;
+        &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;open culture&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;...&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/article&gt;
 
 </code>
 </pre>
@@ -749,8 +750,8 @@
 <code class="lang-html">
 
     &lt;aside&gt;
-    contents here
-&lt;/aside&gt;
+        contents here
+    &lt;/aside&gt;
 
 </code>
 </pre>
@@ -767,13 +768,13 @@
 <code class="lang-html">
 
     &lt;nav class="filter-menu"&gt;
-    &lt;h2&gt;Categories&lt;/h2&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a href="#"&gt;All posts&lt;/a&gt;&lt;/li&gt;
-        &lt;li class="current"&gt;&lt;a href="#"&gt;Open Culture&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Open Knowledge&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/nav&gt;
+        &lt;h2&gt;Categories&lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;All posts&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="current"&gt;&lt;a href="#"&gt;Open Culture&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Open Knowledge&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
 
 
 </code>
@@ -792,13 +793,13 @@
 <code class="lang-html">
 
     &lt;nav&gt;
-    &lt;h2&gt;Related Links&lt;/h2&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a href="#"&gt;All posts&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Open Culture&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Open Knowledge&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/nav&gt;
+        &lt;h2&gt;Related Links&lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;All posts&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Open Culture&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Open Knowledge&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
 
 
 </code>
@@ -819,10 +820,10 @@
 
 
     &lt;article class="data-point"&gt;
-    &lt;h2&gt;Title&lt;/h2&gt;
-    &lt;h3 class="stat"&gt;55+ million articles&lt;/h3&gt;
-    &lt;p&gt;Descriptive text here&lt;/p&gt;
-&lt;/article&gt;
+        &lt;h2&gt;Title&lt;/h2&gt;
+        &lt;h3 class="stat"&gt;55+ million articles&lt;/h3&gt;
+        &lt;p&gt;Descriptive text here&lt;/p&gt;
+    &lt;/article&gt;
  
 
 </code>
@@ -844,19 +845,19 @@
 
 
     &lt;article class="data-points supporting"&gt;
-    &lt;ul&gt;
-        &lt;li&gt;
-            &lt;article class="data-point"&gt;
-                &lt;h2&gt;Title&lt;/h2&gt;
-                &lt;h3 class="stat"&gt;55+ million articles&lt;/h3&gt;
-                &lt;p&gt;Descriptive text here&lt;/p&gt;
-            &lt;/article&gt;
-        &lt;/li&gt;
+        &lt;ul&gt;
+            &lt;li&gt;
+                &lt;article class="data-point"&gt;
+                    &lt;h2&gt;Title&lt;/h2&gt;
+                    &lt;h3 class="stat"&gt;55+ million articles&lt;/h3&gt;
+                    &lt;p&gt;Descriptive text here&lt;/p&gt;
+                &lt;/article&gt;
+            &lt;/li&gt;
 
-        &lt;!-- ... --&gt;
+            &lt;!-- ... --&gt;
 
-    &lt;/ul&gt;
-&lt;/article&gt;
+        &lt;/ul&gt;
+    &lt;/article&gt;
 
 </code>
 </pre>
@@ -875,37 +876,37 @@
 <code class="lang-html">
 
     &lt;article class="case-studies"&gt;
-    &lt;h2&gt;Title here&lt;/h2&gt;
-    &lt;p&gt;Descriptive text&lt;/p&gt;
-    &lt;ul&gt;
-        &lt;li&gt;
-            &lt;figure&gt;
-                &lt;img src="PATH/TO/home.jpg" /&gt;
-                &lt;span class="attribution"&gt;attribution here&lt;/span&gt;
-            &lt;/figure&gt;
-        &lt;/li&gt;
+        &lt;h2&gt;Title here&lt;/h2&gt;
+        &lt;p&gt;Descriptive text&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;
+                &lt;figure&gt;
+                    &lt;img src="PATH/TO/home.jpg" /&gt;
+                    &lt;span class="attribution"&gt;attribution here&lt;/span&gt;
+                &lt;/figure&gt;
+            &lt;/li&gt;
 
-        &lt;!-- ... --&gt;
+            &lt;!-- ... --&gt;
 
-    &lt;/ul&gt;
+        &lt;/ul&gt;
 
-    &lt;footer&gt;
-        &lt;article class="data-points supporting"&gt;
-            &lt;ul&gt;
-                &lt;li&gt;
-                    &lt;article class="data-point"&gt;
-                        &lt;h2&gt;Title&lt;/h2&gt;
-                        &lt;h3 class="stat"&gt;55+ million articles&lt;/h3&gt;
-                        &lt;p&gt;Descriptive text here&lt;/p&gt;
-                    &lt;/article&gt;
-                &lt;/li&gt;
+        &lt;footer&gt;
+            &lt;article class="data-points supporting"&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;
+                        &lt;article class="data-point"&gt;
+                            &lt;h2&gt;Title&lt;/h2&gt;
+                            &lt;h3 class="stat"&gt;55+ million articles&lt;/h3&gt;
+                            &lt;p&gt;Descriptive text here&lt;/p&gt;
+                        &lt;/article&gt;
+                    &lt;/li&gt;
 
-                &lt;!-- ... --&gt;
+                    &lt;!-- ... --&gt;
 
-            &lt;/ul&gt;
-        &lt;/article&gt;
-    &lt;/footer&gt;
-&lt;/article&gt;
+                &lt;/ul&gt;
+            &lt;/article&gt;
+        &lt;/footer&gt;
+    &lt;/article&gt;
 
 
 </code>
@@ -924,13 +925,13 @@
 <code class="lang-html">
 
     &lt;article class="search-form"&gt;
-    &lt;form role="search" method="get" class="search-form" action="https://creativecommons.org/"&gt;
+        &lt;form role="search" method="get" class="search-form" action="https://creativecommons.org/"&gt;
 
-        &lt;input type="search" class="search-field" placeholder="Search for..." value="" name="s" title="Search"&gt;
+            &lt;input type="search" class="search-field" placeholder="Search for..." value="" name="s" title="Search"&gt;
 
-        &lt;button type="submit" value="Search"&gt;Search&lt;/button&gt;
-    &lt;/form&gt;
-&lt;/article&gt;
+            &lt;button type="submit" value="Search"&gt;Search&lt;/button&gt;
+        &lt;/form&gt;
+    &lt;/article&gt;
 
 </code>
 </pre>
@@ -947,17 +948,17 @@
 <pre>
 <code class="lang-html">
 
-  <article class="topic-summary">
-    <h2>Title</h2>
-    <figure>
-      iframe or img here
-      <span class="attribution">attribution here.</span>
-    </figure>
-    <div class="description">
-        <p>Descriptive text here</p>
-        <a href="#">Learn more</a>
-    </div>
-  </article>
+    &lt;article class="topic-summary"&gt;
+        &lt;h2&gt;Title&lt;/h2&gt;
+        &lt;figure&gt;
+            iframe or img here
+            &lt;span class="attribution"&gt;attribution here.&lt;/span&gt;
+        &lt;/figure&gt;
+        &lt;div class="description"&gt;
+            &lt;p&gt;Descriptive text here&lt;/p&gt;
+            &lt;a href="#"&gt;Learn more&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/article&gt;
 
 </code>
 </pre>
@@ -978,17 +979,17 @@
 <pre>
 <code class="lang-html">
 
-  <header>
-    <h1>Title Here</h1>
-    <span class="byline">by <a href="#">Name Here</a>, <a href="#">Name Here</a></span>
+    &lt;header&gt;
+        &lt;h1&gt;Title Here&lt;/h1&gt;
+        &lt;span class="byline"&gt;by &lt;a href="#"&gt;Name Here&lt;/a&gt;, &lt;a href="#"&gt;Name Here&lt;/a&gt;&lt;/span&gt;
 
-    <p>lead in paragraph</p> <!-- optional -->
+        &lt;p&gt;lead in paragraph&lt;/p&gt; &lt;!-- optional --&gt;
 
-    <span class="categories">  <!-- optional -->
-      <a href="#">Open Culture</a>
-    </span>
-  
-  </header>
+        &lt;span class="categories"&gt;  &lt;!-- optional --&gt;
+        &lt;a href="#"&gt;Open Culture&lt;/a&gt;
+        &lt;/span&gt;
+    
+    &lt;/header&gt;
 
 </code>
 </pre>
@@ -1004,21 +1005,21 @@
 <pre>
 <code class="lang-html">
 
-  <header>
+    &lt;header&gt;
 
-    <h1>Name</h1>
-    <span class="title">position/title here</span>
-    <span class="pronouns">pronouns optionally here</span>
+        &lt;h1&gt;Name&lt;/h1&gt;
+        &lt;span class="title"&gt;position/title here&lt;/span&gt;
+        &lt;span class="pronouns"&gt;pronouns optionally here&lt;/span&gt;
 
-    <figure>
-      <img src="PATH/TO/profile.jpg" />
-      <span class="attribution">attribution here</span>
-     </figure>
-     <div class="bio">
-       <p>Bio here</p>
-     </div>
-  
-  </header>
+        &lt;figure&gt;
+        &lt;img src="PATH/TO/profile.jpg" /&gt;
+        &lt;span class="attribution"&gt;attribution here&lt;/span&gt;
+        &lt;/figure&gt;
+        &lt;div class="bio"&gt;
+        &lt;p&gt;Bio here&lt;/p&gt;
+        &lt;/div&gt;
+    
+    &lt;/header&gt;
 
 </code>
 </pre>
