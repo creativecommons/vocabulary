@@ -2,14 +2,12 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.2px;
     color: #333;
     margin: 0;
     overflow-x: hidden;
-
 }
 
 h1 {
@@ -17,7 +15,6 @@ h1 {
     font-size: 39px;
     line-height: 42px;
     margin-bottom: 50px;
-
 }
 
 h2 {
@@ -26,10 +23,7 @@ h2 {
     line-height: 30px;
     text-align: center;
     color: #333;
-    margin-block-start: 40px;
-    margin-block-end: 30px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin: 40px 0 30px 0;
 }
 
 p {
@@ -112,7 +106,13 @@ a:hover {
     overflow-x: hidden;
     position: fixed;
     height: 80%;
+}
 
+/* Hide sidepanel on mobile and medium screens */
+@media (max-width: 768px) {
+    .sidepanel {
+        display: none;
+    }
 }
 
 .sidepanel a.title {
@@ -145,7 +145,6 @@ a:hover {
     text-decoration: none;
     color: #333;
     padding-left: 20px;
-
 }
 
 .sidepanel a.title:hover,
@@ -184,8 +183,7 @@ a:hover {
     line-height: 24px;
     margin-bottom: 30px;
     text-align: left;
-    margin-block-start: 20px;
-    margin-block-end: 10px;
+    margin: 20px 0 10px 0;
 }
 
 .right-col p {
@@ -218,7 +216,6 @@ a:hover {
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     text-align: center;
-
 }
 
 .divider {
@@ -226,15 +223,12 @@ a:hover {
     height: 4px;
     background: #0098f1;
     border-radius: 30px;
-    margin: auto;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin: 8px auto;
 }
 
 .left {
     margin: 20px 0;
 }
-
 
 .footer {
     float: left;
@@ -272,14 +266,10 @@ a:hover {
     padding-bottom: 8px;
 }
 
-
-
 /* Break Points */
-
 
 /* Extra small-small devices (phones, 420px and down) */
 @media only screen and (max-width: 420px) {
-
     .logo {
         width: 100px;
     }
@@ -295,14 +285,10 @@ a:hover {
     .links {
         float: none;
     }
-
 }
-
-
 
 /* Extra small devices (phones, 650px and down) */
 @media only screen and (max-width: 650px) {
-
     .logo {
         width: 115px;
         margin: -10px 0px;
@@ -310,8 +296,7 @@ a:hover {
 
     .navbar a {
         padding-bottom: 5px;
-        margin-left: 40px;
-        margin-right: 0;
+        margin: 0 40px 0 0;
     }
 
     .resp-break {
@@ -322,7 +307,6 @@ a:hover {
     .main-col {
         width: 100%;
     }
-
 
     .wrapper {
         display: block;
@@ -349,13 +333,11 @@ a:hover {
         position: relative;
         margin-top: 20px;
         margin-left: 0px;
-
     }
 }
 
 /* Small devices (portrait tablets and large phones, 650px and up) */
 @media only screen and (min-width: 650px) {
-
     .logo {
         margin: -10px 0px;
     }
@@ -364,19 +346,28 @@ a:hover {
         float: right;
         padding-bottom: 5px;
     }
-
-
-
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) .logo {
-    margin: -10px 0px;
-}
+@media only screen and (min-width: 768px) {
+    .logo {
+        margin: -10px 0px;
+    }
+
+    .navbar {
+        height: 70px; /* Restore the height for larger screens */
+    }
+
+    .sidepanel {
+        display: block; /* Show sidepanel again on larger screens */
+        height: 80%;
+    }
+
+    .right-col {
+        margin-left: 220px; /* Restore margin for larger screens */
+    }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
+/* Large devices (laptops/desktops, 992px and up) {}
 
 /* End Break Points */
