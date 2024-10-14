@@ -33,4 +33,7 @@ Maintain the same indentation level for nested structures, avoid the use of tabs
 ### **b. Line Spacing**
 
 Maintain consistent line spacing in CSS and HTML.
-Use one blank line between different rule sets or major sections to improve clarity.
+
+### **c. Whitespace**
+
+

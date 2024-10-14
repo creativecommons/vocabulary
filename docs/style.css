@@ -1,29 +1,28 @@
 /* @import '../src/css/vocabulary.css' layer(vocabulary); */
 
 body {
-    width: 65%;
-    font-size: 1.2em;
+  width: 65%;
+  font-size: 1.2em;
 
-    padding: 1em;
+  padding: 1em;
 }
 
 pre > code {
-    display: block;
-    padding: 2em;
-    overflow-x: scroll;
+  display: block;
+  padding: 2em;
+  overflow-x: scroll;
 
-    /* white-space: pre-wrap; */
-    background: #ededed;
-    
+  /* white-space: pre-wrap; */
+  background: #ededed;
 }
 
 span.distinct {
-    padding: .1em .2em;
+  padding: 0.1em 0.2em;
 
-    background: #ededed;
-    border-radius: 3px;
+  background: #ededed;
+  border-radius: 3px;
 }
 
 main ul li {
-    margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
