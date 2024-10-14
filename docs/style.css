@@ -108,7 +108,6 @@ a:hover {
     height: 80%;
 }
 
-/* Hide sidepanel on mobile and medium screens */
 @media (max-width: 768px) {
     .sidepanel {
         display: none;
@@ -266,9 +265,7 @@ a:hover {
     padding-bottom: 8px;
 }
 
-/* Break Points */
 
-/* Extra small-small devices (phones, 420px and down) */
 @media only screen and (max-width: 420px) {
     .logo {
         width: 100px;
@@ -287,7 +284,6 @@ a:hover {
     }
 }
 
-/* Extra small devices (phones, 650px and down) */
 @media only screen and (max-width: 650px) {
     .logo {
         width: 115px;
@@ -336,7 +332,7 @@ a:hover {
     }
 }
 
-/* Small devices (portrait tablets and large phones, 650px and up) */
+
 @media only screen and (min-width: 650px) {
     .logo {
         margin: -10px 0px;
@@ -348,26 +344,23 @@ a:hover {
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+
 @media only screen and (min-width: 768px) {
     .logo {
         margin: -10px 0px;
     }
 
     .navbar {
-        height: 70px; /* Restore the height for larger screens */
+        height: 70px; 
     }
 
     .sidepanel {
-        display: block; /* Show sidepanel again on larger screens */
+        display: block;
         height: 80%;
     }
 
     .right-col {
-        margin-left: 220px; /* Restore margin for larger screens */
+        margin-left: 220px; 
     }
 }
 
-/* Large devices (laptops/desktops, 992px and up) {}
-
-/* End Break Points */
