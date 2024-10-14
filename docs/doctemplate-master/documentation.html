@@ -1,0 +1,1039 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vocabulary - Docs</title>
+    <meta name="description" content="A simple HTML/CSS DocumentationTemplate">
+    <meta name="author" content="Carlos Yllobre">
+
+    <link rel="stylesheet" href="style.css?">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <style>
+        pre {
+            background-color: #080808;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: monospace;
+            color: #c7254e;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navbar clear nav-top">
+        <div class="row content">
+            <a href="#"><img class="logo" src="logo.svg"></a>
+            <a class="right" style="text-decoration: underline;" href="#"><i class="fas fa-book"></i>&nbsp; Documentation</a>
+            <a class="right" href="mailto:yourapp@email.com" target="_blank"><i class="fas fa-paper-plane"></i>&nbsp; yourapp@email.com</a>
+        </div>
+    </div>
+
+    <div class="container clear">
+        <div class="row wrapper">
+
+            <div class="sidepanel">
+
+                <a class="title" href="#">Introduction</a>
+                
+                <a class="section" href="#">Structure & Behavior</a>
+                <a class="section" href="#">Upstream/Downstream Change Flow</a>
+                <a class="section" href="#technology">Components</a>
+
+                <div class="divider left"></div>
+
+                <a class="title" href="#gettingstarted">Installation</a>
+
+                <a class="section" href="#installingapp">01. Get the Vocabulary Files</a>
+                 <a class="section" href="#openingapp">02. CSS Installation</a>
+                 <a class="section" href="#openingapp">03. JS Installation</a>
+
+                <div class="divider left"></div>
+
+                <a class="title" href="#basicfeatures">Components</a>
+
+                <a class="section" href="#basicfeatures">Header - Global Area</a>
+                <a class="section" href="#basicfeatures">Expected Contexts</a>
+                <a class="section" href="#feature3">Footer - Global Area</a>
+                <a class="section" href="#feature3">Attribution List - Block</a>
+                <a class="section" href="#feature3">Person Snippet - Singular - Block</a>
+                <a class="section" href="#feature3">Persons Snippets - Plural - Block</a>
+                <a class="section" href="#feature3">Post - Singular - Block</a>
+                <a class="section" href="#feature3">Posts - Plural - Block</a>
+                <a class="section" href="#feature3">Pagination - Nav</a>
+                <a class="section" href="#feature3">Opening Summary - Block</a>
+                <a class="section" href="#feature3">Closing Summary - Block</a>
+                <a class="section" href="#feature3">Tags listing - Block</a>
+                <a class="section" href="#feature3">Sidebar - Region</a>
+                <a class="section" href="#feature3">Filter Menu - Nav</a>
+                <a class="section" href="#feature3">General Menu - Nav</a>
+                <a class="section" href="#feature3">Data Points - Singular - Block</a>
+                <a class="section" href="#feature3">Data Points - Plural - Supporting Block</a>
+                <a class="section" href="#feature3">Case Studies - Block</a>
+                <a class="section" href="#feature3">Search Form - Block</a>
+                <a class="section" href="#feature3">Topic Summary - Block</a>
+                <a class="section" href="#feature3">Page Header - Region</a>
+                <a class="section" href="#feature3">Person Header - Region</a>
+
+            </div>
+
+            <div class="right-col">
+            
+
+
+                <h1 >Introduction</h1>
+                
+                <p>Vocabulary is a refactor and reimplementation of the original, now archived, <a href="https://github.com/cc-archive/vocabulary-legacy">Vocabulary Legacy</a> project.</p>
+
+                <p>Both projects are informed by the  <a href="https://creativecommons.org/wp-content/uploads/2019/10/Creative-Commons-Style-Guide-2019.pdf">CC Style Guide (2019)</a>, and incorporate or adapt its guidance into a digital context.</p>
+
+            
+                <h2>Supported Versions:</h2>
+             
+                <p>Vocabulary is raw material design system with inherent rules and generalized implementable documentation.</p>
+
+                <p>Vocabulary is then implemented within a project via an upstream/downstream relationship as follow:</p>
+
+                <pre>
+                    <code>
+                      Design System → Static Implementation → Dynamic Implementation
+                      vocabulary → prototype → final
+                      vocabulary → [project]-prototype → [project]-[implementation(s)] (*-dev-env *-theme, etc.)
+                    </code>
+                </pre>
+
+                <p>In the case of the <a href="https://creativecommons.org">Index Project (CreativeCommons.org)</a> it looks like this:</a> </p>
+
+                <pre>
+                    <a href="https://github.com/creativecommons/vocabulary">vocabulary</a> → <a href="https://github.com/creativecommons/index-prototype">index-prototype</a> → <a href="https://github.com/creativecommons/vocabulary-theme">vocabulary-theme</a>
+                </pre>
+                <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+                <h4>A prototype contains:</h4>
+                    <ul>
+                        <li>[vocabulary]</li>
+                        <li>project source of truth implementations (contexts mostly)</li>
+                        <li>localized functionality (new contexts, etc., until moved into vocabulary) (functionality)</li>
+                        <li>patches (temp overrides, until moved into vocabulary) (fixes)</li>
+                    </ul>
+
+                    <p>We need to maintain a way to test F/E UX absent a CMS layer. That way the static layer prototype describes the intended output the CMS would create. It becomes a form of documentation and testing. It's an expectation spec.</p>
+
+                    <p>It's one additional layer of downstream changes, but it provides a clear and distinct documentation for how and where things are localized when vocabulary is implemented, and can offer good examples for where we can pull varied localized implementations upstream into vocabulary generally, so the localizations can then be removed.
+                    </p>
+
+
+
+                    <h3>Upstream/Downstream Change Flow</h3>
+
+                    This enables two modes of build work. 
+
+                    <h4>A: upstream → downstream</h4>
+                    <ol>
+                        <li>new functionality introduced into Vocabulary</li>
+                        <li>documented and generalized</li>
+                        <li>available to prototypes and implementations</li>
+                    </ol>
+
+                    <h4>B: downstream → upstream → downstream</h4>
+                    <ol>
+                        <li>new functionality introduced local to project prototype</li>
+                        <li>documented and implemented here locally</li>
+                        <li>migrated to vocabulary</li>
+                        <li>documented and generalized</li>
+                        <li>removed in downstream project's prototype localization</li>
+                        <li>available to prototypes and implementations</li>
+                    </ol>
+
+                    <p>Either route is valid, and has its reasons for being the more viable route. But it is generally preferred that route A be the default consideration wherever possible. </p>
+
+                <h2>Installation</h2>
+                
+                <h3>01. Get the Vocabulary Files</h3>
+
+                <p>Download the <a href="https://github.com/creativecommons/vocabulary">creativecommons/vocabulary</a> repository, rename the <span class="distinct">/src</span> directory to <span class="distinct">/vocabulary</span>, and move it into desired location.</p>
+
+                <p>Vocabulary needs to be included via CSS <strong>and</strong> JavaScript routes. Both are generally required, and recommended.</p>
+
+                <h3>02. CSS Installation</h3>
+
+                <p>Your project should include a “main/root” css styles file, which is included within the <span class="distinct">head</span> element of your HTML.</p>
+
+                <aside>
+                    <p>It is recommended you call this file style.css; depending on the requirements of the system you could also call this file main.css, root.css, or manifest.css. WordPress Theme's, for example, require 'style.css'.</p>
+                </aside>
+                
+                <pre>
+                    <code class="lang-html">
+                        
+                        &lt;link rel="stylesheet" media="all" href="PATH/TO/style.css" /&gt;
+                        
+                    </code>
+                </pre>
+
+                <p>Include <span class="distinct">vocabulary.css</span> from within <span class="distinct">style.css</span> via a <a href="#">CSS @layer import</a> at the top of the file.</p>
+
+                <aside> 
+                    <p>CSS Layers provide a reliable, and safely overridable cascade of rulesets.</p>
+                </aside>
+
+                <pre>
+                <code class="lang-css">
+                    
+                @import 'PATH/TO/vocabulary/css/vocabulary.css' layer(vocabulary);
+                    
+                </code>
+                </pre>
+
+
+
+                <p><strong>Note:</strong> (for in-dev implementations) You can also include the <span class="distinct">vocabulary-tests.css</span> file to perform basic tests against recommended and required approaches within the HTML markup.</p>
+
+                <pre>
+                <code class="lang-css">
+                    
+                @import 'PATH/TO/vocabulary/css/vocabulary.css' layer(vocabulary);
+                @import 'PATH/TO/vocabulary/css/vocabulary-tests.css' layer(vocabulary-tests);
+                    
+                    
+                </code>
+                </pre>
+
+                    
+            <div class="divider" style="width:24%; margin:30px 0;"></div>
+                <h3>03. JS Installation</h3>
+
+                <p>Vocabulary has a minimal JavaScript footprint, but does have some required behaviors that rely on JS.</p>
+
+                <p>Include the <span class="distinct">vocabulary.js</span> file at the bottom of your HTML markup, prior to the closing <span class="distinct">body</span> tag.</p>
+
+                <pre>
+                <code class="lang-html">
+
+                    &lt;script src="PATH/TO/vocabulary/js/vocabulary.js"&gt;&lt;/script&gt;
+                </code>
+                </pre>
+                <h2 id="components">Components</h2>
+
+<p><span class="distinct">Components</span> are discrete collected elements in a semantic order that provide a coherent meaning, and can be placed in various contexts which expect them. Various presentations and/or behaviors can then be applied to them depending on the needs, rules, and use cases of various contexts.</p>
+
+<aside>
+<p>There are perhaps better naming conventions than "components", but when used here it doesn't mean JS Components generally, Web Components, or React Components; it's just the term as general as possible.</p>
+</aside>
+
+
+
+
+
+<h3 id="global-header">Header - Global Area</h3><a class="permalink" href="#global-header">permalink</a>
+
+<p>Each CC site utilizing Vocabulary should include the global <span class="distinct">Header</span> & <span class="distinct">Footer</span> areas at the top and bottom of the site respectively.</p>
+
+<p>The Global Header component contains several sub-elements.</p>
+<ul>
+  
+  <li>
+    Masthead
+    <ul>
+      <li>Entity Logo</li>
+      <li>Primary Nav Menu</li>
+      <li>Ancilliary Nav Menu</li>
+    </ul>
+  </li> 
+  <li>
+    Explore Panel (Explore CC)
+    <ul>
+      <li>Optional main Index Site identity/link / blurb (used for non Index Project sites)</li>
+      <li>Explore Nav Menu</li>
+    </ul>
+  </li>
+</ul>
+
+<p>These sub-elements are not independent and are not meant to be used outside of the Global Header component.</p>
+
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li>The <span class="distinct">Header</span> begins directly after the opening <span class="distinct">body</span> tag, and appears only once per page, on all page levels</li>
+</ul>
+
+
+<pre>
+<code>
+&lt;a class=&quot;skip-to-content&quot; href=&quot;#main-content-marker&quot;&gt;Skip to content&lt;/a&gt;
+
+        &lt;header&gt;
+            &lt;div class=&quot;masthead&quot;&gt;
+              &lt;h1&gt;&lt;a class=&quot;identity-logo product&quot; href=&quot;#&quot;&gt;Vocabulary&lt;/a&gt;&lt;/h1&gt;
+                &lt;button class=&quot;expand-menu&quot;&gt;Menu&lt;/button&gt;
+                &lt;nav class=&quot;primary-menu&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Who We Are&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;What We Do&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Licenses and Tools&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Support Us&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class=&quot;attention&quot; href=&quot;https://summit.creativecommons.org/&quot;&gt;Global Summit 2023&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+        
+                &lt;nav class=&quot;ancilliary-menu&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;!-- uncomment below line, if translation functionality is present on site --&gt;
+                        &lt;!-- &lt;li&gt;&lt;button class=&quot;locale icon-attach fa-globe&quot;&gt;English&lt;/button&gt;&lt;/li&gt; --&gt;
+                        &lt;!-- uncomment below line, if search functionality is present on site --&gt;
+                        &lt;li&gt;&lt;a class=&quot;search icon-attach fa-search&quot; href=&quot;#&quot;&gt;Search&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class=&quot;donate icon-attach fa-heart&quot; href=&quot;https://www.classy.org/give/313412/#!/donation/checkout?c_src=website&amp;c_src2=top-of-page-banner&quot; target=&quot;_blank&quot;&gt;Donate&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;button class=&quot;explore&quot;&gt;Explore CC&lt;/button&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;
+        
+        
+        
+            &lt;div class=&quot;explore-panel&quot;&gt;
+        
+            &lt;!-- (optional main CC logo, p, link on non-home site back to main site) --&gt;
+            &lt;aside&gt;
+                &lt;a class=&quot;identity-logo&quot; href=&quot;https://creativecommons.org&quot;&gt;Creative Commons&lt;/a&gt;
+                &lt;h2&gt;Our Work Relies On You!&lt;/h2&gt;
+                &lt;p&gt;Help us keep the internet free and open.&lt;/p&gt;
+            &lt;/aside&gt;
+        
+            &lt;nav class=&quot;explore-menu&quot;&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;https://network.creativecommons.org/&quot; target=&quot;_blank&quot;&gt;Global Network&lt;/a&gt;
+                        &lt;p&gt;Join a  global community working to strengthen the Commons&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;https://certificate.creativecommons.org/&quot; target=&quot;_blank&quot;&gt;Certificate&lt;/a&gt;
+                        &lt;p&gt;Become an expert in creating and engaging with openly licensed materials&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;https://summit.creativecommons.org/&quot; target=&quot;_blank&quot;&gt;Global Summit&lt;/a&gt;
+                        &lt;p&gt;Attend our annual event, promoting the power of open licensing&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;/choose&quot; target=&quot;_blank&quot;&gt;Chooser&lt;/a&gt;
+                        &lt;p&gt;Get help choosing the appropriate license for your work&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;https://search.creativecommons.org/&quot;  target=&quot;_blank&quot;&gt;Search Portal&lt;/a&gt;
+                        &lt;p&gt;Find engines to search openly licensed material for creative and educational reuse&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;https://opensource.creativecommons.org/&quot; target=&quot;_blank&quot;&gt;Open Source&lt;/a&gt;
+                        &lt;p&gt;Help us build products that maximize creativity and innovation&lt;/p&gt;
+                    &lt;/li&gt;
+        
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+            &lt;/div&gt;
+        
+        &lt;/header&gt;
+        
+</code>
+</pre>
+
+
+
+
+<h3 id="global-footer">Footer - Global Area</h3><a class="permalink" href="#global-footer">permalink</a>
+
+<p>Each CC site utilizing Vocabulary should include the global <span class="distinct">Header</span> & <span class="distinct">Footer</span> areas at the top and bottom of the site respectively.</p>
+
+<p>The Global Footer component contains several sub-elements.</p>
+<ul>
+    <li>main Index Project Site identity/link</li>
+    <li>Footer Nav Menu</li>
+    <li>Contact Information</li>
+    <li>Social Nav Menu</li>
+    <li>Newsletter Subscription Form</li>
+    <li>Donation Call-to-action button</li>
+    <li>License Information</li>
+</ul>
+
+<p>These sub-elements are not independent and are not meant to be used outside of the Global Footer component.</p>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li>The <span class="distinct">Footer</span> begins directly before the bottom <span class="distinct">script</span> includes, which appear before the closing <span class="distinct">body</span> tag, and appears only once per page, on all page levels</li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+        &lt;footer&gt;
+            &lt;a class=&quot;identity-logo&quot; href=&quot;#&quot;&gt;Creative Commons&lt;/a&gt;
+        
+            &lt;nav class=&quot;footer-menu&quot;&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href=&quot;/about/contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;https://mail.creativecommons.org/subscribe&quot; target=&quot;_blank&quot;&gt;Newsletter&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;/privacy&quot;&gt;Privacy&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;/policies&quot;&gt;Policies&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;/terms&quot;&gt;Terms&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        
+            &lt;div class=&quot;contact&quot;&gt;
+                &lt;h2&gt;Contact Us&lt;/h2&gt;
+                &lt;p&gt;Creative Commons &lt;br&gt; PO Box 1866, Mountain View, CA 94042&lt;/p&gt;
+                &lt;p&gt;&lt;a href=&quot;mailto:info@creativecommons.org&quot;&gt;info@creativecommons.org&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a href=&quot;tel:+14154296753&quot;&gt;+1-415-429-6753&lt;/a&gt;&lt;/p&gt;
+        
+                &lt;nav class=&quot;social-menu&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;a class=&quot;icon-replace fa-twitter&quot; href=&quot;https://twitter.com/creativecommons&quot; target=&quot;_blank&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class=&quot;icon-replace fa-mastodon&quot; href=&quot;https://mastodon.social/@creativecommons&quot; target=&quot;_blank&quot;&gt;Mastodon&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class=&quot;icon-replace fa-facebook&quot; href=&quot;https://www.facebook.com/creativecommons&quot; target=&quot;_blank&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class=&quot;icon-replace fa-linkedin&quot; href=&quot;https://www.linkedin.com/company/creative-commons/&quot; target=&quot;_blank&quot;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;
+        
+            &lt;div class=&quot;subscribe&quot;&gt;
+                &lt;h2&gt;Subscribe to our Newsletter&lt;/h2&gt;
+                &lt;form action=&quot;https://creativecommons.us4.list-manage.com/subscribe/post?u=fd30364b6577b471373d6076c&amp;amp;id=4603fe102a&quot; method=&quot;post&quot; id=&quot;mc-embedded-subscribe-form&quot; name=&quot;mc-embedded-subscribe-form&quot; class=&quot;validate newsletter&quot; target=&quot;_blank&quot; novalidate=&quot;&quot;&gt;
+                    &lt;input type=&quot;email&quot; value=&quot;&quot; name=&quot;EMAIL&quot; class=&quot;email input&quot; id=&quot;mce-EMAIL&quot; placeholder=&quot;Your email&quot; required=&quot;&quot;&gt;
+                    &lt;div style=&quot;position: absolute; left: -5000px&quot; aria-hidden=&quot;true&quot;&gt;
+                        &lt;input type=&quot;text&quot; name=&quot;b_fd30364b6577b471373d6076c_4603fe102a&quot; tabindex=&quot;-1&quot; value=&quot;&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;input type=&quot;submit&quot; value=&quot;subscribe&quot; id=&quot;mc-embedded-subscribe&quot; class=&quot;button small&quot;&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+        
+            &lt;div class=&quot;donate&quot;&gt;
+                &lt;h2&gt;Support Our Work&lt;/h2&gt;
+                &lt;p&gt;Our work relies on you! Help us keep the Internet free and open.&lt;/p&gt;
+                &lt;a class=&quot;donate icon-attach cc-heart-filled&quot; href=&quot;https://www.classy.org/give/313412/#!/donation/checkout?c_src=website&amp;amp;c_src2=top-of-page-banner&quot; target=&quot;_blank&quot;&gt;Donate Now&lt;/a&gt;
+            &lt;/div&gt;
+        
+            &lt;div class=&quot;license&quot;&gt;
+                &lt;p&gt;Except where otherwise &lt;a href=&quot;/policies/#license&quot;&gt;noted&lt;/a&gt;, content on this site is licensed under a &lt;a href=&quot;/licenses/by/4.0/&quot;&gt;Creative Commons Attribution 4.0 International license&lt;/a&gt;. Icons by &lt;a href=&quot;https://fontawesome.com/&quot; target=&quot;_blank&quot;&gt;Font Awesome&lt;/a&gt;.&lt;/p&gt;
+        
+                &lt;svg&gt;
+                    &lt;use href=&quot;/vocabulary/svg/cc/icons/cc-icons.svg#cc-logo&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;svg&gt;
+                    &lt;use href=&quot;/vocabulary/svg/cc/icons/cc-icons.svg#cc-by&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+            &lt;/div&gt;
+        
+        &lt;/footer&gt;
+        
+
+      
+</code>
+</pre>
+
+
+
+
+
+
+<h3 id="attribution-list-block">Attribution List - Block</h3><a class="permalink" href="#attribution-list-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+ <!-- <li><span class="distinct">Main Content Region</span> of the <span class="distinct">Home Index</span></li>
+  <li><span class="distinct">Main Content Region</span> of the <span class="distinct">Blog Archive</span></li> -->
+
+  <li><span class="distinct">body.home-index > main > article.authored-posts > footer > article.attribution-list</span>; on the <span class="distinct">home-index</span> page-level</li>
+  <li><span class="distinct">body.blog-index > main > article.attribution-list</span>; after referenced media; on the <span class="distinct">blog-index</span> page-level</li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  &lt;article class=&quot;attribution-list&quot;&gt;
+    &lt;h2&gt;Images Attribution&lt;/h2&gt;
+    &lt;button class=&quot;expand-attribution&quot;&gt;view&lt;/button&gt;
+
+    &lt;ul class=&quot;attribution-panel&quot;&gt;
+        &lt;li&gt;
+            &lt;article&gt;
+                &lt;figure&gt;
+                    &lt;img src=&quot;PATH/TO/image.png&quot;&gt;
+                    &lt;span class=&quot;attribution&quot;&gt;attribution here&lt;/span&gt;
+                &lt;/figure&gt;
+            &lt;/article&gt;
+        &lt;/li&gt;
+
+        &lt;!-- more list items --&gt;
+
+    &lt;/ul&gt;
+&lt;/article&gt;
+
+
+</code>
+</pre>
+
+
+
+<h3 id="attention-block">Attention - Block</h3><a class="permalink" href="#attention-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">body.* > article.attention</span>; after <span class="distinct">body > header</span>; before <span class="distinct">body > main</span>; all page-levels</li>
+  <li><span class="distinct">body.archive-page > aside > article.attention</span>; as last child item, only <span class="distinct">default-page</span>, <span class="distinct">archive-page</span> levels</li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+    &lt;article class=&quot;attention&quot;&gt;
+
+    content here
+ 
+ &lt;/article&gt;
+
+</code>
+</pre>
+
+
+<h3 id="person-snippet-singular-block">Person Snippet - Singular - Block</h3><a class="permalink" href="#person-snippet-singular-block">permalink</a>
+
+<h4>Expected Contexts</h3>
+<ul>
+  <li><span class="distinct">article.persons > ul > li > article.person</span> </li>
+
+</ul>
+
+<pre>
+<code class="lang-html">
+
+    &lt;article class=&quot;person&quot;&gt;
+    &lt;h3&gt;&lt;a href=&quot;#&quot;&gt;Name Here&lt;/a&gt;&lt;/h3&gt;
+    &lt;span class=&quot;title&quot;&gt;Position/Title here&lt;/span&gt;
+    &lt;figure&gt;
+        &lt;img src=&quot;PATH/TO/profile.jpg&quot; /&gt;
+    &lt;/figure&gt;
+    &lt;p&gt;Truncated bio here&hellip;&lt;/p&gt;
+&lt;/article&gt
+
+</code>
+</pre>
+
+
+<h3 id="persons-snippet-plural-block">Persons Snippets - Plural - Block</h3><a class="permalink" href="#persons-snippet-plural-block">permalink</a>
+
+<h4>Expected Contexts</h3>
+<ul>
+  <li><span class="distinct">body.team-index main</span>, directly after <span class="distinct">main > header</span> </li>
+
+</ul>
+
+<pre>
+<code class="lang-html">
+
+    &lt;article class=&quot;person&quot;&gt;
+    &lt;h3&gt;&lt;a href=&quot;#&quot;&gt;Name Here&lt;/a&gt;&lt;/h3&gt;
+    &lt;span class=&quot;title&quot;&gt;Position/Title here&lt;/span&gt;
+    &lt;figure&gt;
+        &lt;img src=&quot;PATH/TO/profile.jpg&quot; /&gt;
+    &lt;/figure&gt;
+    &lt;p&gt;Truncated bio here&hellip;&lt;/p&gt;
+&lt;/article&gt;
+
+
+</code>
+</pre>
+
+<h3 id="post-singular-block">Post - Singular - Block</h3><a class="permalink" href="#post-singular-block">permalink</a>
+
+<p><span class="distinct">Post</span> components nested within a <span class="distinct">Posts</span> component can be direct children or nested within an html list element (<span class="distinct">ol/ul</span>)</p>
+
+<h4>Expected Contexts</h3>
+<ul>
+  <li><span class="distinct">main > article.post</span> </li>
+  <li><span class="distinct">main > article.posts > article.post</span> </li>
+  <li><span class="distinct">article.posts  ul > li > article.post</span> </li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+    &lt;article class=&quot;post&quot;&gt;
+    &lt;header&gt;
+        &lt;h2&gt;&lt;a href=&quot;#&quot;&gt;Title Here&lt;/a&gt;&lt;/h2&gt;
+
+        &lt;span class=&quot;byline&quot;&gt;by &lt;a href=&quot;#&quot;&gt;Author Name&lt;/a&gt;, &lt;a href=&quot;#&quot;&gt;Author Name&lt;/a&gt;&lt;/span&gt;
+        &lt;span class=&quot;categories&quot;&gt;&lt;a href=&quot;#&quot;&gt;Open Culture&lt;/a&gt;&lt;/span&gt;
+
+    &lt;/header&gt;
+    &lt;figure&gt;
+        &lt;img src=&quot;PATH/TO/image.jpg&quot; /&gt;
+        &lt;span class=&quot;attribution&quot;&gt;attribution here&lt;/span&gt;
+    &lt;/figure&gt;
+    &lt;p&gt;truncated teaser excerpt &lt;/p&gt;
+&lt;/article&gt;
+
+
+</code>
+</pre>
+
+
+
+<h3 id="posts-plural-block">Posts - Plural - Block</h3><a class="permalink" href="#posts-plural-block">permalink</a>
+
+<p><span class="distinct">Posts</span> components support a pseudo-semantic variant class of <span class="distinct">featured</span> or <span class="distinct">related</span>. This helps further describe what they are more specifically, but allows a semantic-ish target for their change in behavior or provided sub-elements. </p>
+<h4>Expected Contexts</h3>
+<ul>
+  <li><span class="distinct">main > article.posts</span>, directly after the <span class="distinct">main > header</span> </li>
+  <li><span class="distinct">body.blog-index > main > article.posts.featured</span>, directly after the <span class="distinct">main > header</span> </li>
+  <li><span class="distinct">body.blog-index > main > article.posts</span>, directly after the <span class="distinct">main > article.posts.featured</span> </li>
+  <li><span class="distinct">body.archive-page > main > article.posts</span>, directly after the <span class="distinct">main > aside</span>  </li>
+  <li><span class="distinct">body.person-page > main > article.posts</span>, directly after the <span class="distinct">main > header</span>  </li>
+  <li><span class="distinct">body.blog-post > main > article.posts.related</span>, as the last child of <span class="distinct">body > main</span> </li>
+
+</ul>
+
+<pre>
+<code class="lang-html">
+
+    &lt;article class=&quot;posts&quot;&gt;
+
+    &lt;h2&gt;Title Here&lt;/h2&gt;
+    
+      &lt;article class=&quot;story&quot;&gt;
+        &lt;header&gt;
+        &lt;h3&gt;&lt;a href=&quot;#&quot;&gt;Title Here&lt;/a&gt;&lt;/h3&gt;
+  
+        &lt;span class=&quot;byline&quot;&gt;by &lt;a href=&quot;#&quot;&gt;Author Name&lt;/a&gt;, &lt;a href=&quot;#&quot;&gt;Author Name&lt;/a&gt;&lt;/span&gt;
+        &lt;span class=&quot;categories&quot;&gt;&lt;a href=&quot;#&quot;&gt;Open Culture&lt;/a&gt;&lt;/span&gt;
+  
+        &lt;/header&gt;
+        &lt;figure&gt;
+          &lt;img src=&quot;PATH/TO/image.jpg&quot; /&gt;
+          &lt;span class=&quot;attribution&quot;&gt;attribution here&lt;/span&gt;
+        &lt;/figure&gt;
+        &lt;p&gt;truncated teaser excerpt &lt;/p&gt;
+       &lt;/article&gt;
+  
+       &lt;footer&gt; &lt;!-- optional footer --&gt;
+         &lt;a class=&quot;more&quot; href=&quot;#&quot;&gt;more posts&lt;/a&gt;
+  
+         &lt;article class=&quot;attribution-list&quot;&gt;
+           ...
+         &lt;/article&gt;
+       &lt;/footer&gt;
+  
+     &lt;/article&gt;
+
+
+</code>
+</pre>
+
+
+<h3 id="pagination-nav">Pagination - Nav</h3><a class="permalink" href="#pagination-nav">permalink</a>
+
+<h4>Expected Contexts</h3>
+<ul>
+  <li><span class="distinct">body.archive-page > main > nav.pagination</span>, as the last child of <span class="distinct">body > main</span> </li>
+  <li><span class="distinct">body.person-page > main > nav.pagination</span>, as the last child of <span class="distinct">body > main</span> </li>
+  <li><span class="distinct">body.search-index > main > nav.pagination</span>, as the last child of <span class="distinct">body > main</span> </li>
+
+</ul>
+
+<pre>
+<code class="lang-html">
+
+    &lt;nav class=&quot;pagination&quot;&gt;
+    &lt;ol&gt;
+        &lt;li class=&quot;current&quot;&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&amp;hellip;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;527&lt;/a&gt;&lt;/li&gt;
+
+        &lt;!-- &lt;li&gt;&lt;a href=&quot;&lt;&quot;&gt;&lt;&lt;/a&gt;&lt;/li&gt; --&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/nav&gt;
+
+
+</code>
+</pre>
+
+
+<h3 id="opening-summary-block">Opening Summary - Block</h3><a class="permalink" href="#opening-summary-block">permalink</a>
+
+<h4>Expected Contexts</h3>
+<ul>
+  <li><span class="distinct">body.blog-post > main > aside.opening</span>; optionally after <span class="distinct">main > header</span></li>
+
+
+</ul>
+
+<pre>
+<code class="lang-html">
+
+    &lt;aside class=&quot;opening&quot;&gt;
+    &lt;p&gt;content here&lt;/p&gt;
+&lt;/aside&gt;
+
+</code>
+</pre>
+
+
+<h3 id="closing-summary-block">Closing Summary - Block</h3><a class="permalink" href="#closing-summary-block">permalink</a>
+
+<h4>Expected Contexts</h3>
+<ul>
+  <li><span class="distinct">body.blog-post > main > aside.closing</span>; optionally before <span class="distinct">main > span.pub-date</span></li>
+
+
+</ul>
+
+<pre>
+<code class="lang-html">
+
+    &lt;aside class=&quot;closing&quot;&gt;
+    &lt;p&gt;content here&lt;/p&gt;
+&lt;/aside&gt;
+
+</code>
+</pre>
+
+
+<h3 id="tags-listing-block">Tags listing - Block</h3><a class="permalink" href="#tags-listing-block">permalink</a>
+
+<h4>Expected Contexts</h3>
+<ul>
+  <li><span class="distinct">body.blog-post > main > article.tags</span>; optionally after <span class="distinct">main > span.pubdate</span></li>
+
+
+</ul>
+
+<pre>
+<code class="lang-html">
+
+    &lt;article class=&quot;tags&quot;&gt;
+    &lt;h2&gt;Tags&lt;/h2&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;open culture&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;...&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/article&gt;
+
+</code>
+</pre>
+
+
+
+<h3 id="sidebar-region">Sidebar - Region</h3><a class="permalink" href="#sidebar-region">permalink</a>
+
+<h4>Expected Contexts</h3>
+<ul>
+  <li><span class="distinct">body > aside</span>; optionally after <span class="distinct">main > header</span></li>
+<li><span class="distinct">body.archive-page > aside</span>, after <span class="distinct">main > header</span></li>
+
+
+</ul>
+
+<pre>
+<code class="lang-html">
+
+    &lt;aside&gt;
+    contents here
+&lt;/aside&gt;
+
+</code>
+</pre>
+
+<h3 id="filter-menu-nav">Filter Menu - Nav</h3><a class="permalink" href="#filter-menu-nav">permalink</a>
+
+<h4>Expected Contexts</h3>
+<ul>
+<li><span class="distinct">body.archive-page > aside > nav.filter-menu</span></li>
+
+</ul>
+
+<pre>
+<code class="lang-html">
+
+    &lt;nav class="filter-menu"&gt;
+    &lt;h2&gt;Categories&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;All posts&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="current"&gt;&lt;a href="#"&gt;Open Culture&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Open Knowledge&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+
+
+</code>
+</pre>
+
+
+<h3 id="general-menu-nav">General Menu - Nav</h3><a class="permalink" href="#general-menu-nav">permalink</a>
+
+<h4>Expected Contexts</h3>
+<ul>
+<li><span class="distinct">body.archive-page > aside > nav</span></li>
+
+</ul>
+
+<pre>
+<code class="lang-html">
+
+    &lt;nav&gt;
+    &lt;h2&gt;Related Links&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;All posts&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Open Culture&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Open Knowledge&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+
+
+</code>
+</pre>
+
+
+
+<h3 id="data-points-singular-block">Data Points - Singular - Block</h3><a class="permalink" href="#data-points-singular-block">permalink</a>
+
+<h4>Expected Contexts</h3>
+<ul>
+<li><span class="distinct">article.case-studies > ul > li > article.data-point</span></li>
+
+</ul>
+
+<pre>
+<code class="lang-html">
+
+
+    &lt;article class="data-point"&gt;
+    &lt;h2&gt;Title&lt;/h2&gt;
+    &lt;h3 class="stat"&gt;55+ million articles&lt;/h3&gt;
+    &lt;p&gt;Descriptive text here&lt;/p&gt;
+&lt;/article&gt;
+ 
+
+</code>
+</pre>
+
+
+
+
+<h3 id="data-points-plural-supporting-block">Data Points - Plural - Supporting Block</h3><a class="permalink" href="#data-points-plural-supporting-block">permalink</a>
+
+<h4>Expected Contexts</h3>
+<ul>
+<li><span class="distinct">article.case-studies > footer > article.data-points</span></li>
+
+</ul>
+
+<pre>
+<code class="lang-html">
+
+
+    &lt;article class="data-points supporting"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;article class="data-point"&gt;
+                &lt;h2&gt;Title&lt;/h2&gt;
+                &lt;h3 class="stat"&gt;55+ million articles&lt;/h3&gt;
+                &lt;p&gt;Descriptive text here&lt;/p&gt;
+            &lt;/article&gt;
+        &lt;/li&gt;
+
+        &lt;!-- ... --&gt;
+
+    &lt;/ul&gt;
+&lt;/article&gt;
+
+</code>
+</pre>
+
+
+
+<h3 id="case-studies-block">Case Studies - Block</h3><a class="permalink" href="#case-studies-block">permalink</a>
+
+<h4>Expected Contexts</h3>
+<ul>
+<li><span class="distinct">body.home-index > main > article.case-studies</span></li>
+
+</ul>
+
+<pre>
+<code class="lang-html">
+
+    &lt;article class="case-studies"&gt;
+    &lt;h2&gt;Title here&lt;/h2&gt;
+    &lt;p&gt;Descriptive text&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;figure&gt;
+                &lt;img src="PATH/TO/home.jpg" /&gt;
+                &lt;span class="attribution"&gt;attribution here&lt;/span&gt;
+            &lt;/figure&gt;
+        &lt;/li&gt;
+
+        &lt;!-- ... --&gt;
+
+    &lt;/ul&gt;
+
+    &lt;footer&gt;
+        &lt;article class="data-points supporting"&gt;
+            &lt;ul&gt;
+                &lt;li&gt;
+                    &lt;article class="data-point"&gt;
+                        &lt;h2&gt;Title&lt;/h2&gt;
+                        &lt;h3 class="stat"&gt;55+ million articles&lt;/h3&gt;
+                        &lt;p&gt;Descriptive text here&lt;/p&gt;
+                    &lt;/article&gt;
+                &lt;/li&gt;
+
+                &lt;!-- ... --&gt;
+
+            &lt;/ul&gt;
+        &lt;/article&gt;
+    &lt;/footer&gt;
+&lt;/article&gt;
+
+
+</code>
+</pre>
+
+
+<h3 id="search-form-block">Search Form - Block</h3><a class="permalink" href="#search-form-block">permalink</a>
+
+<h4>Expected Contexts</h3>
+<ul>
+<li><span class="distinct">body.search-index > main > header</span>; directly after the <span class="distinct">main > header > h1</span></span></li>
+
+</ul>
+
+<pre>
+<code class="lang-html">
+
+    &lt;article class="search-form"&gt;
+    &lt;form role="search" method="get" class="search-form" action="https://creativecommons.org/"&gt;
+
+        &lt;input type="search" class="search-field" placeholder="Search for..." value="" name="s" title="Search"&gt;
+
+        &lt;button type="submit" value="Search"&gt;Search&lt;/button&gt;
+    &lt;/form&gt;
+&lt;/article&gt;
+
+</code>
+</pre>
+
+
+<h3 id="topic-summary-block">Topic Summary - Block</h3><a class="permalink" href="#topic-summary-block">permalink</a>
+
+<h4>Expected Contexts</h3>
+<ul>
+<li><span class="distinct">body.home-index > main > article.topic-summary</span></li>
+
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="topic-summary">
+    <h2>Title</h2>
+    <figure>
+      iframe or img here
+      <span class="attribution">attribution here.</span>
+    </figure>
+    <div class="description">
+        <p>Descriptive text here</p>
+        <a href="#">Learn more</a>
+    </div>
+  </article>
+
+</code>
+</pre>
+
+
+<h3 id="page-header-region">Page Header - Region</h3><a class="permalink" href="#page-header-region">permalink</a>
+
+<h4>Expected Contexts</h3>
+<ul>
+<li><span class="distinct">body > main > header</span></li>
+<li><span class="distinct">body.archive-page > main > header</span></li>
+<li><span class="distinct">body.blog-index > main > header</span></li>
+<li><span class="distinct">body.blog-post > main > header</span></li>
+<li><span class="distinct">body.search-index > main > header</span></li>
+<li><span class="distinct">body.team-index > main > header</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <header>
+    <h1>Title Here</h1>
+    <span class="byline">by <a href="#">Name Here</a>, <a href="#">Name Here</a></span>
+
+    <p>lead in paragraph</p> <!-- optional -->
+
+    <span class="categories">  <!-- optional -->
+      <a href="#">Open Culture</a>
+    </span>
+  
+  </header>
+
+</code>
+</pre>
+
+
+<h3 id="person-header-region">Person Header - Region</h3><a class="permalink" href="#person-header-region">permalink</a>
+
+<h4>Expected Contexts</h3>
+<ul>
+<li><span class="distinct">body.person-page > main > header</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <header>
+
+    <h1>Name</h1>
+    <span class="title">position/title here</span>
+    <span class="pronouns">pronouns optionally here</span>
+
+    <figure>
+      <img src="PATH/TO/profile.jpg" />
+      <span class="attribution">attribution here</span>
+     </figure>
+     <div class="bio">
+       <p>Bio here</p>
+     </div>
+  
+  </header>
+
+</code>
+</pre>
+                <div class="doublespace"></div>
+                <div class="divider" style="width:24%; margin:30px 0;"></div>
+                
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
