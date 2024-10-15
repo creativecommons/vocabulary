@@ -37,8 +37,3 @@ publish_to_docs() {
     echo
 }
 
-
-#### MAIN #####################################################################
-
-remove_previous_from_docs
-publish_to_docs
