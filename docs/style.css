@@ -1,4 +1,8 @@
-/* @import '../src/css/vocabulary.css' layer(vocabulary); */
+ /* @import '../src/css/vocabulary.css' layer(vocabulary);  */
+ html{
+    scroll-behavior: smooth;
+    position: relative;  
+} 
 
 body {
     width: 65%;
@@ -27,3 +31,57 @@ span.distinct {
 main ul li {
     margin-bottom: .5em;
 }
+
+.scroll-container a:focus {
+    outline: 2px solid blue; /* or any color that stands out */
+}
+
+  .scroll-container {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    height: 100%;
+    z-index: 1000;
+    transition: opacity 0.3s, visibility 0.3s;
+  
+  }  
+
+ 
+ 
+   .scroll-container:before {
+    content: '';
+    display: block;
+    height: 100vh;
+    pointer-events: none;
+  }  
+ 
+   .scroll-container a {
+    position: sticky;
+    top: 88vh;
+    cursor: pointer;
+    font-size: 20px;
+  }   
+ 
+   @media (max-width: 600px) {
+    .scroll-container {
+      position: fixed; 
+      right: 10px;
+      top: auto; 
+      bottom: 20px; 
+      z-index: 1000;
+    }
+   
+     .scroll-container a {
+      font-size: 16px; 
+      top: auto; 
+      bottom: 10px; 
+    }
+  }      
+
+
+
+
+
+
+
+   
