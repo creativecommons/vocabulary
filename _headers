@@ -1,0 +1,12 @@
+/*                  # Applies to all files
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; script-src 'self'
+
+/index.html         # Applies specifically to index.html
+  Cache-Control: max-age=3600
+  Content-Security-Policy: default-src 'self'
+
+/images/*           # Applies to all files in the /images/ folder
+  Cache-Control: max-age=31536000
+  Access-Control-Allow-Origin: *
