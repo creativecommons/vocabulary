@@ -202,10 +202,6 @@ a.more {
 
 /* .posts .related variant context */
 
-.posts.related {
-    
-}
-
 /* <main> level context */
 
 main {
@@ -1447,12 +1443,7 @@ body > footer .license svg {
     margin-right: .3em;
 }
 
-
 /* archive-page context */
-.archive-page main {
-
-    
-}
 
 /* blog-index context */
 
