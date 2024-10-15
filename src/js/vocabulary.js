@@ -2,7 +2,7 @@ const exploreButton = document.querySelector('button.explore');
 const explorePanel = document.querySelector('.explore-panel');
 
 // explorePanel.classList.add('hide');
-if(exploreButton!==null && explorePanel!==null){
+if(exploreButton!==null && explorePanel!==null) {
     exploreButton.addEventListener('click', (event) => {
         explorePanel.classList.toggle('expand');
         // explorePanel.classList.toggle('hide');
@@ -14,7 +14,7 @@ if(exploreButton!==null && explorePanel!==null){
 const menuButton = document.querySelector('button.expand-menu');
 const menuPanel = document.querySelector('.primary-menu');
 
-if(menuButton !== null && menuPanel !== null){
+if(menuButton !== null && menuPanel !== null) {
     menuButton.addEventListener('click', (event) => {
         menuPanel.classList.toggle('expand');
         // explorePanel.classList.toggle('hide');
