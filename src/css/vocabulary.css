@@ -1907,7 +1907,9 @@ body > footer .license svg {
     .search-index .search-form form button {
         width: 20%;
     }
-
+    main article.posts.related ul{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 @media (max-width: 680px) {
@@ -1996,6 +1998,9 @@ body > footer .license svg {
 
     body > footer .footer-menu ul {
         display: block;
+    }
+    main article.posts.related ul{
+        grid-template-columns: 1fr 1fr;
     }
 }
 
