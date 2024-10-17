@@ -1022,7 +1022,7 @@ This enables two modes of build work.
 
 <script>
 //escapes html within code elements
-document.querySelectorAll("code.lang-html").forEach(el => el.innerText = el.innerHTML);
+document.querySelectorAll("code.lang-html").forEach(el => el.innerText = el.innerHTML.replace(/required=""\s?/g, "required")); // Replace 'required=""' with 'required' in the innerHTML content
 </script>
 
 </body>
