@@ -1022,7 +1022,13 @@ This enables two modes of build work.
 
 <script>
 //escapes html within code elements
-document.querySelectorAll("code.lang-html").forEach(el => el.innerText = el.innerHTML);
+document.querySelectorAll("code.lang-html").forEach(el => {
+  let htmlContent = el.innerHTML
+
+  htmlContent = htmlContent.replace(/\s*required=""/g, " required");
+
+  el.innerText = htmlContent;
+});
 </script>
 
 </body>
