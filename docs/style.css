@@ -1,16 +1,18 @@
 /* @import '../src/css/vocabulary.css' layer(vocabulary); */
 
 body {
-    width: 65%;
+    width: 100vw;
     font-size: 1.2em;
-
     padding: 1em;
 }
 
-pre > code {
+main{
+    overflow-x: hidden;
+}
+pre  {
     display: block;
     padding: 2em;
-    overflow-x: scroll;
+    overflow-x: auto;
 
     /* white-space: pre-wrap; */
     background: #ededed;
