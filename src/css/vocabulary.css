@@ -95,6 +95,7 @@ a.more {
 /* post component - plural */
 
 .posts {
+    padding: 0 2rem;
     text-align: center;
 }
 
@@ -219,7 +220,7 @@ main {
 }
 
 main > * {
-    grid-column: 5 / span 3;
+    grid-column: 5 / span 3 !important;
 }
 
 main > header {
@@ -1556,7 +1557,10 @@ body > footer .license svg {
 }
 
 /* search-index context */
-
+.search-form{
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
 .search-index main > header { /* generalize? */
     display: block;
     padding: 3.7em 0;
@@ -1588,7 +1592,8 @@ body > footer .license svg {
 }
 
 .search-index .search-form form button {
-    width: 10%;
+    width: fit-content;
+    padding: 0.2rem 1rem;
 
     cursor: pointer;
     background: black;
@@ -1828,9 +1833,9 @@ body > footer .license svg {
         grid-column: 3 / 10;
     }
 
-    .search-index main > header:before {
+    /* .search-index main > header:before {
         left: -9.3%;
-    }
+    } */
 }
 
 @media (max-width: 900px) {
@@ -1952,7 +1957,7 @@ body > footer .license svg {
     }
 
     main > header:before {
-        left: 0;
+        left: 0 !important;
     }
 
     .posts article figure {
