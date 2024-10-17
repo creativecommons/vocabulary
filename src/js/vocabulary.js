@@ -35,3 +35,36 @@ if (attributionButton !== null && attributionPanel !== null ) {
     });
 
 }
+
+// accordion logic
+
+const accordionHeader = document.querySelectorAll(".accordion-header")
+
+    if(typeof accordionHeader !== null){
+        accordionHeader.forEach(header=>{
+          header.addEventListener("click",(event)=>{
+            // updating aria-expanded attr as user clicks on the  accordion
+            const expanded = header.getAttribute('aria-expanded') === "true" || false;
+            header.setAttribute('aria-expanded', !expanded);
+             const content = header.nextElementSibling
+             const chevron = header.querySelector(".accordion-chevron")
+
+             if(content.classList.contains("hidden")){
+                 // removing hidden class from accordion-content
+                content.classList.toggle("hidden")
+                      // adding accordion-content class in accordion-content
+                 content.classList.toggle("accordion-content")
+                    // adding accordion-chevron-active class in accordion chevron
+                 chevron.classList.toggle("accordion-chevron-active")
+
+            }else{
+                    // removing hidden class from accordion-content
+                    chevron.classList.toggle("accordion-chevron-active") 
+                    // adding hidden class in accordion-content is it is active
+                    content.classList.toggle("hidden")
+                    // removing accordion-content class from accordion-content
+                    content.classList.toggle("accordion-content")
+             }
+        })
+    })
+}
