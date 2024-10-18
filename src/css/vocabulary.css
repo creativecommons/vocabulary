@@ -840,8 +840,16 @@ body > header .masthead .identity-logo {
 	mask-repeat: no-repeat;
 	cursor: pointer;
 
-	/* standard pattern for setting logo in lieu of background color manipulation */
-	/* background: url('../../svg/cc/logos/cc/logomark.svg') left top no-repeat; */
+    /* allows for color manipulation of svg */
+    background-color: black;
+    -webkit-mask-image: url('../svg/cc/logos/cc/logomark.svg');
+    mask-image: url('../svg/cc/logos/cc/logomark.svg');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    cursor: pointer;
+
+    /* standard pattern for setting logo in lieu of background color manipulation */
+    /* background: url('../svg/cc/logos/cc/logomark.svg') left top no-repeat; */
 }
 
 body > header .masthead .identity-logo:hover {
@@ -897,12 +905,12 @@ body > header .masthead .identity-logo.product:before {
 	left: 0;
 	top: 0.176em;
 
-	background-color: black;
-	-webkit-mask-image: url("./../svg/cc/logos/cc/lettermark.svg");
-	mask-image: url("./../svg/cc/logos/cc/lettermark.svg");
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
-	cursor: pointer;
+    background-color: black;
+    -webkit-mask-image: url('../svg/cc/logos/cc/lettermark.svg');
+    mask-image: url('../svg/cc/logos/cc/lettermark.svg');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    cursor: pointer;
 }
 
 /* .masthead .primary-menu {
@@ -1102,17 +1110,17 @@ body > header .explore-panel aside .identity-logo {
 	mask-repeat: no-repeat;
 	cursor: pointer;
 
-	/* allows for color manipulation of svg */
-	background-color: white;
-	-webkit-mask-image: url("./../svg/cc/logos/cc/logomark.svg");
-	mask-image: url("./../svg/cc/logos/cc/logomark.svg");
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
-	cursor: pointer;
-	text-indent: -1000px;
+    /* allows for color manipulation of svg */
+    background-color: white;
+    -webkit-mask-image: url('../svg/cc/logos/cc/logomark.svg');
+    mask-image: url('../svg/cc/logos/cc/logomark.svg');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    cursor: pointer;
+    text-indent: -1000px;
 
-	/* standard pattern for setting logo in lieu of background color manipulation */
-	/* background: url('../../svg/cc/logos/cc/logomark.svg') left top no-repeat; */
+    /* standard pattern for setting logo in lieu of background color manipulation */
+    /* background: url('../svg/cc/logos/cc/logomark.svg') left top no-repeat; */
 }
 
 body > header .explore-panel aside h2 {
@@ -1329,8 +1337,16 @@ body > footer .identity-logo {
 	mask-repeat: no-repeat;
 	cursor: pointer;
 
-	/* standard pattern for setting logo in lieu of background color manipulation */
-	/* background: url('../../svg/cc/logos/cc/logomark.svg') left top no-repeat; */
+    /* allows for color manipulation of svg */
+    background-color: white;
+    -webkit-mask-image: url('../svg/cc/logos/cc/logomark.svg');
+    mask-image: url('../svg/cc/logos/cc/logomark.svg');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    cursor: pointer;
+
+    /* standard pattern for setting logo in lieu of background color manipulation */
+    /* background: url('../svg/cc/logos/cc/logomark.svg') left top no-repeat; */
 }
 
 body > footer .identity-logo:hover {
