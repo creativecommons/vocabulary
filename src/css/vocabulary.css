@@ -878,8 +878,8 @@ body > header .masthead .identity-logo.product:before {
     top: .176em;
 
     background-color: black;
-    -webkit-mask-image: url('./../svg/cc/logos/cc/lettermark.svg');
-    mask-image: url('./../svg/cc/logos/cc/lettermark.svg');
+    -webkit-mask-image: url('../svg/cc/logos/cc/lettermark.svg');
+    mask-image: url('../svg/cc/logos/cc/lettermark.svg');
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     cursor: pointer;
