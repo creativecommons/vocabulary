@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<title>Vocabulary - Docs</title>
+    <title>Vocabulary - Docs</title>
   
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" media="all" href="style.css" />
+    <!-- Preload Google Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=YourFontName:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=YourFontName:wght@400;700&display=swap"></noscript>
+    
+    <link rel="stylesheet" media="all" href="style.css" />
 
+    <style>
+        /* Hide body content initially */
+        body {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        body.loaded {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
 
@@ -27,14 +43,10 @@
 <nav>
 <ul>
     <li><a href="#introduction" class="active">Introduction</a></li>
-  <li><a href="#installation">Installation</a></li>
-  <li><a href="#components">Components</a></li>
-
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#components">Components</a></li>
 </ul>
-
 </nav>
-
-
 
 </aside>
 
@@ -45,7 +57,6 @@
 <p>Vocabulary is a refactor and reimplementation of the original, now archived, <a href="https://github.com/cc-archive/vocabulary-legacy">Vocabulary Legacy</a> project.</p>
 
 <p>Both projects are informed by the  <a href="https://creativecommons.org/wp-content/uploads/2019/10/Creative-Commons-Style-Guide-2019.pdf">CC Style Guide (2019)</a>, and incorporate or adapt its guidance into a digital context.</p>
-
 
 <h3>Structure & Behavior</h3>
 
@@ -75,8 +86,21 @@
 
 <p>We need to maintain a way to test F/E UX absent a CMS layer. That way the static layer prototype describes the intended output the CMS would create. It becomes a form of documentation and testing. It's an expectation spec.</p>
 
-<p>It's one additional layer of downstream changes, but it provides a clear and distinct documentation for how and where things are localized when vocabulary is implemented, and can offer good examples for where we can pull varied localized implementations upstream into vocabulary generally, so the localizations can then be removed.
-</p>
+<p>It's one additional layer of downstream changes, but it provides a clear and distinct documentation for how and where things are localized when vocabulary is implemented, and can offer good examples for where we can pull varied localized implementations upstream into vocabulary generally, so the localizations can then be removed.</p>
+
+</main>
+
+<script>
+    // font loading and visibility management
+    function onFontLoad() {
+        document.body.classList.add('loaded');
+    }
+
+    document.fonts.ready.then(onFontLoad);
+</script>
+
+</body>
+</html>
 
 
 
