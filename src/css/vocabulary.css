@@ -1830,6 +1830,10 @@ body > footer .license svg {
         display: flex;
         flex-wrap: wrap;
     }
+    main article.posts.related ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 705px) {
