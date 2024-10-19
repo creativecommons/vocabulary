@@ -145,7 +145,7 @@
      --fa-globe: url('./../svg/font-awesome/icons/fa-icons.svg#fa-globe');
      --fa-heart: url('./../svg/font-awesome/icons/fa-icons.svg#fa-heart');
      --fa-info: url('./../svg/font-awesome/icons/fa-icons.svg#fa-info');
-     --fa-right-angle: url('./../svg/font-awesome/icons/fa-icons.svg#fa-right-angle');
+     --fa-angle-right: url('./../svg/font-awesome/icons/fa-icons.svg#fa-angle-right');
      --fa-search: url('./../svg/font-awesome/icons/fa-icons.svg#fa-search');
 
      --fa-instagram: url('./../svg/font-awesome/icons/fa-icons.svg#fa-instagram');
@@ -201,7 +201,7 @@ leaving room for semantic and accessible implementation choices  */
     --icon-sprite: var(--fa-angle-left);
 }
 
-.icon.fa-angle-right, .icon-attach.fa-angle-rignt:before {
+.icon.fa-angle-right, .icon-attach.fa-angle-right:before {
     --icon-sprite: var(--fa-angle-right);
 }
 
@@ -221,7 +221,7 @@ leaving room for semantic and accessible implementation choices  */
     --icon-sprite: var(--fa-info);
 }
 
-.icon.fa-right-angle, .icon-attach.fa-righ-angle:before {
+.icon.fa-angle-right, .icon-attach.fa-angle-right:before {
     --icon-sprite: var(--fa-heart);
 }
 
