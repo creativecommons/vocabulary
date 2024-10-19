@@ -1987,6 +1987,9 @@ body > footer .license svg {
     main nav.pagination ol li {
         line-height: 250%;
     }
+    main article.posts.related ul {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width: 580px) {
