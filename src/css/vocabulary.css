@@ -1946,6 +1946,10 @@ body > footer .license svg {
         left: 0;
     }
 
+    main .content {
+        padding: var(--vocabulary-page-edges-space);
+    }
+
     .posts article figure {
         width: 100%;
         flex: initial;
