@@ -1878,9 +1878,13 @@ body > footer .license svg {
         display: flex;
         flex-wrap: wrap;
     }
-
+  
     .scroll-to-top{
         display: none;
+    }
+  
+    main article.posts.related ul {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -2047,6 +2051,10 @@ body > footer .license svg {
 
     body > footer .footer-menu ul {
         display: block;
+    }
+
+    main article.posts.related ul {
+        grid-template-columns: 1fr;
     }
 }
 
