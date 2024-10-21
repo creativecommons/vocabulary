@@ -201,7 +201,7 @@ leaving room for semantic and accessible implementation choices  */
     --icon-sprite: var(--fa-angle-left);
 }
 
-.icon.fa-angle-right, .icon-attach.fa-angle-rignt:before {
+.icon.fa-angle-right, .icon-attach.fa-angle-right:before {
     --icon-sprite: var(--fa-angle-right);
 }
 
@@ -221,8 +221,8 @@ leaving room for semantic and accessible implementation choices  */
     --icon-sprite: var(--fa-info);
 }
 
-.icon.fa-right-angle, .icon-attach.fa-righ-angle:before {
-    --icon-sprite: var(--fa-heart);
+.icon.fa-right-angle, .icon-attach.fa-right-angle:before {
+    --icon-sprite: var(--fa-right-angle);
 }
 
 .icon.fa-search, .icon-attach.fa-search:before {

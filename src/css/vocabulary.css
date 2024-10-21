@@ -1831,8 +1831,12 @@ body > footer .license svg {
         flex-wrap: wrap;
     }
 
-    main > .posts{
+    main > .posts {
         grid-column: 4 / span 5;
+    }
+  
+    main article.posts.related ul {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -2016,6 +2020,10 @@ body > footer .license svg {
 
     body > footer .footer-menu ul {
         display: block;
+    }
+
+    main article.posts.related ul {
+        grid-template-columns: 1fr;
     }
 }
 
