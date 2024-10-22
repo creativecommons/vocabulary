@@ -27,3 +27,46 @@ span.distinct {
 main ul li {
     margin-bottom: .5em;
 }
+
+.scroll-container {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    height: 100%;
+    z-index: 1000;
+  }
+ 
+  .scroll-container:before {
+    content: '';
+    display: block;
+    height: 100vh;
+    pointer-events: none;
+  }
+ 
+  .scroll-container a {
+    position: sticky;
+    top: 88vh;
+    cursor: pointer;
+    font-size: 20px;
+  }
+ 
+  @media (max-width: 600px) {
+    .scroll-container {
+      position: fixed; 
+      right: 10px; 
+      top: auto; 
+      bottom: 20px; 
+      z-index: 1000;
+    }
+   
+    .scroll-container a {
+      font-size: 16px;
+      top: auto; 
+      bottom: 10px; 
+    }
+  }
+ 
+html{
+    scroll-behavior: smooth;
+    position: relative;
+}
