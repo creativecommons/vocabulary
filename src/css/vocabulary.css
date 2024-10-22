@@ -1902,10 +1902,15 @@ body > footer .license svg {
 }
 
 @media (max-width: 900px) {
-	.blog-index main .posts ul {
-		display: flex;
-		flex-wrap: wrap;
-	}
+
+    .blog-index main .posts ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main article.posts.related ul {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width: 705px) {
@@ -2114,6 +2119,13 @@ body > footer .license svg {
 		font-size: 1em;
 		padding: 0.3em 0.6em;
 	}
+    body > footer .footer-menu ul {
+        display: block;
+    }
+
+    main article.posts.related ul {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 425px) {
