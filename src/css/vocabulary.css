@@ -1911,7 +1911,9 @@ body > footer .license svg {
     .search-index .search-form form button {
         width: 20%;
     }
-
+    main article.posts.related ul{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 @media (max-width: 680px) {
@@ -2001,9 +2003,8 @@ body > footer .license svg {
     body > footer .footer-menu ul {
         display: block;
     }
-
-    main article.posts.related ul {
-        grid-template-columns: 1fr;
+    main article.posts.related ul{
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -2033,10 +2034,16 @@ body > footer .license svg {
     .team-index main article.persons ul {
         display: initial;
     }
+    main article.posts.related{
+        padding: 2em 1em;
+    }
 }
 
 @media (max-width:340px) {
     body > header .ancillary-menu button:before, body > header .ancillary-menu a:before {
         display: none;
+    }
+    main article.posts.related ul{
+        grid-template-columns: 1fr;
     }
 }
