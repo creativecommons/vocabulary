@@ -147,6 +147,7 @@
      --fa-info: url('../svg/font-awesome/icons/fa-icons.svg#fa-info');
      --fa-right-angle: url('../svg/font-awesome/icons/fa-icons.svg#fa-right-angle');
      --fa-search: url('../svg/font-awesome/icons/fa-icons.svg#fa-search');
+     --fa-close: url('../svg/font-awesome/icons/fa-icons.svg#fa-close');
 
      --fa-instagram: url('../svg/font-awesome/icons/fa-icons.svg#fa-instagram');
      --fa-twitter: url('../svg/font-awesome/icons/fa-icons.svg#fa-twitter');
@@ -229,6 +230,10 @@ leaving room for semantic and accessible implementation choices  */
     --icon-sprite: var(--fa-search);
 }
 
+.icon.fa-close, .icon-attach.fa-close:before {
+    --icon-sprite: var(--fa-close);
+}
+
 .icon-replace.fa-instagram {
     --icon-sprite: var(--fa-instagram);
 }
@@ -247,6 +252,10 @@ leaving room for semantic and accessible implementation choices  */
 
 .icon-replace.fa-mastodon {
     --icon-sprite: var(--fa-mastodon);
+}
+
+.icon-replace.fa-close {
+    --icon-sprite: var(--fa-close);
 }
 
 
