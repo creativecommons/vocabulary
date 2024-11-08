@@ -21,9 +21,9 @@
 
 </header>
 
-<aside class="menu">
+<aside class="menu" aria-label="Sidebar menu">
 
-<nav>
+<nav aria-label="Section navigation">
 <ul>
     <li><a href="#introduction" class="active">Introduction</a></li>
   <li><a href="#installation">Installation</a></li>
@@ -114,7 +114,7 @@ This enables two modes of build work.
 
 <p>Your project should include a “main/root” css styles file, which is included within the <span class="distinct">head</span> element of your HTML.</p>
 
-<aside>
+<aside aria-label="File naming recommendations">
     <p>It is recommended you call this file style.css; depending on the requirements of the system you could also call this file main.css, root.css, or manifest.css. WordPress Theme's, for example, require 'style.css'.</p>
 </aside>
 
@@ -128,7 +128,7 @@ This enables two modes of build work.
 
 <p>Include <span class="distinct">vocabulary.css</span> from within <span class="distinct">style.css</span> via a <a href="#">CSS @layer import</a> at the top of the file.</p>
 
-<aside>
+<aside aria-label="CSS Layers information">
     <p>CSS Layers provide a reliable, and safely overridable cascade of rulesets.</p>
 </aside>
 
@@ -175,7 +175,7 @@ This enables two modes of build work.
 
 <p><span class="distinct">Components</span> are discrete collected elements in a semantic order that provide a coherent meaning, and can be placed in various contexts which expect them. Various presentations and/or behaviors can then be applied to them depending on the needs, rules, and use cases of various contexts.</p>
 
-<aside>
+<aside aria-label="Naming conventions note">
 <p>There are perhaps better naming conventions than "components", but when used here it doesn't mean JS Components generally, Web Components, or React Components; it's just the term as general as possible.</p>
 </aside>
 
@@ -224,7 +224,7 @@ This enables two modes of build work.
     <div class="masthead">
       <h1><a class="identity-logo product" href="#">Vocabulary</a></h1>
         <button class="expand-menu">Menu</button>
-        <nav class="primary-menu">
+        <nav class="primary-menu" aria-label="Primary site navigation">
             <ul>
                 <li><a href="#">Who We Are</a></li>
                 <li><a href="#">What We Do</a></li>
@@ -235,7 +235,7 @@ This enables two modes of build work.
             </ul>
         </nav>
 
-        <nav class="ancillary-menu">
+        <nav class="ancillary-menu" aria-label="Secondary site navigation">
             <ul>
                 <!-- uncomment below line, if translation functionality is present on site -->
                 <!-- <li><button class="locale icon-attach fa-globe">English</button></li> -->
@@ -252,13 +252,13 @@ This enables two modes of build work.
     <div class="explore-panel">
 
     <!-- (optional main CC logo, p, link on non-home site back to main site) -->
-    <aside>
+    <aside aria-label="Creative Commons support message">
         <a class="identity-logo" href="https://creativecommons.org">Creative Commons</a>
         <h2>Our Work Relies On You!</h2>
         <p>Help us keep the internet free and open.</p>
     </aside>
 
-    <nav class="explore-menu">
+    <nav class="explore-menu" aria-label="Explore Creative Commons resources">
         <ul>
             <li>
                 <a href="https://network.creativecommons.org/" target="_blank">Global Network</a>
@@ -326,7 +326,7 @@ This enables two modes of build work.
 <footer>
     <a class="identity-logo" href="#">Creative Commons</a>
 
-    <nav class="footer-menu">
+    <nav class="footer-menu" aria-label="Footer menu">
         <ul>
             <li><a href="/about/contact">Contact</a></li>
             <li><a href="https://mail.creativecommons.org/subscribe" target="_blank">Newsletter</a></li>
@@ -343,7 +343,7 @@ This enables two modes of build work.
     <p><a href="mailto:info@creativecommons.org">info@creativecommons.org</a></p>
     <p><a href="tel:+14154296753">+1&#8209;415&#8209;429&#8209;6753</a></p>
 
-    <nav class="social-menu">
+    <nav class="social-menu" aria-label="Social media links">
         <ul>
             <!-- <li><a class="icon-replace fa-instagram" href="#">Instagram</a></li> -->
             <li><a class="icon-replace fa-twitter" href="https://twitter.com/creativecommons" target="_blank">Twitter</a></li>
@@ -612,7 +612,7 @@ This enables two modes of build work.
 <pre>
 <code class="lang-html">
 
-  <nav class="pagination">
+  <nav class="pagination" aria-label="navigation of different pages">
     <ol>
         <li class="current"><a href="#">1</a></li>
         <li><a href="#">2</a></li>
@@ -645,7 +645,7 @@ This enables two modes of build work.
 <pre>
 <code class="lang-html">
 
-  <aside class="opening">
+  <aside class="opening" aria-label="Opening content">
     <p>content here</p>
   </aside>
 
@@ -665,7 +665,7 @@ This enables two modes of build work.
 <pre>
 <code class="lang-html">
 
-  <aside class="closing">
+  <aside class="closing" aria-label="ending content">
     <p>content here</p>
   </aside>
 
@@ -712,7 +712,7 @@ This enables two modes of build work.
 <pre>
 <code class="lang-html">
 
-  <aside>
+  <aside aria-label="Related information">
 
     contents here
 
@@ -732,7 +732,7 @@ This enables two modes of build work.
 <pre>
 <code class="lang-html">
 
-  <nav class="filter-menu">
+  <nav class="filter-menu" aria-label="Categories navigation">
        <h2>Categories</h2>
        <ul>
            <li><a href="#">All posts</a></li>
@@ -757,7 +757,7 @@ This enables two modes of build work.
 <pre>
 <code class="lang-html">
 
-  <nav>
+  <nav aria-label="Related Links navigation">
        <h2>Related Links</h2>
        <ul>
            <li><a href="#">All posts</a></li>
