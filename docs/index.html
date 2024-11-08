@@ -2,10 +2,9 @@
 <html lang="en-US">
 <head>
 <title>Vocabulary - Docs</title>
-  
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" media="all" href="style.css" />
+<link rel="stylesheet" media="all" href="style.css">
 
 </head>
 <body>
@@ -82,7 +81,7 @@
 
 <h3>Upstream/Downstream Change Flow</h3>
 
-This enables two modes of build work. 
+This enables two modes of build work.
 
 <h4>A: upstream → downstream</h4>
 <ol>
@@ -121,9 +120,7 @@ This enables two modes of build work.
 
 <pre>
 <code class="lang-html">
-    
-<link rel="stylesheet" media="all" href="PATH/TO/style.css" />
-    
+<link rel="stylesheet" media="all" href="PATH/TO/style.css">
 </code>
 </pre>
 
@@ -131,15 +128,13 @@ This enables two modes of build work.
 
 <p>Include <span class="distinct">vocabulary.css</span> from within <span class="distinct">style.css</span> via a <a href="#">CSS @layer import</a> at the top of the file.</p>
 
-<aside> 
+<aside>
     <p>CSS Layers provide a reliable, and safely overridable cascade of rulesets.</p>
 </aside>
 
 <pre>
 <code class="lang-css">
-    
 @import 'PATH/TO/vocabulary/css/vocabulary.css' layer(vocabulary);
-    
 </code>
 </pre>
 
@@ -149,11 +144,8 @@ This enables two modes of build work.
 
 <pre>
 <code class="lang-css">
-    
 @import 'PATH/TO/vocabulary/css/vocabulary.css' layer(vocabulary);
 @import 'PATH/TO/vocabulary/css/vocabulary-tests.css' layer(vocabulary-tests);
-    
-    
 </code>
 </pre>
 
@@ -170,7 +162,6 @@ This enables two modes of build work.
 
 <script src="PATH/TO/vocabulary/js/vocabulary.js"></script>
 
-        
 </code>
 </pre>
 
@@ -198,7 +189,7 @@ This enables two modes of build work.
 
 <p>The Global Header component contains several sub-elements.</p>
 <ul>
-  
+
   <li>
     Masthead
     <ul>
@@ -206,7 +197,7 @@ This enables two modes of build work.
       <li>Primary Nav Menu</li>
       <li>Ancillary Nav Menu</li>
     </ul>
-  </li> 
+  </li>
   <li>
     Explore Panel (Explore CC)
     <ul>
@@ -300,7 +291,7 @@ This enables two modes of build work.
 
 </header>
 
-      
+
 </code>
 </pre>
 
@@ -348,7 +339,7 @@ This enables two modes of build work.
     <div class="contact">
     <!-- this area lacks a heading? -->
     <h2>Contact Us</h2>
-    <p>Creative Commons <br /> PO Box 1866, Mountain View, CA 94042</p>
+    <p>Creative Commons <br> PO Box 1866, Mountain View, CA 94042</p>
     <p><a href="mailto:info@creativecommons.org">info@creativecommons.org</a></p>
     <p><a href="tel:+14154296753">+1&#8209;415&#8209;429&#8209;6753</a></p>
 
@@ -395,7 +386,7 @@ This enables two modes of build work.
 
 </footer>
 
-      
+
 </code>
 </pre>
 
@@ -411,8 +402,8 @@ This enables two modes of build work.
  <!-- <li><span class="distinct">Main Content Region</span> of the <span class="distinct">Home Index</span></li>
   <li><span class="distinct">Main Content Region</span> of the <span class="distinct">Blog Archive</span></li> -->
 
-  <li><span class="distinct">body.home-index > main > article.authored-posts > footer > article.attribution-list</span>; on the <span class="distinct">home-index</span> page-level</li>
-  <li><span class="distinct">body.blog-index > main > article.attribution-list</span>; after referenced media; on the <span class="distinct">blog-index</span> page-level</li>
+  <li><span class="distinct">body.home-index &gt; main &gt; article.authored-posts &gt; footer &gt; article.attribution-list</span>; on the <span class="distinct">home-index</span> page-level</li>
+  <li><span class="distinct">body.blog-index &gt; main &gt; article.attribution-list</span>; after referenced media; on the <span class="distinct">blog-index</span> page-level</li>
 </ul>
 
 <pre>
@@ -426,7 +417,7 @@ This enables two modes of build work.
       <li>
         <article>
           <figure>
-            <img src="PATH/TO/image.png" />
+            <img src="PATH/TO/image.png" alt="">
             <span class="attribution">attribution here</span>
           </figure>
         </article>
@@ -447,15 +438,15 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-  <li><span class="distinct">body.* > article.attention</span>; after <span class="distinct">body > header</span>; before <span class="distinct">body > main</span>; all page-levels</li>
-  <li><span class="distinct">body.archive-page > aside > article.attention</span>; as last child item, only <span class="distinct">default-page</span>, <span class="distinct">archive-page</span> levels</li>
+  <li><span class="distinct">body.* &gt; article.attention</span>; after <span class="distinct">body &gt; header</span>; before <span class="distinct">body &gt; main</span>; all page-levels</li>
+  <li><span class="distinct">body.archive-page &gt; aside &gt; article.attention</span>; as last child item, only <span class="distinct">default-page</span>, <span class="distinct">archive-page</span> levels</li>
 </ul>
 
 <pre>
 <code class="lang-html">
 
   <article class="attention">
-  
+
    content here
 
   </article>
@@ -469,7 +460,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-  <li><span class="distinct">article.persons > ul > li > article.person</span> </li>
+  <li><span class="distinct">article.persons &gt; ul &gt; li &gt; article.person</span> </li>
 
 </ul>
 
@@ -480,7 +471,7 @@ This enables two modes of build work.
     <h3><a href="#">Name Here</a></h3>
     <span class="title">Position/Title here</span>
     <figure>
-      <img src="PATH/TO/profile.jpg" />
+      <img src="PATH/TO/profile.jpg" alt="">
     </figure>
     <p>Truncated bio here&hellip;</p>
   </article>
@@ -493,7 +484,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-  <li><span class="distinct">body.team-index main</span>, directly after <span class="distinct">main > header</span> </li>
+  <li><span class="distinct">body.team-index main</span>, directly after <span class="distinct">main &gt; header</span> </li>
 
 </ul>
 
@@ -508,7 +499,7 @@ This enables two modes of build work.
           <h3><a href="#">Name Here</a></h3>
           <span class="title">Position/Title here</span>
           <figure>
-            <img src="PATH/TO/profile.jpg" />
+            <img src="PATH/TO/profile.jpg" alt="">
           </figure>
           <p>Truncated bio here&hellip;</p>
          </article>
@@ -528,9 +519,9 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-  <li><span class="distinct">main > article.post</span> </li>
-  <li><span class="distinct">main > article.posts > article.post</span> </li>
-  <li><span class="distinct">article.posts  ul > li > article.post</span> </li>
+  <li><span class="distinct">main &gt; article.post</span> </li>
+  <li><span class="distinct">main &gt; article.posts &gt; article.post</span> </li>
+  <li><span class="distinct">article.posts  ul &gt; li &gt; article.post</span> </li>
 </ul>
 
 <pre>
@@ -545,7 +536,7 @@ This enables two modes of build work.
 
     </header>
     <figure>
-      <img src="PATH/TO/image.jpg" />
+      <img src="PATH/TO/image.jpg" alt="">
       <span class="attribution">attribution here</span>
     </figure>
     <p>truncated teaser excerpt </p>
@@ -562,12 +553,12 @@ This enables two modes of build work.
 <p><span class="distinct">Posts</span> components support a pseudo-semantic variant class of <span class="distinct">featured</span> or <span class="distinct">related</span>. This helps further describe what they are more specifically, but allows a semantic-ish target for their change in behavior or provided sub-elements. </p>
 <h4>Expected Contexts</h4>
 <ul>
-  <li><span class="distinct">main > article.posts</span>, directly after the <span class="distinct">main > header</span> </li>
-  <li><span class="distinct">body.blog-index > main > article.posts.featured</span>, directly after the <span class="distinct">main > header</span> </li>
-  <li><span class="distinct">body.blog-index > main > article.posts</span>, directly after the <span class="distinct">main > article.posts.featured</span> </li>
-  <li><span class="distinct">body.archive-page > main > article.posts</span>, directly after the <span class="distinct">main > aside</span>  </li>
-  <li><span class="distinct">body.person-page > main > article.posts</span>, directly after the <span class="distinct">main > header</span>  </li>
-  <li><span class="distinct">body.blog-post > main > article.posts.related</span>, as the last child of <span class="distinct">body > main</span> </li>
+  <li><span class="distinct">main &gt; article.posts</span>, directly after the <span class="distinct">main &gt; header</span> </li>
+  <li><span class="distinct">body.blog-index &gt; main &gt; article.posts.featured</span>, directly after the <span class="distinct">main &gt; header</span> </li>
+  <li><span class="distinct">body.blog-index &gt; main &gt; article.posts</span>, directly after the <span class="distinct">main &gt; article.posts.featured</span> </li>
+  <li><span class="distinct">body.archive-page &gt; main &gt; article.posts</span>, directly after the <span class="distinct">main &gt; aside</span>  </li>
+  <li><span class="distinct">body.person-page &gt; main &gt; article.posts</span>, directly after the <span class="distinct">main &gt; header</span>  </li>
+  <li><span class="distinct">body.blog-post &gt; main &gt; article.posts.related</span>, as the last child of <span class="distinct">body &gt; main</span> </li>
 
 </ul>
 
@@ -577,7 +568,7 @@ This enables two modes of build work.
   <article class="posts">
 
   <h2>Title Here</h2>
-  
+
     <article class="story">
       <header>
       <h3><a href="#">Title Here</a></h3>
@@ -587,7 +578,7 @@ This enables two modes of build work.
 
       </header>
       <figure>
-        <img src="PATH/TO/image.jpg" />
+        <img src="PATH/TO/image.jpg" alt="">
         <span class="attribution">attribution here</span>
       </figure>
       <p>truncated teaser excerpt </p>
@@ -612,9 +603,9 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-  <li><span class="distinct">body.archive-page > main > nav.pagination</span>, as the last child of <span class="distinct">body > main</span> </li>
-  <li><span class="distinct">body.person-page > main > nav.pagination</span>, as the last child of <span class="distinct">body > main</span> </li>
-  <li><span class="distinct">body.search-index > main > nav.pagination</span>, as the last child of <span class="distinct">body > main</span> </li>
+  <li><span class="distinct">body.archive-page &gt; main &gt; nav.pagination</span>, as the last child of <span class="distinct">body &gt; main</span> </li>
+  <li><span class="distinct">body.person-page &gt; main &gt; nav.pagination</span>, as the last child of <span class="distinct">body &gt; main</span> </li>
+  <li><span class="distinct">body.search-index &gt; main &gt; nav.pagination</span>, as the last child of <span class="distinct">body &gt; main</span> </li>
 
 </ul>
 
@@ -632,7 +623,7 @@ This enables two modes of build work.
         <li><a href="#">527</a></li>
 
         <!-- <li><a href="#"><</a></li> -->
-        <li><a href="#">></a></li>
+        <li><a href="#">&gt;</a></li>
     </ol>
 
   </nav>
@@ -646,7 +637,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-  <li><span class="distinct">body.blog-post > main > aside.opening</span>; optionally after <span class="distinct">main > header</span></li>
+  <li><span class="distinct">body.blog-post &gt; main &gt; aside.opening</span>; optionally after <span class="distinct">main &gt; header</span></li>
 
 
 </ul>
@@ -666,7 +657,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-  <li><span class="distinct">body.blog-post > main > aside.closing</span>; optionally before <span class="distinct">main > span.pub-date</span></li>
+  <li><span class="distinct">body.blog-post &gt; main &gt; aside.closing</span>; optionally before <span class="distinct">main &gt; span.pub-date</span></li>
 
 
 </ul>
@@ -686,7 +677,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-  <li><span class="distinct">body.blog-post > main > article.tags</span>; optionally after <span class="distinct">main > span.pubdate</span></li>
+  <li><span class="distinct">body.blog-post &gt; main &gt; article.tags</span>; optionally after <span class="distinct">main &gt; span.pubdate</span></li>
 
 
 </ul>
@@ -712,8 +703,8 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-  <li><span class="distinct">body > aside</span>; optionally after <span class="distinct">main > header</span></li>
-<li><span class="distinct">body.archive-page > aside</span>, after <span class="distinct">main > header</span></li>
+  <li><span class="distinct">body &gt; aside</span>; optionally after <span class="distinct">main &gt; header</span></li>
+<li><span class="distinct">body.archive-page &gt; aside</span>, after <span class="distinct">main &gt; header</span></li>
 
 
 </ul>
@@ -734,7 +725,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-<li><span class="distinct">body.archive-page > aside > nav.filter-menu</span></li>
+<li><span class="distinct">body.archive-page &gt; aside &gt; nav.filter-menu</span></li>
 
 </ul>
 
@@ -759,7 +750,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-<li><span class="distinct">body.archive-page > aside > nav</span></li>
+<li><span class="distinct">body.archive-page &gt; aside &gt; nav</span></li>
 
 </ul>
 
@@ -785,7 +776,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-<li><span class="distinct">article.case-studies > ul > li > article.data-point</span></li>
+<li><span class="distinct">article.case-studies &gt; ul &gt; li &gt; article.data-point</span></li>
 
 </ul>
 
@@ -798,7 +789,7 @@ This enables two modes of build work.
     <h3 class="stat">55+ million articles</h3>
     <p>Descriptive text here</p>
   </article>
- 
+
 
 </code>
 </pre>
@@ -810,7 +801,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-<li><span class="distinct">article.case-studies > footer > article.data-points</span></li>
+<li><span class="distinct">article.case-studies &gt; footer &gt; article.data-points</span></li>
 
 </ul>
 
@@ -842,7 +833,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-<li><span class="distinct">body.home-index > main > article.case-studies</span></li>
+<li><span class="distinct">body.home-index &gt; main &gt; article.case-studies</span></li>
 
 </ul>
 
@@ -855,7 +846,7 @@ This enables two modes of build work.
     <ul>
       <li>
         <figure>
-          <img src="PATH/TO/home.jpg" />
+          <img src="PATH/TO/home.jpg" alt="">
           <span class="attribution">attribution here</span>
          </figure>
        </li>
@@ -891,7 +882,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-<li><span class="distinct">body.search-index > main > header</span>; directly after the <span class="distinct">main > header > h1</span></li>
+<li><span class="distinct">body.search-index &gt; main &gt; header</span>; directly after the <span class="distinct">main &gt; header &gt; h1</span></li>
 
 </ul>
 
@@ -915,7 +906,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-<li><span class="distinct">body.home-index > main > article.topic-summary</span></li>
+<li><span class="distinct">body.home-index &gt; main &gt; article.topic-summary</span></li>
 
 </ul>
 
@@ -942,12 +933,12 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-<li><span class="distinct">body > main > header</span></li>
-<li><span class="distinct">body.archive-page > main > header</span></li>
-<li><span class="distinct">body.blog-index > main > header</span></li>
-<li><span class="distinct">body.blog-post > main > header</span></li>
-<li><span class="distinct">body.search-index > main > header</span></li>
-<li><span class="distinct">body.team-index > main > header</span></li>
+<li><span class="distinct">body &gt; main &gt; header</span></li>
+<li><span class="distinct">body.archive-page &gt; main &gt; header</span></li>
+<li><span class="distinct">body.blog-index &gt; main &gt; header</span></li>
+<li><span class="distinct">body.blog-post &gt; main &gt; header</span></li>
+<li><span class="distinct">body.search-index &gt; main &gt; header</span></li>
+<li><span class="distinct">body.team-index &gt; main &gt; header</span></li>
 </ul>
 
 <pre>
@@ -962,7 +953,7 @@ This enables two modes of build work.
     <span class="categories">  <!-- optional -->
       <a href="#">Open Culture</a>
     </span>
-  
+
   </header>
 
 </code>
@@ -973,7 +964,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-<li><span class="distinct">body.person-page > main > header</span></li>
+<li><span class="distinct">body.person-page &gt; main &gt; header</span></li>
 </ul>
 
 <pre>
@@ -986,13 +977,13 @@ This enables two modes of build work.
     <span class="pronouns">pronouns optionally here</span>
 
     <figure>
-      <img src="PATH/TO/profile.jpg" />
+      <img src="PATH/TO/profile.jpg" alt="">
       <span class="attribution">attribution here</span>
      </figure>
      <div class="bio">
        <p>Bio here</p>
      </div>
-  
+
   </header>
 
 </code>
