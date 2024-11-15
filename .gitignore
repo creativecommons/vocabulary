@@ -3,7 +3,7 @@
 .DS_Store
 .AppleDouble
 .LSOverride
-
+.vscode/
 # published
 docs/_redirects
 docs/specimen/
