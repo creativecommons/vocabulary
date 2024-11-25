@@ -231,14 +231,6 @@ leaving room for semantic and accessible implementation choices  */
     --icon-sprite: var(--fa-search);
 }
 
-.icon.fa-close, .icon-attach.fa-close:before {
-    --icon-sprite: var(--fa-close);
-}
-
-.icon-replace.fa-instagram {
-    --icon-sprite: var(--fa-instagram);
-}
-
 .icon-replace.fa-bluesky {
     --icon-sprite: var(--fa-bluesky);
 }
