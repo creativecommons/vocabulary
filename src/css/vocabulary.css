@@ -2033,10 +2033,17 @@ body > footer .license svg {
     .team-index main article.persons ul {
         display: initial;
     }
+    
 }
 
 @media (max-width:340px) {
     body > header .ancillary-menu button:before, body > header .ancillary-menu a:before {
         display: none;
+    }
+  
+}
+@media only screen and (min-width: 320px) and (max-width: 540px) {
+    .content {
+        padding:0 25px;
     }
 }
