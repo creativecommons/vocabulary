@@ -9,8 +9,6 @@ if(exploreButton!==null && explorePanel!==null) {
     });
 }
 
-
-
 const menuButton = document.querySelector('button.expand-menu');
 const menuPanel = document.querySelector('.primary-menu');
 
@@ -21,13 +19,10 @@ if(menuButton !== null && menuPanel !== null) {
     });
 }
 
-
-
 const attributionButton = document.querySelector('button.expand-attribution');
 const attributionPanel = document.querySelector('.attribution-panel');
 
 if (attributionButton !== null && attributionPanel !== null ) {
-
     attributionButton.addEventListener('click', (event) => {
         attributionButton.classList.toggle('selected');
         attributionPanel.classList.toggle('expand');
