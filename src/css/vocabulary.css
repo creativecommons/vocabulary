@@ -1949,6 +1949,24 @@ body > footer .license svg {
     main > header:before {
         left: 0;
     }
+    .search-index main > header:before {
+        left: 0;
+    }
+
+    .search-index main > header {
+        padding: 3.7em 1em;
+    }
+    
+    .search-index .search-form form {
+        display: flex;
+        width: 100%;
+    }
+    
+    .search-index .search-form form button {
+        width: 20%;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
 
     main .content {
         padding: var(--vocabulary-page-edges-space);
@@ -1957,6 +1975,9 @@ body > footer .license svg {
     .posts article figure {
         width: 100%;
         flex: initial;
+    }
+    .posts .post{
+        margin: 0 var(--vocabulary-page-edges-space);
     }
 
     .team-index main > header {
