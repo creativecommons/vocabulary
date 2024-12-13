@@ -20,6 +20,20 @@ For installation information please see the [Installation Documentation][vocabul
 [found-tech]: https://opensource.creativecommons.org/contributing-code/foundational-tech/
 [vocabulary-docs]: https://vocabulary-docs.netlify.app/#installation
 
+### Upstream/Downstream Change Flow
+
+Vocabulary has two modes of change flow that can be utilized as outlined within the [Upstream Downstream Flow documention](https://vocabulary-docs.netlify.app/#upstream-downstream-change-flow).
+
+#### Downstream Implementations
+
+* [cc-resource-archive](https://github.com/creativecommons/cc-resource-archive)
+* [chooser](https://github.com/creativecommons/chooser)
+* [index-prototype](https://github.com/creativecommons/index-prototype)
+  - [vocabulary-theme](https://github.com/creativecommons/vocabulary-theme)
+    - [cc-legal-tools-app](https://github.com/creativecommons/cc-legal-tools-app)
+    - [faq](https://github.com/creativecommons/faq)
+    - [mp](https://github.com/creativecommons/mp)
+* [search](https://github.com/creativecommons/search)
 
 ## Code of conduct
 
