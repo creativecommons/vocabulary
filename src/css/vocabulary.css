@@ -1968,6 +1968,15 @@ body > footer .license svg {
         flex: initial;
     }
 
+    .person-page main > header {
+        padding-left: var(--vocabulary-page-edges-space);
+        padding-right: var(--vocabulary-page-edges-space);
+    }
+
+    .person-page main > header:before { 
+        left: 0;
+    }
+
     .search-index main > header {
         padding-left: var(--vocabulary-page-edges-space);
         padding-right: var(--vocabulary-page-edges-space);
@@ -1977,7 +1986,6 @@ body > footer .license svg {
         left: 0;
     }
     
-
     .team-index main > header {
         padding: 0 var(--vocabulary-page-edges-space);
     }
