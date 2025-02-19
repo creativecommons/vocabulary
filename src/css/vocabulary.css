@@ -1958,6 +1958,9 @@ body > footer .license svg {
         padding: 0 var(--vocabulary-page-edges-space);
     }
 
+    main > *:not(header) {
+        padding: 0 var(--vocabulary-page-edges-space);
+    }
 
     main > .posts {
         padding: 0 var(--vocabulary-page-edges-space); 
