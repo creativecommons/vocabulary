@@ -513,7 +513,7 @@ main figure {
     padding: 0;
 }
 
-main > article figure img, main > figure img {
+main > article figure img, main > figure img, main > .content figure img {
     width: 100%;
 }
 
