@@ -2013,10 +2013,6 @@ body > footer .license svg {
         order: -1;
     }
 
-    main nav.pagination {
-        width: 100%;
-    }
-
     main nav.pagination ol {
         /* width: 100%; */
         flex-wrap: wrap;
