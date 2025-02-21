@@ -49,3 +49,43 @@ body > header .masthead .primary-menu ul li a.donate:before {
 body > header .masthead .primary-menu ul li a.donate:hover:before {
     --icon-sprite-color: white;
 }
+
+body > article.attention {
+    /* background: #fbd43c; */
+    background: #05b5da;
+    /* background: #bb377e; */
+    /* background: #e4cbf3; */
+}
+
+body > article.attention:nth-of-type(2) {
+    background: #CBF3F0;
+    display: none;
+
+}
+
+body > article.attention:nth-of-type(3) {
+    background: #fbd43c;
+}
+
+body > article.attention:nth-of-type(4) {
+    /* background: #fbd43c; */
+
+    display: none;
+}
+
+
+body > article.attention:nth-of-type(5) {
+        background: #bb377e;
+}
+
+body > article.attention:nth-of-type(6) {
+    background: #e4cbf3;
+    background: #fee9f9;
+    display: none;
+}
+
+body > article.attention:nth-of-type(7) {
+    background: black;
+
+}
+
