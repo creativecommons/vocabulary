@@ -1,125 +1,188 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-<title>Vocabulary - Docs</title>
-  
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>Vocabulary - Docs</title>
 
-<link rel="stylesheet" media="all" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-</head>
-<body>
+    <link rel="stylesheet" media="all" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Vocabulary</h1>
 
-<header>
+      <p>A cohesive system of design for Creative Commons.</p>
 
-<h1>Vocabulary</h1>
+      <p><strong>note:</strong> This documentation is still in draft mode.</p>
 
-<p>A cohesive system of design for Creative Commons.</p>
+      <p>
+        <strong>note:</strong> At present Vocabulary is unversioned, and hyper
+        localized to the
+        <a href="https://creativecommons.org">Index Project</a>
+        (CreativeCommons.org). This means that apart from the global
+        <span class="distinct">Header</span> and
+        <span class="distinct">Footer</span> areas; components, elements,
+        pieces, tokens, etc. are not adequately generalized enough to be as
+        composable within other site/project contexts. The work to correct this
+        is underway, caution should be exercised in the meantime.
+      </p>
+    </header>
 
-<p><strong>note:</strong> This documentation is still in draft mode.</p>
+    <div class="sidebar-menu">
+      <aside class="menu">
+        <nav>
+          <ul>
+            <li><a href="#introduction" >Introduction</a></li>
+            <li><a href="#installation">Installation</a></li>
+            <li><a href="#components">Components</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-<p><strong>note:</strong> At present Vocabulary is unversioned, and hyper localized to the <a href="https://creativecommons.org">Index Project</a> (CreativeCommons.org). This means that apart from the global <span class="distinct">Header</span> and <span class="distinct">Footer</span> areas; components, elements, pieces, tokens, etc. are not adequately generalized enough to be as composable within other site/project contexts. The work to correct this is underway, caution should be exercised in the meantime.</p>
+      <main>
+        <h2 id="introduction">Introduction</h2>
 
-</header>
+        <p>
+          Vocabulary is a refactor and reimplementation of the original, now
+          archived,
+          <a href="https://github.com/cc-archive/vocabulary-legacy"
+            >Vocabulary Legacy</a
+          >
+          project.
+        </p>
 
-<aside class="menu">
+        <p>
+          Both projects are informed by the
+          <a
+            href="https://creativecommons.org/wp-content/uploads/2019/10/Creative-Commons-Style-Guide-2019.pdf"
+            >CC Style Guide (2019)</a
+          >, and incorporate or adapt its guidance into a digital context.
+        </p>
 
-<nav>
-<ul>
-    <li><a href="#introduction" class="active">Introduction</a></li>
-  <li><a href="#installation">Installation</a></li>
-  <li><a href="#components">Components</a></li>
+        <h3>Structure &amp; Behavior</h3>
 
-</ul>
+        <p>
+          Vocabulary is raw material design system with inherent rules and
+          generalized implementable documentation.
+        </p>
 
-</nav>
+        <p>
+          Vocabulary is then implemented within a project via an
+          upstream/downstream relationship as follow:
+        </p>
 
-
-
-</aside>
-
-<main>
-
-<h2 id="introduction">Introduction</h2>
-
-<p>Vocabulary is a refactor and reimplementation of the original, now archived, <a href="https://github.com/cc-archive/vocabulary-legacy">Vocabulary Legacy</a> project.</p>
-
-<p>Both projects are informed by the  <a href="https://creativecommons.org/wp-content/uploads/2019/10/Creative-Commons-Style-Guide-2019.pdf">CC Style Guide (2019)</a>, and incorporate or adapt its guidance into a digital context.</p>
-
-
-<h3>Structure &amp; Behavior</h3>
-
-<p>Vocabulary is raw material design system with inherent rules and generalized implementable documentation.</p>
-
-<p>Vocabulary is then implemented within a project via an upstream/downstream relationship as follow:</p>
-
-<pre>
+        <pre>
     Design System → Static Implementation → Dynamic Implementation
     vocabulary → prototype → final
     vocabulary → [project]-prototype → [project]-[implementation(s)] (*-dev-env *-theme, etc.)
-</pre>
+</pre
+        >
 
-<p>In the case of the <a href="https://creativecommons.org">Index Project (CreativeCommons.org)</a> it looks like this: </p>
+        <p>
+          In the case of the
+          <a href="https://creativecommons.org"
+            >Index Project (CreativeCommons.org)</a
+          >
+          it looks like this:
+        </p>
 
-<pre>
+        <pre>
     <a href="https://github.com/creativecommons/vocabulary">vocabulary</a> → <a href="https://github.com/creativecommons/index-prototype">index-prototype</a> → <a href="https://github.com/creativecommons/vocabulary-theme">vocabulary-theme</a>
 </pre>
 
-<h4>A prototype contains:</h4>
-<ul>
-    <li>[vocabulary]</li>
-    <li>project source of truth implementations (contexts mostly)</li>
-    <li>localized functionality (new contexts, etc., until moved into vocabulary) (functionality)</li>
-    <li>patches (temp overrides, until moved into vocabulary) (fixes)</li>
-</ul>
+        <h4>A prototype contains:</h4>
+        <ul>
+          <li>[vocabulary]</li>
+          <li>project source of truth implementations (contexts mostly)</li>
+          <li>
+            localized functionality (new contexts, etc., until moved into
+            vocabulary) (functionality)
+          </li>
+          <li>patches (temp overrides, until moved into vocabulary) (fixes)</li>
+        </ul>
 
-<p>We need to maintain a way to test F/E UX absent a CMS layer. That way the static layer prototype describes the intended output the CMS would create. It becomes a form of documentation and testing. It's an expectation spec.</p>
+        <p>
+          We need to maintain a way to test F/E UX absent a CMS layer. That way
+          the static layer prototype describes the intended output the CMS would
+          create. It becomes a form of documentation and testing. It's an
+          expectation spec.
+        </p>
 
-<p>It's one additional layer of downstream changes, but it provides a clear and distinct documentation for how and where things are localized when vocabulary is implemented, and can offer good examples for where we can pull varied localized implementations upstream into vocabulary generally, so the localizations can then be removed.
-</p>
+        <p>
+          It's one additional layer of downstream changes, but it provides a
+          clear and distinct documentation for how and where things are
+          localized when vocabulary is implemented, and can offer good examples
+          for where we can pull varied localized implementations upstream into
+          vocabulary generally, so the localizations can then be removed.
+        </p>
 
+        <h3 id="upstream-downstream-change-flow">
+          Upstream/Downstream Change Flow
+        </h3>
 
+        This enables two modes of build work.
 
-<h3 id="upstream-downstream-change-flow">Upstream/Downstream Change Flow</h3>
+        <h4>A: upstream → downstream</h4>
+        <ol>
+          <li>new functionality introduced into Vocabulary</li>
+          <li>documented and generalized</li>
+          <li>available to prototypes and implementations</li>
+        </ol>
 
-This enables two modes of build work. 
+        <h4>B: downstream → upstream → downstream</h4>
+        <ol>
+          <li>new functionality introduced local to project prototype</li>
+          <li>documented and implemented here locally</li>
+          <li>migrated to vocabulary</li>
+          <li>documented and generalized</li>
+          <li>removed in downstream project's prototype localization</li>
+          <li>available to prototypes and implementations</li>
+        </ol>
 
-<h4>A: upstream → downstream</h4>
-<ol>
-    <li>new functionality introduced into Vocabulary</li>
-    <li>documented and generalized</li>
-    <li>available to prototypes and implementations</li>
-</ol>
+        <p>
+          Either route is valid, and has its reasons for being the more viable
+          route. But it is generally preferred that route A be the default
+          consideration wherever possible.
+        </p>
 
-<h4>B: downstream → upstream → downstream</h4>
-<ol>
-    <li>new functionality introduced local to project prototype</li>
-    <li>documented and implemented here locally</li>
-    <li>migrated to vocabulary</li>
-    <li>documented and generalized</li>
-    <li>removed in downstream project's prototype localization</li>
-    <li>available to prototypes and implementations</li>
-</ol>
+        <h2 id="installation">Installation</h2>
 
-<p>Either route is valid, and has its reasons for being the more viable route. But it is generally preferred that route A be the default consideration wherever possible. </p>
+        <h3>01. Get the Vocabulary Files</h3>
 
-<h2 id="installation">Installation</h2>
+        <p>
+          Download the
+          <a href="https://github.com/creativecommons/vocabulary"
+            >creativecommons/vocabulary</a
+          >
+          repository, rename the <span class="distinct">/src</span> directory to
+          <span class="distinct">/vocabulary</span>, and move it into desired
+          location.
+        </p>
 
-<h3>01. Get the Vocabulary Files</h3>
+        <p>
+          Vocabulary needs to be included via CSS
+          <strong>and</strong> JavaScript routes. Both are generally required,
+          and recommended.
+        </p>
 
-<p>Download the <a href="https://github.com/creativecommons/vocabulary">creativecommons/vocabulary</a> repository, rename the <span class="distinct">/src</span> directory to <span class="distinct">/vocabulary</span>, and move it into desired location.</p>
+        <h3>02. CSS Installation</h3>
 
-<p>Vocabulary needs to be included via CSS <strong>and</strong> JavaScript routes. Both are generally required, and recommended.</p>
+        <p>
+          Your project should include a “main/root” css styles file, which is
+          included within the <span class="distinct">head</span> element of your
+          HTML.
+        </p>
 
-<h3>02. CSS Installation</h3>
+        <aside>
+          <p>
+            It is recommended you call this file style.css; depending on the
+            requirements of the system you could also call this file main.css,
+            root.css, or manifest.css. WordPress Theme's, for example, require
+            'style.css'.
+          </p>
+        </aside>
 
-<p>Your project should include a “main/root” css styles file, which is included within the <span class="distinct">head</span> element of your HTML.</p>
-
-<aside>
-    <p>It is recommended you call this file style.css; depending on the requirements of the system you could also call this file main.css, root.css, or manifest.css. WordPress Theme's, for example, require 'style.css'.</p>
-</aside>
-
-<pre>
+        <pre>
 <code class="lang-html">
     
 <link rel="stylesheet" media="all" href="PATH/TO/style.css" />
@@ -127,15 +190,20 @@ This enables two modes of build work.
 </code>
 </pre>
 
+        <p>
+          Include <span class="distinct">vocabulary.css</span> from within
+          <span class="distinct">style.css</span> via a
+          <a href="#">CSS @layer import</a> at the top of the file.
+        </p>
 
+        <aside>
+          <p>
+            CSS Layers provide a reliable, and safely overridable cascade of
+            rulesets.
+          </p>
+        </aside>
 
-<p>Include <span class="distinct">vocabulary.css</span> from within <span class="distinct">style.css</span> via a <a href="#">CSS @layer import</a> at the top of the file.</p>
-
-<aside> 
-    <p>CSS Layers provide a reliable, and safely overridable cascade of rulesets.</p>
-</aside>
-
-<pre>
+        <pre>
 <code class="lang-css">
     
 @import 'PATH/TO/vocabulary/css/vocabulary.css' layer(vocabulary);
@@ -143,11 +211,14 @@ This enables two modes of build work.
 </code>
 </pre>
 
+        <p>
+          <strong>Note:</strong> (for in-dev implementations) You can also
+          include the <span class="distinct">vocabulary-tests.css</span> file to
+          perform basic tests against recommended and required approaches within
+          the HTML markup.
+        </p>
 
-
-<p><strong>Note:</strong> (for in-dev implementations) You can also include the <span class="distinct">vocabulary-tests.css</span> file to perform basic tests against recommended and required approaches within the HTML markup.</p>
-
-<pre>
+        <pre>
 <code class="lang-css">
     
 @import 'PATH/TO/vocabulary/css/vocabulary.css' layer(vocabulary);
@@ -157,15 +228,26 @@ This enables two modes of build work.
 </code>
 </pre>
 
-<p>Production use of the <span class="distinct">vocabulary-tests.css</span> file  is not recommended generally.</p>
+        <p>
+          Production use of the
+          <span class="distinct">vocabulary-tests.css</span> file is not
+          recommended generally.
+        </p>
 
-<h3>03. JS Installation</h3>
+        <h3>03. JS Installation</h3>
 
-<p>Vocabulary has a minimal JavaScript footprint, but does have some required behaviors that rely on JS.</p>
+        <p>
+          Vocabulary has a minimal JavaScript footprint, but does have some
+          required behaviors that rely on JS.
+        </p>
 
-<p>Include the <span class="distinct">vocabulary.js</span> file at the bottom of your HTML markup, prior to the closing <span class="distinct">body</span> tag.</p>
+        <p>
+          Include the <span class="distinct">vocabulary.js</span> file at the
+          bottom of your HTML markup, prior to the closing
+          <span class="distinct">body</span> tag.
+        </p>
 
-<pre>
+        <pre>
 <code class="lang-html">
 
 <script src="PATH/TO/vocabulary/js/vocabulary.js"></script>
@@ -174,57 +256,77 @@ This enables two modes of build work.
 </code>
 </pre>
 
+        <h2 id="components">Components</h2>
 
+        <p>
+          <span class="distinct">Components</span> are discrete collected
+          elements in a semantic order that provide a coherent meaning, and can
+          be placed in various contexts which expect them. Various presentations
+          and/or behaviors can then be applied to them depending on the needs,
+          rules, and use cases of various contexts.
+        </p>
 
+        <aside>
+          <p>
+            There are perhaps better naming conventions than "components", but
+            when used here it doesn't mean JS Components generally, Web
+            Components, or React Components; it's just the term as general as
+            possible.
+          </p>
+        </aside>
 
+        <p>
+          <strong>Note:</strong> the code in this component section are meant to
+          be examples, and not necessarily 1:1 reference to be used exactly.
+        </p>
 
+        <h3 id="global-header">Header - Global Area</h3>
+        <a class="permalink" href="#global-header">permalink</a>
 
+        <p>
+          Each CC site utilizing Vocabulary should include the global
+          <span class="distinct">Header</span> &amp;
+          <span class="distinct">Footer</span> areas at the top and bottom of
+          the site respectively.
+        </p>
 
-<h2 id="components">Components</h2>
+        <p>The Global Header component contains several sub-elements.</p>
+        <ul>
+          <li>
+            Masthead
+            <ul>
+              <li>Entity Logo</li>
+              <li>Primary Nav Menu</li>
+              <li>Ancillary Nav Menu</li>
+            </ul>
+          </li>
+          <li>
+            Explore Panel (Explore CC)
+            <ul>
+              <li>
+                Optional main Index Site identity/link / blurb (used for non
+                Index Project sites)
+              </li>
+              <li>Explore Nav Menu</li>
+            </ul>
+          </li>
+        </ul>
 
-<p><span class="distinct">Components</span> are discrete collected elements in a semantic order that provide a coherent meaning, and can be placed in various contexts which expect them. Various presentations and/or behaviors can then be applied to them depending on the needs, rules, and use cases of various contexts.</p>
+        <p>
+          These sub-elements are not independent and are not meant to be used
+          outside of the Global Header component.
+        </p>
 
-<aside>
-<p>There are perhaps better naming conventions than "components", but when used here it doesn't mean JS Components generally, Web Components, or React Components; it's just the term as general as possible.</p>
-</aside>
+        <h4>Expected Contexts</h4>
+        <ul>
+          <li>
+            The <span class="distinct">Header</span> begins directly after the
+            opening <span class="distinct">body</span> tag, and appears only
+            once per page, on all page levels
+          </li>
+        </ul>
 
-
-<p><strong>Note:</strong> the code in this component section are meant to be examples, and not necessarily 1:1 reference to be used exactly.</p>
-
-
-<h3 id="global-header">Header - Global Area</h3><a class="permalink" href="#global-header">permalink</a>
-
-<p>Each CC site utilizing Vocabulary should include the global <span class="distinct">Header</span> &amp; <span class="distinct">Footer</span> areas at the top and bottom of the site respectively.</p>
-
-<p>The Global Header component contains several sub-elements.</p>
-<ul>
-  
-  <li>
-    Masthead
-    <ul>
-      <li>Entity Logo</li>
-      <li>Primary Nav Menu</li>
-      <li>Ancillary Nav Menu</li>
-    </ul>
-  </li> 
-  <li>
-    Explore Panel (Explore CC)
-    <ul>
-      <li>Optional main Index Site identity/link / blurb (used for non Index Project sites)</li>
-      <li>Explore Nav Menu</li>
-    </ul>
-  </li>
-</ul>
-
-<p>These sub-elements are not independent and are not meant to be used outside of the Global Header component.</p>
-
-
-<h4>Expected Contexts</h4>
-<ul>
-  <li>The <span class="distinct">Header</span> begins directly after the opening <span class="distinct">body</span> tag, and appears only once per page, on all page levels</li>
-</ul>
-
-<pre>
+        <pre>
 <code class="lang-html">
 
 <a class="skip-to-content" href="#main-content-marker">Skip to content</a>
@@ -304,32 +406,43 @@ This enables two modes of build work.
 </code>
 </pre>
 
+        <h3 id="global-footer">Footer - Global Area</h3>
+        <a class="permalink" href="#global-footer">permalink</a>
 
+        <p>
+          Each CC site utilizing Vocabulary should include the global
+          <span class="distinct">Header</span> &amp;
+          <span class="distinct">Footer</span> areas at the top and bottom of
+          the site respectively.
+        </p>
 
+        <p>The Global Footer component contains several sub-elements.</p>
+        <ul>
+          <li>main Index Project Site identity/link</li>
+          <li>Footer Nav Menu</li>
+          <li>Contact Information</li>
+          <li>Social Nav Menu</li>
+          <li>Newsletter Subscription Form</li>
+          <li>Donation Call-to-action button</li>
+          <li>License Information</li>
+        </ul>
 
-<h3 id="global-footer">Footer - Global Area</h3><a class="permalink" href="#global-footer">permalink</a>
+        <p>
+          These sub-elements are not independent and are not meant to be used
+          outside of the Global Footer component.
+        </p>
 
-<p>Each CC site utilizing Vocabulary should include the global <span class="distinct">Header</span> &amp; <span class="distinct">Footer</span> areas at the top and bottom of the site respectively.</p>
+        <h4>Expected Contexts</h4>
+        <ul>
+          <li>
+            The <span class="distinct">Footer</span> begins directly before the
+            bottom <span class="distinct">script</span> includes, which appear
+            before the closing <span class="distinct">body</span> tag, and
+            appears only once per page, on all page levels
+          </li>
+        </ul>
 
-<p>The Global Footer component contains several sub-elements.</p>
-<ul>
-    <li>main Index Project Site identity/link</li>
-    <li>Footer Nav Menu</li>
-    <li>Contact Information</li>
-    <li>Social Nav Menu</li>
-    <li>Newsletter Subscription Form</li>
-    <li>Donation Call-to-action button</li>
-    <li>License Information</li>
-</ul>
-
-<p>These sub-elements are not independent and are not meant to be used outside of the Global Footer component.</p>
-
-<h4>Expected Contexts</h4>
-<ul>
-  <li>The <span class="distinct">Footer</span> begins directly before the bottom <span class="distinct">script</span> includes, which appear before the closing <span class="distinct">body</span> tag, and appears only once per page, on all page levels</li>
-</ul>
-
-<pre>
+        <pre>
 <code class="lang-html">
 
 <footer>
@@ -398,23 +511,29 @@ This enables two modes of build work.
 </code>
 </pre>
 
+        <h3 id="attribution-list-block">Attribution List - Block</h3>
+        <a class="permalink" href="#attribution-list-block">permalink</a>
 
-
-
-
-
-<h3 id="attribution-list-block">Attribution List - Block</h3><a class="permalink" href="#attribution-list-block">permalink</a>
-
-<h4>Expected Contexts</h4>
-<ul>
- <!-- <li><span class="distinct">Main Content Region</span> of the <span class="distinct">Home Index</span></li>
+        <h4>Expected Contexts</h4>
+        <ul>
+          <!-- <li><span class="distinct">Main Content Region</span> of the <span class="distinct">Home Index</span></li>
   <li><span class="distinct">Main Content Region</span> of the <span class="distinct">Blog Archive</span></li> -->
 
-  <li><span class="distinct">body.home-index > main > article.authored-posts > footer > article.attribution-list</span>; on the <span class="distinct">home-index</span> page-level</li>
-  <li><span class="distinct">body.blog-index > main > article.attribution-list</span>; after referenced media; on the <span class="distinct">blog-index</span> page-level</li>
-</ul>
+          <li>
+            <span class="distinct"
+              >body.home-index > main > article.authored-posts > footer >
+              article.attribution-list</span
+            >; on the <span class="distinct">home-index</span> page-level
+          </li>
+          <li>
+            <span class="distinct"
+              >body.blog-index > main > article.attribution-list</span
+            >; after referenced media; on the
+            <span class="distinct">blog-index</span> page-level
+          </li>
+        </ul>
 
-<pre>
+        <pre>
 <code class="lang-html">
 
   <article class="attribution-list">
@@ -440,17 +559,26 @@ This enables two modes of build work.
 </code>
 </pre>
 
+        <h3 id="attention-block">Attention - Block</h3>
+        <a class="permalink" href="#attention-block">permalink</a>
 
+        <h4>Expected Contexts</h4>
+        <ul>
+          <li>
+            <span class="distinct">body.* > article.attention</span>; after
+            <span class="distinct">body > header</span>; before
+            <span class="distinct">body > main</span>; all page-levels
+          </li>
+          <li>
+            <span class="distinct"
+              >body.archive-page > aside > article.attention</span
+            >; as last child item, only
+            <span class="distinct">default-page</span>,
+            <span class="distinct">archive-page</span> levels
+          </li>
+        </ul>
 
-<h3 id="attention-block">Attention - Block</h3><a class="permalink" href="#attention-block">permalink</a>
-
-<h4>Expected Contexts</h4>
-<ul>
-  <li><span class="distinct">body.* > article.attention</span>; after <span class="distinct">body > header</span>; before <span class="distinct">body > main</span>; all page-levels</li>
-  <li><span class="distinct">body.archive-page > aside > article.attention</span>; as last child item, only <span class="distinct">default-page</span>, <span class="distinct">archive-page</span> levels</li>
-</ul>
-
-<pre>
+        <pre>
 <code class="lang-html">
 
   <article class="attention">
@@ -463,16 +591,21 @@ This enables two modes of build work.
 </code>
 </pre>
 
+        <h3 id="person-snippet-singular-block">
+          Person Snippet - Singular - Block
+        </h3>
+        <a class="permalink" href="#person-snippet-singular-block">permalink</a>
 
-<h3 id="person-snippet-singular-block">Person Snippet - Singular - Block</h3><a class="permalink" href="#person-snippet-singular-block">permalink</a>
+        <h4>Expected Contexts</h4>
+        <ul>
+          <li>
+            <span class="distinct"
+              >article.persons > ul > li > article.person</span
+            >
+          </li>
+        </ul>
 
-<h4>Expected Contexts</h4>
-<ul>
-  <li><span class="distinct">article.persons > ul > li > article.person</span> </li>
-
-</ul>
-
-<pre>
+        <pre>
 <code class="lang-html">
 
   <article class="person">
@@ -487,16 +620,20 @@ This enables two modes of build work.
 </code>
 </pre>
 
+        <h3 id="persons-snippet-plural-block">
+          Persons Snippets - Plural - Block
+        </h3>
+        <a class="permalink" href="#persons-snippet-plural-block">permalink</a>
 
-<h3 id="persons-snippet-plural-block">Persons Snippets - Plural - Block</h3><a class="permalink" href="#persons-snippet-plural-block">permalink</a>
+        <h4>Expected Contexts</h4>
+        <ul>
+          <li>
+            <span class="distinct">body.team-index main</span>, directly after
+            <span class="distinct">main > header</span>
+          </li>
+        </ul>
 
-<h4>Expected Contexts</h4>
-<ul>
-  <li><span class="distinct">body.team-index main</span>, directly after <span class="distinct">main > header</span> </li>
-
-</ul>
-
-<pre>
+        <pre>
 <code class="lang-html">
 
   <article class="persons">
@@ -521,18 +658,29 @@ This enables two modes of build work.
 </code>
 </pre>
 
-<h3 id="post-singular-block">Post - Singular - Block</h3><a class="permalink" href="#post-singular-block">permalink</a>
+        <h3 id="post-singular-block">Post - Singular - Block</h3>
+        <a class="permalink" href="#post-singular-block">permalink</a>
 
-<p><span class="distinct">Post</span> components nested within a <span class="distinct">Posts</span> component can be direct children or nested within an html list element (<span class="distinct">ol/ul</span>)</p>
+        <p>
+          <span class="distinct">Post</span> components nested within a
+          <span class="distinct">Posts</span> component can be direct children
+          or nested within an html list element (<span class="distinct"
+            >ol/ul</span
+          >)
+        </p>
 
-<h4>Expected Contexts</h4>
-<ul>
-  <li><span class="distinct">main > article.post</span> </li>
-  <li><span class="distinct">main > article.posts > article.post</span> </li>
-  <li><span class="distinct">article.posts  ul > li > article.post</span> </li>
-</ul>
+        <h4>Expected Contexts</h4>
+        <ul>
+          <li><span class="distinct">main > article.post</span></li>
+          <li>
+            <span class="distinct">main > article.posts > article.post</span>
+          </li>
+          <li>
+            <span class="distinct">article.posts ul > li > article.post</span>
+          </li>
+        </ul>
 
-<pre>
+        <pre>
 <code class="lang-html">
 
   <article class="post">
@@ -554,23 +702,50 @@ This enables two modes of build work.
 </code>
 </pre>
 
+        <h3 id="posts-plural-block">Posts - Plural - Block</h3>
+        <a class="permalink" href="#posts-plural-block">permalink</a>
 
+        <p>
+          <span class="distinct">Posts</span> components support a
+          pseudo-semantic variant class of
+          <span class="distinct">featured</span> or
+          <span class="distinct">related</span>. This helps further describe
+          what they are more specifically, but allows a semantic-ish target for
+          their change in behavior or provided sub-elements.
+        </p>
+        <h4>Expected Contexts</h4>
+        <ul>
+          <li>
+            <span class="distinct">main > article.posts</span>, directly after
+            the <span class="distinct">main > header</span>
+          </li>
+          <li>
+            <span class="distinct"
+              >body.blog-index > main > article.posts.featured</span
+            >, directly after the <span class="distinct">main > header</span>
+          </li>
+          <li>
+            <span class="distinct">body.blog-index > main > article.posts</span
+            >, directly after the
+            <span class="distinct">main > article.posts.featured</span>
+          </li>
+          <li>
+            <span class="distinct"
+              >body.archive-page > main > article.posts</span
+            >, directly after the <span class="distinct">main > aside</span>
+          </li>
+          <li>
+            <span class="distinct">body.person-page > main > article.posts</span
+            >, directly after the <span class="distinct">main > header</span>
+          </li>
+          <li>
+            <span class="distinct"
+              >body.blog-post > main > article.posts.related</span
+            >, as the last child of <span class="distinct">body > main</span>
+          </li>
+        </ul>
 
-<h3 id="posts-plural-block">Posts - Plural - Block</h3><a class="permalink" href="#posts-plural-block">permalink</a>
-
-<p><span class="distinct">Posts</span> components support a pseudo-semantic variant class of <span class="distinct">featured</span> or <span class="distinct">related</span>. This helps further describe what they are more specifically, but allows a semantic-ish target for their change in behavior or provided sub-elements. </p>
-<h4>Expected Contexts</h4>
-<ul>
-  <li><span class="distinct">main > article.posts</span>, directly after the <span class="distinct">main > header</span> </li>
-  <li><span class="distinct">body.blog-index > main > article.posts.featured</span>, directly after the <span class="distinct">main > header</span> </li>
-  <li><span class="distinct">body.blog-index > main > article.posts</span>, directly after the <span class="distinct">main > article.posts.featured</span> </li>
-  <li><span class="distinct">body.archive-page > main > article.posts</span>, directly after the <span class="distinct">main > aside</span>  </li>
-  <li><span class="distinct">body.person-page > main > article.posts</span>, directly after the <span class="distinct">main > header</span>  </li>
-  <li><span class="distinct">body.blog-post > main > article.posts.related</span>, as the last child of <span class="distinct">body > main</span> </li>
-
-</ul>
-
-<pre>
+        <pre>
 <code class="lang-html">
 
   <article class="posts">
@@ -606,18 +781,29 @@ This enables two modes of build work.
 </code>
 </pre>
 
+        <h3 id="pagination-nav">Pagination - Nav</h3>
+        <a class="permalink" href="#pagination-nav">permalink</a>
 
-<h3 id="pagination-nav">Pagination - Nav</h3><a class="permalink" href="#pagination-nav">permalink</a>
+        <h4>Expected Contexts</h4>
+        <ul>
+          <li>
+            <span class="distinct"
+              >body.archive-page > main > nav.pagination</span
+            >, as the last child of <span class="distinct">body > main</span>
+          </li>
+          <li>
+            <span class="distinct"
+              >body.person-page > main > nav.pagination</span
+            >, as the last child of <span class="distinct">body > main</span>
+          </li>
+          <li>
+            <span class="distinct"
+              >body.search-index > main > nav.pagination</span
+            >, as the last child of <span class="distinct">body > main</span>
+          </li>
+        </ul>
 
-<h4>Expected Contexts</h4>
-<ul>
-  <li><span class="distinct">body.archive-page > main > nav.pagination</span>, as the last child of <span class="distinct">body > main</span> </li>
-  <li><span class="distinct">body.person-page > main > nav.pagination</span>, as the last child of <span class="distinct">body > main</span> </li>
-  <li><span class="distinct">body.search-index > main > nav.pagination</span>, as the last child of <span class="distinct">body > main</span> </li>
-
-</ul>
-
-<pre>
+        <pre>
 <code class="lang-html">
 
   <nav class="pagination">
@@ -640,17 +826,18 @@ This enables two modes of build work.
 </code>
 </pre>
 
+        <h3 id="opening-summary-block">Opening Summary - Block</h3>
+        <a class="permalink" href="#opening-summary-block">permalink</a>
 
-<h3 id="opening-summary-block">Opening Summary - Block</h3><a class="permalink" href="#opening-summary-block">permalink</a>
+        <h4>Expected Contexts</h4>
+        <ul>
+          <li>
+            <span class="distinct">body.blog-post > main > aside.opening</span>;
+            optionally after <span class="distinct">main > header</span>
+          </li>
+        </ul>
 
-<h4>Expected Contexts</h4>
-<ul>
-  <li><span class="distinct">body.blog-post > main > aside.opening</span>; optionally after <span class="distinct">main > header</span></li>
-
-
-</ul>
-
-<pre>
+        <pre>
 <code class="lang-html">
 
   <aside class="opening">
@@ -660,17 +847,18 @@ This enables two modes of build work.
 </code>
 </pre>
 
+        <h3 id="closing-summary-block">Closing Summary - Block</h3>
+        <a class="permalink" href="#closing-summary-block">permalink</a>
 
-<h3 id="closing-summary-block">Closing Summary - Block</h3><a class="permalink" href="#closing-summary-block">permalink</a>
+        <h4>Expected Contexts</h4>
+        <ul>
+          <li>
+            <span class="distinct">body.blog-post > main > aside.closing</span>;
+            optionally before <span class="distinct">main > span.pub-date</span>
+          </li>
+        </ul>
 
-<h4>Expected Contexts</h4>
-<ul>
-  <li><span class="distinct">body.blog-post > main > aside.closing</span>; optionally before <span class="distinct">main > span.pub-date</span></li>
-
-
-</ul>
-
-<pre>
+        <pre>
 <code class="lang-html">
 
   <aside class="closing">
@@ -680,17 +868,18 @@ This enables two modes of build work.
 </code>
 </pre>
 
+        <h3 id="tags-listing-block">Tags listing - Block</h3>
+        <a class="permalink" href="#tags-listing-block">permalink</a>
 
-<h3 id="tags-listing-block">Tags listing - Block</h3><a class="permalink" href="#tags-listing-block">permalink</a>
+        <h4>Expected Contexts</h4>
+        <ul>
+          <li>
+            <span class="distinct">body.blog-post > main > article.tags</span>;
+            optionally after <span class="distinct">main > span.pubdate</span>
+          </li>
+        </ul>
 
-<h4>Expected Contexts</h4>
-<ul>
-  <li><span class="distinct">body.blog-post > main > article.tags</span>; optionally after <span class="distinct">main > span.pubdate</span></li>
-
-
-</ul>
-
-<pre>
+        <pre>
 <code class="lang-html">
 
   <article class="tags">
@@ -705,19 +894,22 @@ This enables two modes of build work.
 </code>
 </pre>
 
+        <h3 id="sidebar-region">Sidebar - Region</h3>
+        <a class="permalink" href="#sidebar-region">permalink</a>
 
+        <h4>Expected Contexts</h4>
+        <ul>
+          <li>
+            <span class="distinct">body > aside</span>; optionally after
+            <span class="distinct">main > header</span>
+          </li>
+          <li>
+            <span class="distinct">body.archive-page > aside</span>, after
+            <span class="distinct">main > header</span>
+          </li>
+        </ul>
 
-<h3 id="sidebar-region">Sidebar - Region</h3><a class="permalink" href="#sidebar-region">permalink</a>
-
-<h4>Expected Contexts</h4>
-<ul>
-  <li><span class="distinct">body > aside</span>; optionally after <span class="distinct">main > header</span></li>
-<li><span class="distinct">body.archive-page > aside</span>, after <span class="distinct">main > header</span></li>
-
-
-</ul>
-
-<pre>
+        <pre>
 <code class="lang-html">
 
   <aside>
@@ -729,15 +921,19 @@ This enables two modes of build work.
 </code>
 </pre>
 
-<h3 id="filter-menu-nav">Filter Menu - Nav</h3><a class="permalink" href="#filter-menu-nav">permalink</a>
+        <h3 id="filter-menu-nav">Filter Menu - Nav</h3>
+        <a class="permalink" href="#filter-menu-nav">permalink</a>
 
-<h4>Expected Contexts</h4>
-<ul>
-<li><span class="distinct">body.archive-page > aside > nav.filter-menu</span></li>
+        <h4>Expected Contexts</h4>
+        <ul>
+          <li>
+            <span class="distinct"
+              >body.archive-page > aside > nav.filter-menu</span
+            >
+          </li>
+        </ul>
 
-</ul>
-
-<pre>
+        <pre>
 <code class="lang-html">
 
   <nav class="filter-menu">
@@ -753,16 +949,15 @@ This enables two modes of build work.
 </code>
 </pre>
 
+        <h3 id="general-menu-nav">General Menu - Nav</h3>
+        <a class="permalink" href="#general-menu-nav">permalink</a>
 
-<h3 id="general-menu-nav">General Menu - Nav</h3><a class="permalink" href="#general-menu-nav">permalink</a>
+        <h4>Expected Contexts</h4>
+        <ul>
+          <li><span class="distinct">body.archive-page > aside > nav</span></li>
+        </ul>
 
-<h4>Expected Contexts</h4>
-<ul>
-<li><span class="distinct">body.archive-page > aside > nav</span></li>
-
-</ul>
-
-<pre>
+        <pre>
 <code class="lang-html">
 
   <nav>
@@ -778,17 +973,19 @@ This enables two modes of build work.
 </code>
 </pre>
 
+        <h3 id="data-points-singular-block">Data Points - Singular - Block</h3>
+        <a class="permalink" href="#data-points-singular-block">permalink</a>
 
+        <h4>Expected Contexts</h4>
+        <ul>
+          <li>
+            <span class="distinct"
+              >article.case-studies > ul > li > article.data-point</span
+            >
+          </li>
+        </ul>
 
-<h3 id="data-points-singular-block">Data Points - Singular - Block</h3><a class="permalink" href="#data-points-singular-block">permalink</a>
-
-<h4>Expected Contexts</h4>
-<ul>
-<li><span class="distinct">article.case-studies > ul > li > article.data-point</span></li>
-
-</ul>
-
-<pre>
+        <pre>
 <code class="lang-html">
 
 
@@ -802,18 +999,23 @@ This enables two modes of build work.
 </code>
 </pre>
 
+        <h3 id="data-points-plural-supporting-block">
+          Data Points - Plural - Supporting Block
+        </h3>
+        <a class="permalink" href="#data-points-plural-supporting-block"
+          >permalink</a
+        >
 
+        <h4>Expected Contexts</h4>
+        <ul>
+          <li>
+            <span class="distinct"
+              >article.case-studies > footer > article.data-points</span
+            >
+          </li>
+        </ul>
 
-
-<h3 id="data-points-plural-supporting-block">Data Points - Plural - Supporting Block</h3><a class="permalink" href="#data-points-plural-supporting-block">permalink</a>
-
-<h4>Expected Contexts</h4>
-<ul>
-<li><span class="distinct">article.case-studies > footer > article.data-points</span></li>
-
-</ul>
-
-<pre>
+        <pre>
 <code class="lang-html">
 
 
@@ -835,17 +1037,19 @@ This enables two modes of build work.
 </code>
 </pre>
 
+        <h3 id="case-studies-block">Case Studies - Block</h3>
+        <a class="permalink" href="#case-studies-block">permalink</a>
 
+        <h4>Expected Contexts</h4>
+        <ul>
+          <li>
+            <span class="distinct"
+              >body.home-index > main > article.case-studies</span
+            >
+          </li>
+        </ul>
 
-<h3 id="case-studies-block">Case Studies - Block</h3><a class="permalink" href="#case-studies-block">permalink</a>
-
-<h4>Expected Contexts</h4>
-<ul>
-<li><span class="distinct">body.home-index > main > article.case-studies</span></li>
-
-</ul>
-
-<pre>
+        <pre>
 <code class="lang-html">
 
   <article class="case-studies">
@@ -885,16 +1089,18 @@ This enables two modes of build work.
 </code>
 </pre>
 
+        <h3 id="search-form-block">Search Form - Block</h3>
+        <a class="permalink" href="#search-form-block">permalink</a>
 
-<h3 id="search-form-block">Search Form - Block</h3><a class="permalink" href="#search-form-block">permalink</a>
+        <h4>Expected Contexts</h4>
+        <ul>
+          <li>
+            <span class="distinct">body.search-index > main > header</span>;
+            directly after the <span class="distinct">main > header > h1</span>
+          </li>
+        </ul>
 
-<h4>Expected Contexts</h4>
-<ul>
-<li><span class="distinct">body.search-index > main > header</span>; directly after the <span class="distinct">main > header > h1</span></li>
-
-</ul>
-
-<pre>
+        <pre>
 <code class="lang-html">
 
   <article class="search-form">
@@ -909,16 +1115,19 @@ This enables two modes of build work.
 </code>
 </pre>
 
+        <h3 id="topic-summary-block">Topic Summary - Block</h3>
+        <a class="permalink" href="#topic-summary-block">permalink</a>
 
-<h3 id="topic-summary-block">Topic Summary - Block</h3><a class="permalink" href="#topic-summary-block">permalink</a>
+        <h4>Expected Contexts</h4>
+        <ul>
+          <li>
+            <span class="distinct"
+              >body.home-index > main > article.topic-summary</span
+            >
+          </li>
+        </ul>
 
-<h4>Expected Contexts</h4>
-<ul>
-<li><span class="distinct">body.home-index > main > article.topic-summary</span></li>
-
-</ul>
-
-<pre>
+        <pre>
 <code class="lang-html">
 
   <article class="topic-summary">
@@ -936,20 +1145,24 @@ This enables two modes of build work.
 </code>
 </pre>
 
+        <h3 id="page-header-region">Page Header - Region</h3>
+        <a class="permalink" href="#page-header-region">permalink</a>
 
-<h3 id="page-header-region">Page Header - Region</h3><a class="permalink" href="#page-header-region">permalink</a>
+        <h4>Expected Contexts</h4>
+        <ul>
+          <li><span class="distinct">body > main > header</span></li>
+          <li>
+            <span class="distinct">body.archive-page > main > header</span>
+          </li>
+          <li><span class="distinct">body.blog-index > main > header</span></li>
+          <li><span class="distinct">body.blog-post > main > header</span></li>
+          <li>
+            <span class="distinct">body.search-index > main > header</span>
+          </li>
+          <li><span class="distinct">body.team-index > main > header</span></li>
+        </ul>
 
-<h4>Expected Contexts</h4>
-<ul>
-<li><span class="distinct">body > main > header</span></li>
-<li><span class="distinct">body.archive-page > main > header</span></li>
-<li><span class="distinct">body.blog-index > main > header</span></li>
-<li><span class="distinct">body.blog-post > main > header</span></li>
-<li><span class="distinct">body.search-index > main > header</span></li>
-<li><span class="distinct">body.team-index > main > header</span></li>
-</ul>
-
-<pre>
+        <pre>
 <code class="lang-html">
 
   <header>
@@ -967,15 +1180,17 @@ This enables two modes of build work.
 </code>
 </pre>
 
+        <h3 id="person-header-region">Person Header - Region</h3>
+        <a class="permalink" href="#person-header-region">permalink</a>
 
-<h3 id="person-header-region">Person Header - Region</h3><a class="permalink" href="#person-header-region">permalink</a>
+        <h4>Expected Contexts</h4>
+        <ul>
+          <li>
+            <span class="distinct">body.person-page > main > header</span>
+          </li>
+        </ul>
 
-<h4>Expected Contexts</h4>
-<ul>
-<li><span class="distinct">body.person-page > main > header</span></li>
-</ul>
-
-<pre>
+        <pre>
 <code class="lang-html">
 
   <header>
@@ -996,12 +1211,10 @@ This enables two modes of build work.
 
 </code>
 </pre>
+      </main>
+    </div>
 
-
-</main>
-
-
-<!-- <aside class="menu">
+    <!-- <aside class="menu">
 
 <nav>
 <ul>
@@ -1017,13 +1230,11 @@ This enables two modes of build work.
 
 </aside> -->
 
-
-<script>
-//escapes html within code elements
-document.querySelectorAll("code.lang-html").forEach(el => {
-  el.innerText = el.innerHTML.replace(/\s*required=""/g, " required");
-});
-</script>
-
-</body>
+    <script>
+      //escapes html within code elements
+      document.querySelectorAll("code.lang-html").forEach((el) => {
+        el.innerText = el.innerHTML.replace(/\s*required=""/g, " required");
+      });
+    </script>
+  </body>
 </html>
