@@ -1,6 +1,33 @@
 :root {
-    --vocabulary-brand-color-cyan: #05b5da;
-    --vocabulary-brand-color-dark-cyan:#038289;
+    
+    --vocabulary-brand-color-magenta: #BB377E;
+    --vocabulary-brand-color-cyan: #05B6DA;
+    --vocabulary-brand-color-yellow: #FBD53C;
+
+    --vocabulary-brand-color-red: #B82E1E;
+    --vocabulary-brand-color-indigo: #03286C;
+    --vocabulary-brand-color-green: #039733;
+
+    --vocabulary-brand-color: #DB855D;
+    --vocabulary-brand-color: #CB5E6F;
+    --vocabuary-brand-color: #C3508E;
+    --vocabulary-brand-color: #A088B6;
+    --vocabulary-brand-color: #22BFDF;
+    --vocabulary-brand-color: #42BEB3;
+    --vocabulary-brand-color: #80C48B;
+
+
+
+    --vocabulary-brand-color-dark-cyan: #0480A5;
+    --vocabulary-brand-color-dark-yellow: #887421;
+
+    --vocabulary-color-light-grey: #F5F5F5;
+
+
+
+
+    /* --vocabulary-brand-color-dark-cyan:#038289; */
+
 
 }
 
