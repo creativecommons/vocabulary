@@ -37,6 +37,7 @@ body > header .masthead .primary-menu ul li {
 
 body > header .masthead .primary-menu ul li a {
     font-family: 'Source Sans Pro';
+    font-family: "Jost", sans-serif;
     text-transform: capitalize;
     text-transform: lowercase;
     font-weight: 600;
@@ -127,9 +128,15 @@ body article.attention {
 }
 
 
+/* body.pidgin-home .primary-nav {
+    font-family: "Jost", sans-serif;
+} */
+
+
 
 .chooser-mini {
-    /* width: 80%; */
+    width: 80%;
+    grid-column: 5 / 8;
     margin: 0 auto;
     margin-top: 3em;
 
@@ -144,11 +151,20 @@ body article.attention {
     text-align: center;
     color: #324c7f;
     color: var(--vocabulary-brand-color-dark-cyan);
+    color: black;
     /* color: #414040; */
-    font-family: "DM Serif Display", serif;
+    /* font-family: "DM Serif Display", serif; */
+    /* font-family: "Knewave", system-ui; */
+    font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 4em;
+    font-size: 5em;
+    /* transform: rotate(-2deg); */
+}
+
+.chooser-mini p {
+    font-family: "Jost", sans-serif;
 }
 
 .chooser-mini label {
@@ -263,6 +279,7 @@ body article.attention {
 
 .chooser-mini .explainer p {
     margin-top: 1.7em;
+
     line-height: 1.6;
 }
 
