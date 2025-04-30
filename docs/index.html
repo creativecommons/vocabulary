@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 <title>Vocabulary - Docs</title>
-  
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" media="all" href="style.css" />
@@ -26,10 +26,10 @@
 
 <nav>
 <ul>
-    <li><a href="#introduction" class="active">Introduction</a></li>
+  <li><a href="#introduction" class="active">Introduction</a></li>
   <li><a href="#installation">Installation</a></li>
   <li><a href="#components">Components</a></li>
-
+  <li><a href="#specimen">Specimen Index</a></li>
 </ul>
 
 </nav>
@@ -82,7 +82,7 @@
 
 <h3 id="upstream-downstream-change-flow">Upstream/Downstream Change Flow</h3>
 
-This enables two modes of build work. 
+This enables two modes of build work.
 
 <h4>A: upstream → downstream</h4>
 <ol>
@@ -121,9 +121,9 @@ This enables two modes of build work.
 
 <pre>
 <code class="lang-html">
-    
+
 <link rel="stylesheet" media="all" href="PATH/TO/style.css" />
-    
+
 </code>
 </pre>
 
@@ -131,15 +131,15 @@ This enables two modes of build work.
 
 <p>Include <span class="distinct">vocabulary.css</span> from within <span class="distinct">style.css</span> via a <a href="#">CSS @layer import</a> at the top of the file.</p>
 
-<aside> 
+<aside>
     <p>CSS Layers provide a reliable, and safely overridable cascade of rulesets.</p>
 </aside>
 
 <pre>
 <code class="lang-css">
-    
+
 @import 'PATH/TO/vocabulary/css/vocabulary.css' layer(vocabulary);
-    
+
 </code>
 </pre>
 
@@ -149,11 +149,11 @@ This enables two modes of build work.
 
 <pre>
 <code class="lang-css">
-    
+
 @import 'PATH/TO/vocabulary/css/vocabulary.css' layer(vocabulary);
 @import 'PATH/TO/vocabulary/css/vocabulary-tests.css' layer(vocabulary-tests);
-    
-    
+
+
 </code>
 </pre>
 
@@ -170,7 +170,7 @@ This enables two modes of build work.
 
 <script src="PATH/TO/vocabulary/js/vocabulary.js"></script>
 
-        
+
 </code>
 </pre>
 
@@ -198,7 +198,7 @@ This enables two modes of build work.
 
 <p>The Global Header component contains several sub-elements.</p>
 <ul>
-  
+
   <li>
     Masthead
     <ul>
@@ -206,7 +206,7 @@ This enables two modes of build work.
       <li>Primary Nav Menu</li>
       <li>Ancillary Nav Menu</li>
     </ul>
-  </li> 
+  </li>
   <li>
     Explore Panel (Explore CC)
     <ul>
@@ -300,7 +300,7 @@ This enables two modes of build work.
 
 </header>
 
-      
+
 </code>
 </pre>
 
@@ -394,7 +394,7 @@ This enables two modes of build work.
 
 </footer>
 
-      
+
 </code>
 </pre>
 
@@ -454,7 +454,7 @@ This enables two modes of build work.
 <code class="lang-html">
 
   <article class="attention">
-  
+
    content here
 
   </article>
@@ -576,7 +576,7 @@ This enables two modes of build work.
   <article class="posts">
 
   <h2>Title Here</h2>
-  
+
     <article class="story">
       <header>
       <h3><a href="#">Title Here</a></h3>
@@ -797,7 +797,7 @@ This enables two modes of build work.
     <h3 class="stat">55+ million articles</h3>
     <p>Descriptive text here</p>
   </article>
- 
+
 
 </code>
 </pre>
@@ -961,7 +961,7 @@ This enables two modes of build work.
     <span class="categories">  <!-- optional -->
       <a href="#">Open Culture</a>
     </span>
-  
+
   </header>
 
 </code>
@@ -991,12 +991,18 @@ This enables two modes of build work.
      <div class="bio">
        <p>Bio here</p>
      </div>
-  
+
   </header>
 
 </code>
 </pre>
 
+
+<h2 id="specimen">Specimen Index</h2><a class="permalink" href="#specimen">permalink</a>
+
+<ul>
+  <li><a href="specimen/index.html">Vocabulary Specimens</a></li>
+</ul>
 
 </main>
 
