@@ -19,7 +19,7 @@ build_specimen_index() {
 
 build_specimen_index_file() {
     local _file _relative
-    head -n12 specimen/index.html
+    head -n14 specimen/index.html
     for _file in docs/specimen/contexts/*.html
     do
         _relative="${_file#docs/specimen/}"
