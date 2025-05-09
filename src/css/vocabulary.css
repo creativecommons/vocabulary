@@ -1776,7 +1776,7 @@ body > footer .license svg {
 
 .program-index main > article.projects ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 2em;
     margin: 0;
     padding: 0;
