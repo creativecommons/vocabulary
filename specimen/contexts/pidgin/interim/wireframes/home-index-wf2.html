@@ -9,8 +9,29 @@
     body {
         margin: 2% 2%;
         margin-top: 1.5em;
+        display: grid;
+        grid-template-columns: 5% 3% 6% 6% 15% 15% 15% 15% 6% 6% 3% 5%;
+        overflow-x: hidden;
 
         background: #eae4fc;
+    }
+
+    header, footer {
+        grid-column: 1 / 13;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: subgrid;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 8em;
+        padding: 0;
+        grid-column: 1 / 13;
+    }
+
+    main > article {
+        grid-column: 1 / 13;
     }
 
     h1 {
@@ -55,6 +76,8 @@
     article {
        border: 1px solid #a1a2ef;
        margin: 2em 0;
+
+       text-align: center;
     }
 
 
@@ -70,9 +93,13 @@
 
 <body>
 
-    <h1>Homepage - Wireframe Beats Draft v2.0</h1>
 
-    <div>Header: Logo, Navigation</div>
+    <header>
+    <h1>Homepage - Wireframe Beats Draft v2.0</h1>
+        <div>Header: Logo, Navigation</div>
+    </header>
+
+    <main>
 
     <article class="intro">
         <h2>Lead in Summary of the Org: Who, What, Why</h2>
@@ -137,9 +164,12 @@
 
     </article>
 
-       
+    </main>
 
-    <div>Footer</div>
+       
+    <footer>
+        <div>Footer</div>
+    </footer>
 
 </body>
 </html>
