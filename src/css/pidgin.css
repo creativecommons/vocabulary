@@ -31,7 +31,7 @@
 
 }
 
-body > header .masthead .primary-menu ul li {
+/* body > header .masthead .primary-menu ul li {
     margin-left: 3em;
 }
 
@@ -66,30 +66,29 @@ body > header .masthead .primary-menu ul li a.donate:hover {
     background: #bb377e;
     text-decoration: none;
 
-}
+} */
 
-body > header .masthead .primary-menu ul li a.donate:before {
+/* body > header .masthead .primary-menu ul li a.donate:before {
     --icon-sprite-color: #62327F;
     --icon-sprite-color: #bb377e;
     --icon-sprite-size: .7em;
     
     margin-right: .3em;
 
-    /* margin-top: 6px; */
-}
+} */
 
-body > header .masthead .primary-menu ul li a.donate:hover:before {
+/* body > header .masthead .primary-menu ul li a.donate:hover:before {
     --icon-sprite-color: white;
-}
+} */
 
 body > article.attention {
     /* background: #fbd43c; */
-    background: #05b5da;
+    /* background: #05b5da; */
     /* background: #bb377e; */
     /* background: #e4cbf3; */
 }
 
-body > article.attention:nth-of-type(2) {
+/* body > article.attention:nth-of-type(2) {
     background: #CBF3F0;
     display: none;
 
@@ -97,16 +96,16 @@ body > article.attention:nth-of-type(2) {
 
 body > article.attention:nth-of-type(3) {
     background: #fbd43c;
-}
+} */
 
 body > article.attention:nth-of-type(4) {
     /* background: #fbd43c; */
 
-    display: none;
+    /* display: none; */
 }
 
 
-body > article.attention:nth-of-type(5) {
+/* body > article.attention:nth-of-type(5) {
         background: #bb377e;
 }
 
@@ -125,7 +124,7 @@ body > article.attention:nth-of-type(7) {
 
 body article.attention {
     display: none;
-}
+} */
 
 
 /* body.pidgin-home .primary-nav {
@@ -295,6 +294,7 @@ body article.attention {
 
 /* interim home-narrative */
 
-.home-narrative {
+.home-narrative article.topic-summary.intro a {
+    display: inline-block;
     
 }
