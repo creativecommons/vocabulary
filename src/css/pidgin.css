@@ -311,6 +311,10 @@ body article.attention {
     grid-column: 4/9;
 }
 
+.home-narrative article.call-to-action{
+    grid-column: 4/9;
+}
+
 .home-narrative article.stories {
     grid-column: 3/10;
 }
