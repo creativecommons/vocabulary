@@ -294,7 +294,33 @@ body article.attention {
 
 /* interim home-narrative */
 
-.home-narrative article.topic-summary.intro a {
-    display: inline-block;
-    
+
+.home-narrative article.topic-summary {
+    grid-column: 3/10;
 }
+
+.home-narrative article.topic-summary.intro {
+    grid-column: 2/11;
+}
+
+.home-narrative article.topic-summary.intro a {
+    display: inline-block; 
+}
+
+.home-narrative article.topic-summary.legal-tools {
+    grid-column: 4/9;
+}
+
+.home-narrative article.stories {
+    grid-column: 3/10;
+}
+
+.home-narrative article.newsletter {
+    grid-column: 3/10;
+}
+
+.home-narrative article.events {
+    grid-column: 3/10;
+}
+
+
