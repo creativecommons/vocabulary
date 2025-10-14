@@ -311,12 +311,43 @@ body article.attention {
     grid-column: 4/9;
 }
 
+.home-narrative article.topic-summaries.focus-areas {
+    grid-column: 3/10;
+}
+
 .home-narrative article.call-to-action{
     grid-column: 4/9;
 }
 
-.home-narrative article.stories {
+.home-narrative article.posts {
     grid-column: 3/10;
+}
+
+.home-narrative article.posts ul {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 8em;
+    /* padding: 0 4em; */
+    gap: 2em;
+    box-sizing: border-box;
+    width:100%;
+    margin: 0 auto;
+    margin-top: 0;
+
+    font-size: 1rem;
+    list-style: none;
+}
+
+.home-narrative article.posts ul li {
+    grid-column: span 4;
+ }
+
+ .home-narrative article.posts ul li h3 {
+    font-size: 1.5em;
+}
+
+.home-narrative article.posts .post figure {
+    order: -1;
 }
 
 .home-narrative article.newsletter {
