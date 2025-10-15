@@ -301,6 +301,8 @@ body article.attention {
 
 .home-narrative article.topic-summary.intro {
     grid-column: 2/11;
+
+    display: none;
 }
 
 .home-narrative article.topic-summary.intro a {
@@ -309,10 +311,72 @@ body article.attention {
 
 .home-narrative article.topic-summary.legal-tools {
     grid-column: 4/9;
+
+    display: none;
 }
 
 .home-narrative article.topic-summaries.focus-areas {
-    grid-column: 3/10;
+    /* display: grid;
+    grid-template-columns: subgrid; */
+    grid-column: 4/9;
+}
+
+.home-narrative article.topic-summaries.focus-areas .topic-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+
+    margin: 12em 0;
+    overflow-y: hidden;
+}
+
+.home-narrative article.topic-summaries.focus-areas .topic-summary .description {
+    padding: 20% 0;
+}
+
+
+.home-narrative article.topic-summaries.focus-areas .topic-summary p {
+    font-size: 1.2em;
+}
+
+.home-narrative article.topic-summaries.focus-areas .topic-summary a {
+
+    --icon-sprite-color: white;
+
+    font-family: 'Source Sans Pro';
+    background: black;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    text-shadow: none;
+    font-weight: 200;
+    text-decoration: none;
+
+    box-sizing: border-box;
+}
+
+.home-narrative article.topic-summaries.focus-areas .topic-summary a span:before {
+    /* display: inline-block; */
+    /* margin-top: 4px; */
+}
+
+.home-narrative article.topic-summaries.focus-areas .topic-summary:nth-child(even) figure {
+    order: -1;
+    text-align: right;
+}
+
+.home-narrative article.topic-summaries.focus-areas .topic-summary figure {
+  
+}
+
+.home-narrative article.topic-summaries.focus-areas .topic-summary figure img {
+    object-fit: cover;
+    width: 200%;
+    height: auto;
+}
+
+.home-narrative article.topic-summaries.focus-areas .topic-summary:nth-child(even) figure img {
+    width: 100%;
 }
 
 .home-narrative article.call-to-action{
