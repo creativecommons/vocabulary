@@ -300,20 +300,22 @@ body article.attention {
 }
 
 .home-narrative article.topic-summary.intro {
-    grid-column: 2/12;
-
+    grid-column: 2/11;
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     gap: 2em;
-
     /* margin: 12em 0; */
-    /* margin-top: 4em; */
-    overflow-y: hidden;
+    margin-top: 2em;
+    overflow: hidden;
+
+    /* border-top-right-radius: 200px; */
+    /* border-bottom-right-radius: 300px; */
+    /* border-bottom-left-radius: 200px; */
 
     /* display: none; */
 }
 .home-narrative article.topic-summary.intro .description {
-    /* padding: 15% 0; */
+    padding: 5% 0;
 }
 
 .home-narrative article.topic-summary.intro h2 {
@@ -321,6 +323,10 @@ body article.attention {
 
     font-size: 3.5em;
     font-weight: 100;
+}
+
+.home-narrative article.topic-summary.intro h2 strong {
+    /* font-weight: 700; */
 }
 
 .home-narrative article.topic-summary.intro p {
@@ -334,17 +340,50 @@ body article.attention {
     font-size: 1.2em;
 }
 
-.home-narrative article.topic-summary.intro img {
-    width: 200%
-}
-
 .home-narrative article.topic-summary.intro a {
     display: inline-block;
 
     color: black;
     font-size: .8em;
     font-style: italic;
+    transition: .2s ease;
 }
+
+.home-narrative article.topic-summary.intro a:hover {
+    font-weight: 700;
+}
+
+.home-narrative article.topic-summary.intro img {
+    width: 200%
+}
+
+.home-narrative article.topic-summary.intro figure {
+    padding: 0;
+}
+
+.home-narrative article.topic-summary.intro figcaption {
+    width: 50%;
+    margin: 0;
+    margin-top: -5px;
+    padding: 12px;
+    float: right;
+
+    background: black;
+    color: white;
+    font-family: 'Source Sans Pro';
+    font-size: 1em;
+}
+
+.home-narrative article.topic-summary.intro figcaption a {
+    font-style: normal;
+    text-shadow: none;
+    font-size: inherit;
+
+    color: white;
+
+}
+
+
 
 .home-narrative article.topic-summary.intro ul {
     display: flex;
@@ -405,7 +444,7 @@ body article.attention {
     gap: 2em;
 
     margin: 12em 0;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .home-narrative article.topic-summaries.focus-areas .topic-summary .description {
@@ -440,7 +479,6 @@ body article.attention {
     font-weight: 200;
     text-decoration: none;
     transition: .2s ease;
-
 }
 
 .home-narrative article.topic-summaries.focus-areas .topic-summary a:hover {
