@@ -342,11 +342,16 @@ body article.attention {
     display: inline-block;
 
     color: black;
+    font-size: .8em;
+    font-style: italic;
 }
 
 .home-narrative article.topic-summary.intro ul {
+    display: flex;
     margin: 0;
     list-style: none;
+    gap: 1em;
+    align-items: center;
 }
 
 .home-narrative article.topic-summary.intro ul li {
@@ -361,16 +366,25 @@ body article.attention {
     box-sizing: border-box;
 
     font-family: 'Source Sans Pro';
+    font-style: normal;
     background: black;
     color: white;
     padding: 12px;
-    /* border: 1px solid black; */
+    border: 1px solid white;
     border-radius: 5px;
     text-shadow: none;
     font-weight: 200;
     text-decoration: none;
     transition: .2s ease;
+}
 
+.home-narrative article.topic-summary.intro li:nth-of-type(1) a:hover {
+    --icon-sprite-color: black;
+
+    color: black;
+    background: white;
+
+    border: 1px solid black;
 }
 
 .home-narrative article.topic-summary.legal-tools {
