@@ -26,7 +26,6 @@ if (attributionButton !== null && attributionPanel !== null ) {
     attributionButton.addEventListener('click', (event) => {
         attributionButton.classList.toggle('selected');
         attributionPanel.classList.toggle('expand');
-        // explorePanel.classList.toggle('hide');
     });
 
 }

@@ -15,8 +15,6 @@
 <style>
     /* temporary while in progress */
     @import '../../../../src/css/pidgin.css' layer(vocabulary);
-
-    .attribution-list {display: none;}
 </style>
 
 </head>
@@ -115,13 +113,83 @@
 </article>
 
 <article class="topic-summary legal-tools">
-    <h2>Licenses & Tools</h2>
+    
     <div class="description">
-        <p>[break down intro of the legal tools, and guidance towards the chooser</p>
-        <!-- <a href="#">Learn more</a> -->
-        <!-- <a href="#">Meet the team</a> -->
-        <!-- <a href="#">What we do</a> -->
+        <h2>Licenses & Tools</h2>
+        <p>Our six licenses and public domain dedication tool give everyone from individual creators to large institutions a standardized way to grant the public permission to use their creative work under copyright law. </p>
+        <p>Used by <a href="#">Wikipedia</a>, <a href="#">Flickr</a>, <a href="#">The Met</a>, <a href="#">Khan Academy</a>, <a href="#">Godot</a>, and millions more globally! </p>
     </div>
+
+    <article class="chooser-mini">
+       
+        <!-- <form id="license-chooser" class="mini"> -->
+
+            <div class="license-menu"> 
+            <!-- <fieldset id="choose-a-license"> -->
+                <!-- <legend>Choose a License</legend> -->
+                <!-- <legend>Which license do you need?</legend> -->
+                <div class="icon-attach fa-angle-down">
+                <label for="license">License</label>
+                <select name="license" id="license">
+                    <option value="cc-0">CC0</option>
+                    <option value="cc-by">CC-BY 4.0</option>
+                    <option value="cc-by-sa" selected="">Attribution ShareAlike (CC-BY-SA)</option>
+                    <option value="cc-by-nd">CC-BY-ND 4.0</option>
+                    <option value="cc-by-nc">CC-BY-NC 4.0</option>
+                    <option value="cc-by-nc-sa">CC-BY-NC-SA 4.0</option>
+                    <option value="cc-by-nc-nd">CC-BY-NC-ND 4.0</option>
+                </select>
+                </div>
+                <!-- <p>OR</p>
+
+                <div></div>
+                    <input type="checkbox" id="help" name="help" value="help" />
+                    <label for="help">Help me choose</label>
+                </div> -->
+
+            <!-- </fieldset> -->
+            
+        <!-- </form> -->
+
+
+        <!-- <button>submit</button> -->
+
+        <!-- <a class="need-help-choosing" href="/">Learn more</a> -->
+
+        <a class="need-help-choosing" href="/">Need help choosing a license?</a>
+
+        </div> 
+
+        <div class="explainer">
+            <h3>Attribution ShareAlike (CC-BY-SA)</h3>
+
+            <div class="license-graphics">
+                <div class="license-icons">
+                    <svg>
+                        <use href="../../../../src/svg/cc/icons/cc-icons.svg#cc-by"></use>
+                    </svg>
+
+                    <svg>
+                        <use href="../../../../src/svg/cc/icons/cc-icons.svg#cc-sa"></use>
+                    </svg>
+                </div>
+
+                <img class="license-badge" src="../../../../src/svg/cc/license_badges/big/by_sa.svg">
+            
+            </div>
+
+
+            <p><strong>This license lets others remix, tweak, and build upon your work even for commercial purposes, as long as credit you and license their new creations under the identical terms.</strong> This license is often compared to "copyleft" free and open source software licenses. All new works based on yours will carry the same license, so any derivatives will also allow commercial use. This is the license used by Wikipedia, and is recommended for materials that would benefit from incorporating content form Wikipedia and similarly licensed projects.</p>
+
+            <nav class="license-info-nav">
+                <ul>
+                    <li><a href="#&quot;">View license deed</a></li>
+                    <li><a href="#&quot;">View legal code</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        </article>
 </article>
 
 <article class="topic-summaries focus-areas">
@@ -313,196 +381,20 @@
 
     <footer>
         <a class="more" href="#">more posts</a>
-
-        <article class="attribution-list">
-            <h2>Images Attribution</h2>
-            <button class="expand-attribution">view</button>
-                <ul class="attribution-panel">
-                    <li>
-                        <article>
-                            
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" 
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts 
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-                            
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image4.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://www.flickr.com/photos/47691521@N07/8249753855" target="_blank" rel="noopener noreferrer">Creative Commons a vessel ideas</a>" 
-                                    by <a href="https://www.flickr.com/photos/47691521@N07" target="_blank" rel="noopener noreferrer">opensourceway</a> 
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>
-                                </figcaption>
-                            </figure>
-                            
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" 
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> 
-                                    for Creative Commons & Fine Acts is licensed under 
-                                    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-                            
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" 
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts 
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-                            
-                        </article>
-                    </li>
-
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" 
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts 
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" 
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts 
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" 
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts 
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" 
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts 
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" 
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts 
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" 
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts 
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" 
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts 
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" 
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts 
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" 
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts 
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </li>
-                </ul>
-            </article>
     </footer>
 
 </article>
 
 <article class="newsletter">
-    <h2>Newsletter</h2>
+    <h2>Newsletter highlights</h2>
     <div class="description">
-        <p></p>
-        <a href="#">Learn more</a>
-        <a href="#">Meet the team</a>
-        <a href="#">What we do</a>
+        <h3>A CC-Certified alumni team in Indonesia trained 129 teachers and librarians across five regions, helping them create and share openly licensed content</h3>
+        <a href="#">Sign up for the  CC's Community Newsletter by joining the CC Community &rarr;</a>
     </div>
+    <figure>
+        <img src="https://creativecommons.org/wp-content/uploads/2023/01/Open-Palms-Not-Clutching-Fists.png">
+    </figure>
+    
 </article>
 
 <!-- <article class="events">
@@ -514,6 +406,97 @@
         <a href="#">What we do</a>
     </div>
 </article> -->
+
+
+
+<article class="attribution-list">
+<details>
+<summary>Images attribution</summary>
+    <ul class="attribution-panel expand">
+        <li>
+            <article>
+                
+                <figure>
+                    <img src="https://creativecommons.org/wp-content/uploads/2025/09/roadturn16x9-scaled.jpg" />
+                    <figcaption class="attribution">
+                        "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" 
+                        by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts 
+                        is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+                    </figcaption>
+                </figure>
+                
+            </article>
+        </li>
+        <li>
+            <article>
+                <figure>
+                    <img src="https://creativecommons.org/wp-content/uploads/2025/09/Blog-Image-Size.png" />
+                    <figcaption class="attribution">
+                        "<a href="https://www.flickr.com/photos/47691521@N07/8249753855" target="_blank" rel="noopener noreferrer">Creative Commons a vessel ideas</a>" 
+                        by <a href="https://www.flickr.com/photos/47691521@N07" target="_blank" rel="noopener noreferrer">opensourceway</a> 
+                        is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>
+                    </figcaption>
+                </figure>
+                
+            </article>
+        </li>
+        <li>
+            <article>
+                <figure>
+                    <img src="https://creativecommons.org/wp-content/uploads/2025/08/Blog-Image-Size-3.png" />
+                    <figcaption class="attribution">
+                        "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" 
+                        by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> 
+                        for Creative Commons & Fine Acts is licensed under 
+                        <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+                    </figcaption>
+                </figure>
+                
+            </article>
+        </li>
+        <li>
+            <article>
+                <figure>
+                    <img src="https://creativecommons.org/wp-content/uploads/2025/08/Blog-Image-Size-2.png" />
+                    <figcaption class="attribution">
+                        "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" 
+                        by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts 
+                        is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+                    </figcaption>
+                </figure>
+                
+            </article>
+        </li>
+
+        <li>
+            <article>
+                <figure>
+                    <img src="https://creativecommons.org/wp-content/uploads/2025/08/Blog-Image-Size.png" />
+                    <figcaption class="attribution">
+                        "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" 
+                        by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts 
+                        is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+                    </figcaption>
+                </figure>
+            </article>
+        </li>
+
+        <li>
+            <article>
+                <figure>
+                    <img src="https://creativecommons.org/wp-content/uploads/2025/07/Ocean-Coast-by-Maurice-Denis.-Public-Domain.-Swedish-National-Museum.png" />
+                    <figcaption class="attribution">
+                        "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" 
+                        by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts 
+                        is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+                    </figcaption>
+                </figure>
+            </article>
+        </li>
+
+    </ul>
+</details>
+</article>
 
 
 
