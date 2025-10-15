@@ -334,6 +334,12 @@ body article.attention {
     padding: 20% 0;
 }
 
+.home-narrative article.topic-summaries.focus-areas .topic-summary .description h3 {
+    font-size: 2em;
+    font-weight: 100;
+    
+}
+
 
 .home-narrative article.topic-summaries.focus-areas .topic-summary p {
     font-size: 1.2em;
@@ -341,18 +347,26 @@ body article.attention {
 
 .home-narrative article.topic-summaries.focus-areas .topic-summary a {
 
-    --icon-sprite-color: white;
+    --icon-sprite-color: black;
+
+    box-sizing: border-box;
 
     font-family: 'Source Sans Pro';
-    background: black;
-    color: white;
+    background: white;
+    color: black;
     padding: 12px;
+    border: 1px solid black;
     border-radius: 5px;
     text-shadow: none;
     font-weight: 200;
     text-decoration: none;
+    transition: .2s ease;
 
-    box-sizing: border-box;
+}
+
+.home-narrative article.topic-summaries.focus-areas .topic-summary a:hover {
+    background: black;
+    color: white;
 }
 
 .home-narrative article.topic-summaries.focus-areas .topic-summary a span:before {
