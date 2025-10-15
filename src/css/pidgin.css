@@ -430,9 +430,22 @@ body article.attention {
 }
 
 .home-narrative article.topic-summary.legal-tools {
-    grid-column: 4/9;
+    grid-column: 1/12;
+    margin-top: 6em;
+    padding: 6em 25% 8em 25%;
 
-    display: none;
+    background: var(--vocabulary-color-light-grey);
+
+
+    /* display: none; */
+}
+
+.home-narrative article.topic-summary.legal-tools h2 {
+
+    margin-bottom: .7em;
+
+    font-size: 2em;
+    font-weight: 100;
 }
 
 .home-narrative article.topic-summaries.focus-areas {
