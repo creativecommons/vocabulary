@@ -349,7 +349,7 @@ body article.attention {
     transition: .2s ease;
 }
 
-.home-narrative article.topic-summary.intro a:hover {
+.home-narrative article.topic-summary.intro .description a:hover {
     font-weight: 700;
 }
 
@@ -362,25 +362,28 @@ body article.attention {
 }
 
 .home-narrative article.topic-summary.intro figcaption {
-    width: 50%;
+    /* width: 50%; */
     margin: 0;
     margin-top: -5px;
-    padding: 12px;
+    /* padding: 12px; */
+    padding-top: 8px;
     float: right;
 
-    background: black;
-    color: white;
+    /* background: black;
+    color: white; */
     font-family: 'Source Sans Pro';
-    font-size: 1em;
+    /* font-size: 1em; */
+    font-size: .8em;
+
 }
 
 .home-narrative article.topic-summary.intro figcaption a {
     font-style: normal;
     text-shadow: none;
     font-size: inherit;
+    line-height: 1.8;
 
-    color: white;
-
+    /* color: white; */
 }
 
 
@@ -510,12 +513,101 @@ body article.attention {
     width: 100%;
 }
 
-.home-narrative article.call-to-action{
-    grid-column: 4/9;
+.home-narrative article.support {
+    grid-column: 5/8;
+    grid-column: 1/12;
+    padding: 4em 25% 8em 25%;
+    margin-bottom: 6em;
+
+    background: var(--vocabulary-color-light-grey);
+}
+
+.home-narrative article.support h2 {
+    margin-bottom: .7em;
+
+    font-size: 2em;
+    font-weight: 100;
+}
+
+.home-narrative article.support p {
+    font-size: 1.2em;
+
+}
+
+.home-narrative article.support a {
+    --underline-background-color: var(--vocabulary-color-light-grey);
+    font-family: 'Source Sans Pro';
+    color: black;
+
+}
+
+.home-narrative article.support div > a {
+    font-style: italic;
+    margin-left: 1em;
+}
+
+.home-narrative article.support div > a:hover {
+    font-weight: 700;
+}
+
+.home-narrative article.support div > a:nth-of-type(1) {
+
+    --icon-sprite-color: white;
+
+    box-sizing: border-box;
+    margin-left: 0;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    background: black;
+    color: white;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-shadow: none;
+    font-weight: 200;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.home-narrative article.support div > a:nth-of-type(1):hover {
+    --icon-sprite-color: black;
+
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.home-narrative article.support p {
+    margin-bottom: .7em;
+}
+
+.home-narrative article.support p.share {
+    margin-top: 0;
+    margin-bottom: 2.8em;
+
+    font-size: 1em;
 }
 
 .home-narrative article.posts {
     grid-column: 3/10;
+}
+
+.home-narrative article.posts h2 {
+    font-weight: 100;
+    margin-bottom: 1em;
+}
+
+.home-narrative article.posts a {
+    color: black;
+    font-weight: 100;
+}
+
+.home-narrative article.posts a.more {
+    padding: 12px;
+    
+    color: white;
+    border-radius: 5px;
 }
 
 .home-narrative article.posts ul {
