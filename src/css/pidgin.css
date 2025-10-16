@@ -499,6 +499,17 @@ body article.attention {
     transition: .2s ease;
 }
 
+.home-narrative article.topic-summary.legal-tools .description > a:hover {
+    font-weight: 700;
+}
+
+.home-narrative article.topic-summary.legal-tools .description > a:nth-of-type(1):hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
+    font-weight: normal;
+}
+
 .home-narrative article.topic-summary.legal-tools a {
     --underline-background-color: white;
     color: black;
