@@ -462,6 +462,7 @@ body article.attention {
 .home-narrative article.topic-summary.legal-tools .description p {
     font-size: 1.2em;
     margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .home-narrative article.topic-summary.legal-tools .description p:nth-of-type(2) {
@@ -470,6 +471,31 @@ body article.attention {
 
 .home-narrative article.topic-summary.legal-tools .description a {
     --underline-background-color: var(--vocabulary-color-light-grey);
+}
+
+.home-narrative article.topic-summary.legal-tools .description > a {
+    font-family: 'Source Sans Pro';
+    font-style: italic;
+    margin-left: 1em;
+}
+
+.home-narrative article.topic-summary.legal-tools .description > a:nth-of-type(1) {
+    --icon-sprite-color: white;
+    margin-left: 0;
+    /* display: block; */
+    box-sizing: border-box;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    background: black;
+    color: white;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-shadow: none;
+    font-weight: 200;
+    text-decoration: none;
+    transition: .2s ease;
 }
 
 .home-narrative article.topic-summary.legal-tools a {
@@ -481,6 +507,8 @@ body article.attention {
     grid-column: auto;
     order: -1;
     width: auto;
+
+    display: none;
 }
 
 .home-narrative article.topic-summary.legal-tools .chooser-mini select {
@@ -544,7 +572,7 @@ body article.attention {
     font-size: 1.2em;
 }
 
-.home-narrative article.topic-summaries.focus-areas .topic-summary a {
+.home-narrative article.topic-summaries.focus-areas .topic-summary .description a {
 
     --icon-sprite-color: black;
 
@@ -591,6 +619,26 @@ body article.attention {
     width: 100%;
     /* object-fit: cover;
     width: 200%; */
+}
+
+.home-narrative article.topic-summaries.focus-areas .topic-summary figcaption {
+    font-family: 'Source Sans Pro';
+    font-size: .8em;
+}
+
+.home-narrative article.topic-summaries.focus-areas .topic-summary figcaption a {
+    font-style: normal;
+    text-shadow: none;
+    font-size: inherit;
+    line-height: 1.8;
+
+    color: black;
+
+    /* color: white; */
+}
+
+.home-narrative article.topic-summaries.focus-areas .topic-summary:nth-child(even) figcaption {
+    float: left;
 }
 
 .home-narrative article.support {
@@ -763,14 +811,14 @@ body article.attention {
 }
 
 .home-narrative article.attribution-list {
-    grid-column: 2/11;
+    grid-column: 1/12;
     margin-top: 12em;
     padding: 1em;
 
     font-family: 'Source Sans Pro';
     /* background: white; */
     /* border: 1px solid rgba(0,0,0,.2); */
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 .home-narrative details.attribution-list h2 {
@@ -785,5 +833,9 @@ body article.attention {
 
     border: 1px solid rgba(0,0,0,.4);
 } */
+
+.home-narrative main {
+    margin-bottom: 0;
+}
 
 
