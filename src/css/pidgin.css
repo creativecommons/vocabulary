@@ -526,11 +526,12 @@ body article.attention {
 .home-narrative article.topic-summary.legal-tools .description p {
     font-size: 1.2em;
     margin-bottom: 1em;
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
 }
 
 .home-narrative article.topic-summary.legal-tools .description p:nth-of-type(2) {
     font-size: 1.1em;
+    margin-bottom: 2em;
 }
 
 .home-narrative article.topic-summary.legal-tools .description a {
