@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>home-index - context wireframe v2.0 </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    body {
+        /* margin: 2% 2%; */
+        margin: 0;
+        margin-top: 1.5em;
+        display: grid;
+        grid-template-columns: 5% 3% 6% 6% 15% 15% 15% 15% 6% 6% 3% 5%;
+        overflow-x: hidden;
+
+        background: #eae4fc;
+    }
+
+    header, footer {
+        grid-column: 1 / 13;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: subgrid;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 8em;
+        padding: 0;
+        grid-column: 1 / 13;
+    }
+
+    main > article {
+        grid-column: 1 / 13;
+    }
+
+    h1 {
+        position: absolute;
+        top: .5em;
+        right: 1em;
+        margin: 0;
+
+        font-size: .7em;
+        font-family: Arial;
+        opacity: .4;
+    }
+
+    div {
+        /* border: 4px solid black; */
+        padding: 2%;
+        margin: 2%;
+
+        background: #a1a2ef;
+        text-align: center;
+        font-family: Arial;
+        font-size: 1.4rem;
+    }
+
+    div p {
+        font-size: .8em;
+    }
+
+    div > div {
+        border: 1px solid black;
+    }
+
+    div ul {
+        margin: 0 auto;
+        width: 30%;
+    }
+
+    div ul li {
+        text-align: left;
+    }
+
+    header div, footer div {
+        margin: 0;
+    }
+
+    article {
+       border: 1px solid #a1a2ef;
+       margin: 2em 0;
+
+       text-align: center;
+    }
+
+
+    article img {
+        border: 1px solid black;
+        width: 100%;
+        height: 300px;
+    }
+
+    article.intro {
+         grid-column: 2 / 12;
+    }
+
+    article.what-we-do {
+         grid-column: 2 / 7;
+    }
+
+    article.support-our-work {
+        grid-column: 5 / 9;
+    }
+
+     article.whats-going-on {
+        grid-column: 2 / 12;
+    }
+
+</style>
+
+</head>
+
+<body>
+
+
+    <header>
+    <h1>Homepage - Wireframe Beats Draft v2.0</h1>
+        <div>Header: Logo, Navigation</div>
+    </header>
+
+    <main>
+
+    <article class="intro">
+        <h2>Lead in Summary of the Org: Who, What, Why</h2>
+        <img src="" />
+        <p>description here</p>
+
+        <!-- <ul>
+            <li><strong>WHO</strong> is Creative Commons</li>
+            <li><strong>WHAT</strong> Creative Commons does</li>
+            <li><strong>WHY</strong> it matters (and <strong>WHY</strong> you should care and support us)</li>
+        </ul>
+
+        <p>Quick drill down, biggest beat is “who” and then can jump to the what/why</p>
+
+        <p>Center Community, and layer throughout other sections as relevant.</p>
+
+        <p>Enough interest to dig further, but new  visitors are not “lost” with this as the only takeaway, they are instead “curious”, “excited”, or “motivated” to know more.</p> -->
+
+    </article>
+
+    <article class="what-we-do">
+        
+        <h2>What We Do</h2>
+
+        <article>
+            <h3>Legal Tools</h3>
+        </article>
+
+        <article>
+            <h3>Focus Areas & Projects</h3>
+        </article>
+
+        <!-- <p>Legitimacy (why we matter) is layered throughout this, tied to impact, case studies, etc.</p>
+
+        <p>Opportunities here to tie topics to community</p> -->
+
+    </article>
+
+    <article class="support-our-work">
+        
+        <h2>Support Our Work</h2>
+
+        <article>Give</article>
+
+        <article>Get Involved</article>
+
+        <!-- <p>Can begin light (just giving), and then break into ways to support beyond monetary (joining the community, etc.)</p> -->
+
+    </article>
+
+    <article class="whats-going-on">
+        <h2>"What's Going On"</h2>
+
+         <article>Blog</article>
+
+        <article>Newsletter(s)</article>
+
+        <!-- <p>"What is going on" in the space, establishes relevance, context, and grounds org in being “active”. Can later expand to include News and Events</p>
+
+        <p>Opportunities here to tie topics to community</p> -->
+
+
+    </article>
+
+    </main>
+
+       
+    <footer>
+        <div>Footer</div>
+    </footer>
+
+</body>
+</html>
