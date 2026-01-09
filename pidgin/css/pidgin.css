@@ -1,2 +1,7 @@
 
 @import 'library-vars.css';
+
+
+.explore-panel {
+    display: none;
+}
