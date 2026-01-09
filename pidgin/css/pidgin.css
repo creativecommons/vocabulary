@@ -6,10 +6,10 @@
     display: none;
 }
 
-.dm-sans-specimen {
+main p.dm-sans-specimen {
     font-family: "DM Sans";
 }
 
-.dm-mono-specimen {
+main p.dm-mono-specimen {
     font-family: "DM Mono";
 }
