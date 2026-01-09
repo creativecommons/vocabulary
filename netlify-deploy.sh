@@ -33,7 +33,6 @@ publish_to_docs() {
     cp -a _redirects docs/
     cp -a specimen/* docs/specimen/
     cp -a src/* docs/vocabulary/
-    cp -a pidgin/* docs/pidgin/
     echo 'done.'
     echo
 }
