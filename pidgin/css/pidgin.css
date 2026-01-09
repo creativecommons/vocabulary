@@ -5,3 +5,11 @@
 .explore-panel {
     display: none;
 }
+
+.dm-sans-specimen {
+    font-family: "DM Sans";
+}
+
+.dm-mono-specimen {
+    font-family: "DM Mono";
+}
