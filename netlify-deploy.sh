@@ -20,8 +20,8 @@ print_header() {
 remove_previous_from_docs() {
     # shellcheck disable=SC2016
     print_header 'Remove previous publish from the `docs/` directory'
-    rm -rf docs/_redirects docs/specimen docs/vocabulary docs/pidgin
-    mkdir -p docs/specimen docs/vocabulary docs/pidgin
+    rm -rf docs/_redirects docs/specimen docs/vocabulary
+    mkdir -p docs/specimen docs/vocabulary
     echo 'done.'
     echo
 }
