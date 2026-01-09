@@ -1,0 +1,20 @@
+/* library vars */
+
+/* brand typsetting */
+@font-face {
+    font-family:'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:  url('../fonts/dm-fonts/Sans/fonts/webfonts/DMSans-Regular.woff2') format('woff2'),
+        url('../fonts/dm-fonts/Sans/fonts/otf/DMSans-Regular.otf') format('opentype'),
+        url('../fonts/dm-fonts/Sans/fonts/ttf/DMSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/dm-mono/exports/DMMono-Regular.ttf') format('truetype');
+}
