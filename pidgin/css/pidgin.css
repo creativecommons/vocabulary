@@ -45,3 +45,12 @@ body > header .masthead .primary-menu ul:has(ul) li:focus-within ul {
     display: block;
 }
 
+/* test if user lacks pointer device (assuming touch device instead) */
+@media (pointer: none) {
+
+    body {
+        background: red;
+    }
+
+}
+
