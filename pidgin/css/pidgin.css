@@ -2,6 +2,7 @@
 @import 'library-vars.css';
 
 
+/* temp resets */
 .explore-panel {
     display: none;
 }
@@ -12,4 +13,18 @@ main p.dm-sans-specimen {
 
 main p.dm-mono-specimen {
     font-family: "DM Mono";
+}
+
+/* drop down behavior */
+
+body > header .masthead .primary-menu ul ul {
+    display: none;
+}
+
+body > header .masthead .primary-menu ul:has(ul) li:hover ul {
+    display: inherit;
+}
+
+body > header .masthead .primary-menu ul:has(ul) li:focus-within ul {
+    display: inherit;
 }
