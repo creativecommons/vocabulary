@@ -17,14 +17,31 @@ main p.dm-mono-specimen {
 
 /* drop down behavior */
 
+body > header .masthead .primary-menu ul li {
+    position: relative;
+}
+
 body > header .masthead .primary-menu ul ul {
     display: none;
+    padding: 1em;
+    width: 120%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    border: 1px solid black;
+}
+
+body > header .masthead .primary-menu ul ul li {
+    margin: 0;
+    padding: 0;
 }
 
 body > header .masthead .primary-menu ul:has(ul) li:hover ul {
-    display: inherit;
+    display: block;
 }
 
 body > header .masthead .primary-menu ul:has(ul) li:focus-within ul {
-    display: inherit;
+    display: block;
 }
+
