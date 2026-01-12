@@ -18,3 +18,11 @@
     font-display: swap;
     src: url('../fonts/dm-mono/exports/DMMono-Regular.ttf') format('truetype');
 }
+
+@font-face {
+    font-family:'DM Mono';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('../fonts/dm-mono/exports/DMMono-Medium.ttf') format('truetype');
+}
