@@ -8,11 +8,20 @@
 }
 
 main p.dm-sans-specimen {
+    display: none;
+
     font-family: "DM Sans";
 }
 
 main p.dm-mono-specimen {
+    display: none;
+    
     font-family: "DM Mono";
+}
+
+body > footer {
+    display: none;
+
 }
 
 
