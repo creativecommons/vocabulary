@@ -31,6 +31,8 @@ body > header .masthead {
     align-items: center;
 }
 
+/* drop down behavior */
+
 body > header .masthead .primary-menu ul li {
     position: relative;
     margin-left: 40px;
@@ -60,6 +62,14 @@ body > header .masthead .primary-menu ul ul {
     border-bottom-left-radius: 5px;
 }
 
+body > header .masthead .primary-menu ul ul ul {
+    top: 100%;
+    left: 20%;
+
+    /* move elsewhere */
+    background: white;
+}
+
 body > header .masthead .primary-menu ul ul li {
     margin: 0;
     padding: 0;
@@ -75,13 +85,12 @@ body > header .masthead .primary-menu ul ul li:last-child {
     width: 100%;
 } */
 
-/* drop down behavior */
 
-body > header .masthead .primary-menu ul:has(ul) li:hover ul {
+body > header .masthead .primary-menu ul:has(ul) li:hover > ul {
     display: block;
 }
 
-body > header .masthead .primary-menu ul:has(ul) li:focus-within ul {
+body > header .masthead .primary-menu ul:has(ul) li:focus-within > ul {
     display: block;
 }
 
