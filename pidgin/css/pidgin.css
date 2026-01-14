@@ -53,7 +53,7 @@ body > header .masthead .primary-menu ul ul {
     /* padding-right: 1em; */
     /* width: 110%; */
     /* width: 8.5em; */
-    min-width: 10.5em;
+    min-width: 11em;
     position: absolute;
     overflow: visible;
     top: 100%;
@@ -64,6 +64,9 @@ body > header .masthead .primary-menu ul ul {
     border-bottom-width: 2px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+
+    box-shadow: 2px 2px #ADFF00;
+    z-index: 1000;
 }
 
 body > header .masthead .primary-menu ul ul ul {
@@ -74,6 +77,8 @@ body > header .masthead .primary-menu ul ul ul {
 
     /* move elsewhere */
     background: white;
+
+    box-shadow: 2px 2px #FF9CFF;
 }
 
 body > header .masthead .primary-menu ul ul ul:before {
