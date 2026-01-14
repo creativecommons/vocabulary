@@ -25,10 +25,42 @@ body > footer {
 }
 
 
-
 body > header .masthead {
     padding-top: 20px;
     align-items: center;
+}
+
+body > header .masthead .identity-logo:hover {
+    /* background-color: var(--vocabulary-neutral-color-dark-gray); */
+    background-color: inherit;
+}
+
+body > header .masthead .identity-logo {
+    position: relative;
+    background-color: inherit;
+    -webkit-mask-image: inherit;
+    mask-image: inherit;
+
+}
+
+body > header .masthead .identity-logo:before {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 191px;
+
+    /* allows for color manipulation of svg */
+    background-color: black;
+    
+    mask-image: url('../../src/svg/cc/logos/cc/logomark.svg');
+    mask-repeat: no-repeat;
+    cursor: pointer;
+
+    /* standard pattern for setting logo in lieu of background color manipulation */
+    /* background: url('../svg/cc/logos/cc/logomark.svg') left top no-repeat; */
 }
 
 /* drop down behavior */
