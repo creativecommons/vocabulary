@@ -112,6 +112,8 @@ body > header .masthead .primary-menu ul ul li {
     padding-left: 1em;
     border-left: 3px solid white;
 
+    line-height: 1.5;
+
 }
 
 body > header .masthead .primary-menu ul ul li:last-child {
@@ -177,9 +179,37 @@ body > header .masthead .primary-menu ul li a.donate {
     transition: .2s ease;
 }
 
+
+@keyframes color-spin {
+
+    0% {
+        box-shadow: 2px 2px #ADFF00, -2px -2px #FF9CFF;
+    }
+
+    25% {
+        box-shadow: -2px 2px #ADFF00, 2px -2px #FF9CFF;
+    }
+
+    50% {
+        box-shadow: -2px -2px #ADFF00, 2px 2px #FF9CFF;
+    }
+
+    75% {
+        box-shadow: 2px -2px #ADFF00, -2px 2px #FF9CFF;
+    }
+
+    100% {
+        box-shadow: 2px 2px #ADFF00, -2px -2px #FF9CFF;
+    }
+
+}
+
 body > header .masthead .primary-menu ul li a.donate:hover {
     color: white;
     background: black;
+
+    animation: color-spin 2s infinite;
+
 }
 
 
