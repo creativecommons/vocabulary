@@ -49,8 +49,8 @@ body > header .masthead .primary-menu ul li:hover > a{
 body > header .masthead .primary-menu ul ul {
     display: none;
     padding: 1em;
-    width: 110%;
-    width: 7em;
+    /* width: 110%; */
+    width: 8.5em;
     position: absolute;
     top: 100%;
     left: 0;
@@ -65,9 +65,27 @@ body > header .masthead .primary-menu ul ul {
 body > header .masthead .primary-menu ul ul ul {
     top: 100%;
     left: 20%;
+    /* margin-top: 1em; */
+    z-index: 1000;
 
     /* move elsewhere */
     background: white;
+}
+
+body > header .masthead .primary-menu ul ul ul:before {
+    display: inline-block;
+    height: 1em;
+    width: 60%;
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: -1em;
+
+    /* background: white; */
+    /* border: 1px solid black; */
+    /* border-right-width: 2px; */
+    /* border-bottom-width: 0; */
+
 }
 
 body > header .masthead .primary-menu ul ul li {
