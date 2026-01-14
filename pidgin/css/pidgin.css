@@ -49,10 +49,11 @@ body > header .masthead .primary-menu > ul > li:hover > a{
 
 body > header .masthead .primary-menu ul ul {
     display: none;
-    padding: 1em;
+    /* padding: 1em; */
+    /* padding-right: 1em; */
     /* width: 110%; */
     /* width: 8.5em; */
-    min-width: 9em;
+    min-width: 10.5em;
     position: absolute;
     overflow: visible;
     top: 100%;
@@ -67,7 +68,7 @@ body > header .masthead .primary-menu ul ul {
 
 body > header .masthead .primary-menu ul ul ul {
     top: 100%;
-    left: 20%;
+    left: 30%;
     /* margin-top: 1em; */
     z-index: 1000;
 
@@ -98,8 +99,14 @@ body > header .masthead .primary-menu ul ul li {
     padding-bottom: .7em;
 
     padding-bottom: 1em;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
     border-bottom: 1px solid var(--vocabulary-neutral-color-lighter-gray);
+
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-left: 3px solid white;
+
 }
 
 body > header .masthead .primary-menu ul ul li:last-child {
@@ -108,7 +115,7 @@ body > header .masthead .primary-menu ul ul li:last-child {
 
 
 body > header .masthead .primary-menu ul ul li:last-child {
-    padding-bottom: 0;
+    /* padding-bottom: 0; */
 }
 
 /* body > header .masthead .primary-menu ul ul li a {
@@ -142,8 +149,19 @@ body > header .masthead .primary-menu > ul ul > li > a:hover {
     /* border-left: 2px solid black; */
 }
 
-body > header .masthead .primary-menu > ul ul > li:has(a:hover) {
-    /* border-left: 2px solid black; */
+body > header .masthead .primary-menu > ul ul > li:hover {
+    border-left: 3px solid #444242;
+
+    background: black;
+}
+
+body > header .masthead .primary-menu > ul ul > li:hover > a {
+    color: white;
+
+}
+
+body > header .masthead .primary-menu ul ul:has(ul) > li:hover {
+    border-bottom-color: black;
 }
 
 body > header .masthead .primary-menu ul li a.donate {
