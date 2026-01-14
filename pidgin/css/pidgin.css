@@ -36,13 +36,14 @@ body > header .masthead {
 body > header .masthead .primary-menu ul li {
     position: relative;
     margin-left: 40px;
+    /* padding-bottom: 1em; */
 }
 
 body > header .masthead .primary-menu ul li:hover {
     cursor: pointer;
 }
 
-body > header .masthead .primary-menu ul li:hover > a{
+body > header .masthead .primary-menu > ul > li:hover > a{
     border-bottom: 2px solid black;
 }
 
@@ -50,8 +51,10 @@ body > header .masthead .primary-menu ul ul {
     display: none;
     padding: 1em;
     /* width: 110%; */
-    width: 8.5em;
+    /* width: 8.5em; */
+    min-width: 9em;
     position: absolute;
+    overflow: visible;
     top: 100%;
     left: 0;
 
@@ -93,7 +96,16 @@ body > header .masthead .primary-menu ul ul li {
     padding: 0;
 
     padding-bottom: .7em;
+
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid var(--vocabulary-neutral-color-lighter-gray);
 }
+
+body > header .masthead .primary-menu ul ul li:last-child {
+    border-bottom: none;
+}
+
 
 body > header .masthead .primary-menu ul ul li:last-child {
     padding-bottom: 0;
@@ -122,8 +134,16 @@ body > header .masthead .primary-menu ul li a {
     /* transition: .1s ease; */
 }
 
-body > header .masthead .primary-menu ul li a:hover {
+body > header .masthead .primary-menu > ul > li > a:hover {
     border-bottom: 2px solid black;
+}
+
+body > header .masthead .primary-menu > ul ul > li > a:hover {
+    /* border-left: 2px solid black; */
+}
+
+body > header .masthead .primary-menu > ul ul > li:has(a:hover) {
+    /* border-left: 2px solid black; */
 }
 
 body > header .masthead .primary-menu ul li a.donate {
