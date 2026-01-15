@@ -267,6 +267,10 @@ body > header .masthead .primary-menu ul li a.donate:hover {
         top: 1em;
         right: 1em;
         z-index: 1000;
+
+        font-family: "DM Mono";
+        text-transform: capitalize;
+        border-radius: 40px;
     }
 
     body > header .masthead .primary-menu ul ul { 
