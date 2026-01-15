@@ -261,4 +261,54 @@ body > header .masthead .primary-menu ul li a.donate:hover {
 }
 
 
+@media (max-width: 705px) {
+    body > header button.expand-menu {
+        position: fixed;
+        top: 1em;
+        right: 1em;
+        z-index: 1000;
+    }
+
+    body > header .masthead .primary-menu ul ul { 
+        display: block;
+        position: relative;
+
+        border: none;
+        box-shadow: none;
+    }
+
+    body > header .masthead .primary-menu ul li {
+        display: block;
+        z-index: 900;
+    }
+
+    body > header .primary-menu.expand ul > li:has(a.donate) {
+        box-sizing: border-box;
+        margin-top: 1em;
+     }
+
+    body > header .primary-menu.expand ul > li a.donate {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+     body > header .primary-menu.expand ul li {
+        border-top: none;
+     }
+
+
+    body > header .masthead .primary-menu ul ul ul {
+        position: relative;
+        left: 0;
+        top: 0;
+
+        border: none;
+        box-shadow: none;
+    }
+
+}
+
+
 
