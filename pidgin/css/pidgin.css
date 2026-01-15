@@ -280,6 +280,7 @@ body > header .masthead .primary-menu ul li a.donate:hover {
     body > header .masthead .primary-menu ul li {
         display: block;
         z-index: 900;
+        margin-left: 0;
     }
 
     body > header .primary-menu.expand ul > li:has(a.donate) {
