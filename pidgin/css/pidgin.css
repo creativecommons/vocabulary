@@ -236,6 +236,12 @@ body > header .masthead .primary-menu ul li a.donate {
 
 }
 
+body > footer .identity-logo { 
+    height: 82px;
+    width: 340px;
+}
+
+
 body > header .masthead .primary-menu ul li a.donate:hover {
     color: white;
     background: black;
@@ -244,6 +250,17 @@ body > header .masthead .primary-menu ul li a.donate:hover {
 
 }
 
+body > footer .footer-menu ul li a {
+    color: white;
+}
+
+body > footer .social-menu ul li a {
+    color: #ADFF00;
+}
+
+body > footer a, body > footer p a {
+    color: #ADFF00;
+}
 
 
 
