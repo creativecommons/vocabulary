@@ -20,8 +20,7 @@ main p.dm-mono-specimen {
 }
 
 body > footer {
-    display: none;
-
+    /* display: none; */
 }
 
 
@@ -91,6 +90,7 @@ body > header .masthead .primary-menu ul ul {
     top: 100%;
     left: 0;
 
+    background: white;
     border: 1px solid black;
     border-right-width: 3px;
     border-bottom-width: 2px;
