@@ -255,6 +255,7 @@ body > footer {
         "contact nav subscribe"
         "contact nav subscribe"
         "license license license";
+    padding-top: 55px;
 }
 
 body > footer .identity-logo { 
@@ -311,6 +312,7 @@ body > footer a, body > footer p a {
 body > footer .search {
     width: 100%;
     grid-area: search;
+    margin-top: 1.5em;
 }
 
 body > footer .search form {
