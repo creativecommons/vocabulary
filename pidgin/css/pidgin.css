@@ -236,18 +236,21 @@ body > header .masthead .primary-menu ul li a.donate {
 
 }
 
-body > footer .identity-logo { 
-    height: 82px;
-    width: 340px;
-}
-
-
 body > header .masthead .primary-menu ul li a.donate:hover {
     color: white;
     background: black;
 
     animation: color-spin 2s infinite;
 
+}
+
+body > footer .identity-logo { 
+    height: 82px;
+    width: 340px;
+}
+
+body > footer .identity-logo:hover {
+    background-color: #FF9CFF;
 }
 
 body > footer .footer-menu ul li a {
