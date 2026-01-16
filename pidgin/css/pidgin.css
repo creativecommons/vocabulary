@@ -244,6 +244,19 @@ body > header .masthead .primary-menu ul li a.donate:hover {
 
 }
 
+
+
+
+body > footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "logo search search"
+        "contact nav subscribe"
+        "contact nav subscribe"
+        "license license license";
+}
+
 body > footer .identity-logo { 
     height: 82px;
     width: 340px;
@@ -253,8 +266,38 @@ body > footer .identity-logo:hover {
     background-color: #FF9CFF;
 }
 
+body > footer .footer-menu ul {
+    max-height: 8em;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    font-family: "DM Sans";
+    font-size: .9em;
+}
+
+body > footer .footer-menu ul li {
+    margin-bottom: .8em;
+}
+
 body > footer .footer-menu ul li a {
     color: white;
+}
+
+body > footer .contact h2 {
+    font-family: "DM Sans";
+}
+
+body > footer .contact p {
+    font-family: "DM Sans";
+    font-size: 1.1em;
+}
+
+body > footer .contact .social-menu ul {
+    margin-top: 1.5em;
+    padding-left: 2em;
+
+    font-size: 1.1em;
+
 }
 
 body > footer .social-menu ul li a {
@@ -265,6 +308,72 @@ body > footer a, body > footer p a {
     color: #ADFF00;
 }
 
+body > footer .search {
+    width: 100%;
+    grid-area: search;
+}
+
+body > footer .search input {
+    width: 100%;
+}
+
+body > footer .subscribe {
+    grid-area: subscribe;
+    padding: 2.5em .5em .5em .5em;
+    width: 90%;
+    height: 60%;
+    margin-left: 5%;
+    
+
+    font-family: "DM Sans";
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+
+    color: black;
+}
+
+body > footer .subscribe h2 {
+    margin-bottom: 1.5em;
+
+    font-family: "DM Sans";
+}
+
+body > footer .subscribe a {
+    padding: .8em 1.8em;
+    
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 1.2em;
+    color: black;
+    background:#ADFF00;
+    border-radius: 60px;
+}
+
+body > footer .license {
+    text-align: center;
+    width: 60%;
+    justify-content: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 18fr;
+}
+
+body > footer .license svg {
+    /* width: 1.5em;
+    height: 1.5em; */
+}
+
+
+body > footer .license p {
+    margin-top: 0;
+    margin-left: .5em;
+
+    font-family: "DM Mono";
+    font-size: .8em;
+    text-align: left;
+
+}
 
 
 
