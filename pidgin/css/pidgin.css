@@ -261,10 +261,37 @@ body > footer {
 body > footer .identity-logo { 
     height: 82px;
     width: 340px;
+    position: relative;
+
+    background-color: black;
+    mask-image: none;
+
+}
+
+body > footer .identity-logo:before {
+    display: inline-block;
+    /* text-indent: -1000px; */
+    /* vertical-align: bottom; */
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 82px;
+    width: 340px;
+    background-color: white;
+    mask-image: url('../../src/svg/cc/logos/cc/logomark.svg');
+    mask-repeat: no-repeat;
+    cursor: pointer;
+    grid-area: logo;
 }
 
 body > footer .identity-logo:hover {
+    background-color: black;
+}
+
+body > footer .identity-logo:hover:before {
     background-color: #FF9CFF;
+    /* background-color: white; */
 }
 
 body > footer .footer-menu ul {
