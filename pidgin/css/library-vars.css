@@ -26,3 +26,7 @@
     font-display: swap;
     src: url('../fonts/dm-mono/exports/DMMono-Medium.ttf') format('truetype');
 }
+
+.icon-replace.fa-search {
+    --icon-sprite: var(--fa-search);
+}

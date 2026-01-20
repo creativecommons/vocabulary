@@ -331,14 +331,32 @@ body > footer .search input:nth-of-type(1) {
     border-bottom-right-radius: 0; 
 }
 
-body > footer .search input:nth-of-type(2) {
+body > footer .search input:nth-of-type(2), body > footer .search button {
     
     border: none;
     border-radius: 60px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    
+
+    /* --icon-sprite-color: white; */
+    /* background: white; */
+    /* width: 1em; */
+    /* height: 100%; */
+    background: white;
+    /* text-indent: 1000px; */
+    color: white;
+    /* overflow: hidden; */
+    position: relative;
+    cursor: pointer;
 }
+
+body > footer .search input:nth-of-type(2), body > footer .search button:before {
+    top: 35%;
+    right: 1.5em;
+    position: absolute;
+    transform: scaleX(-1);
+}
+
 
 body > footer .subscribe {
     grid-area: subscribe;
