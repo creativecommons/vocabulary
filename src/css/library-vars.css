@@ -235,7 +235,7 @@ leaving room for semantic and accessible implementation choices  */
     --icon-sprite: var(--fa-close);
 }
 
-.icon-replace.fa-bluesky {
+.icon-replace.fa-bluesky:before {
     --icon-sprite: var(--fa-bluesky);
 }
 
@@ -243,15 +243,15 @@ leaving room for semantic and accessible implementation choices  */
     --icon-sprite: var(--fa-facebook);
 }
 
-.icon-replace.fa-instagram {
+.icon-replace.fa-instagram:before {
     --icon-sprite: var(--fa-instagram);
 }
 
-.icon-replace.fa-linkedin {
+.icon-replace.fa-linkedin:before {
     --icon-sprite: var(--fa-linkedin);
 }
 
-.icon-replace.fa-mastodon {
+.icon-replace.fa-mastodon:before {
     --icon-sprite: var(--fa-mastodon);
 }
 
@@ -284,8 +284,20 @@ leaving room for semantic and accessible implementation choices  */
 
 .icon-replace {
     display: inline-block;
+    text-indent: -1000px;
+    height: 2em;
+    width: 2em;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.icon-replace:before {
+    display: inline-block;
     content: '';
     text-indent: -1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
 
     /* min-width: 30px; */
     /* min-height: 30px; */

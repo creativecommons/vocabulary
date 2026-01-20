@@ -30,3 +30,5 @@
 .icon-replace.fa-search {
     --icon-sprite: var(--fa-search);
 }
+
+/* needs a rework to not break focus indicator */
