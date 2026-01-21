@@ -311,6 +311,27 @@ body > footer .footer-menu ul li a {
     color: white;
 }
 
+body > footer .footer-menu ul li a:hover {
+    /* better hyperlink underline typesetting inspired by Tufte CSS */
+    --underline-color: var(--vocabulary-brand-color-turquoise);
+    --underline-background-color: black;
+    color: var(--vocabulary-brand-color-turquoise);
+    /* text-decoration: none; */
+
+    /* adapted from Tufte.css -- Copyright (c) 2014 Dave Liepmann -- https://github.com/edwardtufte/tufte-css -- https://github.com/edwardtufte/tufte-css/blob/gh-pages/LICENSE */
+    background: -webkit-linear-gradient(var( --underline-color), var( --underline-color)), -webkit-linear-gradient(var( --underline-color), var( --underline-color)), -webkit-linear-gradient(currentColor, currentColor);
+    background: linear-gradient(var( --underline-color), var( --underline-color)), linear-gradient(var( --underline-color), var( --underline-color)), linear-gradient(currentColor, currentColor);
+    -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    text-shadow: 0.03em 0 var(--underline-background-color), -0.03em 0 var(--underline-background-color), 0 0.03em var(--underline-background-color), 0 -0.03em var(--underline-background-color), 0.06em 0 var(--underline-background-color), -0.06em 0 var(--underline-background-color), 0.09em 0 var(--underline-background-color), -0.09em 0 var(--underline-background-color), 0.12em 0 var(--underline-background-color), -0.12em 0 var(--underline-background-color), 0.15em 0 var(--underline-background-color), -0.15em 0 var(--underline-background-color);
+    background-position: 0% 93%, 100% 93%, 0% 93%;
+    /* background-position-y: 87%, 87%, 87%; */
+    
+    color:#FF9CFF;
+}
+
 body > footer .contact h2 {
     font-family: "DM Sans";
 }
@@ -330,6 +351,10 @@ body > footer .contact .social-menu ul {
 
 body > footer .social-menu ul li a {
     color: #ADFF00;
+}
+
+body > footer .social-menu ul li a:hover:before {
+    background-color:#FF9CFF;
 }
 
 body > footer a, body > footer p a {
@@ -440,7 +465,10 @@ body > footer .license p {
     font-family: "DM Mono";
     font-size: .8em;
     text-align: left;
+}
 
+body > footer .license p a:hover {
+    color:#FF9CFF;
 }
 
 
