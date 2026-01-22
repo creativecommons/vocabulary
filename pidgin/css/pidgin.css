@@ -361,6 +361,10 @@ body > footer a, body > footer p a {
     color: #ADFF00;
 }
 
+body > footer a:hover, body > footer p a:hover {
+    color:#FF9CFF;
+}
+
 body > footer .search {
     width: 100%;
     grid-area: search;
@@ -441,6 +445,12 @@ body > footer .subscribe a {
     color: black;
     background:#ADFF00;
     border-radius: 60px;
+}
+
+body > footer .subscribe a:hover {
+    
+    background: black;
+    color: white;
 }
 
 body > footer .license {
