@@ -1,0 +1,621 @@
+
+@import 'library-vars.css';
+
+
+/* temp resets */
+.explore-panel {
+    display: none;
+}
+
+main p.dm-sans-specimen {
+    display: none;
+
+    font-family: "DM Sans";
+}
+
+main p.dm-mono-specimen {
+    display: none;
+    
+    font-family: "DM Mono";
+}
+
+body > footer {
+    /* display: none; */
+}
+
+
+body > header .masthead {
+    padding-top: 20px;
+    align-items: center;
+}
+
+body > header .masthead .identity-logo:hover {
+    /* background-color: var(--vocabulary-neutral-color-dark-gray); */
+    background-color: inherit;
+}
+
+body > header .masthead .identity-logo {
+    position: relative;
+    background-color: inherit;
+    -webkit-mask-image: inherit;
+    mask-image: inherit;
+
+}
+
+body > header .masthead .identity-logo:before {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 191px;
+
+    /* allows for color manipulation of svg */
+    background-color: black;
+    
+    mask-image: url('../../src/svg/cc/logos/cc/logomark.svg');
+    mask-repeat: no-repeat;
+    cursor: pointer;
+
+    /* standard pattern for setting logo in lieu of background color manipulation */
+    /* background: url('../svg/cc/logos/cc/logomark.svg') left top no-repeat; */
+}
+
+body > header .masthead .identity-logo:hover:before {
+    background:#2E1FB8;
+}
+
+/* drop down behavior */
+
+body > header .masthead .primary-menu ul li {
+    position: relative;
+    margin-left: 40px;
+    /* padding-bottom: 1em; */
+}
+
+body > header .masthead .primary-menu ul li:hover {
+    cursor: pointer;
+}
+
+body > header .masthead .primary-menu > ul > li:hover > a {
+    border-bottom: 2px solid #2E1FB8;
+    color: #2E1FB8;
+}
+
+body > header .masthead .primary-menu ul ul {
+    display: none;
+    /* padding: 1em; */
+    /* padding-right: 1em; */
+    /* width: 110%; */
+    /* width: 8.5em; */
+    min-width: 11em;
+    position: absolute;
+    overflow: visible;
+    top: 100%;
+    left: 0;
+
+    background: white;
+    border: 1px solid black;
+    border-right-width: 3px;
+    border-bottom-width: 2px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    box-shadow: 2px 2px #ADFF00;
+    z-index: 1000;
+}
+
+body > header .masthead .primary-menu ul ul ul {
+    top: 100%;
+    left: 30%;
+    /* margin-top: 1em; */
+    z-index: 1000;
+
+    /* move elsewhere */
+    background: white;
+
+    box-shadow: 2px 2px #FF9CFF;
+}
+
+body > header .masthead .primary-menu ul ul ul:before {
+    display: inline-block;
+    height: 1em;
+    width: 60%;
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: -1em;
+
+    /* background: white; */
+    /* border: 1px solid black; */
+    /* border-right-width: 2px; */
+    /* border-bottom-width: 0; */
+
+}
+
+body > header .masthead .primary-menu ul ul li {
+    margin: 0;
+    padding: 0;
+
+    padding-bottom: .7em;
+
+    padding-bottom: 1em;
+    /* margin-bottom: 1em; */
+    border-bottom: 1px solid var(--vocabulary-neutral-color-lighter-gray);
+
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-left: 3px solid white;
+
+    line-height: 1.5;
+
+}
+
+body > header .masthead .primary-menu ul ul li:last-child {
+    border-bottom: none;
+}
+
+
+body > header .masthead .primary-menu ul ul li:last-child {
+    /* padding-bottom: 0; */
+}
+
+/* body > header .masthead .primary-menu ul ul li a {
+    width: 100%;
+} */
+
+
+body > header .masthead .primary-menu ul:has(ul) li:hover > ul {
+    display: block;
+}
+
+body > header .masthead .primary-menu ul:has(ul) li:focus-within > ul {
+    display: block;
+}
+
+body > header .masthead .primary-menu ul li a {
+    font-family: "DM Mono";
+    font-size: 1em;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: black;
+
+    /* transition: .1s ease; */
+}
+
+body > header .masthead .primary-menu > ul > li > a:hover {
+    border-bottom: 2px solid #2E1FB8;
+}
+
+body > header .masthead .primary-menu > ul ul > li > a:hover {
+    /* border-left: 2px solid black; */
+}
+
+body > header .masthead .primary-menu > ul ul > li:hover {
+    border-left: 3px solid #444242;
+
+    background: black;
+}
+
+body > header .masthead .primary-menu > ul ul > li:hover > a {
+    color: white;
+
+}
+
+body > header .masthead .primary-menu ul ul:has(ul) > li:hover {
+    border-bottom-color: black;
+}
+
+body > header .masthead .primary-menu ul li a.donate {
+    border: 4px solid black;
+    border-radius: 100px;
+    padding: 1em 1.4em;
+
+    transition: .2s ease;
+}
+
+
+@keyframes color-spin {
+
+    0% {
+        box-shadow: 2px 2px #ADFF00, -2px -2px #FF9CFF;
+    }
+
+    25% {
+        box-shadow: -2px 2px #ADFF00, 2px -2px #FF9CFF;
+    }
+
+    50% {
+        box-shadow: -2px -2px #ADFF00, 2px 2px #FF9CFF;
+    }
+
+    75% {
+        box-shadow: 2px -2px #ADFF00, -2px 2px #FF9CFF;
+    }
+
+    100% {
+        box-shadow: 2px 2px #ADFF00, -2px -2px #FF9CFF;
+    }
+
+}
+
+body > header .masthead .primary-menu ul li a.donate:hover {
+    color: white;
+    background: black;
+
+    animation: color-spin 2s infinite;
+
+}
+
+
+
+
+body > footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "logo search search"
+        "contact nav subscribe"
+        "contact nav subscribe"
+        "license license license";
+    padding-top: 55px;
+}
+
+body > footer .identity-logo { 
+    height: 82px;
+    width: 340px;
+    position: relative;
+
+    background-color: black;
+    mask-image: none;
+
+}
+
+body > footer .identity-logo:before {
+    display: inline-block;
+    /* text-indent: -1000px; */
+    /* vertical-align: bottom; */
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 82px;
+    width: 340px;
+    background-color: white;
+    mask-image: url('../../src/svg/cc/logos/cc/logomark.svg');
+    mask-repeat: no-repeat;
+    cursor: pointer;
+    grid-area: logo;
+}
+
+body > footer .identity-logo:hover {
+    background-color: black;
+}
+
+body > footer .identity-logo:hover:before {
+    background-color: #FF9CFF;
+    /* background-color: white; */
+}
+
+body > footer .footer-menu ul {
+    max-height: 8em;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    font-family: "DM Sans";
+    font-size: .9em;
+}
+
+body > footer .footer-menu ul li {
+    margin-bottom: .8em;
+}
+
+body > footer .footer-menu ul li a {
+    color: white;
+}
+
+body > footer .footer-menu ul li a:hover {
+    /* better hyperlink underline typesetting inspired by Tufte CSS */
+    --underline-color: var(--vocabulary-brand-color-turquoise);
+    --underline-background-color: black;
+    color: var(--vocabulary-brand-color-turquoise);
+    /* text-decoration: none; */
+
+    /* adapted from Tufte.css -- Copyright (c) 2014 Dave Liepmann -- https://github.com/edwardtufte/tufte-css -- https://github.com/edwardtufte/tufte-css/blob/gh-pages/LICENSE */
+    background: -webkit-linear-gradient(var( --underline-color), var( --underline-color)), -webkit-linear-gradient(var( --underline-color), var( --underline-color)), -webkit-linear-gradient(currentColor, currentColor);
+    background: linear-gradient(var( --underline-color), var( --underline-color)), linear-gradient(var( --underline-color), var( --underline-color)), linear-gradient(currentColor, currentColor);
+    -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    text-shadow: 0.03em 0 var(--underline-background-color), -0.03em 0 var(--underline-background-color), 0 0.03em var(--underline-background-color), 0 -0.03em var(--underline-background-color), 0.06em 0 var(--underline-background-color), -0.06em 0 var(--underline-background-color), 0.09em 0 var(--underline-background-color), -0.09em 0 var(--underline-background-color), 0.12em 0 var(--underline-background-color), -0.12em 0 var(--underline-background-color), 0.15em 0 var(--underline-background-color), -0.15em 0 var(--underline-background-color);
+    background-position: 0% 93%, 100% 93%, 0% 93%;
+    /* background-position-y: 87%, 87%, 87%; */
+    
+    color:#FF9CFF;
+}
+
+body > footer .contact h2 {
+    font-family: "DM Sans";
+}
+
+body > footer .contact p {
+    font-family: "DM Sans";
+    font-size: 1.1em;
+}
+
+body > footer .contact .social-menu ul {
+    margin-top: 1.5em;
+    padding-left: 1.2em;
+
+    font-size: 1.1em;
+
+}
+
+body > footer .social-menu ul li a {
+    color: #ADFF00;
+}
+
+body > footer .social-menu ul li a:hover:before {
+    background-color:#FF9CFF;
+}
+
+body > footer a, body > footer p a {
+    color: #ADFF00;
+}
+
+body > footer a:hover, body > footer p a:hover {
+    color:#FF9CFF;
+}
+
+body > footer .search {
+    width: 100%;
+    grid-area: search;
+    margin-top: 1.5em;
+}
+
+body > footer .search form {
+    display: flex;
+}
+
+body > footer .search input:nth-of-type(1) {
+    width: 90%;
+    padding: .6em 1.5em;
+
+    font-family: "DM Sans";
+    font-size: 1.2em;
+    border: none;
+    border-radius: 60px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; 
+}
+
+body > footer .search input:nth-of-type(2), body > footer .search button {
+    
+    border: none;
+    border-radius: 60px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    /* --icon-sprite-color: white; */
+    /* background: white; */
+    /* width: 1em; */
+    /* height: 100%; */
+    background: white;
+    /* text-indent: 1000px; */
+    color: white;
+    /* overflow: hidden; */
+    position: relative;
+    cursor: pointer;
+}
+
+body > footer .search input:nth-of-type(2), body > footer .search button:before {
+    top: 35%;
+    right: 1.5em;
+    position: absolute;
+    transform: scaleX(-1);
+}
+
+
+body > footer .subscribe {
+    grid-area: subscribe;
+    padding: 2.5em .5em .5em .5em;
+    width: 90%;
+    height: 60%;
+    margin-left: 5%;
+    
+
+    font-family: "DM Sans";
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+
+    color: black;
+}
+
+body > footer .subscribe h2 {
+    margin-bottom: 1.5em;
+
+    font-family: "DM Sans";
+}
+
+body > footer .subscribe a {
+    padding: .8em 1.8em;
+    
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 1.2em;
+    color: black;
+    background:#ADFF00;
+    border-radius: 60px;
+}
+
+body > footer .subscribe a:hover {
+
+    background: black;
+    color: white;
+}
+
+body > footer .license {
+    text-align: center;
+    width: 60%;
+    justify-content: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 18fr;
+}
+
+body > footer .license svg {
+    /* width: 1.5em;
+    height: 1.5em; */
+}
+
+
+body > footer .license p {
+    margin-top: 0;
+    margin-left: .5em;
+
+    font-family: "DM Mono";
+    font-size: .8em;
+    text-align: left;
+}
+
+body > footer .license p a:hover {
+    color:#FF9CFF;
+}
+
+
+
+
+
+
+/* test if user lacks pointer device (assuming touch device instead) */
+@media (pointer: none) {
+
+    body {
+        background: red;
+    }
+
+}
+
+@media (max-width: 979px) {
+    body footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    body > footer .footer-menu {
+        width: 100%;
+    }
+
+    body > footer .footer-menu ul {
+        flex-direction: row;
+        /* justify-content: flex-end; */
+    }
+
+    body > footer .contact {
+        width: 40%;
+    }
+
+    body > footer .subscribe {
+        /* width: 50%; */
+        width: inherit;
+        height: inherit;
+        box-sizing: border-box;
+        margin-left: 0;
+        flex-grow: 2;
+    }
+}
+
+
+@media (max-width: 765px) {
+
+    body > footer > nav {
+        margin-bottom: .5em;
+    }
+
+    body > footer .footer-menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body > footer .search {
+        margin-bottom: .5em;
+    }
+
+    body > footer > div {
+        margin-bottom: .5em;
+    }
+
+    body > footer .subscribe {
+        padding-bottom: 1.5em;
+    }
+
+    body > footer .subscribe a {
+        display: inline-block;
+    }
+
+    body > footer .license {
+        width: inherit;
+    }
+}
+
+
+@media (max-width: 705px) {
+    body > header button.expand-menu {
+        position: fixed;
+        top: 1em;
+        right: 1em;
+        z-index: 1000;
+
+        font-family: "DM Mono";
+        text-transform: capitalize;
+        border-radius: 40px;
+    }
+
+    body > header .masthead .primary-menu ul ul { 
+        display: block;
+        position: relative;
+
+        border: none;
+        box-shadow: none;
+    }
+
+    body > header .masthead .primary-menu ul li {
+        display: block;
+        z-index: 900;
+        margin-left: 0;
+    }
+
+    body > header .primary-menu.expand ul > li:has(a.donate) {
+        box-sizing: border-box;
+        margin-top: 1em;
+     }
+
+    body > header .primary-menu.expand ul > li a.donate {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+     body > header .primary-menu.expand ul li {
+        border-top: none;
+     }
+
+
+    body > header .masthead .primary-menu ul ul ul {
+        position: relative;
+        left: 0;
+        top: 0;
+
+        border: none;
+        box-shadow: none;
+    }
+
+}
+
+
+
