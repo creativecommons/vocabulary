@@ -62,6 +62,10 @@ body > header .masthead .identity-logo:before {
     /* background: url('../svg/cc/logos/cc/logomark.svg') left top no-repeat; */
 }
 
+body > header .masthead .identity-logo:hover:before {
+    background:#2E1FB8;
+}
+
 /* drop down behavior */
 
 body > header .masthead .primary-menu ul li {
@@ -74,8 +78,9 @@ body > header .masthead .primary-menu ul li:hover {
     cursor: pointer;
 }
 
-body > header .masthead .primary-menu > ul > li:hover > a{
-    border-bottom: 2px solid black;
+body > header .masthead .primary-menu > ul > li:hover > a {
+    border-bottom: 2px solid #2E1FB8;
+    color: #2E1FB8;
 }
 
 body > header .masthead .primary-menu ul ul {
@@ -181,7 +186,7 @@ body > header .masthead .primary-menu ul li a {
 }
 
 body > header .masthead .primary-menu > ul > li > a:hover {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #2E1FB8;
 }
 
 body > header .masthead .primary-menu > ul ul > li > a:hover {
@@ -448,7 +453,7 @@ body > footer .subscribe a {
 }
 
 body > footer .subscribe a:hover {
-    
+
     background: black;
     color: white;
 }
