@@ -500,6 +500,68 @@ body > footer .license p a:hover {
 
 }
 
+@media (max-width: 979px) {
+    body footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    body > footer .footer-menu {
+        width: 100%;
+    }
+
+    body > footer .footer-menu ul {
+        flex-direction: row;
+        /* justify-content: flex-end; */
+    }
+
+    body > footer .contact {
+        width: 40%;
+    }
+
+    body > footer .subscribe {
+        /* width: 50%; */
+        width: inherit;
+        height: inherit;
+        box-sizing: border-box;
+        margin-left: 0;
+        flex-grow: 2;
+    }
+}
+
+
+@media (max-width: 765px) {
+
+    body > footer > nav {
+        margin-bottom: .5em;
+    }
+
+    body > footer .footer-menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body > footer .search {
+        margin-bottom: .5em;
+    }
+
+    body > footer > div {
+        margin-bottom: .5em;
+    }
+
+    body > footer .subscribe {
+        padding-bottom: 1.5em;
+    }
+
+    body > footer .subscribe a {
+        display: inline-block;
+    }
+
+    body > footer .license {
+        width: inherit;
+    }
+}
+
 
 @media (max-width: 705px) {
     body > header button.expand-menu {
