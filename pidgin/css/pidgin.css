@@ -584,6 +584,74 @@ body main article.topic-summary.intro figure img.shape3 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+.home-narrative article.posts {
+    grid-column: 3/10;
+}
+
+.home-narrative article.posts h2 {
+    font-weight: 100;
+    margin-bottom: 1em;
+}
+
+.home-narrative article.posts a {
+    color: black;
+    font-weight: 100;
+}
+
+.home-narrative article.posts a.more {
+    padding: 12px;
+    
+    color: white;
+    border-radius: 5px;
+}
+
+.home-narrative article.posts ul {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 8em;
+    /* padding: 0 4em; */
+    gap: 2em;
+    box-sizing: border-box;
+    width:100%;
+    margin: 0 auto;
+    margin-top: 0;
+
+    font-size: 1rem;
+    list-style: none;
+}
+
+.home-narrative article.posts ul li {
+    grid-column: span 4;
+ }
+
+ .home-narrative article.posts ul li h3 {
+    font-size: 1.5em;
+}
+
+.home-narrative article.posts .post {
+    margin-bottom: 4em;
+}
+
+.home-narrative article.posts .post figure {
+    order: -1;
+}
+
+
+
+
+
+
 /* test if user lacks pointer device (assuming touch device instead) */
 @media (pointer: none) {
 
