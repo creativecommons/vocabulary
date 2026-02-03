@@ -647,6 +647,11 @@ body main article.topic-summary.intro figure img.shape3 {
     order: -1;
 }
 
+.home-narrative article.posts .post figure img {
+    border-radius: 16px;
+}
+    
+
 
 
 
