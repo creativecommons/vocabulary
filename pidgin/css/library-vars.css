@@ -12,6 +12,26 @@
 }
 
 @font-face {
+    font-family:'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src:  url('../fonts/dm-fonts/Sans/fonts/webfonts/DMSans-Medium.woff2') format('woff2'),
+        url('../fonts/dm-fonts/Sans/fonts/otf/DMSans-Medium.otf') format('opentype'),
+        url('../fonts/dm-fonts/Sans/fonts/ttf/DMSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:'DM Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src:  url('../fonts/dm-fonts/Sans/fonts/webfonts/DMSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/dm-fonts/Sans/fonts/otf/DMSans-SemiBold.otf') format('opentype'),
+        url('../fonts/dm-fonts/Sans/fonts/ttf/DMSans-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
     font-family:'DM Mono';
     font-style: normal;
     font-weight: 400;

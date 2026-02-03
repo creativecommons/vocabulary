@@ -587,12 +587,48 @@ body main article.topic-summary.intro figure img.shape3 {
 
 
 
+.posts > h2 {
+    font-family: "DM Sans";
+}
+
+.posts .post h2, .posts .post h3 {
+    font-family: "DM Sans";
+}
 
 
+.post a {
+    font-weight: 600;
+}
+
+.post .categories {
+    font-family: "DM Mono";
+}
+
+.post .categories a {
+    font-weight: 500;
+}
 
 
+.posts .post .byline {
+    font-weight: 600;
+}
 
+.posts .post p {
+    margin-top: 1em;
 
+    font-size: 1.3em;
+    line-height: 1.2;
+}
+
+.posts .post .byline {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.posts .post .byline a {
+    font-family: "DM Sans";
+    color: #2E1FB8;
+}
 
 
 .home-narrative article.posts {
@@ -600,20 +636,30 @@ body main article.topic-summary.intro figure img.shape3 {
 }
 
 .home-narrative article.posts h2 {
-    font-weight: 100;
+    font-weight: 600;
     margin-bottom: 1em;
 }
 
 .home-narrative article.posts a {
     color: black;
-    font-weight: 100;
+    /* font-weight: 600; */
 }
 
 .home-narrative article.posts a.more {
-    padding: 12px;
+    /* padding: 12px;
     
     color: white;
-    border-radius: 5px;
+    border-radius: 60px; */
+
+    padding: .8em 1.8em;
+    
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 1.2em;
+    color: white;
+    background:#2E1FB8;
+    border-radius: 60px;
+    text-transform: capitalize;
 }
 
 .home-narrative article.posts ul {
@@ -621,7 +667,7 @@ body main article.topic-summary.intro figure img.shape3 {
     grid-template-columns: repeat(12, 1fr);
     margin-top: 8em;
     /* padding: 0 4em; */
-    gap: 6em;
+    gap: 0 6em;
     box-sizing: border-box;
     width:100%;
     margin: 0 auto;
@@ -639,12 +685,31 @@ body main article.topic-summary.intro figure img.shape3 {
     grid-column: span 12;
  }
 
+ .home-narrative article.posts ul li:nth-child(1) article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 3em;
+ }
+
+ .home-narrative article.posts ul li:nth-child(1) article header {
+    grid-column: 2 / 3 ;
+    grid-row-start: 1;
+ }
+
+  .home-narrative article.posts ul li:nth-child(1) article figure {
+    grid-row-start: 1;
+    width: 100%;
+
+  }
+
  .home-narrative article.posts ul li h3 {
     font-size: 1.5em;
 }
 
 .home-narrative article.posts .post {
-    margin-bottom: 4em;
+    margin-bottom: 1em;
+
+    font-family: "DM Sans";
 }
 
 .home-narrative article.posts .post figure {
@@ -653,6 +718,10 @@ body main article.topic-summary.intro figure img.shape3 {
 
 .home-narrative article.posts .post figure img {
     border-radius: 16px;
+}
+
+.home-narrative article.posts footer {
+    margin-top: 2em;
 }
     
 
