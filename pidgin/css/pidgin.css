@@ -489,6 +489,61 @@ body > footer .license p a:hover {
 
 
 
+article.topic-summary a {
+    --underline-background-color: black;
+
+    padding: .8em 1.8em;
+    
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 1.2em;
+    color: white;
+    background:black;
+    border-radius: 60px;
+    text-transform: capitalize;
+}
+
+article.topic-summary a:hover {
+    --underline-background-color: black;
+    background: black;
+    color: white;
+}
+
+article.topic-summary.focus-area a {
+    /* --underline-background-color: #2E1FB8;
+    background:#2E1FB8;
+    color: white; */
+
+    /* --underline-background-color: #ADFF00;
+    background:#ADFF00;
+    color: black; */
+}
+
+
+
+article.topic-summary.focus-area:nth-child(2) a {
+    --underline-background-color: #2E1FB8;
+    background:#2E1FB8;
+    color: white;
+}
+
+article.topic-summary.focus-area:nth-child(3) a {
+    --underline-background-color: #FF9CFF;
+    background:#FF9CFF;
+    color: black;
+}
+
+/* article.topic-summary.focus-area:nth-child(4) a {
+    --underline-background-color: #ADFF00;
+    background:#ADFF00;
+    color: black;
+} */
+
+
+
+
+
+
 
 body main article.topic-summary.intro {
     display: flex;
@@ -637,7 +692,7 @@ body main article.topic-summary.intro figure img.shape3 {
 
 .home-narrative article.posts h2 {
     font-weight: 600;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
 
 .home-narrative article.posts a {
@@ -660,6 +715,10 @@ body main article.topic-summary.intro figure img.shape3 {
     background:#2E1FB8;
     border-radius: 60px;
     text-transform: capitalize;
+}
+
+.home-narrative article.posts a.more:hover {
+    background: black;
 }
 
 .home-narrative article.posts ul {
