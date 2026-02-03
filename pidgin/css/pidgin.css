@@ -596,7 +596,7 @@ body main article.topic-summary.intro figure img.shape3 {
 
 
 .home-narrative article.posts {
-    grid-column: 3/10;
+    grid-column: 2/11;
 }
 
 .home-narrative article.posts h2 {
@@ -621,7 +621,7 @@ body main article.topic-summary.intro figure img.shape3 {
     grid-template-columns: repeat(12, 1fr);
     margin-top: 8em;
     /* padding: 0 4em; */
-    gap: 2em;
+    gap: 6em;
     box-sizing: border-box;
     width:100%;
     margin: 0 auto;
@@ -633,6 +633,10 @@ body main article.topic-summary.intro figure img.shape3 {
 
 .home-narrative article.posts ul li {
     grid-column: span 4;
+ }
+
+ .home-narrative article.posts ul li:nth-child(1) {
+    grid-column: span 12;
  }
 
  .home-narrative article.posts ul li h3 {
