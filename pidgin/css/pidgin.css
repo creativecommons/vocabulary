@@ -531,19 +531,19 @@ article.topic-summary.focus-area a {
 
 
 
-article:nth-child(2 of .topic-summary.focus-area) a {
+article:nth-child(3n + 2 of .topic-summary.focus-area) a {
     --underline-background-color: #2E1FB8;
     background:#2E1FB8;
     color: white;
 }
 
-article:nth-child(3 of .topic-summary.focus-area) a {
+article:nth-child(3n + 3 of .topic-summary.focus-area) a {
     --underline-background-color: #FF9CFF;
     background:#FF9CFF;
     color: black;
 }
 
-article:nth-child(1 of .topic-summary.focus-area) a, article:nth-child(4 of .topic-summary.focus-area) a {
+article:nth-child(3n + 1 of .topic-summary.focus-area) a {
     --underline-background-color: #ADFF00;
     background:#ADFF00;
     color: black;
