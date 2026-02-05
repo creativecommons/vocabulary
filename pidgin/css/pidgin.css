@@ -489,11 +489,38 @@ body > footer .license p a:hover {
 
 
 
+article.topic-summary {
+    grid-column: 2 / 11;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin-bottom: 4em;
+}
+
+article.topic-summary .description {
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: center; */
+}
+
+article.topic-summary h2 {
+    font-family: "DM Sans";
+}
+
+article.topic-summary p {
+    margin-bottom: 1.2em;
+
+    font-family: "DM Sans";
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+
 article.topic-summary a {
     --underline-background-color: black;
-
+    display: inline-block;
+    margin-top: 1em;
     padding: .8em 1.8em;
-    
+
     font-family: "DM Sans";
     font-weight: 700;
     font-size: 1.2em;
@@ -570,10 +597,7 @@ article.topic-summary.highlight figure {
 }
 
 
-
-
-
-article.topic-summary.highlight.community{
+article:nth-child(even).topic-summary.highlight {
     grid-template-areas: 
         "g g g p p p p"
         "g g g d d d d"
@@ -581,27 +605,25 @@ article.topic-summary.highlight.community{
         "c c c e e e e";
 }
 
-article.topic-summary.highlight.community .description {
-    background: #FFD9CC;
-}
-
-article.topic-summary.highlight.community figure {
+article:nth-child(even).topic-summary.highlight figure { 
     margin-left: 0;
 }
 
-
-
-article.topic-summary.highlight.support .description {
-    background: #E0FF00;
+article:nth-child(odd of .topic-summary.highlight) .description {
+    background: #FFD9CC;
 }
 
-
+article:nth-child(even of .topic-summary.highlight) .description {
+    background: #E0FF00;
+}
 
 
 article.topic-summary.focus-area {
     grid-column: 2 / 11;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 0 3em;
+
 }
 
 
@@ -621,20 +643,20 @@ article.topic-summary.focus-area:nth-of-type(even) figure {
 }
 
 article:nth-child(3n + 2 of .topic-summary.focus-area) a {
+    --underline-background-color: #ADFF00;
+    background:#ADFF00;
+    color: black;
+}
+
+article:nth-child(3n + 3 of .topic-summary.focus-area) a {
     --underline-background-color: #2E1FB8;
     background:#2E1FB8;
     color: white;
 }
 
-article:nth-child(3n + 3 of .topic-summary.focus-area) a {
+article:nth-child(3n + 1 of .topic-summary.focus-area) a {
     --underline-background-color: #FF9CFF;
     background:#FF9CFF;
-    color: black;
-}
-
-article:nth-child(3n + 1 of .topic-summary.focus-area) a {
-    --underline-background-color: #ADFF00;
-    background:#ADFF00;
     color: black;
 }
 
@@ -740,6 +762,11 @@ body main article.topic-summary.intro figure img.shape3 {
    top: -10%;
    right: 0;
    z-index: 5;
+}
+
+
+body main article.topic-summary.about figure {
+    order: -1;
 }
 
 
