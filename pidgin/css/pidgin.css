@@ -540,6 +540,10 @@ article.topic-summary a:hover {
     padding: .6em 1.6em;
 }
 
+article.topic-summary figure {
+    margin-bottom: 0;
+}
+
 
 article.topic-summary.highlight {
     grid-column: 2 / 11;
@@ -624,6 +628,23 @@ article.topic-summary.focus-area {
     grid-template-columns: 1fr 1fr;
     gap: 0 3em;
 
+}
+
+article.topic-summary.focus-area .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+article.topic-summary.focus-area .description h2 {
+    margin: 0;
+    margin-bottom: .3em;
+}
+
+article.topic-summary.focus-area .description p {
+    /* margin: 0; */
+    margin-bottom: 1.1em;
 }
 
 
