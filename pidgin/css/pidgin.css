@@ -795,6 +795,38 @@ body main article.topic-summary.about figure {
 }
 
 
+body main article.topic-summary.newsletter {
+    margin-top: 6em;
+    padding: 4em;
+    box-sizing: border-box;
+    position: relative;
+
+    background: white;
+    background: #FF9CFF;
+    border: 4px solid black;
+    border-radius: 20px;
+    /* z-index: 10; */
+}
+
+body main article.topic-summary.newsletter h2 {
+    margin-top: 0;
+}
+
+body main article.topic-summary.newsletter figure {
+    /* margin-left: 35%; */
+    /* margin-top: -30%; */
+    /* width: 74%; */
+    /* height: 160%; */
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+    width: 375px;
+    height: 500px;
+    background: var(--vocabulary-neutral-color-lighter-gray);
+    border-radius: 16px;
+}
+
+
 
 
 
