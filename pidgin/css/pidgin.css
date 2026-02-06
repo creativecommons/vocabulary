@@ -1014,6 +1014,10 @@ body main article.topic-summary.newsletter figure {
     border-radius: 16px;
 }
 
+.home-narrative article.posts .post figure figcaption {
+    display: none;
+}
+
 .home-narrative article.posts footer {
     margin-top: 2em;
 }
