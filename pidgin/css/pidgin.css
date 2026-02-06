@@ -19,6 +19,33 @@ main p.dm-mono-specimen {
     font-family: "DM Mono";
 }
 
+body .locale {
+    grid-column: 1 / 12;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1em;
+    width: 100%;
+    padding: 1em var(--vocabulary-page-edges-space);
+    box-sizing: border-box;
+
+    background: #EFEFEF;
+    text-align: right;
+    font-family: "DM Sans";
+    font-size: .8em;
+    font-weight: 600;
+
+    /* temp */
+    display: none;
+}
+
+body .locale:before {
+    font-size: 1.5em;
+}
+
+
+
 body > footer {
     /* display: none; */
 }
@@ -64,15 +91,6 @@ body > header .masthead .identity-logo:before {
 
 body > header .masthead .identity-logo:hover:before {
     background:#2E1FB8;
-}
-
-body > header .masthead .locale {
-    order: -1;
-    width: 100%;
-    margin-top: -20px;
-    padding: .5em 0;
-
-    background: #EFEFEF;
 }
 
 /* drop down behavior */
