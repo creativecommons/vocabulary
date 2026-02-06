@@ -613,8 +613,18 @@ article:nth-child(even).topic-summary.highlight figure {
     margin-left: 0;
 }
 
+
+article:nth-child(odd of .topic-summary.highlight) {
+    margin-bottom: 6em;
+}
+
 article:nth-child(odd of .topic-summary.highlight) .description {
     background: #FFD9CC;
+    margin-bottom: -5%;
+}
+
+article:nth-child(odd of .topic-summary.highlight) figure {
+
 }
 
 article:nth-child(even of .topic-summary.highlight) .description {
