@@ -66,6 +66,15 @@ body > header .masthead .identity-logo:hover:before {
     background:#2E1FB8;
 }
 
+body > header .masthead .locale {
+    order: -1;
+    width: 100%;
+    margin-top: -20px;
+    padding: .5em 0;
+
+    background: #EFEFEF;
+}
+
 /* drop down behavior */
 
 body > header .masthead .primary-menu ul li {
@@ -249,7 +258,9 @@ body > header .masthead .primary-menu ul li a.donate:hover {
 
 }
 
-
+body > main {
+    margin-bottom: 0;
+}
 
 
 body > footer {
