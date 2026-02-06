@@ -652,7 +652,6 @@ article.topic-summary.focus-area .description a {
 }
 
 
-
 article.topic-summary.focus-area figure {
     display: inline-block;
     background: var(--vocabulary-neutral-color-lighter-gray);
@@ -859,6 +858,10 @@ body main article.topic-summary.about figure {
 .home-narrative article.posts a {
     color: black;
     /* font-weight: 600; */
+}
+
+.home-narrative article.posts .post a:hover {
+    color:#FF0000;
 }
 
 .home-narrative article.posts a.more {
