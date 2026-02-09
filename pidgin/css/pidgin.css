@@ -727,7 +727,7 @@ article:nth-child(3n + 1 of .topic-summary.focus-area) a {
 article.topic-summary.focus-area a:hover {
     --underline-background-color: #black;
     background:black;
-    color: white; */
+    color: white;
 
     /* padding: .8em 1.8em; */
 
@@ -835,6 +835,7 @@ body main article.topic-summary.about figure {
 
 
 body main article.topic-summary.newsletter {
+    grid-column: 2 / 11;
     margin-top: 6em;
     padding: 4em;
     box-sizing: border-box;
@@ -1022,7 +1023,64 @@ body main article.topic-summary.newsletter figure {
     margin-top: 2em;
 }
     
+main > header {
+    grid-column: 2 / 11;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
+main > header div {
+    display: flex;
+    flex-direction: column;
+    align-content: middle;
+    justify-content: center;
+
+    height: 100%; 
+}
+main > header h1 {
+    margin: 0;
+    padding-left: 2em;
+    display: inline-block;
+    box-sizing: border-box;
+
+    font-family: "DM Sans";
+    text-align: left;
+
+}
+
+main > header:before {
+    display: none;
+}
+
+main > header figure {
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    order: -1;
+
+    background: var(--vocabulary-neutral-color-lighter-gray);
+    border-radius: 16px;
+   
+}
+
+main > header figure img {
+    width: 100%;
+}
+
+main .content p {
+    font-family: "DM Sans";
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+
+main aside.closing { 
+    padding: 2.5em;
+    box-sizing: border-box;
+
+    background: #E0FF00;
+    border: 4px solid black;
+    border-radius: 20px;
+}
 
 
 
