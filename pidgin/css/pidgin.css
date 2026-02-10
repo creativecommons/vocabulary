@@ -1022,6 +1022,14 @@ body main article.topic-summary.newsletter figure {
 .home-narrative article.posts footer {
     margin-top: 2em;
 }
+
+main a {
+    color:#2E1FB8;
+}
+
+main ul, main ol {
+    font-family: "DM Sans";
+}
     
 main > header {
     grid-column: 2 / 11;
@@ -1071,6 +1079,52 @@ main .content p {
     font-family: "DM Sans";
     font-size: 1.2em;
     line-height: 1.4;
+}
+
+main:has( > aside.sidebar) > aside.sidebar {
+    padding-left: 1em;
+    margin-left: 3.1em;
+}
+
+main aside.sidebar {
+    margin-bottom: 6em;
+    padding: 1em;
+
+    font-family: "DM Sans";
+    border: 4px solid #E0E0E0;
+    border-radius: 16px;
+}
+
+main > aside.sidebar h2 {
+    font-family: "DM Sans";
+    font-weight: 600;
+}
+
+main > aside.sidebar nav {
+    margin-bottom: 0;
+}
+
+main > aside.sidebar nav ul li {
+    font-family: "DM Sans";
+    font-size: 1em;
+    font-weight: 600;
+}
+
+main > aside.sidebar nav > ul > li {
+    margin-bottom: 0;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid var(--vocabulary-neutral-color-lighter-gray);
+    
+    position: relative;
+}
+
+main > aside.sidebar nav > ul > li:has(ul):after { /* temp testing */
+    content: '^';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 main aside.closing { 
