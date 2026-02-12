@@ -751,7 +751,7 @@ body main article.topic-wummary.intro .description {
 
 body main article.topic-summary.intro h2 {
     font-family: "DM Sans";
-    font-size: 3.6em;
+    font-size: 3.7em;
     /* width: 8em; */
     margin-top: 45%;
     margin-left: 5%;
@@ -1047,18 +1047,39 @@ main > header div {
     flex-direction: column;
     align-content: middle;
     justify-content: center;
-
     height: 100%; 
+
+    text-align: left;
+    font-family: "DM Sans";
 }
+
 main > header h1 {
     margin: 0;
-    padding-left: 2em;
+    /* padding-left: 2em; */
     display: inline-block;
     box-sizing: border-box;
 
     font-family: "DM Sans";
+    font-size: 3.7em;
     text-align: left;
+    text-align: left;
+}
 
+main > header a {
+    --underline-background-color: white;
+
+    color: black;
+}
+
+main > header .byline {
+    margin-top: .5em;
+
+    font-style: normal;
+    font-size: 2.2em;
+}
+
+main > header .categories {
+    margin-bottom: 1em;
 }
 
 main > header:before {
@@ -1155,13 +1176,42 @@ main > aside.sidebar nav > ul > li:has(ul):after { /* temp testing */
     right: 0;
 }
 
-main aside.closing { 
+main aside.opening, main aside.closing { 
     padding: 2.5em;
     box-sizing: border-box;
 
-    background: #E0FF00;
     border: 4px solid black;
     border-radius: 20px;
+}
+
+main aside.opening h2, main aside.closing h2 { 
+    margin-top: 0;
+}
+
+main aside.opening a, main aside.closing a { 
+    color: black;
+}
+
+main aside.opening {
+    background:#FF9CFF;
+} 
+
+main aside.opening a {
+    --underline-background-color:#FF9CFF;
+} 
+
+main aside.closing {
+    background: #E0FF00;
+} 
+
+main aside.closing a {
+    --underline-background-color:#E0FF00;
+}
+
+
+
+.blog-post header figure {
+    order: 1;
 }
 
 
