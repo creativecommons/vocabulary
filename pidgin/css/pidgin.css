@@ -1055,7 +1055,7 @@ main > header div {
 
 main > header h1 {
     margin: 0;
-    /* padding-left: 2em; */
+    padding-left: 2em;
     display: inline-block;
     box-sizing: border-box;
 
@@ -1208,7 +1208,9 @@ main aside.closing a {
     --underline-background-color:#E0FF00;
 }
 
-
+.blog-post header h1 {
+    padding-left: 0;
+}
 
 .blog-post header figure {
     order: 1;
