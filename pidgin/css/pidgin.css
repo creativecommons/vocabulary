@@ -1110,7 +1110,7 @@ main:has( > aside.sidebar) > aside.sidebar {
     margin-left: 4.1em;
 }
 
-main aside.sidebar {
+main aside.sidebar nav {
     margin-bottom: 6em;
     padding: 1em;
 
@@ -1141,6 +1141,10 @@ main > aside.sidebar nav > ul > li {
     border-bottom: 1px solid var(--vocabulary-neutral-color-lighter-gray);
     
     position: relative;
+}
+
+main > aside.sidebar nav > ul > li:last-child {
+    border-bottom: none;
 }
 
 main > aside.sidebar nav > ul > li:has(ul):after { /* temp testing */
