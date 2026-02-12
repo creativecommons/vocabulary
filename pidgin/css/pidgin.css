@@ -1029,6 +1029,11 @@ main a {
 
 main ul, main ol {
     font-family: "DM Sans";
+    font-size: 1.2em;
+}
+
+main figure {
+    margin-bottom: 2em;
 }
     
 main > header {
@@ -1075,15 +1080,34 @@ main > header figure img {
     width: 100%;
 }
 
+main .content h2 {
+    font-family: "DM Sans";
+}
+
 main .content p {
     font-family: "DM Sans";
     font-size: 1.2em;
     line-height: 1.4;
 }
 
+main .content figure figcaption {
+    font-family: "DM Mono";
+    font-size: .8em;
+}
+
+main .content img {
+    border-radius: 16px;
+}
+
+main .content ul li, main .content ol li {
+    margin-bottom: 1em;
+
+    line-height: 1.4;
+}
+
 main:has( > aside.sidebar) > aside.sidebar {
     padding-left: 1em;
-    margin-left: 3.1em;
+    margin-left: 4.1em;
 }
 
 main aside.sidebar {
@@ -1136,6 +1160,91 @@ main aside.closing {
     border-radius: 20px;
 }
 
+
+
+
+/* Classic Editor TinyMCE WYSIWYG editor image alignment, previous theme's markukp  */
+/* presently <figure> */
+div[id^="attachment_"] {
+  width: 120%;
+  margin: 0;
+  margin-left: -10%;
+  margin-bottom: 3em;
+  padding: 0;
+  float: none;
+}
+
+/* presently <img> */
+div[id^="attachment_"] img[class^="wp-image"]:not([width]) {
+  width: 100%;
+}
+
+/* presently <span class="attribution> */
+div[id^="attachment_"] p[id^="caption-attachment-"] {
+  display: block;
+  margin-top: 1em;
+  font-size: 1em;
+}
+
+div[id^="attachment_"].alignleft {
+  margin-top: 2em;
+  margin-right: 2em;
+  margin-left: -10%;
+  width: 50%;
+  float: left;
+}
+
+div[id^="attachment_"].alignleft:after {
+  display: block;
+  content: '';
+  height: 3em;
+  clear: both;
+}
+
+div[id^="attachment_"].aligncenter {
+  width: 100%;
+
+  margin-left: 0;
+}
+
+div[id^="attachment_"].alignright {
+  margin-top: 2em;
+  margin-right: -10%;
+  margin-left: 2em;
+  width: 50%;
+  float: right;
+}
+
+div[id^="attachment_"].alignright:after {
+  display: block;
+  content: '';
+  height: 2em;
+  clear: both;
+}
+
+main .content div[id^="attachment_"].alignleft {
+  margin-left: 0;
+  width: 40%;
+}
+
+main .content div[id^="attachment_"].alignright {
+  margin-right: 0;
+  width: 40%;
+}
+
+main .content figure:has(img.alignleft), .blog-post main figure:has(img.alignleft) {
+  margin-right: 2em;
+  margin-left: 0;
+  width: 40%;
+  float: left;
+}
+
+main .content figure:has(img.alignright), .blog-post main figure:has(img.alignright) {
+  margin-right: 0;
+  margin-left: 2em;
+  width: 40%;
+  float: right;
+}
 
 
 
