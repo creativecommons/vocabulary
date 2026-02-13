@@ -1217,6 +1217,57 @@ main aside.closing a {
 }
 
 
+.event-post header h1 {
+    padding-left: 0;
+}
+
+.event-post header figure {
+    order: 1;
+}
+
+.event-post aside.sidebar .event-meta {
+    margin-bottom: 6em;
+    padding: 3em;
+
+    background: #F5F5F5;
+    font-family: "DM Sans";
+    border: 4px solid black;
+    border-radius: 16px;
+}
+
+.event-post aside.sidebar .event-meta h2 {
+    margin-top: 0;
+
+    color:#2E1FB8;
+}
+
+.event-post aside.sidebar .event-meta a {
+    --underline-background-color:#FF9CFF;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 1em;
+    padding: .8em 1.8em;
+    
+    
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 1.2em;
+    color: black;
+    background:#FF9CFF;
+    border-radius: 60px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.event-post aside.sidebar .event-meta a:hover {
+    --underline-background-color:black;
+
+    color: white;
+    background:black;
+}
+
+
 
 
 /* Classic Editor TinyMCE WYSIWYG editor image alignment, previous theme's markukp  */
