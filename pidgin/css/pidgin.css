@@ -1283,7 +1283,6 @@ main aside.closing a {
     color:#2E1FB8;
 }
 
-
 .blog-index main .posts h2 {
 
     text-align: left;
@@ -1350,6 +1349,15 @@ main aside.closing a {
     color: white;
     background:black;
 }
+
+/* 
+.support-page header h1 {
+    padding-left: 0;
+}
+
+.support-page header figure {
+    order: 1;
+} */
 
 
 
