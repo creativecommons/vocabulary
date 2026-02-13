@@ -922,21 +922,21 @@ body main article.topic-summary.newsletter figure {
     grid-column: 2/11;
 }
 
-.home-narrative article.posts h2 {
+article.posts h2 {
     font-weight: 600;
     margin-bottom: 1.5em;
 }
 
-.home-narrative article.posts a {
+article.posts a {
     color: black;
     /* font-weight: 600; */
 }
 
-.home-narrative article.posts .post a:hover {
+article.posts .post a:hover {
     color:#FF0000;
 }
 
-.home-narrative article.posts a.more {
+article.posts a.more {
     /* padding: 12px;
     
     color: white;
@@ -953,11 +953,11 @@ body main article.topic-summary.newsletter figure {
     text-transform: capitalize;
 }
 
-.home-narrative article.posts a.more:hover {
+article.posts a.more:hover {
     background: black;
 }
 
-.home-narrative article.posts ul {
+article.posts ul {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     margin-top: 8em;
@@ -972,7 +972,7 @@ body main article.topic-summary.newsletter figure {
     list-style: none;
 }
 
-.home-narrative article.posts ul li {
+article.posts ul li {
     grid-column: span 4;
  }
 
@@ -997,29 +997,29 @@ body main article.topic-summary.newsletter figure {
 
   }
 
- .home-narrative article.posts ul li h3 {
+article.posts ul li h3 {
     font-size: 1.5em;
 }
 
-.home-narrative article.posts .post {
+article.posts .post {
     margin-bottom: 1em;
 
     font-family: "DM Sans";
 }
 
-.home-narrative article.posts .post figure {
+article.posts .post figure {
     order: -1;
 }
 
-.home-narrative article.posts .post figure img {
+article.posts .post figure img {
     border-radius: 16px;
 }
 
-.home-narrative article.posts .post figure figcaption {
+article.posts .post figure figcaption {
     display: none;
 }
 
-.home-narrative article.posts footer {
+article.posts footer {
     margin-top: 2em;
 }
 
@@ -1207,6 +1207,32 @@ main aside.closing {
 main aside.closing a {
     --underline-background-color:#E0FF00;
 }
+
+
+
+.blog-index header h1 {
+    padding-left: 0;
+}
+
+.blog-index header figure {
+    order: 1;
+}
+
+.blog-index main .post.featured {
+    margin-bottom: 6em;
+    padding: 3em;
+
+    background: #F5F5F5;
+    font-family: "DM Sans";
+    border: 4px solid black;
+    border-radius: 16px;
+}
+
+.blog-index main .posts h2 {
+    text-align: left;
+}
+
+
 
 .blog-post header h1 {
     padding-left: 0;
