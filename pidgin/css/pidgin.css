@@ -980,18 +980,18 @@ article.posts ul li {
     grid-column: span 12;
  }
 
- .home-narrative article.posts ul li:nth-child(1) article {
+ .home-narrative article.posts ul li:nth-child(1) article, .blog-index article.post.featured {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 3em;
  }
 
- .home-narrative article.posts ul li:nth-child(1) article header {
+ .home-narrative article.posts ul li:nth-child(1) article header, .blog-index article.post.featured header {
     grid-column: 2 / 3 ;
     grid-row-start: 1;
  }
 
-  .home-narrative article.posts ul li:nth-child(1) article figure {
+  .home-narrative article.posts ul li:nth-child(1) article figure, .blog-index article.post.featured figure {
     grid-row-start: 1;
     width: 100%;
 
@@ -1219,17 +1219,75 @@ main aside.closing a {
 }
 
 .blog-index main .post.featured {
-    margin-bottom: 6em;
+    grid-column: 2 / 11;
+    margin-top: 6em;
+    margin-bottom: 8em;
     padding: 3em;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'image title'
+        'image teaser';
+
+    position: relative;
+    text-align: left;
+    position: relative;
+    text-align: left;
 
     background: #F5F5F5;
     font-family: "DM Sans";
     border: 4px solid black;
     border-radius: 16px;
+    font-family: "DM Sans";
 }
 
+.blog-index main .post.featured a {
+    --underline-background-color: #F5F5F5;
+
+    color: black;
+}
+
+.blog-index main .post.featured h2 {
+    font-family: "DM Sans";
+    font-size: 1.5em;
+}
+
+.blog-index main .post.featured .byline {
+    font-size: 1.2em;
+}
+
+.blog-index main .post.featured figure {
+    grid-area: image;
+}
+
+.blog-index main .post.featured figure img {
+    border-radius: 16px;
+}
+
+.blog-index main .post.featured figure figcaption {
+    margin-top: 1em;
+
+    font-family: "DM Mono";
+    font-size: .7em;
+}
+
+.blog-index main .post.featured p {
+    grid-column-start: 2;
+    grid-area: teaser;
+
+    font-size: 1.3em;
+    line-height: 1.2;
+}
+
+.blog-index main .post.featured .byline a {
+    color:#2E1FB8;
+}
+
+
 .blog-index main .posts h2 {
+
     text-align: left;
+
 }
 
 
