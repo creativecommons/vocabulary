@@ -1380,6 +1380,14 @@ main aside.more-links ul {
     background:black;
 }
 
+.training-index header h1 {
+    padding-left: 0;
+}
+
+.training-index header figure {
+    order: 1;
+}
+
 
 .casetudies-index header h1 {
     padding-left: 0;
