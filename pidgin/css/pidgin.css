@@ -1208,6 +1208,36 @@ main aside.closing a {
     --underline-background-color:#E0FF00;
 }
 
+main aside.more-links {
+    grid-column: 3 / 10;
+    margin-bottom: 6em;
+    padding: 1em;
+
+    font-family: "DM Sans";
+    border: 4px solid #E0E0E0;
+    border-radius: 16px;
+}
+
+main aside.more-links h2 {
+    margin-top: 0;
+
+    font-family: "DM Sans";
+    font-size: 1.7em;
+}
+
+main aside.more-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    line-height: 1.4;
+    font-size: 1em;
+    font-weight: 600;
+}
+
 
 
 .blog-index header h1 {
@@ -1357,6 +1387,67 @@ main aside.closing a {
 
 .casestudies-index header figure {
     order: 1;
+}
+
+.support-page .topic-summary footer {
+    grid-column: 1 / 3;
+    margin-top: 4em;
+}
+
+.support-page ul.payment-methods {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.support-page ul.payment-methods li {
+    padding: 2em;
+
+    background: #F5F5F5;
+    font-family: "DM Sans";
+    border: 4px solid black;
+    border-radius: 16px;
+}
+
+.support-page ul.payment-methods li:nth-child(1) {
+    background: #E0FF00;
+}
+
+.support-page ul.payment-methods li:nth-child(2) {
+    background:#FFD9CC;
+}
+
+.support-page ul.payment-methods li:nth-child(3) {
+    background:#FF9CFF;
+}
+
+.support-page ul.payment-methods li h3 {
+    margin-top: 0;
+    margin-bottom: .8em;
+}
+
+.support-page ul.payment-methods li p {
+    font-size: 1em;
+}
+
+.support-page .topic-summary.supporters {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.support-page .topic-summary.supporters .description {
+    grid-column: span 2;
+}
+
+.support-page .topic-summary.supporters ul {
+    margin: 0;
+    columns: 2;
+
+    list-style: none;
+    line-height: 1.4;
 }
 
 
