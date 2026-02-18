@@ -1245,6 +1245,49 @@ main aside.more-links ul {
     font-weight: 600;
 }
 
+main blockquote {
+    grid-column: 2/8;
+    padding: 4em;
+    margin-bottom: 4em;
+
+    font-family: "DM Sans";
+    background: #F5F5F5;
+    border: 4px solid black;
+    border-radius: 16px;
+}
+
+
+main blockquote p {
+    /* display: grid;
+    grid-template-columns: 1fr 3fr; */
+    margin: 0;
+    position: relative;
+
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+main blockquote p:before {
+    /* grid-column-start: 1; */
+    position: absolute;
+    left: -3.3em;
+    top: 2em;
+}
+
+main blockquote p:after {
+    position: absolute;
+    right: -10em;
+    bottom: -4em;
+    z-index: -1;
+
+    content: '';
+    width: 30%;
+    height: 120%;
+    background: var(--vocabulary-neutral-color-lighter-gray);
+    border-radius: 16px;
+}
+
 
 
 .blog-index header h1 {
