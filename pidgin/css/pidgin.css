@@ -1409,6 +1409,9 @@ main aside.more-links ul {
 
 .training-index .topic-summary .trainings {
     grid-column: span 2;
+    margin-top: 4em;
+
+    font-size: 13.4px;
 }
 
 .training-index .topic-summary .trainings ul {
@@ -1464,6 +1467,12 @@ main aside.more-links ul {
 .training-index .topic-summary .trainings > ul > li:nth-child(4) a {
     --underline-background-color:#E0FF00;
     background-color:#E0FF00;
+}
+
+.training-index .topic-summary .trainings > ul > li a:hover {
+    --underline-background-color: black;
+    border-color: transparent;
+    background-color: black;
 }
 
 
