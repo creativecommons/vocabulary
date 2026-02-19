@@ -56,6 +56,70 @@ body > header .masthead {
     align-items: center;
 }
 
+body > header .masthead h1 {
+    position: relative;
+}
+
+@keyframes twenty-fifth {
+
+    0% {
+        background-color: #ADFF00;
+    }
+
+    25% {
+        background-color:#FF9CFF
+    }
+
+    50% {
+        background-color: #D9D9D9;
+    }
+
+    75% {
+        background-color:#FF9CFF;
+    }
+
+    100% {
+        background-color: #ADFF00;
+    }
+
+}
+
+body > header .masthead h1:before {
+    position: absolute;
+    left: .2em;
+    top: .4em;
+    transition: .2s ease;
+    /* animation: twenty-fifth 2s infinite; */
+
+    display: block;
+    content: '';
+    height: .85em;
+    width: .85em;
+    /* font-size: ; */
+    background-color: #ADFF00;
+    background-color: #9EC846;
+    filter: saturate(70%);
+    opacity: .7;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url(../svg/25.svg);
+    mask-image: url(../svg/25.svg);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+body > header .masthead h1:has(a:hover):before {
+    left: -.5em;
+    top: -.2em;
+    height: 2em;
+    width: 2em;
+
+    animation: twenty-fifth 10s infinite;
+    /* filter: saturate(100%); */
+}
+
+
+
 body > header .masthead .identity-logo:hover {
     /* background-color: var(--vocabulary-neutral-color-dark-gray); */
     background-color: inherit;
