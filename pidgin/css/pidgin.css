@@ -1247,8 +1247,10 @@ main aside.more-links ul {
 
 main blockquote {
     grid-column: 2/8;
-    padding: 4em;
+    padding: 5em;
     margin-bottom: 4em;
+    position: relative;
+    clear: both;
 
     font-family: "DM Sans";
     background: #F5F5F5;
@@ -1271,8 +1273,21 @@ main blockquote p {
 main blockquote p:before {
     /* grid-column-start: 1; */
     position: absolute;
-    left: -3.3em;
-    top: 2em;
+    left: -5em;
+    top: -2.4em;
+
+    display: block;
+    content: '';
+    height: 4.8em;
+    width: 4.8em;
+    /* font-size: ; */
+    background-color: black;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url(../svg/quote.svg);
+    mask-image: url(../svg/quote.svg);
+    -webkit-mask-size: contain;
+    mask-size: contain;
 }
 
 main blockquote p:after {
@@ -1282,10 +1297,47 @@ main blockquote p:after {
     z-index: -1;
 
     content: '';
-    width: 30%;
-    height: 120%;
-    background: var(--vocabulary-neutral-color-lighter-gray);
-    border-radius: 16px;
+    /* width: 30%; */
+    /* height: 120%; */
+    /* background: var(--vocabulary-neutral-color-lighter-gray); */
+    /* border-radius: 16px; */
+
+     display: block;
+    content: '';
+    height: 10em;
+    width: 10em;
+    /* font-size: ; */
+    background-color:#ADFF00;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url(../svg/blob5.svg);
+    mask-image: url(../svg/blob5.svg);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    /* transform: rotate(90deg); */
+}
+
+main blockquote:after {
+    position: absolute;
+    right: -10em;
+    bottom: -2em;
+    z-index: -1;
+
+    content: '';
+
+    display: block;
+    content: '';
+    height: 20em;
+    width: 20em;
+    /* font-size: ; */
+    background-color:black;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url(../svg/repeat_c.svg);
+    mask-image: url(../svg/repeat_c.svg);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    transform: rotate(25deg);
 }
 
 
