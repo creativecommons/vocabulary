@@ -1004,7 +1004,7 @@ article.posts ul li {
 
   }
 
-article.posts ul li h3 {
+article.posts .post h3 {
     font-size: 1.5em;
 }
 
