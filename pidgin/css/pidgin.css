@@ -1999,7 +1999,7 @@ main div.highlight p {
     font-size: 13.4px;
 }
 
-.training-index .topic-summary .trainings ul {
+.training-index .topic-summary .trainings > ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
@@ -2056,6 +2056,16 @@ main div.highlight p {
 
 .training-index .topic-summary .training h3 {
     margin-top: 0;
+}
+
+.training-index .topic-summary .training h4 {
+    font-family: "DM Mono";
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.training-index .topic-summary .training ul li {
+    line-height: 1.6;
 }
 
 .training-index .topic-summary .trainings > ul > li a:hover {
