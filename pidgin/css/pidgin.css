@@ -2382,6 +2382,215 @@ main nav.pagination ol li.current a {
     line-height: 1.4;
 }
 
+.archive-page h1 {
+    padding-left: 0;
+}
+
+main > aside.sidebar nav.filter-menu ul li.current {
+    background: var(--vocabulary-neutral-color-lighter-gray);
+    border-radius: 10px;
+}
+
+.archive-page article.posts .post {
+    margin-bottom: 4em;
+    font-family: "DM Sans";
+}
+
+.archive-page .posts .post .type {
+    top: -1em;
+
+    background:#FFD9CC;
+}
+
+.archive-page article.posts .post h2 {
+    margin-bottom: 1em;
+
+    font-size: 1.5em;
+}
+
+.archive-page article.posts .post figure {
+    order: inherit;
+}
+
+.archive-page article.posts .post figure figcaption {
+    display: inherit;
+
+    font-family: "DM Mono";
+    font-size: .8em;
+}
+
+.archive-page article.posts .post p {
+    margin-top: 0;
+
+    font-family: "DM Sans";
+    line-height: 1.4;
+    font-size: 1.2em;
+}
+
+
+.team-index header figure {
+    order: 1;
+}
+
+.team-index main .persons ul {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.team-index main .persons .person {
+    font-family: "DM Sans";
+    font-size: 1.5em;
+}
+
+.team-index main .persons .person h3 {
+    font-family: "DM Sans";
+}
+
+.team-index main .persons .person a {
+    color: #2E1FB8;
+}
+
+.team-index main .persons .person figure {
+    position: relative;
+}
+
+.team-index main .persons .person figure:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    content: '';
+    /* width: 30%; */
+    /* height: 120%; */
+    /* background: var(--vocabulary-neutral-color-lighter-gray); */
+    /* border-radius: 16px; */
+
+     display: block;
+    content: '';
+    height: 15em;
+    width: 15em;
+    /* font-size: ; */
+    background-color:#ADFF00;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url(../svg/blob2.svg);
+    mask-image: url(../svg/blob2.svg);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    /* transform: rotate(90deg); */
+}
+
+.team-index main .persons ul li:nth-child(even) .person figure:before {
+    background:#FF9CFF;
+}
+
+
+.team-index main .persons .person figure img {
+    border-radius: 16px;
+}
+
+.person-page main > header h1 {
+    padding-left: 0;
+    font-size: 3.56em;
+}
+
+.person-page main > header .title, .person-page main > header .pronouns {
+    font-weight: 400;
+}
+
+.person-page main > header .title {
+    margin-bottom: .5em;
+}
+
+.person-page main > header .pronouns {
+    font-size: 1.2em;
+    font-family: "DM Mono";
+}
+
+.person-page main > header p {
+    font-size: 1.2em;
+}
+
+.person-page main > header figure {
+    width: auto;
+    height: auto;
+    position: inherit;
+
+    background: none; 
+} 
+
+.person-page main > header figure:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    content: '';
+    /* width: 30%; */
+    /* height: 120%; */
+    /* background: var(--vocabulary-neutral-color-lighter-gray); */
+    /* border-radius: 16px; */
+
+     display: block;
+    content: '';
+    height: 22em;
+    width: 22em;
+    /* font-size: ; */
+    background-color:#ADFF00;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url(../svg/blob2.svg);
+    mask-image: url(../svg/blob2.svg);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    /* transform: rotate(90deg); */
+}
+
+.person-page main > header figure img {
+    border: none;
+    border-radius: 200px;
+}
+
+.person-page article.posts .post {
+    margin-bottom: 4em;
+    font-family: "DM Sans";
+}
+
+.person-page .posts .post .type {
+    top: -1em;
+
+    background:#FFD9CC;
+}
+
+.person-page article.posts .post h2 {
+    margin-bottom: 1em;
+
+    font-size: 1.5em;
+}
+
+.person-page article.posts .post figure {
+    order: inherit;
+}
+
+.person-page article.posts .post figure figcaption {
+    display: inherit;
+
+    font-family: "DM Mono";
+    font-size: .8em;
+}
+
+.person-page article.posts .post p {
+    margin-top: 0;
+
+    font-family: "DM Sans";
+    line-height: 1.4;
+    font-size: 1.2em;
+}
+
+
+
+
+
 .search-index h1 {
     padding-left: 0;
 }
@@ -2463,7 +2672,7 @@ main nav.pagination ol li.current a {
 
 .search-index .posts .post .type {
     top: -1em;
-    
+
     background:#FFD9CC;
 }
 
