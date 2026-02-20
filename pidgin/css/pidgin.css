@@ -2228,6 +2228,20 @@ main div.highlight p {
     border-color: black;
 }
 
+.casestudy-post .content {
+    grid-column: 2/11;
+
+}
+
+.casestudy-post .content > p {
+    width: 60%;
+}
+
+.casestudy-post .content > blockquote {
+    width: 75%;
+}
+
+
 .support-page .topic-summary footer {
     grid-column: 1 / 3;
     margin-top: 4em;
