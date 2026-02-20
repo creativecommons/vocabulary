@@ -1445,6 +1445,126 @@ main nav.pagination ol li.current a {
 }
 
 
+.legal-tools main > header h1 {
+    padding-left: 0;
+    order: 2;
+}
+
+.legal-tools main > header span.alt-titles > span.tool-icons {
+    margin-right: .5em;
+}
+
+.legal-tools main > header span.alt-titles > span.tool-icons > span.cc-icon > svg {
+    display: inline;
+    height: .8em;
+    width: .8em;
+    vertical-align: center;
+}
+
+.legal-tools main > header span.alt-titles {
+    display: flex;
+    align-items: middle;
+    font-size: 2.4em;
+}
+
+.legal-tools main > header h2 {
+    order: 3;
+
+    font-family: "DM Mono";
+    font-size: 2.2em;
+    font-weight: 400;
+}
+
+.legal-tools .tool-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-bottom: 2em;
+    padding: 2em;
+
+    background: #F5F5F5;
+    border: 4px solid #D9D9D9;
+    border-radius: 16px;
+}
+
+.legal-tools .tool-meta h2 {
+    font-size: 1em;
+    margin: 0;
+    /* font-family: "Source Sans Pro"; */
+    font-weight: 400;
+    margin-left: 0.6em;
+    display: inline;
+}
+
+.legal-tools .tool-meta a {
+    --underline-background-color: #F5F5F5;
+}
+
+.legal-tools div#deed-body ol > li {
+    clear: both;
+    list-style: none;
+    margin-bottom: 2em;
+    min-height: 2em;
+}
+
+.legal-tools .alt-view {
+    align-self: center;
+    margin-left: auto;
+}
+
+.legal-tools div.content div#deed-body {
+    margin-bottom: 2em;
+    padding: 4em;
+
+    border: 4px solid #FF9CFF;
+    border-radius: 16px;
+}
+
+.legal-tools div.content div#deed-body h2:nth-of-type(1) {
+    margin-top: 0;
+}
+
+.legal-tools .notice-bottom {
+    padding: 3em;
+
+    background: rgba(224, 255, 0, 0.35);
+    font-family: "DM Mono";
+}
+
+.legal-tools .notice-bottom h2:nth-of-type(1) {
+    margin-top: 0;
+}
+
+.legal-tools .notice-bottom h2, .legal-tools .notice-bottom p {
+    font-family: "DM Mono";
+}
+
+.legal-tools .notice-bottom p:last-child {
+    margin-bottom: 0;
+}
+
+.legal-tools article.footnotes ul, .legal-tools article.footnotes h2, .legal-tools article.footnotes p {
+    font-family: "DM Mono";
+}
+
+.legal-tools article.footnotes .icon-replace.fa-angle-up {
+    --icon-sprite: var(--fa-angle-up);
+    /* --icon-sprite-color: blue; */
+    /* position: relative; */
+}
+
+.legal-tools article.footnotes ul {
+    margin: 0 inherit;
+    padding: 0;
+    list-style: none;
+    font-size: 1rem;
+}
+
+.legal-tools article.footnotes ul li a span {
+    display: inline-block;
+    text-indent: -3000px;
+}
+
 
 
 .blog-index header h1 {
