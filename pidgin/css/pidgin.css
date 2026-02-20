@@ -2233,12 +2233,55 @@ main div.highlight p {
 
 }
 
+.casestudy-post .content > h2 {
+    width: 60%;
+}
+
 .casestudy-post .content > p {
     width: 60%;
 }
 
 .casestudy-post .content > blockquote {
     width: 75%;
+}
+
+.casestudy-post .content > ul, .casestudy-post .content > ol {
+    width: 60%;
+}
+
+
+.casestudy-post .content > .datapoints ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    margin: 0;
+
+    list-style: none;
+}
+
+.casestudy-post .content > .datapoints .datapoint p {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.casestudy-post .content > .datapoints .datapoint .stat {
+    display: block;
+
+    font-size: 2em;
+    color:#2E1FB8;
+}
+
+.casestudy-post aside.insights {
+    width: 75%;
+    margin-bottom: 6em;
+    padding: 3em;
+
+    color: white;
+    background:#2E1FB8;
+}
+
+.casestudy-post aside.insights h2 {
+    margin-top: 0;
 }
 
 
