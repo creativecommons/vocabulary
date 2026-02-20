@@ -1513,7 +1513,11 @@ main div.highlight p {
 }
 
 
-.events-index {}
+.events-index main article.topic-summary.about figure {
+    order: 2;
+
+}
+
 
 .events-index .events {
     grid-column: 2/11;
@@ -1721,9 +1725,38 @@ main div.highlight p {
 
 .event-post aside.sidebar .event-meta h2 {
     margin-top: 0;
+    margin-bottom: .8em;
 
     color:#2E1FB8;
+    font-size: 1.4em;
 }
+
+.event-post aside.sidebar .event-meta p {
+    margin: 0;
+}
+
+.event-post aside.sidebar .event-meta .date, 
+.event-post aside.sidebar .event-meta .time, 
+.event-post aside.sidebar .event-meta .location {
+    font-family: "DM Mono";
+}
+
+.event-post aside.sidebar .event-meta .date {
+    font-size: 1.8em;
+}
+
+.event-post aside.sidebar .event-meta .time {
+    margin-bottom: 2em;
+
+    font-size: 1.4em;
+}
+
+.event-post aside.sidebar .event-meta .location {
+    margin-bottom: 1em;
+
+    font-size: 1.4em;
+}
+
 
 .event-post aside.sidebar .event-meta a {
     --underline-background-color:#FF9CFF;
@@ -1750,6 +1783,194 @@ main div.highlight p {
     color: white;
     background:black;
 }
+
+.event-post .content h2 {
+    /* margin-top: 3em; */
+}
+
+.event-post .content a.files {
+    --underline-background-color:black;
+    display: inline-block;
+    box-sizing: border-box;
+    /* width: 100%; */
+    margin-top: 1em;
+    padding: .6em 1.6em;
+    
+    
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 1.2em;
+    color: white;
+    background:black;
+    border-radius: 60px;
+    text-transform: capitalize;
+    text-align: center;
+    border: 4px solid transparent;
+}
+
+.event-post .content a.files:hover {
+    --underline-background-color:white;
+
+    color: black;
+    background:white;
+    border-color: black;
+}
+
+.event-post .content .speakers {
+    margin-top: 6em;
+}
+
+.event-post .content .speakers ul {
+    margin: 0;
+
+    list-style: none;
+}
+
+.event-post .content .speakers .speaker {
+    /* display: flex; */
+    margin-bottom: 6em;
+    position: relative;
+}
+
+.event-post .content .speakers h2 {
+    margin-bottom: 1.5em;
+}
+
+.event-post .content .speakers .speaker h3 {
+    width: 100%;
+    margin: 0;
+    margin-left: 20%;
+
+    font-family: "DM Sans";
+    font-size: 1.5em;
+}
+
+.event-post .content .speakers .speaker h4 {
+    margin: 0;
+    margin-left: 20%;
+    /* width: 100%; */
+
+    color:#2E1FB8;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
+.event-post .content .speakers .speaker p {
+    margin-top: 4em;
+
+    font-size: 1em;
+}
+
+.event-post .content .speakers .speaker figure {
+    width: 120px;
+    height: 120px;
+    /* order: -1; */
+    /* float: left; */
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border-radius: 120px;
+    background: var(--vocabulary-neutral-color-lighter-gray);
+}
+
+.event-post .content .speakers .speaker figure:before {
+    position: absolute;
+    top: -1em;
+    left: -1em;
+    z-index: -1;
+
+    content: '';
+    /* width: 30%; */
+    /* height: 120%; */
+    /* background: var(--vocabulary-neutral-color-lighter-gray); */
+    /* border-radius: 16px; */
+
+     display: block;
+    content: '';
+    height: 8em;
+    width: 8em;
+    /* font-size: ; */
+    background-color:#E0FF00;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url(../svg/blob_c.svg);
+    mask-image: url(../svg/blob_c.svg);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    /* transform: rotate(-40deg); */
+}
+
+.event-post .content .speakers ul li:nth-child(even) figure:before {
+    background-color:#FF9CFF;
+}
+
+
+.event-post main footer {
+    grid-column: 2/11;
+    margin-bottom: 6em;
+
+    text-align: center;
+}
+
+.event-post main footer nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+
+    list-style: none;
+}
+
+.event-post .more {
+    --underline-background-color:black;
+    display: inline-block;
+    box-sizing: border-box;
+    /* width: 100%; */
+    margin-top: 1em;
+    padding: .6em 1.6em;
+    
+    
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 1.2em;
+    color: white;
+    background:black;
+    border-radius: 60px;
+    text-transform: capitalize;
+    text-align: center;
+    border: 4px solid transparent;
+}
+
+.event-post main .more:hover {
+    --underline-background-color:white;
+
+    color: black;
+    background:white;
+    border-color: black;
+}
+
+.event-post main .previous, .event-post main .next {
+    font-weight: bold;
+}
+
+.event-post main .previous:hover, .event-post main .next:hover {
+    color:#FF0000;
+
+}
+
+.event-post main .previous:before {
+    content: '< ';
+}
+
+.event-post main .next:after {
+    content: ' >';
+}
+
+
+
+
+
 
 .training-index header h1 {
     padding-left: 0;
