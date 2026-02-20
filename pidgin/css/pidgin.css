@@ -2148,6 +2148,34 @@ main div.highlight p {
     /* padding: .6em 1.6em; */
 }
 
+.casestudies-index .casestudies ul li:nth-child(3n + 2) a {
+    --underline-background-color: #FF9CFF;
+    background:#FF9CFF;
+    color: black;
+}
+
+.casestudies-index .casestudies ul li:nth-child(3n + 3) a {
+    --underline-background-color:#E0FF00;
+    background:#E0FF00;
+    color: black;
+}
+
+.casestudies-index .casestudies ul li:nth-child(3n + 1) a {
+    --underline-background-color: #ADFF00;
+    background:#ADFF00;
+    color: black;
+}
+
+.casestudies-index .casestudies ul li a:hover {
+    --underline-background-color: black;
+    background: black;
+    color: white;
+    border-color: transparent;
+
+    /* border: 4px solid transparent; */
+    /* padding: .6em 1.6em; */
+}
+
 .casestudies-index .case-study figure {
     margin-bottom: 0;
     display: inline-block;
@@ -2170,6 +2198,9 @@ main div.highlight p {
 /* .casestudies-index .casestudies li:nth-child(3n+2) figure {
     order: -1;
 } */
+
+
+
 .casestudies-index .casestudies footer {
     margin-bottom: 6em;
 
