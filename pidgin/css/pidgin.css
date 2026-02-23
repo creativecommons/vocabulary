@@ -2945,6 +2945,10 @@ main > aside.sidebar nav.filter-menu ul li.current {
     color:#FF0000;
 }
 
+.licenses-page .licenses footer {
+    text-align: center;
+}
+
 .licenses-page .licenses a.more {
     display: inline-block;
 
