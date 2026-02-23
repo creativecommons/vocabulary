@@ -940,8 +940,8 @@ body main article.topic-summary.newsletter figure {
 
 body main article.topic-summary.newsletter:before {
     position: absolute;
-    top: -5em;
-    right: 15em;
+    top: -4.5em;
+    right: 16em;
     z-index: 1;
 
     content: '';
@@ -967,8 +967,8 @@ body main article.topic-summary.newsletter:before {
 
 body main article.topic-summary.newsletter figure:after {
     position: absolute;
-    top: -4em;
-    left: -8em;
+    bottom: 3em;
+    left: -6em;
     z-index: 1;
 
     content: '';
@@ -979,10 +979,10 @@ body main article.topic-summary.newsletter figure:after {
 
      display: block;
     content: '';
-    height: 20em;
-    width: 20em;
+    height: 9em;
+    width: 9em;
     /* font-size: ; */
-    background-color:black;
+    background-color:#2E1FB8;
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     -webkit-mask-image: url(../svg/star_c.svg);
