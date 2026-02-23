@@ -2821,6 +2821,157 @@ main > aside.sidebar nav.filter-menu ul li.current {
     font-size: 1.2em;
 }
 
+.licenses-page header h1 {
+    padding-left: 0;
+}
+
+.licenses-page header figure {
+    order: 1;
+}
+
+.licenses-page .content {
+    grid-column: 2/11;
+
+}
+
+.licenses-page .content > h2 {
+    width: 60%;
+}
+
+.licenses-page .content > p {
+    width: 60%;
+}
+
+.licenses-page .content > blockquote {
+    width: 75%;
+}
+
+.licenses-page .content > ul, .casestudy-post .content > ol {
+    width: 60%;
+}
+
+/* .license-page article.topic-summary:has( .licenses) {
+    display: block;
+} */
+
+.licenses-page .licenses {
+    /* grid-column: span 2; */
+    margin-top: 4em;
+
+    font-size: 13.4px;
+}
+
+.licenses-page .licenses h2 {
+    font-family: "DM Sans";
+}
+
+.licenses-page .licenses > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.licenses-page .licenses > ul > li {
+    padding: 2em;
+
+    background: white;
+    font-family: "DM Sans";
+    border: 4px solid #FF0000;
+    border-radius: 16px;
+}
+
+/* .licenses-page .topic-summary .licenses > ul > li:nth-child(1) {
+    border-color:#FF9CFF;
+} */
+
+/* .licenses-page .topic-summary .licenses > ul > li:nth-child(1) a {
+    background-color:#FF9CFF;
+} */
+
+/* .licenses-page .topic-summary .licenses > ul > li:nth-child(2) {
+    border-color:#ADFF00
+} */
+
+/* .licenses-page .topic-summary .licenses > ul > li:nth-child(2) a {
+    --underline-background-color:#ADFF00;
+    background-color:#ADFF00;
+} */
+
+/* .licenses-page .topic-summary .licenses > ul > li:nth-child(3) {
+    border-color:#FFD9CC;
+    
+} */
+
+/* .licenses-page .topic-summary .licenses > ul > li:nth-child(3) a {
+    --underline-background-color:#FFD9CC;
+    background-color:#FFD9CC; 
+} */
+
+/* .licenses-page .topic-summary .licenses > ul > li:nth-child(4) {
+    border-color:#E0FF00;
+} */
+
+/* .licenses-page .topic-summary .licenses > ul > li:nth-child(4) a {
+    --underline-background-color:#E0FF00;
+    background-color:#E0FF00;
+} */
+
+.licenses-page .license h3 {
+    margin-top: 0;
+    
+    font-family: "DM Sans";
+}
+
+.licenses-page .license h4 {
+    font-family: "DM Mono";
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.licenses-page .license p {
+    font-family: "DM Sans";
+    font-size: 1.2em;
+}
+
+.licenses-page .licenses ul li {
+    line-height: 1.6;
+}
+
+.licenses-page .licenses > ul > li a {
+    color:#FF0000;
+}
+
+.licenses-page .licenses a.more {
+    display: inline-block;
+
+    padding: .8em 1.8em;
+    
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 1.4em;
+    color: black;
+    background:#ADFF00;
+    border-radius: 60px;
+    text-transform: capitalize;
+    border: 4px solid transparent;
+}
+
+.licenses-page .licenses a.more:hover {
+    background: black;
+    color: white;
+    /* border-color: black; */
+}
+
+/* .licenses-page .licenses > ul > li a:hover {
+    --underline-background-color: black;
+    border-color: transparent;
+    background-color: black;
+} */
+
 
 
 /* Classic Editor TinyMCE WYSIWYG editor image alignment, previous theme's markukp  */
