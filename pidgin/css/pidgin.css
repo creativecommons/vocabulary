@@ -3017,8 +3017,36 @@ article:nth-child(odd of .topic-summary.highlight) {
     /* display: block; */
 }
 
-.licenses-page .topic-summary.newsletter.embed .description {
+.licenses-page .topic-summary.newsletter.embed {
+    margin-top: 10em;
+    margin-left: 40%;
+    width: 60%;
     
+    background:#ADFF00;
+}
+
+.licenses-page .topic-summary.newsletter.embed figure {
+    /* top: 0; */
+    right: 0;
+    left: -40%;
+    z-index: -1;
+}
+
+.licenses-page .topic-summary.newsletter.embed:before {
+    right: 0;
+    top: -8em;
+    left: -65%;
+    z-index: -1;
+
+    background:#FF9CFF;
+}
+
+.licenses-page .topic-summary.newsletter.embed .description {
+    grid-column: span 2;
+}
+
+.licenses-page .topic-summary.newsletter.embed .description h2 {
+    font-weight: 400;
 }
 
 .licenses-page .licenses {
