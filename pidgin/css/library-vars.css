@@ -105,4 +105,12 @@
     --icon-sprite: var(--fa-search);
 }
 
+.icon-replace.fa-angle-down:before {
+    --icon-sprite: var(--fa-angle-down);
+}
+
+.icon-replace {
+    text-indent: -5000px;
+}
+
 /* needs a rework to not break focus indicator */

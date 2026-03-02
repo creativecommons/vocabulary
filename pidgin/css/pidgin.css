@@ -1294,13 +1294,18 @@ main > aside.sidebar nav > ul > li:last-child {
     border-bottom: none;
 }
 
-main > aside.sidebar nav > ul > li:has(ul):after { /* temp testing */
+/* main > aside.sidebar nav ul ul {
+    display: none;
+} */
+
+/* temp testing */
+/* main > aside.sidebar nav > ul > li:has(ul):after { 
     content: '^';
     display: inline-block;
     position: absolute;
     top: 0;
     right: 0;
-}
+} */
 
 main aside.opening, main aside.closing { 
     padding: 2.5em;
@@ -3311,13 +3316,25 @@ main .content figure:has(img.alignright), .blog-post main figure:has(img.alignri
 
 
 
-/* test if user lacks pointer device (assuming touch device instead) */
-@media (pointer: none) {
+ .primary-menu ul button.expand {
+    display: none;
+}
 
-    body {
-        background: red;
+/* test if user lacks pointer device (assuming touch device instead) */
+@media (pointer: coarse) {
+
+    .primary-menu ul button.expand {
+        display: inline-block;
+        background: transparent;
+        border: none;
+        margin-left: .5em;
+        margin-top: 1em;
     }
 
+    /* ul button.expand.icon-replace:before {
+        width: 1em;
+        height: 1em;
+    } */
 }
 
 @media (min-width: 1500px) {
@@ -3403,7 +3420,7 @@ main .content figure:has(img.alignright), .blog-post main figure:has(img.alignri
     }
 
     body > header .masthead .primary-menu ul ul { 
-        display: block;
+        /* display: block; */
         position: relative;
 
         border: none;
