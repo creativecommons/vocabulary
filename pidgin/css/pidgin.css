@@ -3320,6 +3320,10 @@ main .content figure:has(img.alignright), .blog-post main figure:has(img.alignri
     display: none;
 }
 
+ .primary-menu li:hover > button:before {
+    transform: rotate(180deg);
+}
+
 /* test if user lacks pointer device (assuming touch device instead) */
 @media (pointer: coarse) {
 
@@ -3427,6 +3431,16 @@ main .content figure:has(img.alignright), .blog-post main figure:has(img.alignri
         box-shadow: none;
     }
 
+    body > header .masthead .primary-menu > ul ul > li:hover {
+        background: none;
+        border: none;
+        color: black;
+    }
+
+      body > header .masthead .primary-menu > ul ul > li:hover a {
+        color: black;
+      }
+
     body > header .masthead .primary-menu ul li {
         display: block;
         z-index: 900;
@@ -3458,6 +3472,8 @@ main .content figure:has(img.alignright), .blog-post main figure:has(img.alignri
         border: none;
         box-shadow: none;
     }
+
+    
 
 }
 
