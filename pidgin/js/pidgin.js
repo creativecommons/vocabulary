@@ -1,10 +1,22 @@
 
+const collapsedButtons = document.querySelectorAll('button.expand');
 
 
-// const mediaQuery = window.matchMedia("(pointer: coarse)");
-// isTouch = mediaQuery.matches;
 
-// // listen incase the pointer changes
-// mediaQuery.addEventListener("change", (e) => {
-//     isTouchDevice = e.matches;
-// })
+collapsedButtons.forEach((expander) => {
+
+    expander.parentElement.querySelector('ul').classList.toggle('hide');
+    
+    expander.addEventListener('click', (event) => {
+        // event.target.parentElement.querySelector('ul').classList.toggle('expand');
+
+        event.target.parentElement.querySelector('ul').classList.toggle('hide');
+    });
+
+    //console.log();
+
+    //expander
+
+});
+
+

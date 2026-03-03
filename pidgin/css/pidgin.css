@@ -1294,6 +1294,31 @@ main > aside.sidebar nav > ul > li:last-child {
     border-bottom: none;
 }
 
+
+main > aside.sidebar nav li:has(ul) button.expand {
+    display: inline-block;
+
+    background: transparent;
+    border: none;
+}
+
+main > aside.sidebar nav li:has(ul) button.expand:before {
+    display: inline-block;
+    transform: rotate(180deg);
+    /* padding-left: 1em; */
+    margin-top: .5em;
+}
+
+main > aside.sidebar nav ul.hide {
+    display: none;
+}
+
+main > aside.sidebar nav li:has(ul.hide) button.expand:before {
+    transform: none;
+}
+
+
+
 /* main > aside.sidebar nav ul ul {
     display: none;
 } */
