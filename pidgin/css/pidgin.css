@@ -3239,7 +3239,7 @@ article:nth-child(odd of .topic-summary.highlight) {
     order: -1;
  }
 
-.licenses-page .license p {
+.licenses-page main .license p {
     font-family: "DM Sans";
     font-size: 1.2em;
     line-height: 1.3;
