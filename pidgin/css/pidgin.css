@@ -354,6 +354,62 @@ body > footer {
         "contact nav subscribe"
         "license license license";
     padding-top: 55px;
+    position: relative;
+    overflow: hidden;
+}
+
+body > footer:before {
+    position: absolute;
+    bottom: -6em;
+    right: -11em;
+    z-index: 1;
+
+    content: '';
+    /* width: 30%; */
+    /* height: 120%; */
+    /* background: var(--vocabulary-neutral-color-lighter-gray); */
+    /* border-radius: 16px; */
+
+     display: block;
+    content: '';
+    height: 35em;
+    width: 35em;
+    /* font-size: ; */
+    background-color:#FF9CFF;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url(../svg/repeat_c.svg);
+    mask-image: url(../svg/repeat_c.svg);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    transform: rotate(-225deg);
+}
+
+body > footer:after {
+    position: absolute;
+    bottom: -7em;
+    right: -17em;
+    z-index: 1;
+
+    content: '';
+    /* width: 30%; */
+    /* height: 120%; */
+    /* background: var(--vocabulary-neutral-color-lighter-gray); */
+    /* border-radius: 16px; */
+
+     display: block;
+    content: '';
+    height: 35em;
+    width: 35em;
+    /* font-size: ; */
+    background-color:white;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url(../svg/repeat_c.svg);
+    mask-image: url(../svg/repeat_c.svg);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    transform: rotate(-190deg);
 }
 
 body > footer .identity-logo { 
@@ -518,6 +574,7 @@ body > footer .subscribe {
     width: 90%;
     height: 60%;
     margin-left: 5%;
+    z-index: 2;
     
 
     font-family: "DM Sans";
@@ -558,6 +615,8 @@ body > footer .license {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 18fr;
+    position: relative;
+    z-index: 3;
 }
 
 body > footer .license svg {
@@ -3366,11 +3425,20 @@ main .content figure:has(img.alignright), .blog-post main figure:has(img.alignri
     } */
 }
 
+
 @media (min-width: 1500px) {
     body {
         width: 100%;
         /* margin: 0 auto; */
     }
+}
+
+@media (max-width: 1190px) {
+
+    body > footer:before, body > footer:after {
+        display: none;
+    }
+
 }
 
 @media (max-width: 979px) {
@@ -3438,7 +3506,7 @@ main .content figure:has(img.alignright), .blog-post main figure:has(img.alignri
 
 @media (max-width: 705px) {
     body > header button.expand-menu {
-        position: fixed;
+        position: absolute;
         top: 1em;
         right: 1em;
         z-index: 1000;
@@ -3446,6 +3514,7 @@ main .content figure:has(img.alignright), .blog-post main figure:has(img.alignri
         font-family: "DM Mono";
         text-transform: capitalize;
         border-radius: 40px;
+        border: 4px solid black;
     }
 
     body > header .masthead .primary-menu ul ul { 
