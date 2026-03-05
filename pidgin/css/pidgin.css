@@ -3020,11 +3020,11 @@ main > aside.sidebar nav.filter-menu ul li.current {
     order: 1;
 } */
 
-article.topic-summary.focus-area:nth-of-type(even) figure {
+.licenses-page article.topic-summary.focus-area:nth-of-type(even) figure {
     order: 0;
 }
 
-article.topic-summary.focus-area:nth-of-type(odd) figure {
+.licenses-page article.topic-summary.focus-area:nth-of-type(odd) figure {
     order: -1;
 }
 
