@@ -2528,33 +2528,16 @@ main nav.pagination ol li.current a {
     border-color: black;
 }
 
-.casestudy-post .content {
-    grid-column: 2/11;
-
-}
-
-.casestudy-post .content > h2 {
-    width: 60%;
-}
-
-.casestudy-post .content > p {
-    width: 60%;
-}
-
 .casestudy-post .content > blockquote {
-    width: 75%;
+    /* width: 75%; */
+    margin: 0 -8em;
 }
-
-.casestudy-post .content > ul, .casestudy-post .content > ol {
-    width: 60%;
-}
-
 
 .casestudy-post .content > .datapoints ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2em;
-    margin: 0;
+    margin: 0 -8em;
 
     list-style: none;
 }
@@ -2572,12 +2555,14 @@ main nav.pagination ol li.current a {
 }
 
 .casestudy-post aside.insights {
-    width: 75%;
-    margin-bottom: 6em;
+    /* width: 75%; */
+    margin: 0 -6em 3em -6em;
     padding: 3em;
 
     color: white;
     background:#2E1FB8;
+    border-radius: 16px;
+    border: 4px solid #E0FF00;
 }
 
 .casestudy-post aside.insights h2 {
@@ -3515,7 +3500,19 @@ main .content figure:has(img.alignright), .blog-post main figure:has(img.alignri
     }
 
     .casestudy-post aside.insights {
-        width: 85%;
+        /* width: 85%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .casestudy-post .content > blockquote {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .casestudy-post .content > .datapoints ul, .casestudy-post .content > .datapoints ol {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .team-index main .persons ul {
