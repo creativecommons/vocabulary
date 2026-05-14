@@ -2528,27 +2528,10 @@ main nav.pagination ol li.current a {
     border-color: black;
 }
 
-/* .casestudy-post .content {
-    grid-column: 2/11;
-} */
-
-/* .casestudy-post .content > h2 {
-    width: 60%;
-} */
-
-/* .casestudy-post .content > p {
-    width: 60%;
-} */
-
 .casestudy-post .content > blockquote {
     /* width: 75%; */
     margin: 0 -8em;
 }
-
-/* .casestudy-post .content > ul, .casestudy-post .content > ol {
-    width: 60%;
-} */
-
 
 .casestudy-post .content > .datapoints ul {
     display: grid;
@@ -2579,6 +2562,7 @@ main nav.pagination ol li.current a {
     color: white;
     background:#2E1FB8;
     border-radius: 16px;
+    border: 4px solid #E0FF00;
 }
 
 .casestudy-post aside.insights h2 {
