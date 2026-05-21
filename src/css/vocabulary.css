@@ -27,6 +27,7 @@ EX:
 
 @import 'vendor/normalize.css';
 @import 'library-vars.css';
+@import '../../pidgin/css/library-vars.css';
 
 /* utilities */
 .skip-to-content {
