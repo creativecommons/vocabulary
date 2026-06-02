@@ -394,11 +394,11 @@ article.topic-summary.focus-area a:hover {
 /* .posts .post .categories {
     order: -1;
 
-    font-family: 'Source Sans Pro';
+    font-family: 'DM Sans';
 } */
 
 .posts .post .byline {
-    font-family: 'Source Sans Pro';
+    font-family: 'DM Sans';
     font-size: 1.2em;
     font-weight: 500;
 }
@@ -416,7 +416,7 @@ article.topic-summary.focus-area a:hover {
 
     background: var(--vocabulary-brand-color-soft-turquoise);
     border-radius: 4px;
-    font-family: 'Source Sans Pro';
+    font-family: 'DM Sans';
 }
 
 .posts .post figure {
@@ -656,7 +656,7 @@ main > header .categories {
     margin-bottom: 1em;
     order: -1;
 
-    font-family: 'Source Sans Pro';
+    font-family: 'DM Sans';
     font-size: 1.2em;
     font-style: normal;
     font-weight: 400;
@@ -668,7 +668,7 @@ main > header .byline {
     margin-top: .5em;
     margin-bottom: 2em;
 
-    font-family: 'Source Sans Pro';
+    font-family: 'DM Sans';
     font-size: 2.2em;
     font-style: normal;
     font-weight: 400;
@@ -906,7 +906,7 @@ main aside.opening a {
 main aside.opening p {
     margin :0;
 
-    font-family: 'Source Sans Pro';
+    font-family: 'DM Sans';
     font-size: 1.2em;
     font-style: normal;
     font-weight: 400;
@@ -935,7 +935,7 @@ main a {
 main p {
     margin-bottom: 2em;
 
-    font-family: 'Source Sans Pro';
+    font-family: 'DM Sans';
     font-size: 1.5em;
     font-style: normal;
     font-weight: 400;
@@ -997,7 +997,7 @@ main blockquote p {
     margin: 0;
     position: relative;
 
-    font-family: 'Source Sans Pro';
+    font-family: 'DM Sans';
     font-size: 1.4em;
     font-weight: 400;
     line-height: 1.4;
@@ -1093,7 +1093,7 @@ main figure .attribution {
     display: block;
     margin-top: 1em;
 
-    font-family: 'Source Sans Pro';
+    font-family: 'DM Mono';
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -1151,7 +1151,7 @@ main aside.closing a {
 main aside.closing p {
     margin :0;
 
-    font-family: 'Source Sans Pro';
+    font-family: 'DM Sans';
     font-size: 1.2em;
     font-style: normal;
     font-weight: 400;
@@ -1162,7 +1162,7 @@ main .pub-date {
     display: inline-block;
     margin-bottom: 4em;
 
-    font-family: 'Source Sans Pro';
+    font-family: 'DM Sans';
     font-size: 1.5em;
     font-style: normal;
     font-weight: 400;
@@ -1334,7 +1334,7 @@ main .attribution-list h2 {
     margin: 0;
 }
 
-main .attribution-list button.expand-attribution {
+/* main .attribution-list button.expand-attribution {
     position: absolute;
     top: 4.5em;
     right: 4em;
@@ -1343,13 +1343,13 @@ main .attribution-list button.expand-attribution {
     cursor: pointer;
     border: 1px solid black;
     border-radius: 3px;
-    font-family: 'Source Sans Pro';
+    font-family: 'DM Sans';
 }
 
 main .attribution-list button.expand-attribution.selected {
     background: black;
     color: white;
-}
+} */
 
 main .attribution-list ul {
     display: none;
@@ -2281,7 +2281,7 @@ body > footer {
     position: relative;
     overflow: hidden;
 
-    font-family: 'Source Sans Pro';
+    font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
     color: white;
@@ -2774,7 +2774,7 @@ body > footer .license p a:hover {
 .legal-tools .tool-meta h2 {
     font-size: 1em;
     margin: 0;
-    /* font-family: "Source Sans Pro"; */
+    /* font-family: "DM Sans"; */
     font-weight: 400;
     margin-left: 0.6em;
     display: inline;
@@ -3966,7 +3966,7 @@ body > footer .license p a:hover {
     margin-top: 1em;
     margin-bottom: 1em;
 
-    font-family: 'Source Sans Pro';
+    font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 1em;
@@ -4630,7 +4630,7 @@ body > footer .license p a:hover {
     grid-column-start: 2;
     margin-bottom: .5em;
 
-    font-family: 'Source Sans Pro';
+    font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 1.9em;
@@ -4790,7 +4790,7 @@ body > footer .license p a:hover {
   margin-top: 1em;
   margin-bottom: 1em;
 
-  font-family: 'Source Sans Pro';
+  font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 1em;
@@ -4946,7 +4946,7 @@ body > footer .license p a:hover {
 }
 
 .faq-page .breadcrumbs {
-  font-family: 'Source Sans Pro';
+  font-family: 'DM Sans';
 }
 
 .return-to-top {
@@ -4957,7 +4957,7 @@ body > footer .license p a:hover {
   height: 300%;
   width: 100px;
 
-  font-family: 'Source Sans Pro';
+  font-family: 'DM Sans';
 }
 
 .return-to-top span {
@@ -5035,7 +5035,7 @@ body > footer .license p a:hover {
 .course-page details {
   margin-bottom: 2em;
 
-  font-family: 'Source Sans Pro';
+  font-family: 'DM Sans';
   border: 2px solid var(--vocabulary-neutral-color-lighter-gray);
   border-radius: 5px;
 }
