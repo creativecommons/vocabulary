@@ -672,7 +672,7 @@ main > header .byline {
     font-size: 2.2em;
     font-style: normal;
     font-weight: 400;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 main > header figure {
