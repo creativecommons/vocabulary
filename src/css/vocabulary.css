@@ -5042,6 +5042,14 @@ body > footer .license p a:hover {
   display: none;
 }
 
+.course-embedded main .content p > img, .course-page main .content p > img, .course-index main .content p > img {
+    width: initial;
+}
+
+.course-embedded main .content figure > img, .course-page main .content figure > img, .course-index main .content figure > img {
+    width: initial;
+}
+
 .course-page details {
   margin-bottom: 2em;
 
