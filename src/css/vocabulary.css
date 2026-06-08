@@ -4989,8 +4989,18 @@ body > footer .license p a:hover {
 }
 
 /* course-index, course-page contexts */
+
 .course-index > header {
   display: none;
+}
+
+.course-index main > header, .course-page main > header, .course-embedded main > header {
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
+}
+
+.course-index main > header h1, .course-page main > header h1, .course-embedded main > header h1 {
+    margin-top: 2em;
 }
 
 .course-index > footer {
@@ -5016,7 +5026,7 @@ body > footer .license p a:hover {
 .course-embedded nav.breadcrumbs ul, .course-page nav.breadcrumbs ul, .course-index nav.breadcrumbs ul {
   display: flex;
   margin: 0;
-  justify-content: space-between;
+  /* justify-content: space-around; */
 
   list-style: none;
   text-align: left;
@@ -5030,6 +5040,14 @@ body > footer .license p a:hover {
 
 .course-embedded nav.breadcrumbs ul li:last-child:after, .course-page nav.breadcrumbs ul li:last-child:after, .course-index nav.breadcrumbs ul li:last-child:after {
   display: none;
+}
+
+.course-embedded main .content p > img, .course-page main .content p > img, .course-index main .content p > img {
+    width: initial;
+}
+
+.course-embedded main .content figure > img, .course-page main .content figure > img, .course-index main .content figure > img {
+    width: initial;
 }
 
 .course-page details {
