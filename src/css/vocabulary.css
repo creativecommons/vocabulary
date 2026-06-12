@@ -5361,6 +5361,23 @@ table.tablepress a {
     .search-index main > header:before {
         left: -9.3%;
     }
+
+    .event-post .content .speakers .speaker {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .event-post .content .speakers .speaker h3, .event-post .content .speakers .speaker h4, .event-post .content .speakers .speaker p {
+        margin-left: 0;
+    }
+
+    .event-post .content .speakers .speaker figure {
+        position: relative;
+        float: none;
+        order: -1;
+
+
+    }
 }
 
 @media (max-width: 979px) {
