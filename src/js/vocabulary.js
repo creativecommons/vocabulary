@@ -1,3 +1,12 @@
+const menuButton = document.querySelector('button.expand-menu');
+const menuPanel = document.querySelector('.primary-menu');
+
+if(menuButton !== null && menuPanel !== null) {
+    menuButton.addEventListener('click', (event) => {
+        menuPanel.classList.toggle('expand');
+    });
+}
+
 const menusWithChildren = document.querySelectorAll('main > aside.sidebar nav > ul > li:has(ul) > a');
 
 menusWithChildren.forEach((menu) => {

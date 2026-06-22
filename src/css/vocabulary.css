@@ -1749,7 +1749,7 @@ body > header .masthead .identity-logo:before {
     /* allows for color manipulation of svg */
     background-color: black;
     
-    mask-image: url('../../src/svg/cc/logos/cc/logomark.svg');
+    mask-image: url('../svg/cc/logos/cc/logomark.svg');
     mask-repeat: no-repeat;
     cursor: pointer;
 
@@ -1803,6 +1803,10 @@ body > header .masthead .identity-logo.product:before {
     vertical-align: bottom;
 
 } */
+
+body > header button.expand-menu {
+    display: none;
+}
 
 body > header .masthead .primary-menu ul {
     display: flex;
@@ -2402,7 +2406,7 @@ body > footer .identity-logo:before {
     height: 82px;
     width: 340px;
     background-color: white;
-    mask-image: url('../../src/svg/cc/logos/cc/logomark.svg');
+    mask-image: url('../svg/cc/logos/cc/logomark.svg');
     mask-repeat: no-repeat;
     cursor: pointer;
     grid-area: logo;
