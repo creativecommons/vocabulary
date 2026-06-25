@@ -287,25 +287,25 @@ article.topic-summary.focus-area:nth-of-type(even) figure {
     order: -1;
 }
 
-article:nth-child(3n + 2 of .topic-summary.focus-area) a {
+article:nth-child(3n + 2 of .topic-summary.focus-area) > a {
     --underline-background-color: #ADFF00;
     background:#ADFF00;
     color: black;
 }
 
-article:nth-child(3n + 3 of .topic-summary.focus-area) a {
+article:nth-child(3n + 3 of .topic-summary.focus-area) > a {
     --underline-background-color: #2E1FB8;
     background:#2E1FB8;
     color: white;
 }
 
-article:nth-child(3n + 1 of .topic-summary.focus-area) a {
+article:nth-child(3n + 1 of .topic-summary.focus-area) > a {
     --underline-background-color: #FF9CFF;
     background:#FF9CFF;
     color: black;
 }
 
-article.topic-summary.focus-area a:hover {
+article.topic-summary.focus-area > a:hover {
     --underline-background-color: #black;
     background:black;
     color: white;
@@ -313,6 +313,28 @@ article.topic-summary.focus-area a:hover {
     /* padding: .8em 1.8em; */
 
     /* border: none; */
+}
+
+article.topic-summary p a {
+    --underline-background-color: none;
+    display: inline;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: none;
+    color: #2E1FB8;
+    text-decoration: underline;
+}
+
+article.topic-summary p a:hover {
+    --underline-background-color: none;
+    
+    border: none;
+    background: none;
 }
 
 /* post component - singular */
@@ -3071,7 +3093,7 @@ body > footer .license p a:hover {
     order: -1;
 
     font-family: "DM Sans";
-    font-size: 3.2em;
+    font-size: 1.5em;
     color:#2E1FB8;
 }
 
