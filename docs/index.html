@@ -1007,7 +1007,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-<li><span class="distinct">article.case-studies > ul > li > article.data-point</span></li>
+<li><span class="distinct">article.datapoints > article.datapoint</span></li>
 
 </ul>
 
@@ -1032,7 +1032,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-<li><span class="distinct">article.case-studies > footer > article.data-points</span></li>
+<li><span class="distinct">body.casestudy-post main .content > article.datapoints</span></li>
 
 </ul>
 
@@ -1054,56 +1054,6 @@ This enables two modes of build work.
 
      </ul>
    </article>
-
-</code>
-</pre>
-
-
-
-<h3 id="case-studies-block">Case Studies - Block</h3><a class="permalink" href="#case-studies-block">permalink</a>
-
-<h4>Expected Contexts</h4>
-<ul>
-<li><span class="distinct">body.home-index > main > article.case-studies</span></li>
-
-</ul>
-
-<pre>
-<code class="lang-html">
-
-  <article class="case-studies">
-    <h2>Title here</h2>
-    <p>Descriptive text</p>
-    <ul>
-      <li>
-        <figure>
-          <img src="PATH/TO/home.jpg" />
-          <span class="attribution">attribution here</span>
-         </figure>
-       </li>
-
-        ...
-
-    </ul>
-
-    <footer>
-      <article class="data-points supporting">
-        <ul>
-          <li>
-            <article class="data-point">
-              <h2>Title</h2>
-              <h3 class="stat">55+ million articles</h3>
-              <p>Descriptive text here</p>
-            </article>
-           </li>
-
-           ...
-
-         </ul>
-       </article>
-    </footer>
-  </article>
-
 
 </code>
 </pre>
