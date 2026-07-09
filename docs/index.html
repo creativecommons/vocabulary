@@ -579,31 +579,81 @@ This enables two modes of build work.
  <!-- <li><span class="distinct">Main Content Region</span> of the <span class="distinct">Home Index</span></li>
   <li><span class="distinct">Main Content Region</span> of the <span class="distinct">Blog Archive</span></li> -->
 
-  <li><span class="distinct">body.home-index > main > article.authored-posts > footer > article.attribution-list</span>; on the <span class="distinct">home-index</span> page-level</li>
-  <li><span class="distinct">body.blog-index > main > article.attribution-list</span>; after referenced media; on the <span class="distinct">blog-index</span> page-level</li>
+  <li><span class="distinct">body.home-narrative > main > article.posts </span>; on the <span class="distinct">home-narrative</span> page-level</li>
+  <li><span class="distinct">body.blog-index > main > article.posts</span>; after referenced media; on the <span class="distinct">blog-index</span> page-level</li>
 </ul>
 
 <pre>
 <code class="lang-html">
 
-  <article class="attribution-list">
-    <h2>Images Attribution</h2>
-    <button class="expand-attribution">view</button>
+  <details class="attribution">
+    <summary>Attribution <span class="icon icon-replace fa-angle-up"></span></summary>
 
-    <ul class="attribution-panel">
-      <li>
-        <article>
-          <figure>
-            <img src="PATH/TO/image.png" />
-            <span class="attribution">attribution here</span>
-          </figure>
-        </article>
-      </li>
+    <ul class="attributions">
 
-      ...
+    
+            <li>
+                <article>
+                    <figure>
+                        <img src="https://creativecommons.org/wp-content/uploads/2026/07/Social-Header-1024x576.png" alt="">
 
-   </ul>
-  </article>
+                        <figcaption class="attribution"><p>"<a href="https://www.flickr.com/photos/37996577538@N01/6875075891">Library</a>" by <a href="https://www.flickr.com/photos/thievingjoker/">thievingjoker</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.en">CC BY-SA 2.0</a>. "<a href="https://images.nasa.gov/details/art002e009287">A New View of the Moon</a>" from NASA, here remixed,&nbsp;is marked in the <a href="https://creativecommons.org/publicdomain/mark/1.0/">public domain</a>. "<a href="https://flickr.com/photos/stewart/461099066/">Encyclopædia Britannica, Eleventh Edition (1911)</a>" by <a href="https://flickr.com/photos/stewart/">Stewart Butterfield</a> is licensed under <a href="https://creativecommons.org/licenses/by/2.0/deed.en">CC BY 2.0</a>. "<a href="https://www.metmuseum.org/art/collection/search/39664">Irises at Yatsuhashi (Eight Bridges)</a>" by Ogata Kōrin, 1709, is marked in the <a href="https://creativecommons.org/publicdomain/mark/1.0/">public domain</a>.</p></figcaption>
+                    </figure>
+                </article>
+            </li>
+            
+            <li>
+                <article>
+                    <figure>
+                        <img src="https://creativecommons.org/wp-content/uploads/2026/06/CC-Zoom-Background-2-1024x576.png" alt="">
+
+                        <figcaption class="attribution"><p>“<a href="”https://www.flickr.com/photos/dtkindler/8258497307/in/dateposted/”">Hal Abelson</a>” by <a href="https://www.flickr.com/photos/dtkindler/">David Kindler</a> is licensed under <a href="”https://creativecommons.org/licenses/by/2.0/deed.en”">CC BY 2.0</a>. “<a href="”https://www.flickr.com/photos/ter-burg/22209039065/”">Lawrence Lessig at the Creative Commons Global Summit 2015</a>” by <a href="”https://www.flickr.com/photos/ter-burg/”">Sebastiaan ter Burg</a> is licensed under <a href="”https://creativecommons.org/licenses/by/2.0/deed.en”">CC BY 2.0</a>. “<a href="”https://www.flickr.com/photos/dtkindler/8258494113/in/dateposted/”">Molly Van Houweling</a>” by <a href="https://www.flickr.com/photos/dtkindler/">David Kindler</a> is licensed under <a href="”https://creativecommons.org/licenses/by/2.0/deed.en”">CC BY 2.0</a>. "<a href="”https://www.flickr.com/photos/slapshot/5041607/”">Glenn Otis Brown of Creative Commons</a>” by <a href="https://www.flickr.com/photos/slapshot/">David Thompson</a> is licensed under <a href="”https://creativecommons.org/licenses/by-nc/2.0/deed.en”">CC BY-NC 2.0</a>.</p></figcaption>
+                    </figure>
+                </article>
+            </li>
+            
+            <li>
+                <article>
+                    <figure>
+                        <img src="https://creativecommons.org/wp-content/uploads/2026/05/Social-Header-1-1024x576.png" alt="The title " from="" signals="" to="" infrastructure:="" strengthening="" the="" commons="" for="" ai="" era"="" in="" cc="" branding."="">
+
+                        <figcaption class="attribution"><p></p></figcaption>
+                    </figure>
+                </article>
+            </li>
+            
+            <li>
+                <article>
+                    <figure>
+                        <img src="https://creativecommons.org/wp-content/uploads/2026/05/Social-Header-1024x576.png" alt="A photo at the UNESCO House in Paris, France, during the Open Heritage Statement Exploratory Dialogue event in 2026.">
+
+                        <figcaption class="attribution"><p>Photo by Anna Tumadóttir is licensed under <a href="https://creativecommons.org/licenses/by/4.0/deed.en">CC BY 4.0</a>.</p></figcaption>
+                    </figure>
+                </article>
+            </li>
+            
+            <li>
+                <article>
+                    <figure>
+                        <img src="https://creativecommons.org/wp-content/uploads/2026/04/Social-Header-2-2-1024x576.png" alt="The words " cc="" signals:="" what="" changed="" and="" why"="" over="" a="" pink="" green="" blob."="">
+
+                        <figcaption class="attribution"><p></p></figcaption>
+                    </figure>
+                </article>
+            </li>
+            
+            <li>
+                <article>
+                    <figure>
+                        <img src="https://creativecommons.org/wp-content/uploads/2026/04/Social-Header-1024x576.jpg" alt="The cover of the report Licensing Best Practices for Sharing Scientific Data with a dark-blue blog and stars made of C's as part of CC's visual brand.">
+
+                        <figcaption class="attribution"><p></p></figcaption>
+                    </figure>
+                </article>
+            </li>
+            
+        </ul>
+</details>
 
 
 </code>
@@ -616,7 +666,7 @@ This enables two modes of build work.
 <h4>Expected Contexts</h4>
 <ul>
   <li><span class="distinct">body.* > article.attention</span>; after <span class="distinct">body > header</span>; before <span class="distinct">body > main</span>; all page-levels</li>
-  <li><span class="distinct">body.archive-page > aside > article.attention</span>; as last child item, only <span class="distinct">default-page</span>, <span class="distinct">archive-page</span> levels</li>
+  <!-- <li><span class="distinct">body.archive-page > aside > article.attention</span>; as last child item, only <span class="distinct">default-page</span>, <span class="distinct">archive-page</span> levels</li> -->
 </ul>
 
 <pre>
@@ -745,8 +795,10 @@ This enables two modes of build work.
   <article class="posts">
 
   <h2>Title Here</h2>
+
+  <!-- optional attribution-list component here when relevant -->
   
-    <article class="story">
+    <article class="post">
       <header>
       <h3><a href="#">Title Here</a></h3>
 
@@ -785,6 +837,8 @@ This enables two modes of build work.
   <li><span class="distinct">body.search-index > main > nav.pagination</span>, as the last child of <span class="distinct">body > main</span> </li>
 
 </ul>
+
+<p>Note: WordPress forces the list to be <span class="distinct">ul</span> instead of <span class="distinct">ol</span>.</p>
 
 <pre>
 <code class="lang-html">
