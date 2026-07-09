@@ -1096,14 +1096,15 @@ This enables two modes of build work.
 
   <article class="topic-summary">
     <h2>Title</h2>
-    <figure>
-      iframe or img here
-      <span class="attribution">attribution here.</span>
-    </figure>
     <div class="description">
         <p>Descriptive text here</p>
         <a href="#">Learn more</a>
     </div>
+    <figure>
+      iframe or img here
+      <figcaption class="attribution">attribution here.</figcaption>
+    </figure>
+    
   </article>
 
 </code>
@@ -1126,15 +1127,19 @@ This enables two modes of build work.
 <code class="lang-html">
 
   <header>
-    <h1>Title Here</h1>
-    <span class="byline">by <a href="#">Name Here</a>, <a href="#">Name Here</a></span>
 
-    <p>lead in paragraph</p> <!-- optional -->
+    <div>
+      <h1>Person Name</h1>
+      <span class="title">Title Here</span>
+      <span class="pronouns">pronouns</span>
+      <p>Bio here</p>
+    </div>
 
-    <span class="categories">  <!-- optional -->
-      <a href="#">Open Culture</a>
-    </span>
-  
+    <figure>
+        <img src="PATH/TO/img" >
+        <figcaption class="attribution"></figcaption>
+    </figure>
+
   </header>
 
 </code>
