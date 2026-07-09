@@ -13,7 +13,7 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    grid-column: 1 / 12;    
+    grid-column: 1 / 12;
 }
 
 .grid-temp main > * {
