@@ -829,42 +829,432 @@ This enables two modes of build work.
 
 
 <!-- add section here for event -->
+<h3 id="event-singular-block">Event - Singular - Block</h3><a class="permalink" href="#event-singular-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">article.events > ul > li > article.event</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="event">
+
+      <div class="description">
+      <h3>Legal Office Hours | September 2026</h3>
+      <h4>September 1, 2026</h4>
+      <span class="time">2:00 pm - 3:00 pm EDT</span>
+      <span class="location">Zoom</span>
+
+      <p></p>
+
+      <a href="#">See Event Details</a>
+      </div>
+
+      <figure>
+
+          <img src="PATH/TO/img">
+
+          <figcaption>
+                <p>attribution here</p>
+          </figcaption>
+      </figure>
+
+    </article>
+
+
+</code>
+</pre>
+
 <!-- add section here for events -->
+ <h3 id="events-plural-block">Events - Plural - Block</h3><a class="permalink" href="#events-plural-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">body.events-index > main > .content > article.events</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="events">
+  
+   <ul>
+    <li>
+      <article class="event">
+        content here
+      </article>
+    </li>
+    <li>
+      <article class="event">
+        content here
+      </article>
+    </li>
+    <li>
+      <article class="event">
+        content here
+      </article>
+    </li>
+   </ul>
+
+  </article>
+
+
+</code>
+</pre>
 
 <!-- add section here for speaker -->
+ <h3 id="speaker-singular-block">Speaker - Singular - Block</h3><a class="permalink" href="#speaker-singular-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">article.speakers >  ul > li > article.speaker</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="speaker">
+      <h3><a href="#">Person Name</a></h3>
+      <h4>Title</h4>
+      <p>Bio here...</p>
+
+
+      <figure>
+          <img src="PATH/TO/img">
+      </figure>
+
+  </article>
+
+
+</code>
+</pre>
+
 <!-- add section here for speakers -->
+ <h3 id="speakers-plural-block">Speakers - Plural - Block</h3><a class="permalink" href="#speakers-plural-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">body.event-post > main .content > article.speakers</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="speakers">
+  
+   <ul>
+    <li>
+      <article class="speaker">
+        content here
+      </article>
+    </li>
+    <li>
+      <article class="speaker">
+        content here
+      </article>
+    </li>
+    <li>
+      <article class="speaker">
+        content here
+      </article>
+    </li>
+   </ul>
+
+  </article>
+
+
+</code>
+</pre>
+
 
 <!-- add section here for casestudy -->
+ <h3 id="casestudy-singular-block">Case Study - Singular - Block</h3><a class="permalink" href="#casestudy-singular-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">article.casestudies > ul > li > article.casestudy</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="case-study">
+  
+   <div class="description">
+            <h2>Title</h2>
+
+            <p>Content here</p>
+
+            <a href="#">Learn More</a>
+        </div>
+
+        <figure>
+
+            <img src="PATH/TO/img">
+
+            <figcaption>
+                 attribution here
+            </figcaption>
+        </figure>
+
+  </article>
+
+
+</code>
+</pre>
+
 <!-- add section here fore casestudies -->
+ <h3 id="casestudies-plural-block">Case Studies - Plural - Block</h3><a class="permalink" href="#casestudies-plural-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">body.casestudies-index > main .content article.casestudies</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="casestudies">
+  
+   <ul>
+    <li>
+      <article class="case-study">
+        content here
+      </article>
+    </li>
+    <li>
+      <article class="case-study">
+        content here
+      </article>
+    </li>
+    <li>
+      <article class="case-study">
+        content here
+      </article>
+    </li>
+   </ul>
+
+  </article>
+
+
+</code>
+</pre>
 
 <!-- add section here for license -->
+ <h3 id="license-singular-block">Licese - Singular - Block</h3><a class="permalink" href="#license-singular-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">article.licenses > ul > li > article.license</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="license">
+      <h3><a href="#">CC BY</a></h3>
+      <img src="PATH/TO/img" class="badge">
+      <p>This license enables reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. CC BY includes the following elements:</p>
+
+      <dl class="conditions-definitions">
+          <div>
+              <dt class="icon-attach cc-by">BY</dt>
+              <dd>Credit must be given to you, the creator.</dd>
+          </div>
+      </dl>
+  </article>
+
+
+</code>
+</pre>
 <!-- add section here fore licenses -->
+ <h3 id="licenses-plural-block">Licenses - Plural - Block</h3><a class="permalink" href="#licenses-plural-block">permalink</a>
 
-<!-- add section for newsletter promo -->
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">body.licenses-page > main > .content > article.licenses</span></li>
+</ul>
 
-<!-- don't forget topic-summary has a variant with .focus-area -->
-<!-- don't forget topic-summary has a variant with .intro -->
-<!-- don't forget topic-summary has a variant with .about -->
-<!-- don't forget topic-summary has a variant with .supporters -->
-<!-- don't forget topic-summary has a variant with .highlight -->
+<pre>
+<code class="lang-html">
 
-<!-- don't forget topic-summary has optional .supporting footer-->
+  <article class="licenses">
+  
+   <ul>
+    <li>
+      <article class="license">
+        content here
+      </article>
+    </li>
+    <li>
+      <article class="license">
+        content here
+
+      </article>
+    </li>
+    <li>
+      <article class="license">
+        content here
+      </article>
+    </li>
+   </ul>
+
+  </article>
+
+</code>
+</pre>
+
 
 <!-- don't forget topic-dive -->
+ <h3 id="topic-dive-block">Topic Dive - Block</h3><a class="permalink" href="#topic-dive-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">body.training-index > main article.topic-dive</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="topic-dive">
+  
+   content here
+
+  </article>
+
+
+</code>
+</pre>
 
 <!-- add section for payment-methods -->
+ <h3 id="payment-methods-block">Payment Methods - Block</h3><a class="permalink" href="#payment-methods-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">body.support-page article.topic-summary.focus-area > footer > ul.payment-methods</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <ul class="payment-methods">
+  
+   <li>
+      content here
+   </li>>
+
+  </ul>
+
+
+</code>
+</pre>
 
 <!-- add section for event-meta -->
+ <h3 id="event-meta-block">Event Meta - Block</h3><a class="permalink" href="#event-meta-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">body.event-post aside.sidebar > article.event-meta</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="event-meta">
+      <h2>Date &amp; Time</h2>
+      <p class="date">September 1, 2026</p>
+      <p class="time">2:00 pm - 3:00 pm EDT</p>
+
+      <h2>Location</h2>
+
+      <p class="location">Zoom</p>
+
+      <a href="#">Register</a>
+    </article>
+    
+</code>
+</pre>
 
 <!-- add section for training -->
+ <h3 id="training-singular-block">Training - Singular - Block</h3><a class="permalink" href="#training-singular-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">article.trainings > ul > li > article.training</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="training">
+  
+   content here
+
+  </article>
+
+
+</code>
+</pre>
 <!-- add section for trainings -->
+<h3 id="trainings-plural-block">Trainings - Plural - Block</h3><a class="permalink" href="#trainigs-plural-block">permalink</a>
 
-<!-- add section for blockquote -->
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">body.support-page > main > article.topic-dive > article.topic-summary > article.training</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="trainings">
+  
+   <ul>
+    <li>
+      <article class="training">
+        content here
+      </article>
+    </li>
+    <li>
+      <article class="training">
+        content here
+      </article>
+    </li>
+    <li>
+      <article class="training">
+        content here
+      </article>
+    </li>
+   </ul>>
+
+  </training>
+
+
+</code>
+</pre>
+
+
 <!-- add section for div.highlight -->
+ <h3 id="highlight-box-block">Highlight Box - Block</h3><a class="permalink" href="#highlight-box-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">body.* > main div.highlight</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <div class="highlight">
+  
+   content here
+
+  </div>
 
 
-
-
+</code>
+</pre>
 
 
 
@@ -1139,6 +1529,7 @@ This enables two modes of build work.
   <li><span class="distinct">.intro</span></li>
   <li><span class="distinct">.about</span></li>
   <li><span class="distinct">.supporters</span></li>
+  <li><span class="distinct">.newsletter</span></li>
 </ul>
 
 <p>These addon classes are meant to subtly describe a more specific intent for for the block, and can also be used to provide alternative visual treatments to match that altered meaning through expressed visual design.</p>
