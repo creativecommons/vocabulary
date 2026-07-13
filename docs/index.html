@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<title>Vocabulary - Docs</title>
+<title>Vocabulary - v2.0 - Docs</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,9 +16,7 @@
 
 <p>A cohesive system of design for Creative Commons.</p>
 
-<p><strong>note:</strong> This documentation is still in draft mode.</p>
-
-<p><strong>note:</strong> At present Vocabulary is unversioned, and hyper localized to the <a href="https://creativecommons.org">Index Project</a> (CreativeCommons.org). This means that apart from the global <span class="distinct">Header</span> and <span class="distinct">Footer</span> areas; components, elements, pieces, tokens, etc. are not adequately generalized enough to be as composable within other site/project contexts. The work to correct this is underway, caution should be exercised in the meantime.</p>
+<p><strong>note:</strong> At present Vocabulary is still hyper localized to the <a href="https://creativecommons.org">Index Project</a> (CreativeCommons.org). This means that apart from the global <span class="distinct">Header</span> and <span class="distinct">Footer</span> areas; components, elements, pieces, tokens, etc. are not adequately generalized enough to be as composable within other site/project contexts. Caution should be exercised in the meantime.</p>
 
 </header>
 
@@ -42,10 +40,11 @@
 
 <h2 id="introduction">Introduction</h2>
 
-<p>Vocabulary is a refactor and reimplementation of the original, now archived, <a href="https://github.com/cc-archive/vocabulary-legacy">Vocabulary Legacy</a> project.</p>
+<p>Vocabulary builds from a refactor and reimplementation of the original, now archived, <a href="https://github.com/cc-archive/vocabulary-legacy">Vocabulary Legacy</a> project.</p>
 
-<p>Both projects are informed by the  <a href="https://creativecommons.org/wp-content/uploads/2019/10/Creative-Commons-Style-Guide-2019.pdf">CC Style Guide (2019)</a>, and incorporate or adapt its guidance into a digital context.</p>
+<p>Both projects were informed by the  <a href="https://creativecommons.org/wp-content/uploads/2019/10/Creative-Commons-Style-Guide-2019.pdf">CC Style Guide (2019)</a>, and incorporate or adapt its guidance into a digital context.</p>
 
+<p>As of 2026, Vocabulary was refactored to include the newly selected Brand Guidelines, which overrides much of the 2019 Style Guide, the new Style Guide is not currently publicly available.</p>
 
 <h3>Structure &amp; Behavior</h3>
 
@@ -203,20 +202,21 @@ This enables two modes of build work.
     Masthead
     <ul>
       <li>Entity Logo</li>
+       <li>Translation Menu</li>
       <li>Primary Nav Menu</li>
-      <li>Ancillary Nav Menu</li>
+      <!-- <li>Ancillary Nav Menu</li> -->
     </ul>
-  </li>
-  <li>
+  </li> 
+  <!-- <li>
     Explore Panel (Explore CC)
     <ul>
       <li>Optional main Index Site identity/link / blurb (used for non Index Project sites)</li>
       <li>Explore Nav Menu</li>
     </ul>
-  </li>
+  </li> -->
 </ul>
 
-<p>These sub-elements are not independent and are not meant to be used outside of the Global Header component.</p>
+<!-- <p>These sub-elements are not independent and are not meant to be used outside of the Global Header component.</p> -->
 
 
 <h4>Expected Contexts</h4>
@@ -228,74 +228,230 @@ This enables two modes of build work.
 <code class="lang-html">
 
 <a class="skip-to-content" href="#main-content-marker">Skip to content</a>
+<!-- translation support element here -->
+<div class="locale icon-attach fa-globe">
+    <select id="languages-dropdown">
+        <option disabled="">Languages available</option>
+        <option data-link="/licenses/by/4.0/deed.an" id="option-an" value="an">
+        aragonés
+        </option>
+        <option data-link="/licenses/by/4.0/deed.az" id="option-az" value="az">
+        Azərbaycanca
+        </option>
+        <option data-link="/licenses/by/4.0/deed.id" id="option-id" value="id">
+        Bahasa Indonesia
+        </option>
+        <option data-link="/licenses/by/4.0/deed.eu" id="option-eu" value="eu">
+        Basque
+        </option>
+        <option data-link="/licenses/by/4.0/deed.ca" id="option-ca" value="ca">
+        català
+        </option>
+        <option data-link="/licenses/by/4.0/deed.da" id="option-da" value="da">
+        dansk
+        </option>
+        <option data-link="/licenses/by/4.0/deed.de" id="option-de" value="de">
+        Deutsch
+        </option>
+        <option data-link="/licenses/by/4.0/deed.et" id="option-et" value="et">
+        eesti
+        </option>
+        <option data-link="/licenses/by/4.0/deed.en" id="option-en" selected="" value="en">
+        English
+        </option>
+        <option data-link="/licenses/by/4.0/deed.es" id="option-es" value="es">
+        español
+        </option>
+        <option data-link="/licenses/by/4.0/deed.eo" id="option-eo" value="eo">
+        Esperanto
+        </option>
+        <option data-link="/licenses/by/4.0/deed.fr" id="option-fr" value="fr">
+        français
+        </option>
+        <option data-link="/licenses/by/4.0/deed.fy" id="option-fy" value="fy">
+        frysk
+        </option>
+        <option data-link="/licenses/by/4.0/deed.ga" id="option-ga" value="ga">
+        Gaeilge
+        </option>
+        <option data-link="/licenses/by/4.0/deed.gl" id="option-gl" value="gl">
+        galego
+        </option>
+        <option data-link="/licenses/by/4.0/deed.hr" id="option-hr" value="hr">
+        Hrvatski
+        </option>
+        <option data-link="/licenses/by/4.0/deed.it" id="option-it" value="it">
+        italiano
+        </option>
+        <option data-link="/licenses/by/4.0/deed.lv" id="option-lv" value="lv">
+        latviešu
+        </option>
+        <option data-link="/licenses/by/4.0/deed.lt" id="option-lt" value="lt">
+        Lietuviškai
+        </option>
+        <option data-link="/licenses/by/4.0/deed.hu" id="option-hu" value="hu">
+        Magyar
+        </option>
+        <option data-link="/licenses/by/4.0/deed.ms" id="option-ms" value="ms">
+        Melayu
+        </option>
+        <option data-link="/licenses/by/4.0/deed.nl" id="option-nl" value="nl">
+        Nederlands
+        </option>
+        <option data-link="/licenses/by/4.0/deed.no" id="option-no" value="no">
+        norsk
+        </option>
+        <option data-link="/licenses/by/4.0/deed.pl" id="option-pl" value="pl">
+        polski
+        </option>
+        <option data-link="/licenses/by/4.0/deed.pt" id="option-pt" value="pt">
+        Português
+        </option>
+        <option data-link="/licenses/by/4.0/deed.pt-br" id="option-pt-br" value="pt-br">
+        Português Brasileiro
+        </option>
+        <option data-link="/licenses/by/4.0/deed.ro" id="option-ro" value="ro">
+        Română
+        </option>
+        <option data-link="/licenses/by/4.0/deed.sk" id="option-sk" value="sk">
+        Slovensky
+        </option>
+        <option data-link="/licenses/by/4.0/deed.sl" id="option-sl" value="sl">
+        Slovenščina
+        </option>
+        <option data-link="/licenses/by/4.0/deed.sr-latn" id="option-sr-latn" value="sr-latn">
+        srpski (latinica)
+        </option>
+        <option data-link="/licenses/by/4.0/deed.fi" id="option-fi" value="fi">
+        suomi
+        </option>
+        <option data-link="/licenses/by/4.0/deed.sv" id="option-sv" value="sv">
+        svenska
+        </option>
+        <option data-link="/licenses/by/4.0/deed.tr" id="option-tr" value="tr">
+        Türkçe
+        </option>
+        <option data-link="/licenses/by/4.0/deed.is" id="option-is" value="is">
+        Íslenska
+        </option>
+        <option data-link="/licenses/by/4.0/deed.cs" id="option-cs" value="cs">
+        česky
+        </option>
+        <option data-link="/licenses/by/4.0/deed.el" id="option-el" value="el">
+        Ελληνικά
+        </option>
+        <option data-link="/licenses/by/4.0/deed.be" id="option-be" value="be">
+        беларуская
+        </option>
+        <option data-link="/licenses/by/4.0/deed.bg" id="option-bg" value="bg">
+        български
+        </option>
+        <option data-link="/licenses/by/4.0/deed.ru" id="option-ru" value="ru">
+        Русский
+        </option>
+        <option data-link="/licenses/by/4.0/deed.uk" id="option-uk" value="uk">
+        Українська
+        </option>
+        <option data-link="/licenses/by/4.0/deed.ar" id="option-ar" value="ar">
+        العربيّة
+        </option>
+        <option data-link="/licenses/by/4.0/deed.fa" id="option-fa" value="fa">
+        فارسی
+        </option>
+        <option data-link="/licenses/by/4.0/deed.hi" id="option-hi" value="hi">
+        हिंदी
+        </option>
+        <option data-link="/licenses/by/4.0/deed.bn" id="option-bn" value="bn">
+        বাংলা
+        </option>
+        <option data-link="/licenses/by/4.0/deed.ja" id="option-ja" value="ja">
+        日本語
+        </option>
+        <option data-link="/licenses/by/4.0/deed.zh-hans" id="option-zh-hans" value="zh-hans">
+        简体中文
+        </option>
+        <option data-link="/licenses/by/4.0/deed.zh-hant" id="option-zh-hant" value="zh-hant">
+        繁體中文
+        </option>
+        <option data-link="/licenses/by/4.0/deed.ko" id="option-ko" value="ko">
+        한국어
+        </option>
+    </select>
+</div>
 
 <header>
     <div class="masthead">
-      <h1><a class="identity-logo product" href="#">Vocabulary</a></h1>
+        <h1><a class="identity-logo" href="#">Vocabulary</a></h1>
         <button class="expand-menu">Menu</button>
         <nav class="primary-menu">
             <ul>
-                <li><a href="#">Who We Are</a></li>
-                <li><a href="#">What We Do</a></li>
-                <li><a href="#">Licenses and Tools</a></li>
+                <li>
+                    <a href="#">Who We Are</a>
+                    <button class="expand icon-replace fa-angle-down">Expand</button>
+                    
+                    <ul>
+                        <li><a href="#">Strategic Plan</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Governance</a></li>
+                        <li><a href="#">Opportunities</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">What We Do</a>
+                    <button class="expand icon-replace fa-angle-down">Expand</button>
+
+                    <ul>
+                        <li>
+                            <a href="#">Build <br> Open Infrastructure</a>
+                            <button class="expand icon-replace fa-angle-down">Expand</button>
+
+                             <ul>
+                                <li><a href="#">CC Licenses</a></li>
+                                <li><a href="#">CC Signals</a></li>
+                                <li><a href="#">Public Domain</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Implement <br> the Commons</a>
+                            <button class="expand icon-replace fa-angle-down">Expand</button>
+
+                             <ul>
+                                <li><a href="#">Where CC Makes An Impact</a></li>
+                                <li><a href="#">Resources</a></li>
+                                <li><a href="#">Search the Commons</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Engage <br> the People</a>
+                            <button class="expand icon-replace fa-angle-down">Expand</button>
+
+                             <ul>
+                                <li><a href="#">Training + Webinars</a></li>
+                                <li><a href="#">Advocacy</a></li>
+                                <li><a href="#">Community</a></li>
+                                <li><a href="#">Partnerships</a></li>
+                                <li><a href="#">Events</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Support Us</a></li>
-                <li><a class="attention" href="https://summit.creativecommons.org/">Global Summit 2023</a></li>
+                <li>
+                    <a href="#">Support Us</a>
+                    <button class="expand icon-replace fa-angle-down">Expand</button>
+
+                    <ul>
+                        <li><a href="#">Make a Gift</a></li>
+                        <li><a href="#">Ways to Give</a></li>
+                        <li><a href="#">Open Infrastructure Circle</a></li>
+                        <li><a href="#">Donor FAQ</a></li>
+                    </ul>
+                </li>
+                <li><a class="donate" href="#">Donate</a></li>
             </ul>
         </nav>
-
-        <nav class="ancillary-menu">
-            <ul>
-                <!-- uncomment below line, if translation functionality is present on site -->
-                <!-- <li><button class="locale icon-attach fa-globe">English</button></li> -->
-                <!-- uncomment below line, if search functionality is present on site -->
-                <li><a class="search icon-attach fa-search" href="#">Search</a></li>
-                <li><a class="donate icon-attach fa-heart" href="https://www.classy.org/give/313412/#!/donation/checkout?c_src=website&c_src2=top-of-page-banner" target="_blank">Donate</a></li>
-                <li><button class="explore">Explore CC</button></li>
-            </ul>
-        </nav>
-    </div>
-
-
-
-    <div class="explore-panel">
-
-    <!-- (optional main CC logo, p, link on non-home site back to main site) -->
-    <aside>
-        <a class="identity-logo" href="https://creativecommons.org">Creative Commons</a>
-        <h2>Our Work Relies On You!</h2>
-        <p>Help us keep the internet free and open.</p>
-    </aside>
-
-    <nav class="explore-menu">
-        <ul>
-            <li>
-                <a href="https://network.creativecommons.org/" target="_blank">Global Network</a>
-                <p>Join a  global community working to strengthen the Commons</p>
-            </li>
-            <li>
-                <a href="https://certificate.creativecommons.org/" target="_blank">Certificate</a>
-                <p>Become an expert in creating and engaging with openly licensed materials</p>
-            </li>
-            <li>
-                <a href="https://summit.creativecommons.org/" target="_blank">Global Summit</a>
-                <p>Attend our annual event, promoting the power of open licensing</p>
-            </li>
-            <li>
-                <a href="/choose" target="_blank">Chooser</a>
-                <p>Get help choosing the appropriate license for your work</p>
-            </li>
-            <li>
-                <a href="https://search.creativecommons.org/"  target="_blank">Search Portal</a>
-                <p>Find engines to search openly licensed material for creative and educational reuse</p>
-            </li>
-            <li>
-                <a href="https://opensource.creativecommons.org/" target="_blank">Open Source</a>
-                <p>Help us build products that maximize creativity and innovation</p>
-            </li>
-
-        </ul>
-    </nav>
     </div>
 
 </header>
@@ -333,65 +489,78 @@ This enables two modes of build work.
 <code class="lang-html">
 
 <footer>
-    <a class="identity-logo" href="#">Creative Commons</a>
+    <a class="identity-logo" href="/">Creative Commons</a>
 
-    <nav class="footer-menu">
+    <div class="search">
+        <form method="get" id="" name="" class="" action="https://creativecommons.org/">
+            <input type="text" value="" name="s" class="" id="s" placeholder="Search">
+            <!-- <input type="submit" value="submit" id="" class=""> -->
+
+            <button class="icon-attach fa-search">submit</button>
+
+            <!-- <div class="icon-replace fa-search">hmmm</div> -->
+        </form>
+    </div>
+
+    <nav class="footer-menu" aria-label="Footer menu">
         <ul>
-            <li><a href="/about/contact">Contact</a></li>
-            <li><a href="https://mail.creativecommons.org/subscribe" target="_blank">Newsletter</a></li>
+            <li><a href="/who-we-are">Who we are</a></li>
+            <li><a href="/what-we-do">What we do</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/support">Support us</a></li>
+            <li><a href="https://creative-commons-shop.fourthwall.com/">Store</a></li>
+
+            <li><a href="/contact">Contact</a></li>
             <li><a href="/privacy">Privacy</a></li>
             <li><a href="/policies">Policies</a></li>
             <li><a href="/terms">Terms</a></li>
         </ul>
     </nav>
 
+
+
     <div class="contact">
     <!-- this area lacks a heading? -->
     <h2>Contact Us</h2>
-    <p>Creative Commons <br /> PO Box 1866, Mountain View, CA 94042</p>
+    <p>Creative Commons <br> PO Box 1866, Mountain View, <br> CA 94042</p>
     <p><a href="mailto:info@creativecommons.org">info@creativecommons.org</a></p>
 
-    <nav class="social-menu">
+    <nav class="social-menu" aria-label="Social menu">
         <ul>
             <!-- <li><a class="icon-replace fa-instagram" href="#">Instagram</a></li> -->
             <li><a class="icon-replace fa-bluesky" href="https://bsky.app/profile/creativecommons.bsky.social" target="_blank">Bluesky</a></li>
             <li><a class="icon-replace fa-mastodon" href="https://mastodon.social/@creativecommons" target="_blank">Mastodon</a></li>
+            <!-- <li><a class="icon-replace fa-facebook" href="https://www.facebook.com/creativecommons" target="_blank">Facebook</a></li> -->
             <li><a class="icon-replace fa-linkedin" href="https://www.linkedin.com/company/creative-commons/" target="_blank">LinkedIn</a></li>
         </ul>
     </nav>
     </div>
 
     <div class="subscribe">
-    <h2>Subscribe to our Newsletter</h2>
-    <form action="https://creativecommons.us4.list-manage.com/subscribe/post?u=fd30364b6577b471373d6076c&amp;id=4603fe102a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate newsletter" target="_blank">
-        <input type="email" value="" name="EMAIL" class="email input" id="mce-EMAIL" placeholder="Your email" required>
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px" aria-hidden="true">
-          <input type="text" name="b_fd30364b6577b471373d6076c_4603fe102a" tabindex="-1" value="">
-        </div>
-        <input type="submit" value="subscribe" id="mc-embedded-subscribe" class="button small">
-      </form>
+    <h2>Subscribe to our newsletter</h2>
+    <a href="https://mail.creativecommons.org/subscribe">Subscribe</a>
     </div>
 
-    <div class="donate">
+    <!-- <div class="donate">
         <h2>Support Our Work</h2>
         <p>Our work relies on you! Help us keep the Internet free and open.</p>
         <a class="donate icon-attach cc-heart-filled" href="https://www.classy.org/give/313412/#!/donation/checkout?c_src=website&c_src2=top-of-page-banner" target="_blank">Donate Now</a>
-    </div>
+    </div> -->
 
 
     <div class="license">
-        <p>Except where otherwise <a href="/policies/#license">noted</a>, content on this site is licensed under a <a href="/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>. Icons by <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.</p>
-
         <svg>
-            <use href="/vocabulary/svg/cc/icons/cc-icons.svg#cc-logo"></use>
+            <use href="/vocabulary-theme/vocabulary/svg/cc/icons/cc-icons.svg#cc-logo"></use>
         </svg>
         <svg>
             <use href="/vocabulary/svg/cc/icons/cc-icons.svg#cc-by"></use>
         </svg>
+
+        <p>Except where otherwise <a href="/policies/#license">noted</a>, content on this site is licensed under a <a href="/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>. Icons by <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.</p>
+
     </div>
 
-</footer>
+    </footer>
 
 
 </code>
@@ -409,31 +578,81 @@ This enables two modes of build work.
  <!-- <li><span class="distinct">Main Content Region</span> of the <span class="distinct">Home Index</span></li>
   <li><span class="distinct">Main Content Region</span> of the <span class="distinct">Blog Archive</span></li> -->
 
-  <li><span class="distinct">body.home-index > main > article.authored-posts > footer > article.attribution-list</span>; on the <span class="distinct">home-index</span> page-level</li>
-  <li><span class="distinct">body.blog-index > main > article.attribution-list</span>; after referenced media; on the <span class="distinct">blog-index</span> page-level</li>
+  <li><span class="distinct">body.home-narrative > main > article.posts </span>; on the <span class="distinct">home-narrative</span> page-level</li>
+  <li><span class="distinct">body.blog-index > main > article.posts</span>; after referenced media; on the <span class="distinct">blog-index</span> page-level</li>
 </ul>
 
 <pre>
 <code class="lang-html">
 
-  <article class="attribution-list">
-    <h2>Images Attribution</h2>
-    <button class="expand-attribution">view</button>
+  <details class="attribution">
+    <summary>Attribution <span class="icon icon-replace fa-angle-up"></span></summary>
 
-    <ul class="attribution-panel">
-      <li>
-        <article>
-          <figure>
-            <img src="PATH/TO/image.png" />
-            <span class="attribution">attribution here</span>
-          </figure>
-        </article>
-      </li>
+    <ul class="attributions">
 
-      ...
+    
+            <li>
+                <article>
+                    <figure>
+                        <img src="https://creativecommons.org/wp-content/uploads/2026/07/Social-Header-1024x576.png" alt="">
 
-   </ul>
-  </article>
+                        <figcaption class="attribution"><p>"<a href="https://www.flickr.com/photos/37996577538@N01/6875075891">Library</a>" by <a href="https://www.flickr.com/photos/thievingjoker/">thievingjoker</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.en">CC BY-SA 2.0</a>. "<a href="https://images.nasa.gov/details/art002e009287">A New View of the Moon</a>" from NASA, here remixed,&nbsp;is marked in the <a href="https://creativecommons.org/publicdomain/mark/1.0/">public domain</a>. "<a href="https://flickr.com/photos/stewart/461099066/">Encyclopædia Britannica, Eleventh Edition (1911)</a>" by <a href="https://flickr.com/photos/stewart/">Stewart Butterfield</a> is licensed under <a href="https://creativecommons.org/licenses/by/2.0/deed.en">CC BY 2.0</a>. "<a href="https://www.metmuseum.org/art/collection/search/39664">Irises at Yatsuhashi (Eight Bridges)</a>" by Ogata Kōrin, 1709, is marked in the <a href="https://creativecommons.org/publicdomain/mark/1.0/">public domain</a>.</p></figcaption>
+                    </figure>
+                </article>
+            </li>
+            
+            <li>
+                <article>
+                    <figure>
+                        <img src="https://creativecommons.org/wp-content/uploads/2026/06/CC-Zoom-Background-2-1024x576.png" alt="">
+
+                        <figcaption class="attribution"><p>“<a href="”https://www.flickr.com/photos/dtkindler/8258497307/in/dateposted/”">Hal Abelson</a>” by <a href="https://www.flickr.com/photos/dtkindler/">David Kindler</a> is licensed under <a href="”https://creativecommons.org/licenses/by/2.0/deed.en”">CC BY 2.0</a>. “<a href="”https://www.flickr.com/photos/ter-burg/22209039065/”">Lawrence Lessig at the Creative Commons Global Summit 2015</a>” by <a href="”https://www.flickr.com/photos/ter-burg/”">Sebastiaan ter Burg</a> is licensed under <a href="”https://creativecommons.org/licenses/by/2.0/deed.en”">CC BY 2.0</a>. “<a href="”https://www.flickr.com/photos/dtkindler/8258494113/in/dateposted/”">Molly Van Houweling</a>” by <a href="https://www.flickr.com/photos/dtkindler/">David Kindler</a> is licensed under <a href="”https://creativecommons.org/licenses/by/2.0/deed.en”">CC BY 2.0</a>. "<a href="”https://www.flickr.com/photos/slapshot/5041607/”">Glenn Otis Brown of Creative Commons</a>” by <a href="https://www.flickr.com/photos/slapshot/">David Thompson</a> is licensed under <a href="”https://creativecommons.org/licenses/by-nc/2.0/deed.en”">CC BY-NC 2.0</a>.</p></figcaption>
+                    </figure>
+                </article>
+            </li>
+            
+            <li>
+                <article>
+                    <figure>
+                        <img src="https://creativecommons.org/wp-content/uploads/2026/05/Social-Header-1-1024x576.png" alt="The title " from="" signals="" to="" infrastructure:="" strengthening="" the="" commons="" for="" ai="" era"="" in="" cc="" branding."="">
+
+                        <figcaption class="attribution"><p></p></figcaption>
+                    </figure>
+                </article>
+            </li>
+            
+            <li>
+                <article>
+                    <figure>
+                        <img src="https://creativecommons.org/wp-content/uploads/2026/05/Social-Header-1024x576.png" alt="A photo at the UNESCO House in Paris, France, during the Open Heritage Statement Exploratory Dialogue event in 2026.">
+
+                        <figcaption class="attribution"><p>Photo by Anna Tumadóttir is licensed under <a href="https://creativecommons.org/licenses/by/4.0/deed.en">CC BY 4.0</a>.</p></figcaption>
+                    </figure>
+                </article>
+            </li>
+            
+            <li>
+                <article>
+                    <figure>
+                        <img src="https://creativecommons.org/wp-content/uploads/2026/04/Social-Header-2-2-1024x576.png" alt="The words " cc="" signals:="" what="" changed="" and="" why"="" over="" a="" pink="" green="" blob."="">
+
+                        <figcaption class="attribution"><p></p></figcaption>
+                    </figure>
+                </article>
+            </li>
+            
+            <li>
+                <article>
+                    <figure>
+                        <img src="https://creativecommons.org/wp-content/uploads/2026/04/Social-Header-1024x576.jpg" alt="The cover of the report Licensing Best Practices for Sharing Scientific Data with a dark-blue blog and stars made of C's as part of CC's visual brand.">
+
+                        <figcaption class="attribution"><p></p></figcaption>
+                    </figure>
+                </article>
+            </li>
+            
+        </ul>
+</details>
 
 
 </code>
@@ -446,7 +665,7 @@ This enables two modes of build work.
 <h4>Expected Contexts</h4>
 <ul>
   <li><span class="distinct">body.* > article.attention</span>; after <span class="distinct">body > header</span>; before <span class="distinct">body > main</span>; all page-levels</li>
-  <li><span class="distinct">body.archive-page > aside > article.attention</span>; as last child item, only <span class="distinct">default-page</span>, <span class="distinct">archive-page</span> levels</li>
+  <!-- <li><span class="distinct">body.archive-page > aside > article.attention</span>; as last child item, only <span class="distinct">default-page</span>, <span class="distinct">archive-page</span> levels</li> -->
 </ul>
 
 <pre>
@@ -576,7 +795,9 @@ This enables two modes of build work.
 
   <h2>Title Here</h2>
 
-    <article class="story">
+  <!-- optional attribution-list component here when relevant -->
+  
+    <article class="post">
       <header>
       <h3><a href="#">Title Here</a></h3>
 
@@ -606,6 +827,436 @@ This enables two modes of build work.
 </pre>
 
 
+<!-- add section here for event -->
+<h3 id="event-singular-block">Event - Singular - Block</h3><a class="permalink" href="#event-singular-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">article.events > ul > li > article.event</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="event">
+
+      <div class="description">
+      <h3>Legal Office Hours | September 2026</h3>
+      <h4>September 1, 2026</h4>
+      <span class="time">2:00 pm - 3:00 pm EDT</span>
+      <span class="location">Zoom</span>
+
+      <p></p>
+
+      <a href="#">See Event Details</a>
+      </div>
+
+      <figure>
+
+          <img src="PATH/TO/img">
+
+          <figcaption>
+                <p>attribution here</p>
+          </figcaption>
+      </figure>
+
+    </article>
+
+
+</code>
+</pre>
+
+<!-- add section here for events -->
+ <h3 id="events-plural-block">Events - Plural - Block</h3><a class="permalink" href="#events-plural-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">body.events-index > main > .content > article.events</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="events">
+  
+   <ul>
+    <li>
+      <article class="event">
+        content here
+      </article>
+    </li>
+    <li>
+      <article class="event">
+        content here
+      </article>
+    </li>
+    <li>
+      <article class="event">
+        content here
+      </article>
+    </li>
+   </ul>
+
+  </article>
+
+
+</code>
+</pre>
+
+<!-- add section here for speaker -->
+ <h3 id="speaker-singular-block">Speaker - Singular - Block</h3><a class="permalink" href="#speaker-singular-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">article.speakers >  ul > li > article.speaker</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="speaker">
+      <h3><a href="#">Person Name</a></h3>
+      <h4>Title</h4>
+      <p>Bio here...</p>
+
+
+      <figure>
+          <img src="PATH/TO/img">
+      </figure>
+
+  </article>
+
+
+</code>
+</pre>
+
+<!-- add section here for speakers -->
+ <h3 id="speakers-plural-block">Speakers - Plural - Block</h3><a class="permalink" href="#speakers-plural-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">body.event-post > main .content > article.speakers</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="speakers">
+  
+   <ul>
+    <li>
+      <article class="speaker">
+        content here
+      </article>
+    </li>
+    <li>
+      <article class="speaker">
+        content here
+      </article>
+    </li>
+    <li>
+      <article class="speaker">
+        content here
+      </article>
+    </li>
+   </ul>
+
+  </article>
+
+
+</code>
+</pre>
+
+
+<!-- add section here for casestudy -->
+ <h3 id="casestudy-singular-block">Case Study - Singular - Block</h3><a class="permalink" href="#casestudy-singular-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">article.casestudies > ul > li > article.casestudy</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="case-study">
+  
+   <div class="description">
+            <h2>Title</h2>
+
+            <p>Content here</p>
+
+            <a href="#">Learn More</a>
+        </div>
+
+        <figure>
+
+            <img src="PATH/TO/img">
+
+            <figcaption>
+                 attribution here
+            </figcaption>
+        </figure>
+
+  </article>
+
+
+</code>
+</pre>
+
+<!-- add section here fore casestudies -->
+ <h3 id="casestudies-plural-block">Case Studies - Plural - Block</h3><a class="permalink" href="#casestudies-plural-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">body.casestudies-index > main .content article.casestudies</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="casestudies">
+  
+   <ul>
+    <li>
+      <article class="case-study">
+        content here
+      </article>
+    </li>
+    <li>
+      <article class="case-study">
+        content here
+      </article>
+    </li>
+    <li>
+      <article class="case-study">
+        content here
+      </article>
+    </li>
+   </ul>
+
+  </article>
+
+
+</code>
+</pre>
+
+<!-- add section here for license -->
+ <h3 id="license-singular-block">Licese - Singular - Block</h3><a class="permalink" href="#license-singular-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">article.licenses > ul > li > article.license</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="license">
+      <h3><a href="#">CC BY</a></h3>
+      <img src="PATH/TO/img" class="badge">
+      <p>This license enables reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. CC BY includes the following elements:</p>
+
+      <dl class="conditions-definitions">
+          <div>
+              <dt class="icon-attach cc-by">BY</dt>
+              <dd>Credit must be given to you, the creator.</dd>
+          </div>
+      </dl>
+  </article>
+
+
+</code>
+</pre>
+<!-- add section here fore licenses -->
+ <h3 id="licenses-plural-block">Licenses - Plural - Block</h3><a class="permalink" href="#licenses-plural-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">body.licenses-page > main > .content > article.licenses</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="licenses">
+  
+   <ul>
+    <li>
+      <article class="license">
+        content here
+      </article>
+    </li>
+    <li>
+      <article class="license">
+        content here
+
+      </article>
+    </li>
+    <li>
+      <article class="license">
+        content here
+      </article>
+    </li>
+   </ul>
+
+  </article>
+
+</code>
+</pre>
+
+
+<!-- don't forget topic-dive -->
+ <h3 id="topic-dive-block">Topic Dive - Block</h3><a class="permalink" href="#topic-dive-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">body.training-index > main article.topic-dive</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="topic-dive">
+  
+   content here
+
+  </article>
+
+
+</code>
+</pre>
+
+<!-- add section for payment-methods -->
+ <h3 id="payment-methods-block">Payment Methods - Block</h3><a class="permalink" href="#payment-methods-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">body.support-page article.topic-summary.focus-area > footer > ul.payment-methods</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <ul class="payment-methods">
+  
+   <li>
+      content here
+   </li>>
+
+  </ul>
+
+
+</code>
+</pre>
+
+<!-- add section for event-meta -->
+ <h3 id="event-meta-block">Event Meta - Block</h3><a class="permalink" href="#event-meta-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">body.event-post aside.sidebar > article.event-meta</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="event-meta">
+      <h2>Date &amp; Time</h2>
+      <p class="date">September 1, 2026</p>
+      <p class="time">2:00 pm - 3:00 pm EDT</p>
+
+      <h2>Location</h2>
+
+      <p class="location">Zoom</p>
+
+      <a href="#">Register</a>
+    </article>
+    
+</code>
+</pre>
+
+<!-- add section for training -->
+ <h3 id="training-singular-block">Training - Singular - Block</h3><a class="permalink" href="#training-singular-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">article.trainings > ul > li > article.training</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="training">
+  
+   content here
+
+  </article>
+
+
+</code>
+</pre>
+<!-- add section for trainings -->
+<h3 id="trainings-plural-block">Trainings - Plural - Block</h3><a class="permalink" href="#trainigs-plural-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">body.support-page > main > article.topic-dive > article.topic-summary > article.training</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <article class="trainings">
+  
+   <ul>
+    <li>
+      <article class="training">
+        content here
+      </article>
+    </li>
+    <li>
+      <article class="training">
+        content here
+      </article>
+    </li>
+    <li>
+      <article class="training">
+        content here
+      </article>
+    </li>
+   </ul>
+
+  </article>
+
+
+</code>
+</pre>
+
+
+<!-- add section for div.highlight -->
+ <h3 id="highlight-box-block">Highlight Box - Block</h3><a class="permalink" href="#highlight-box-block">permalink</a>
+
+<h4>Expected Contexts</h4>
+<ul>
+  <li><span class="distinct">body.* > main div.highlight</span></li>
+</ul>
+
+<pre>
+<code class="lang-html">
+
+  <div class="highlight">
+  
+   content here
+
+  </div>
+
+
+</code>
+</pre>
+
+
+
 <h3 id="pagination-nav">Pagination - Nav</h3><a class="permalink" href="#pagination-nav">permalink</a>
 
 <h4>Expected Contexts</h4>
@@ -615,6 +1266,8 @@ This enables two modes of build work.
   <li><span class="distinct">body.search-index > main > nav.pagination</span>, as the last child of <span class="distinct">body > main</span> </li>
 
 </ul>
+
+<p><strong>Note:</strong> WordPress forces the list to be <span class="distinct">ul</span> instead of <span class="distinct">ol</span>.</p>
 
 <pre>
 <code class="lang-html">
@@ -783,7 +1436,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-<li><span class="distinct">article.case-studies > ul > li > article.data-point</span></li>
+<li><span class="distinct">article.datapoints > article.datapoint</span></li>
 
 </ul>
 
@@ -808,7 +1461,7 @@ This enables two modes of build work.
 
 <h4>Expected Contexts</h4>
 <ul>
-<li><span class="distinct">article.case-studies > footer > article.data-points</span></li>
+<li><span class="distinct">body.casestudy-post main .content > article.datapoints</span></li>
 
 </ul>
 
@@ -830,56 +1483,6 @@ This enables two modes of build work.
 
      </ul>
    </article>
-
-</code>
-</pre>
-
-
-
-<h3 id="case-studies-block">Case Studies - Block</h3><a class="permalink" href="#case-studies-block">permalink</a>
-
-<h4>Expected Contexts</h4>
-<ul>
-<li><span class="distinct">body.home-index > main > article.case-studies</span></li>
-
-</ul>
-
-<pre>
-<code class="lang-html">
-
-  <article class="case-studies">
-    <h2>Title here</h2>
-    <p>Descriptive text</p>
-    <ul>
-      <li>
-        <figure>
-          <img src="PATH/TO/home.jpg" />
-          <span class="attribution">attribution here</span>
-         </figure>
-       </li>
-
-        ...
-
-    </ul>
-
-    <footer>
-      <article class="data-points supporting">
-        <ul>
-          <li>
-            <article class="data-point">
-              <h2>Title</h2>
-              <h3 class="stat">55+ million articles</h3>
-              <p>Descriptive text here</p>
-            </article>
-           </li>
-
-           ...
-
-         </ul>
-       </article>
-    </footer>
-  </article>
-
 
 </code>
 </pre>
@@ -917,23 +1520,63 @@ This enables two modes of build work.
 
 </ul>
 
+<p><strong>note:</strong> The <span class="distinct">.topic-summary</span> block also has several pseudo-semantic addon classes that can be added for various treatments which includes: </p>
+
+<ul>
+  <li><span class="distinct">.focus-area</span></li>
+  <li><span class="distinct">.highlight</span></li>
+  <li><span class="distinct">.intro</span></li>
+  <li><span class="distinct">.about</span></li>
+  <li><span class="distinct">.supporters</span></li>
+  <li><span class="distinct">.newsletter</span></li>
+</ul>
+
+<p>These addon classes are meant to subtly describe a more specific intent for for the block, and can also be used to provide alternative visual treatments to match that altered meaning through expressed visual design.</p>
+
 <pre>
 <code class="lang-html">
 
   <article class="topic-summary">
     <h2>Title</h2>
-    <figure>
-      iframe or img here
-      <span class="attribution">attribution here.</span>
-    </figure>
     <div class="description">
         <p>Descriptive text here</p>
         <a href="#">Learn more</a>
     </div>
+    <figure>
+      iframe or img here
+      <figcaption class="attribution">attribution here.</figcaption>
+    </figure>
+    
   </article>
 
 </code>
 </pre>
+
+<p>Additionally, the <span class="distinct">.topic-summary</span> block also supports a <span class="distinct">footer.supporting</span> when relevant. </p>
+
+<pre>
+<code class="lang-html">
+
+  <article class="topic-summary focus-area">
+    <h2>Title</h2>
+    <div class="description">
+        <p>Descriptive text here</p>
+        <a href="#">Learn more</a>
+    </div>
+    <figure>
+      iframe or img here
+      <figcaption class="attribution">attribution here.</figcaption>
+    </figure>
+
+    <footer class="supporting">
+      <!-- sub-elements here -->
+    </footer>
+    
+  </article>
+
+</code>
+</pre>
+
 
 
 <h3 id="page-header-region">Page Header - Region</h3><a class="permalink" href="#page-header-region">permalink</a>
@@ -952,16 +1595,20 @@ This enables two modes of build work.
 <code class="lang-html">
 
   <header>
-    <h1>Title Here</h1>
-    <span class="byline">by <a href="#">Name Here</a>, <a href="#">Name Here</a></span>
+    <div>
+        <h1>Title</h1>
+        <span class="byline">by <a href="#">Person Name</a></span>
+        <span class="categories"><a href="#" rel="category tag">Category Name</a></span>
+    </div>
+    <figure>
+        <img src="PATH/TO/img" />
 
-    <p>lead in paragraph</p> <!-- optional -->
-
-    <span class="categories">  <!-- optional -->
-      <a href="#">Open Culture</a>
-    </span>
-
-  </header>
+        <figcaption>
+            <p>attribution details here</p>
+            
+        </figcaption>
+    </figure>
+</header>
 
 </code>
 </pre>
