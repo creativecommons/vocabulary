@@ -4780,7 +4780,7 @@ body > footer .license p a:hover {
 
 .program-index main > article.projects ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 2em;
     margin: 0;
     padding: 0;
