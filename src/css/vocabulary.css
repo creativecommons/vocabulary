@@ -2453,6 +2453,7 @@ body > footer .footer-menu {
 body > footer .footer-menu ul {
     display: flex;
     justify-content: space-between;
+    min-height: 10em;
     max-height: 8em;
     flex-direction: column;
     flex-wrap: wrap;
