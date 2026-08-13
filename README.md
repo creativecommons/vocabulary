@@ -1,4 +1,4 @@
-# Vocabulary - v2.0
+# Vocabulary - v2.1
 A cohesive system of design for Creative Commons
 
 Vocabulary is a refactor and reimplementation of the original, now archived, [Vocabulary Legacy][vocabulary-legacy] project.
