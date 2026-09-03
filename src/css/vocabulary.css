@@ -635,7 +635,7 @@ main > header .default-image img.photo {
   margin-left: -2em;
     /* width: 100%; */
     object-fit: cover;
-    mask-image: url(pidgin/svg/blob5.svg);
+    mask-image: url(../svg/blob5.svg);
     mask-repeat: no-repeat;
     mask-position: top center;
     mask-size: 86% 100%;
