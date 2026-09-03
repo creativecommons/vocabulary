@@ -86,13 +86,13 @@
     --vocabulary-page-edges-space: 5%;
 
     /* cc icons */
-    --cc-by: url('../src/svg/cc/icons/cc-icons.svg#cc-by');
-    --cc-nc: url('../src/svg/cc/icons/cc-icons.svg#cc-nc');
-    --cc-nd: url('../src/svg/cc/icons/cc-icons.svg#cc-nd');
-    --cc-pd: url('../src/svg/cc/icons/cc-icons.svg#cc-pd');
-    --cc-pdm: url('../src/svg/cc/icons/cc-icons.svg#cc-pdm');
-    --cc-sa: url('../src/svg/cc/icons/cc-icons.svg#cc-sa');
-    --cc-zero: url('../src/svg/cc/icons/cc-icons.svg#cc-zero');
+    --cc-by: url('../svg/cc/icons/cc-icons.svg#cc-by');
+    --cc-nc: url('../svg/cc/icons/cc-icons.svg#cc-nc');
+    --cc-nd: url('../svg/cc/icons/cc-icons.svg#cc-nd');
+    --cc-pd: url('../svg/cc/icons/cc-icons.svg#cc-pd');
+    --cc-pdm: url('../svg/cc/icons/cc-icons.svg#cc-pdm');
+    --cc-sa: url('../svg/cc/icons/cc-icons.svg#cc-sa');
+    --cc-zero: url('../svg/cc/icons/cc-icons.svg#cc-zero');
 
 
 
