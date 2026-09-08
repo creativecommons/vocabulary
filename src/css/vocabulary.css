@@ -2525,6 +2525,7 @@ body > footer .contact .social-menu ul li {
 
 body > footer .social-menu ul li a {
     color: #ADFF00;
+    --icon-sprite-color: white;
     --icon-sprite-size: 1.9em;
 }
 
