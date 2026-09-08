@@ -2101,7 +2101,7 @@ body > article.attention a:hover {
 
 
 /* tiny banner type */
-main > article.attention.low-importance {
+body > article.attention.low-importance {
     background: none;
     text-align: left;
     border: none;
@@ -2111,24 +2111,24 @@ main > article.attention.low-importance {
     /* border-radius: 10px; */
 }
 
-main > article.attention.low-importance:before {
+body > article.attention.low-importance:before {
     display: none;
 }
 
-main > article.attention.low-importance div {
+body > article.attention.low-importance div {
     grid-column: span 2;
     display: block;
     padding: 0;
 }
 
-main > article.attention.low-importance h2 {
+body > article.attention.low-importance h2 {
     display: inline-block;
     margin: 0;
 
     font-size: 1em;
 }
 
-main > article.attention.low-importance p {
+body > article.attention.low-importance p {
     margin: 0;
     padding: 0;
 
@@ -2137,7 +2137,7 @@ main > article.attention.low-importance p {
     font-weight: 700;
 }
 
-main > article.attention.low-importance a {
+body > article.attention.low-importance a {
     margin: 0;
     padding: 0;
 
@@ -2172,20 +2172,20 @@ main > article.attention.low-importance a {
      background-position-y: 90%, 90%, 90%;
 }
 
-main > article.attention.low-importance a:hover {
+body > article.attention.low-importance a:hover {
        background-size: 0.05em 2px, 0.05em 2px, 2px 2px;
 }
 
-main > article.attention.low-importance a:hover {
+body > article.attention.low-importance a:hover {
     /* border: none; */
 }
 
-main > article.attention.low-importance figure {
+body > article.attention.low-importance figure {
     display: none;
 }
 
 /* popover banner type */
-main > article.attention.medium-importance {
+body > article.attention.medium-importance {
     
 
 }
