@@ -2242,6 +2242,11 @@ body > article.attention.low-importance figure {
 
 body > article.attention.medium-importance {
 
+    /* position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000; */
+
     overflow: hidden;
     interpolate-size: allow-keywords;
     animation: push-down 1.7s ease-in-out;
