@@ -2069,6 +2069,7 @@ body > article.attention h2 {
 }
 
 body > article.attention p {
+  font-family: "DM Sans";
   font-size: 1.4em;
 }
 
@@ -2236,7 +2237,7 @@ body > article.attention.low-importance figure {
 
     100% {
         opacity: 1;
-        display: block; 
+        /* display: block;  */
     }
 }
 
@@ -2246,17 +2247,45 @@ body > article.attention.medium-importance {
     top: 0;
     right: 0;
     z-index: 1000; */
-
+    position: relative;
     overflow: hidden;
     interpolate-size: allow-keywords;
     animation: push-down 1.7s ease-in-out;
 
+    text-align: left;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-top-width: 1px;
     border-right-width: 6px;
     border-bottom-width: 6px;
 
+    background: none;
+}
+
+body > article.attention.medium-importance:before {
+    display: none;
+}
+
+body > article.attention.medium-importance:after {
+    content: '';
+    height: 3%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    background:#E0FF00;
+    /* display: none; */
+}
+
+body > article.attention.medium-importance p {
+    line-height: 1.5;
+}
+
+body > article.attention.medium-importance a {
+    z-index: 2;
 }
 
 body > article.attention.medium-importance > * {
@@ -2265,8 +2294,41 @@ body > article.attention.medium-importance > * {
 
     animation: push-down-reveal 1.2s ease-in;
     /* animation-delay: s; */
-
      
+}
+
+svg.filter {
+    height: 0;
+    width: 0;
+}
+
+body > article.attention.medium-importance .container {
+    /* filter: url(#liquid); */
+}
+
+body > article.attention.medium-importance .circle {
+    min-width: 300px;
+    height: 300px;
+    position: relative;
+
+    /* background:#FF9CFF; */
+    border-radius: 50%;
+
+    z-index: 3;
+}
+
+body > article.attention.medium-importance .circle:before {
+    content:'';
+    position: absolute;
+    inset: -50px;
+    border-radius: 50%;
+    /* background:#FF9CFF; */
+    /* opacity: .1; */
+    filter: blur(50px);
+}
+
+body > article.attention.medium-importance .circle, body > article.attention.medium-importance .circle:before {
+    background: linear-gradient(45deg, #ADFF00, #FF9CFF);
 }
 
 body > main {
