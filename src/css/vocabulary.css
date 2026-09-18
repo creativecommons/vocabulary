@@ -2251,6 +2251,12 @@ body > article.attention.medium-importance {
     interpolate-size: allow-keywords;
     animation: push-down 1.7s ease-in-out;
 
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top-width: 1px;
+    border-right-width: 6px;
+    border-bottom-width: 6px;
+
 }
 
 body > article.attention.medium-importance > * {
