@@ -2553,6 +2553,13 @@ body > footer .search form {
     display: flex;
 }
 
+body > footer .search form label.search-label {
+    visibility: hidden;
+    height: 1px;
+    width: 1px;
+    overflow: none;
+}
+
 body > footer .search input:nth-of-type(1) {
     width: 90%;
     padding: .6em 1.5em;
