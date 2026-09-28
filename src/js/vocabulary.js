@@ -34,18 +34,26 @@ collapsedButtons.forEach((expander) => {
 
 // handle pushdown banner hide for a time functionality
 const showNotice = localStorage.getItem('showNotice');
+const currentTime = Date.now();
 const noticeHiddenAt = localStorage.getItem('noticeHiddenAt'); // set to time when clicked.
-const hideNoticeInterval = '100'; // set to a number
+const hideNoticeInterval = 20000; // set to a number
+// const hideNoticeInterval = 3600000; // set to a number
 const elapsedHiddenTime = (currentTime - noticeHiddenAt); //time between now and noticeHiddenAt in ms
 
 if(showNotice === 'false' && elapsedHiddenTime <= hideNoticeInterval){
-  document.querySelector('article.attention.medium-importance').toggleClass('hide');
+  document.querySelector('article.attention.medium-importance').classList.toggle('hide');
+  console.log('notice stays hidden');
+  console.log(elapsedHiddenTime);
 } else {
     localStorage.setItem('showNotice', 'true');
+    localStorage.setItem('noticeHiddenAt', 0);
+    console.log('notice unhides');
+    console.log(elapsedHiddenTime);
 }
 
 document.querySelector('#closeNotice').addEventListener('click', (event) => {
-  document.querySelector('article.attention.medium-importance').toggleClass('hide');
-  localStorage.setItem('noticeHiddenAt', 'currentTime');
+  document.querySelector('article.attention.medium-importance').classList.toggle('hide');
+  localStorage.setItem('noticeHiddenAt', currentTime);
   localStorage.setItem('showNotice', 'false');
+  console.log('notice hides');
 });
