@@ -2023,7 +2023,7 @@ body > article.attention {
     line-height: 150%;
     text-align: center;
     background:#F5F5F5;
-    background: #E0FF00;
+    /* background: #E0FF00; */
     border: 4px solid black;
     border-radius: 16px;
 }
@@ -2039,7 +2039,7 @@ body > article.attention:before {
     z-index: 5;
 
     background:#F5F5F5;
-    background:#E0FF00;
+    /* background:#E0FF00; */
     border-top: 4px solid black;
     border-right: 4px solid black;
 
@@ -2059,8 +2059,25 @@ body > article.attention div {
   padding: 1em 2em 2em 2em;
 }
 
+body > article.attention figure {
+    position: relative;
+}
+
 body > article.attention figure img {
   width: 100%;
+}
+
+body > article.attention figure span.double {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -1em;
+  right: 4em;
+  background-color:#FFD9CC;
+  mask-image: url('../svg/blob_c2.svg');
+  mask-size: 95% 95%;
+  mask-repeat: no-repeat;
 }
 
 body > article.attention h2 {
@@ -2079,6 +2096,7 @@ body > article.attention p {
 
 body > article.attention a {
   --underline-background-color:black;
+  --underline-background-color: #2E1FB8;
   display: inline-block;
   margin-top: 1em;
   padding: .6em 1.6em;
@@ -2088,6 +2106,7 @@ body > article.attention a {
   font-size: 1em;
   color: white;
   background:black;
+  background: #2E1FB8;
   border-radius: 60px;
   text-transform: capitalize;
   box-sizing: border-box;
@@ -2290,6 +2309,11 @@ body > article.attention.medium-importance p {
 
 body > article.attention.medium-importance a {
     z-index: 2;
+    background: black;
+}
+
+body > article.attention.medium-importance a:hover {
+    background: white;
 }
 
 body > article.attention.medium-importance > * {
