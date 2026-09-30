@@ -5700,6 +5700,8 @@ table.tablepress a {
 
 @media (max-width: 979px) {
 
+
+
     .licenses-page .licenses > ul {
         grid-template-columns: 1fr 1fr;
     }
@@ -5745,7 +5747,6 @@ table.tablepress a {
     .team-index main .persons ul {
         grid-template-columns: 1fr 1fr;
     }
-
 
     body footer {
         display: flex;
@@ -5805,6 +5806,18 @@ table.tablepress a {
 
     body main header {
         display: block;
+    }
+
+    body > article.attention {
+        display: block;
+    }
+
+    body > article.attention a {
+        margin: 0 auto;
+    }
+
+    body > article.attention figure {
+        display: none;
     }
 
     body main article.topic-summary.about figure {
