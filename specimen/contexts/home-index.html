@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<title>Home Index - Context</title>
+<title>Default Page - Context</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -9,34 +9,43 @@
 <link rel="icon" href="../vocabulary/favicon/favicon.svg" type="image/svg+xml" />
 <link rel="manifest" href="../vocabulary/favicon/manifest.webmanifest" />
 <link rel="apple-touch-icon" sizes="180x180" href="../vocabulary/favicon/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Knewave&family=Permanent+Marker&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" media="all" href="../style.css" />
+<link rel="stylesheet" media="all" href="../../style.css" />
+
+<style>
+    /* temporary while in progress */
+    @import '../../../../pidgin/css/pidgin-old.css' layer(vocabulary);
+</style>
 
 </head>
 
-<body class="home-narrative">
+<body class="pidgin-home">
 <a class="skip-to-content" href="#main-content-marker">Skip to content</a>
 
 <header>
     <div class="masthead">
-        <h1><a class="identity-logo product" href="#">Vocabulary</a></h1>
+        <h1><a class="identity-logo" href="#">Vocabulary</a></h1>
         <button class="expand-menu">Menu</button>
-        <nav class="primary-menu" aria-label="Primary navigation">
+        <nav class="primary-menu">
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Licenses & Tools</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Support</a></li>
+                <li><a class="donate icon-attach fa-heart" href="#">Donate</a></li>
             </ul>
         </nav>
 
-        <nav class="ancillary-menu" aria-label="Ancillary navigation">
+        <!-- <nav class="ancillary-menu" aria-label="Ancillary navigation">
             <ul>
                 <li><button class="locale icon-attach fa-globe">English</button></li>
                 <li><a class="donate icon-attach fa-heart" href="#">Donate</a></li>
                 <li><button class="explore">Explore CC</button></li>
             </ul>
-        </nav>
+        </nav> -->
     </div>
 
 
@@ -54,7 +63,7 @@
         <ul>
             <li>
                 <a href="#">Global Network</a>
-                <p>Join a  global community working to strengthen the Commons</p>
+                <p>Join a global community working to strengthen the Commons</p>
             </li>
             <li>
                 <a href="#">Certificate</a>
@@ -79,380 +88,177 @@
 
 </header>
 
-<!-- <article class="attention">
-<p></p>
-</article> -->
+<article class="attention">
+    <p>Join us in <a href="#">celebrating 25 years of the Commons</a> this Fall.</p>
+</article>
 
-<span id="main-content-marker"></span>
+<article class="attention">
+    <p>Join us in <a href="#">celebrating 25 years of the Commons</a> this Fall.</p>
+</article>
+
+<article class="attention">
+    <p>Join us in <a href="#">celebrating 25 years of the Commons</a> this Fall.</p>
+</article>
+
+<article class="attention">
+    <p>Join us in <a href="#">celebrating 25 years of the Commons</a> this Fall.</p>
+</article>
+
+<article class="attention">
+    <p>Join us in <a href="#">celebrating 25 years of the Commons</a> this Fall.</p>
+</article>
+
+<article class="attention">
+    <p>Join us in <a href="#">celebrating 25 years of the Commons</a> this Fall.</p>
+</article>
+
+<article class="attention">
+    <p>Join us in <a href="#">celebrating 25 years of the Commons</a> this Fall.</p>
+</article>
 
 <main>
 
-<article class="topic-summary">
-    <h2>Better Sharing, Brighter Future</h2>
-    <figure>
-        <iframe style="width: 100%;" title="Twenty Years of Creative Commons (in Sixty Seconds)" src="https://player.vimeo.com/video/777912896?h=016f97b875&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allowfullscreen="allowfullscreen" data-ready="true"></iframe>
-        <span class="attribution">
-            “<a href="https://www.flickr.com/photos/creativecommons/52543574218/">Twenty Years of Creative Commons (in Sixty Seconds)</a>” by&nbsp;<a href="http://www.junell.net/">Ryan Junell</a>&nbsp;and&nbsp;<a href="https://www.linkedin.com/in/gotisbrown/">Glenn Otis Brown</a>&nbsp;for&nbsp;<a href="https://creativecommons.org/">Creative Commons</a>&nbsp;is licensed via&nbsp;<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>&nbsp;and includes adaptations of the multiple open and public domain works. View full licensing and attribution information about all works included in the video&nbsp;<a href="https://www.flickr.com/photos/creativecommons/52543574218/">on Flickr</a>.
-        </span>
-    </figure>
-    <div class="description">
-        <p>Creative Commons is an international nonprofit organization that empowers people to grow and sustain the thriving commons of shared knowledge and culture we need to address the world's most pressing challenges and create a brighter future for all.</p>
-        <a href="#">Learn more</a>
+<article class="chooser-mini">
+
+<header>
+
+    <h2>licenses & tools</h2>
+
+    <p>There are six main Creative Commons license you can use when you choose to publish your work under CC terms. The six CC licenses are based on four conditions. The four conditions and the six licenses are described below.</p>
+
+</header>
+<!-- <form id="license-chooser" class="mini"> -->
+
+    <div class="license-menu"> 
+    <!-- <fieldset id="choose-a-license"> -->
+        <!-- <legend>Choose a License</legend> -->
+        <!-- <legend>Which license do you need?</legend> -->
+        <div class="icon-attach fa-angle-down">
+        <label for="license">License</label>
+        <select name="license" id="license">
+            <option value="cc-0">CC0</option>
+            <option value="cc-by">CC-BY 4.0</option>
+            <option value="cc-by-sa" selected>Attribution ShareAlike (CC-BY-SA)</option>
+            <option value="cc-by-nd">CC-BY-ND 4.0</option>
+            <option value="cc-by-nc">CC-BY-NC 4.0</option>
+            <option value="cc-by-nc-sa">CC-BY-NC-SA 4.0</option>
+            <option value="cc-by-nc-nd">CC-BY-NC-ND 4.0</option>
+        </select>
+        </div>
+        <!-- <p>OR</p>
+
+        <div></div>
+            <input type="checkbox" id="help" name="help" value="help" />
+            <label for="help">Help me choose</label>
+        </div> -->
+
+    <!-- </fieldset> -->
+    
+<!-- </form> -->
+
+
+<!-- <button>submit</button> -->
+
+<a class="need-help-choosing" href="/">Need help choosing a license?</a>
+
+</div> 
+
+<div class="explainer">
+    <h3>Attribution ShareAlike (CC-BY-SA)</h3>
+
+    <div class="license-graphics">
+        <div class="license-icons">
+            <svg>
+                <use href="../../../../src/svg/cc/icons/cc-icons.svg#cc-by"></use>
+            </svg>
+
+            <svg>
+                <use href="../../../../src/svg/cc/icons/cc-icons.svg#cc-sa"></use>
+            </svg>
+        </div>
+
+        <img class="license-badge" src="../../../../src/svg/cc/license_badges/big/by_sa.svg">
+    
     </div>
+
+
+    <p><strong>This license lets others remix, tweak, and build upon your work even for commercial purposes, as long as credit you and license their new creations under the identical terms.</strong> This license is often compared to "copyleft" free and open source software licenses. All new works based on yours will carry the same license, so any derivatives will also allow commercial use. This is the license used by Wikipedia, and is recommended for materials that would benefit from incorporating content form Wikipedia and similarly licensed projects.</p>
+
+    <nav class="license-info-nav">
+        <ul>
+            <li><a href=#">View license deed</a></li>
+            <li><a href=#">View legal code</a></li>
+        </ul>
+    </nav>
+</div>
+
 </article>
 
 
-<article class="case-studies">
-    <h2>The nonprofit behind the licenses and tools the world uses to share</h2>
-    <p>For over 20 years, Creative Commons has supported a global movement built on a belief in the power of open access to knowledge and creativity. From Wikipedia to the Smithsonian, organizations and individuals rely on our work to share billions of historic images, scientific articles, cultural artifacts, educational resources, music, and more!</p>
+<!-- <div class="series">
+    <span>part of the</span>
+    <a href="#">Copyright and Artists</a> series, a unique take on how copyright isn't aligned with the interests of individual artists, but instead mega-corps.
+
+    </div> -->
+
+
+
+<!-- <p>What are the barriers to open culture? What challenges do cultural heritage institutions &mdash; such as galleries, libraries, archives, and museums (GLAMs) &mdash; face in making their collections openly accessible online? How could Creative Commons support institutions in addressing these challenges and taking part in better sharing of cultural heritage?</p>
+
+<p>In search of answers, we looked at past research, notably Andrea Wallace's Barriers to Open Access &mdash; Open GLAM, and asked more than 30 experts in the open culture movement. You can watch what they told us in our CC Open Culture VOICES vlog series. Here's a small sample of what we heard:</p>
+
+<h2>Let's Try This Again</h2>
+
+<h3>Along The Way We Try</h3>
+
+
+<p>Along with 600 million people, nine-year-old Chris Hadfield is glued to his television&mdash;watching intently as American astronaut Neil Armstrong glides down the ladder of the Lunar Module, and in one swift pounce, touches the dust of a familiar yet alien world. His words forever immortalized, "That's one small step for man, one giant leap for mankind."</p>
+
+<ul>
+    <li>Assemble module</li>
+    <li>Launch aircraft</li>
+    <li>Land safely</li>
+</ul>
+
+<p>“To see that successfully carried out against what seemed like impossible odds for the first time in human history,” Hadfield recalled in 2012, “was hugely inspiring.” That moment sparked his lifelong journey to become an astronaut; which he did, becoming the first Canadian to walk in space in 2001. In the 1990s, Haley Harrison first heard Armstrong's words on an educational tape about space. “I was very young, probably 4 or 5 years old,” she recollected, “I just listened to the tape over and over. I would imagine myself on the shuttle…and I would pretend I was going up to space.” Harrison is now a Ph.D. candidate studying nanoscience at The University of North Carolina at Greensboro, with goals of working in the space industry.</p>
+
+
+<blockquote>
+<p>NASA is not only required by law (e.g. the U.S. Copyright Act of 1976) to give the public access to many of its materials, the Agency really wants people to use them.</p>
+</blockquote>
+
+<figure>
+    <img src="../imgs/image.jpg" />
+    <figcaption class="attribution">"<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></figcaption>
+</figure>
+
+
+<p>Footage and audio of the <a href="#">Apollo 11 Commander Neil Armstrong</a> and lunar module pilot Buzz Aldrin hopping on the Moon's surface in 1969 have been remixed, remastered, and reshared countless times—inspiring generations of everyday citizens, like Hadfield and Harrison, to engage <em>with</em> space science and exploration. In fact, the use of materials created by the National Aeronautics and Space Administration (NASA) to create new works for the public doesn't end with Armstrong's history-making first steps.</p>
+
+<h3>Steps to launch</h3>
+<ol>
+    <li>Assemble module</li>
+    <li>Launch aircraft</li>
+    <li>Land safely</li>
+</ol>
+
+<p>For example, Alex G. Orphanos, a science communicator, engineer, and host of the Today in Space podcast, has put NASA's materials to use for over six years. In particular, he has used images from the Hubble Space Telescope and information from NASA Procurement to better explain space-related issues to his audience. Rachael Eidson, a business development specialist for <strong>Trenton Systems</strong> and social media influencer also routinely uses NASA's images in her collaborations with eco-fashion and accessory companies. In fact, it's hard to miss the resurgence of space-themed items, including t-shirts, mugs, bags, etc. featuring NASA's “meatball” logo. As the L.A. Times reported in 2019, “The NASA logo is having a moment.”</p>
+
+
+<ul>
+
+    <li>Top Level Item</li>
+
     <ul>
-        <li>
-            <figure>
-                <img src="imgs/home.jpg" />
-                <figcaption>
-                    "<a href="https://www.loc.gov/pictures/item/2017786790/">Farmer and his brother making music</a>" by
-                    <a href="https://www.loc.gov/pictures/related/?fi=name&q=Lee%2C%20Russell%2C%201903-1986">Russell Lee</a>,
-                    here cropped, is marked with
-                    <a href="https://creativecommons.org/publicdomain/mark/1.0/">CC PDM 1.0</a>.
-                </figcaption>
-            </figure>
+        <li>Second Level Item</li>
 
-        </li>
-        <li>
-            <figure>
-                <img src="imgs/home.jpg" />
-                <figcaption>
-                    “<a href="https://www.flickr.com/photos/ter-burg/32896267507/">Flickr photowalk at the Creative Commons Global Summit 2019, Lisbon</a>” by
-                    <a href="https://www.flickr.com/photos/ter-burg/">Sebastiaan ter Burg</a>, here cropped, is licensed via
-                    <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.
-                </figcaption>
-            </figure>
-
-        </li>
-        <li>
-            <figure>
-                <img src="imgs/home.jpg" />
-                    <figcaption class="attribution">
-                        “<a href="https://www.flickr.com/photos/niaid/49557785797">Novel Coronavirus SARS-CoV-2</a>”
-                        by <a href="https://www.flickr.com/photos/niaid/">NIAID</a>, here cropped, is licensed via
-                        <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
-                    </figcaption>
-                 </figure>
-        </li>
-        <li>
-            <figure>
-                    <img src="imgs/home.jpg" />
-                    <figcaption>
-                        “<a href="https://www.flickr.com/photos/lensonjapan/8724992177">Children kabuki theater in Nagahama (warrior Kumagai, 12 y.o.)</a>” by
-                        <a href="https://www.flickr.com/photos/lensonjapan/">lensonjapan</a>, here cropped, is licensed via
-                        <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.
-                    </figcaption>
-                </figure>
-        </li>
+        <ul>
+            <li>Third Level Item</li>
+        </ul>
     </ul>
 
-    <footer>
-        <article class="data-points supporting">
-            <ul>
-                <li>
-                    <article class="data-point wikipedia">
-                        <h2 style="background-image: url('');">Wikipedia</h2>
-                        <h3 class="stat">55+ million articles</h3>
-                        <p>Every one of Wikipedia's 55 million plus articles are shared openly and freely using  a CC license.</p>
-                    </article>
-                </li>
-                <li>
-                    <article class="data-point the-met">
-                        <h2 style="background-image: url('');">The Met</h2>
-                        <h3 class="stat">492,000+ images</h3>
-                        <p>All images of public-domain works in the Met's collection are openly available under Creative Commons Zero (CC0).</p>
-                    </article>
-                </li>
-                <li>
-                    <article class="data-point khan-academy">
-                        <h2 style="background-image: url('');">Khan Academy</h2>
-                        <h3 class="stat">100,000+ lessons</h3>
-                        <p>Many of the lessons found on Khan Academy are openly licensed under CC-BY-NC-SA.</p>
-                    </article>
-                </li>
-            </ul>
-        </article>
-    </footer>
-</article>
-
-
-<article class="stories authored-posts highlight">
-
-    <h2>Latest News</h2>
-
-    <article class="story">
-        <header>
-        <h3 class="title"><a href="#">Open Access in Practice: A Conversation with President Larry Kramer of The Hewlett Foundation</a></h3>
-
-        <span class="byline">by <a href="#">Amanda Conway</a>, <a href="#">Ólafur Jónsson</a></span>
-        <span class="categories"><a href="#">Open Culture</a></span>
-        </header>
-
-        <figure>
-            <img src="../imgs/image2.jpg" />
-            <figcaption class="attribution">
-                "<a href="https://www.flickr.com/photos/47691521@N07/8249753855" target="_blank" rel="noopener noreferrer">Creative Commons a vessel ideas</a>" by&nbsp;
-                <a href="https://www.flickr.com/photos/47691521@N07" target="_blank" rel="noopener noreferrer">opensourceway</a>&nbsp;is licensed under&nbsp;
-                <a href="https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>
-            </figcaption>
-        </figure>
-
-        <p>The Creative Commons Open Education Team is pleased to provide a snapshot of progress made toward opening access and equity in education, through a look at our collective efforts in 2022.1 We laud the CC open education community for its important work throughout 2022. CC and community members' open education efforts in 2022 included, but </p>
-
-    </article>
-
-    <article class="story">
-        <header>
-        <h3 class="title"><a href="#">Open Access in Practice: A Conversation with President Larry Kramer of The Hewlett Foundation</a></h3>
-        <span class="byline">by <a href="#">Amanda Conway</a>, <a href="#">Ólafur Jónsson</a></span>
-        <span class="categories"><a href="#">Open Culture</a></span>
-
-        </header>
-
-        <figure>
-            <img src="../imgs/image3.png" />
-
-            <!-- <span class="attribution">"<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span> -->
-        </figure>
-
-    </article>
-
-    <article class="story">
-        <header>
-        <h3 class="title"><a href="#">Open Access in Practice: A Conversation with President Larry Kramer of The Hewlett Foundation</a></h3>
-        <span class="byline">by <a href="#">Amanda Conway</a>, <a href="#">Ólafur Jónsson</a></span>
-        <span class="categories"><a href="#">Open Culture</a></span>
-
-        </header>
-
-        <figure>
-            <img src="../imgs/image4.png" />
-
-            <!-- <span class="attribution">"<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span> -->
-        </figure>
-
-    </article>
-
-    <article class="story">
-        <header>
-        <h3 class="title"><a href="#">Open Access in Practice: A Conversation with President Larry Kramer of The Hewlett Foundation</a></h3>
-        <span class="byline">by <a href="#">Amanda Conway</a>, <a href="#">Ólafur Jónsson</a></span>
-        <span class="categories"><a href="#">Open Culture</a></span>
-
-        </header>
-
-        <figure>
-            <img src="../imgs/image3.png" />
-
-            <!-- <span class="attribution">"<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span> -->
-        </figure>
-
-    </article>
-
-    <article class="story">
-        <header>
-        <h3 class="title"><a href="#">Open Access in Practice: A Conversation with President Larry Kramer of The Hewlett Foundation</a></h3>
-        <span class="byline">by <a href="#">Amanda Conway</a>, <a href="#">Ólafur Jónsson</a></span>
-        <span class="categories"><a href="#">Open Culture</a></span>
-
-        </header>
-
-        <figure>
-            <img src="../imgs/image3.png" />
-
-            <!-- <span class="attribution">"<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span> -->
-        </figure>
-
-    </article>
-
-    <footer>
-        <a class="more" href="#">more posts</a>
-
-        <article class="attribution-list">
-            <h2>Images Attribution</h2>
-            <button class="expand-attribution">view</button>
-                <ul class="attribution-panel">
-                    <li>
-                        <article>
-
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>"
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image4.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://www.flickr.com/photos/47691521@N07/8249753855" target="_blank" rel="noopener noreferrer">Creative Commons a vessel ideas</a>"
-                                    by <a href="https://www.flickr.com/photos/47691521@N07" target="_blank" rel="noopener noreferrer">opensourceway</a>
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>
-                                </figcaption>
-                            </figure>
-
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>"
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a>
-                                    for Creative Commons & Fine Acts is licensed under
-                                    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>"
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-
-                        </article>
-                    </li>
-
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>"
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>"
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>"
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>"
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>"
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>"
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>"
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>"
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article>
-                            <figure>
-                                <img src="../imgs/image3.png" />
-                                <figcaption class="attribution">
-                                    "<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>"
-                                    by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts
-                                    is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </li>
-                </ul>
-            </article>
-    </footer>
-
-</article>
+    <li>Top Level Item</li>
+</ul> -->
 
 </main>
 
@@ -480,6 +286,7 @@
             <!-- <li><a class="icon-replace fa-instagram" href="#">Instagram</a></li> -->
             <li><a class="icon-replace fa-bluesky" href="https://bsky.app/profile/creativecommons.bsky.social" target="_blank">Bluesky</a></li>
             <li><a class="icon-replace fa-mastodon" href="https://mastodon.social/@creativecommons" target="_blank">Mastodon</a></li>
+            <li><a class="icon-replace fa-facebook" href="https://www.facebook.com/creativecommons" target="_blank">Facebook</a></li>
             <li><a class="icon-replace fa-linkedin" href="https://www.linkedin.com/company/creative-commons/" target="_blank">LinkedIn</a></li>
         </ul>
     </nav>
@@ -505,18 +312,20 @@
 
 
     <div class="license">
-        <p>Except where otherwise <a href="/policies/#license">noted</a>, content on this site is licensed under a <a href="/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>. Icons by <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.</p>
-
         <svg>
             <use href="../../src/svg/cc/icons/cc-icons.svg#cc-logo"></use>
         </svg>
         <svg>
             <use href="../../src/svg/cc/icons/cc-icons.svg#cc-by"></use>
         </svg>
+
+        <p>Except where otherwise <a href="/policies/#license">noted</a>, content on this site is licensed under a <a href="/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>. Icons by <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.</p>
+
     </div>
 
     </footer>
 
 <script src="../../src/js/vocabulary.js"></script>
+
 </body>
 </html>
