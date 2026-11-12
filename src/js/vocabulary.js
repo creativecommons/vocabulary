@@ -45,7 +45,7 @@ if(noticeBanner && showNotice === 'false' && elapsedHiddenTime <= hideNoticeInte
   noticeBanner.classList.toggle('hide');
   console.log('notice stays hidden');
   console.log(elapsedHiddenTime);
-} elseif (noticeBanner) {
+} else if (noticeBanner) {
     localStorage.setItem('showNotice', 'true');
     localStorage.setItem('noticeHiddenAt', 0);
     console.log('notice unhides');
