@@ -39,21 +39,24 @@ const noticeHiddenAt = localStorage.getItem('noticeHiddenAt'); // set to time wh
 const hideNoticeInterval = 20000; // set to a number
 // const hideNoticeInterval = 3600000; // set to a number
 const elapsedHiddenTime = (currentTime - noticeHiddenAt); //time between now and noticeHiddenAt in ms
+const noticeBanner = document.querySelector('article.attention.medium-importance');
 
-if(showNotice === 'false' && elapsedHiddenTime <= hideNoticeInterval){
-  document.querySelector('article.attention.medium-importance').classList.toggle('hide');
+if(noticeBanner && showNotice === 'false' && elapsedHiddenTime <= hideNoticeInterval){
+  noticeBanner.classList.toggle('hide');
   console.log('notice stays hidden');
   console.log(elapsedHiddenTime);
-} else {
+} elseif (noticeBanner) {
     localStorage.setItem('showNotice', 'true');
     localStorage.setItem('noticeHiddenAt', 0);
     console.log('notice unhides');
     console.log(elapsedHiddenTime);
 }
 
-document.querySelector('#closeNotice').addEventListener('click', (event) => {
-  document.querySelector('article.attention.medium-importance').classList.toggle('hide');
-  localStorage.setItem('noticeHiddenAt', currentTime);
-  localStorage.setItem('showNotice', 'false');
-  console.log('notice hides');
-});
+if (noticeBanner) {
+    document.querySelector('#closeNotice').addEventListener('click', (event) => {
+    noticeBanner.classList.toggle('hide');
+    localStorage.setItem('noticeHiddenAt', currentTime);
+    localStorage.setItem('showNotice', 'false');
+    console.log('notice hides');
+    });
+}
